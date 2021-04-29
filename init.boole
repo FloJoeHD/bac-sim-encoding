@@ -1,0 +1,3254 @@
+% init board with all positions to empty
+! green$0_0.1 &
+! red$0_0.1 &
+! green$0_0.2 &
+! red$0_0.2 &
+! green$0_0.3 &
+! red$0_0.3 &
+! green$0_0.4 &
+! red$0_0.4 &
+! green$0_0.5 &
+! red$0_0.5 &
+! green$0_1.2 &
+! red$0_1.2 &
+! green$0_1.3 &
+! red$0_1.3 &
+! green$0_1.4 &
+! red$0_1.4 &
+! green$0_1.5 &
+! red$0_1.5 &
+! green$0_2.3 &
+! red$0_2.3 &
+! green$0_2.4 &
+! red$0_2.4 &
+! green$0_2.5 &
+! red$0_2.5 &
+! green$0_3.4 &
+! red$0_3.4 &
+! green$0_3.5 &
+! red$0_3.5 &
+! green$0_4.5 &
+! red$0_4.5 &
+% define goal states
+green$10_0.2 & green$10_0.1 & green$10_1.2 |
+green$10_0.3 & green$10_0.1 & green$10_1.3 |
+green$10_0.3 & green$10_0.2 & green$10_2.3 |
+green$10_0.4 & green$10_0.1 & green$10_1.4 |
+green$10_0.4 & green$10_0.2 & green$10_2.4 |
+green$10_0.4 & green$10_0.3 & green$10_3.4 |
+green$10_0.5 & green$10_0.1 & green$10_1.5 |
+green$10_0.5 & green$10_0.2 & green$10_2.5 |
+green$10_0.5 & green$10_0.3 & green$10_3.5 |
+green$10_0.5 & green$10_0.4 & green$10_4.5 |
+green$10_1.3 & green$10_1.2 & green$10_2.3 |
+green$10_1.4 & green$10_1.2 & green$10_2.4 |
+green$10_1.4 & green$10_1.3 & green$10_3.4 |
+green$10_1.5 & green$10_1.2 & green$10_2.5 |
+green$10_1.5 & green$10_1.3 & green$10_3.5 |
+green$10_1.5 & green$10_1.4 & green$10_4.5 |
+green$10_2.4 & green$10_2.3 & green$10_3.4 |
+green$10_2.5 & green$10_2.3 & green$10_3.5 |
+green$10_2.5 & green$10_2.4 & green$10_4.5 |
+green$10_3.5 & green$10_3.4 & green$10_4.5 &
+% define moves of players
+% player green:
+( green$0_1.2 <-> green$1_1.2) & ( red$0_1.2 <-> red$1_1.2) &
+! green$0_0.1 & ! red$0_0.1 & green$1_0.1 & ! red$1_0.1 &
+( green$0_1.3 <-> green$1_1.3) & ( red$0_1.3 <-> red$1_1.3) &
+! green$0_0.1 & ! red$0_0.1 & green$1_0.1 & ! red$1_0.1 &
+( green$0_1.4 <-> green$1_1.4) & ( red$0_1.4 <-> red$1_1.4) &
+! green$0_0.1 & ! red$0_0.1 & green$1_0.1 & ! red$1_0.1 &
+( green$0_1.5 <-> green$1_1.5) & ( red$0_1.5 <-> red$1_1.5) &
+! green$0_0.1 & ! red$0_0.1 & green$1_0.1 & ! red$1_0.1 &
+( green$0_2.2 <-> green$1_2.2) & ( red$0_2.2 <-> red$1_2.2) &
+! green$0_0.1 & ! red$0_0.1 & green$1_0.1 & ! red$1_0.1 &
+( green$0_2.3 <-> green$1_2.3) & ( red$0_2.3 <-> red$1_2.3) &
+! green$0_0.1 & ! red$0_0.1 & green$1_0.1 & ! red$1_0.1 &
+( green$0_2.4 <-> green$1_2.4) & ( red$0_2.4 <-> red$1_2.4) &
+! green$0_0.1 & ! red$0_0.1 & green$1_0.1 & ! red$1_0.1 &
+( green$0_2.5 <-> green$1_2.5) & ( red$0_2.5 <-> red$1_2.5) &
+! green$0_0.1 & ! red$0_0.1 & green$1_0.1 & ! red$1_0.1 &
+( green$0_3.2 <-> green$1_3.2) & ( red$0_3.2 <-> red$1_3.2) &
+! green$0_0.1 & ! red$0_0.1 & green$1_0.1 & ! red$1_0.1 &
+( green$0_3.3 <-> green$1_3.3) & ( red$0_3.3 <-> red$1_3.3) &
+! green$0_0.1 & ! red$0_0.1 & green$1_0.1 & ! red$1_0.1 &
+( green$0_3.4 <-> green$1_3.4) & ( red$0_3.4 <-> red$1_3.4) &
+! green$0_0.1 & ! red$0_0.1 & green$1_0.1 & ! red$1_0.1 &
+( green$0_3.5 <-> green$1_3.5) & ( red$0_3.5 <-> red$1_3.5) &
+! green$0_0.1 & ! red$0_0.1 & green$1_0.1 & ! red$1_0.1 &
+( green$0_4.2 <-> green$1_4.2) & ( red$0_4.2 <-> red$1_4.2) &
+! green$0_0.1 & ! red$0_0.1 & green$1_0.1 & ! red$1_0.1 &
+( green$0_4.3 <-> green$1_4.3) & ( red$0_4.3 <-> red$1_4.3) &
+! green$0_0.1 & ! red$0_0.1 & green$1_0.1 & ! red$1_0.1 &
+( green$0_4.4 <-> green$1_4.4) & ( red$0_4.4 <-> red$1_4.4) &
+! green$0_0.1 & ! red$0_0.1 & green$1_0.1 & ! red$1_0.1 &
+( green$0_4.5 <-> green$1_4.5) & ( red$0_4.5 <-> red$1_4.5) &
+! green$0_0.1 & ! red$0_0.1 & green$1_0.1 & ! red$1_0.1 &
+( green$0_1.1 <-> green$1_1.1) & ( red$0_1.1 <-> red$1_1.1) &
+! green$0_0.2 & ! red$0_0.2 & green$1_0.2 & ! red$1_0.2 &
+( green$0_1.3 <-> green$1_1.3) & ( red$0_1.3 <-> red$1_1.3) &
+! green$0_0.2 & ! red$0_0.2 & green$1_0.2 & ! red$1_0.2 &
+( green$0_1.4 <-> green$1_1.4) & ( red$0_1.4 <-> red$1_1.4) &
+! green$0_0.2 & ! red$0_0.2 & green$1_0.2 & ! red$1_0.2 &
+( green$0_1.5 <-> green$1_1.5) & ( red$0_1.5 <-> red$1_1.5) &
+! green$0_0.2 & ! red$0_0.2 & green$1_0.2 & ! red$1_0.2 &
+( green$0_2.1 <-> green$1_2.1) & ( red$0_2.1 <-> red$1_2.1) &
+! green$0_0.2 & ! red$0_0.2 & green$1_0.2 & ! red$1_0.2 &
+( green$0_2.3 <-> green$1_2.3) & ( red$0_2.3 <-> red$1_2.3) &
+! green$0_0.2 & ! red$0_0.2 & green$1_0.2 & ! red$1_0.2 &
+( green$0_2.4 <-> green$1_2.4) & ( red$0_2.4 <-> red$1_2.4) &
+! green$0_0.2 & ! red$0_0.2 & green$1_0.2 & ! red$1_0.2 &
+( green$0_2.5 <-> green$1_2.5) & ( red$0_2.5 <-> red$1_2.5) &
+! green$0_0.2 & ! red$0_0.2 & green$1_0.2 & ! red$1_0.2 &
+( green$0_3.1 <-> green$1_3.1) & ( red$0_3.1 <-> red$1_3.1) &
+! green$0_0.2 & ! red$0_0.2 & green$1_0.2 & ! red$1_0.2 &
+( green$0_3.3 <-> green$1_3.3) & ( red$0_3.3 <-> red$1_3.3) &
+! green$0_0.2 & ! red$0_0.2 & green$1_0.2 & ! red$1_0.2 &
+( green$0_3.4 <-> green$1_3.4) & ( red$0_3.4 <-> red$1_3.4) &
+! green$0_0.2 & ! red$0_0.2 & green$1_0.2 & ! red$1_0.2 &
+( green$0_3.5 <-> green$1_3.5) & ( red$0_3.5 <-> red$1_3.5) &
+! green$0_0.2 & ! red$0_0.2 & green$1_0.2 & ! red$1_0.2 &
+( green$0_4.1 <-> green$1_4.1) & ( red$0_4.1 <-> red$1_4.1) &
+! green$0_0.2 & ! red$0_0.2 & green$1_0.2 & ! red$1_0.2 &
+( green$0_4.3 <-> green$1_4.3) & ( red$0_4.3 <-> red$1_4.3) &
+! green$0_0.2 & ! red$0_0.2 & green$1_0.2 & ! red$1_0.2 &
+( green$0_4.4 <-> green$1_4.4) & ( red$0_4.4 <-> red$1_4.4) &
+! green$0_0.2 & ! red$0_0.2 & green$1_0.2 & ! red$1_0.2 &
+( green$0_4.5 <-> green$1_4.5) & ( red$0_4.5 <-> red$1_4.5) &
+! green$0_0.2 & ! red$0_0.2 & green$1_0.2 & ! red$1_0.2 &
+( green$0_1.1 <-> green$1_1.1) & ( red$0_1.1 <-> red$1_1.1) &
+! green$0_0.3 & ! red$0_0.3 & green$1_0.3 & ! red$1_0.3 &
+( green$0_1.2 <-> green$1_1.2) & ( red$0_1.2 <-> red$1_1.2) &
+! green$0_0.3 & ! red$0_0.3 & green$1_0.3 & ! red$1_0.3 &
+( green$0_1.4 <-> green$1_1.4) & ( red$0_1.4 <-> red$1_1.4) &
+! green$0_0.3 & ! red$0_0.3 & green$1_0.3 & ! red$1_0.3 &
+( green$0_1.5 <-> green$1_1.5) & ( red$0_1.5 <-> red$1_1.5) &
+! green$0_0.3 & ! red$0_0.3 & green$1_0.3 & ! red$1_0.3 &
+( green$0_2.1 <-> green$1_2.1) & ( red$0_2.1 <-> red$1_2.1) &
+! green$0_0.3 & ! red$0_0.3 & green$1_0.3 & ! red$1_0.3 &
+( green$0_2.2 <-> green$1_2.2) & ( red$0_2.2 <-> red$1_2.2) &
+! green$0_0.3 & ! red$0_0.3 & green$1_0.3 & ! red$1_0.3 &
+( green$0_2.4 <-> green$1_2.4) & ( red$0_2.4 <-> red$1_2.4) &
+! green$0_0.3 & ! red$0_0.3 & green$1_0.3 & ! red$1_0.3 &
+( green$0_2.5 <-> green$1_2.5) & ( red$0_2.5 <-> red$1_2.5) &
+! green$0_0.3 & ! red$0_0.3 & green$1_0.3 & ! red$1_0.3 &
+( green$0_3.1 <-> green$1_3.1) & ( red$0_3.1 <-> red$1_3.1) &
+! green$0_0.3 & ! red$0_0.3 & green$1_0.3 & ! red$1_0.3 &
+( green$0_3.2 <-> green$1_3.2) & ( red$0_3.2 <-> red$1_3.2) &
+! green$0_0.3 & ! red$0_0.3 & green$1_0.3 & ! red$1_0.3 &
+( green$0_3.4 <-> green$1_3.4) & ( red$0_3.4 <-> red$1_3.4) &
+! green$0_0.3 & ! red$0_0.3 & green$1_0.3 & ! red$1_0.3 &
+( green$0_3.5 <-> green$1_3.5) & ( red$0_3.5 <-> red$1_3.5) &
+! green$0_0.3 & ! red$0_0.3 & green$1_0.3 & ! red$1_0.3 &
+( green$0_4.1 <-> green$1_4.1) & ( red$0_4.1 <-> red$1_4.1) &
+! green$0_0.3 & ! red$0_0.3 & green$1_0.3 & ! red$1_0.3 &
+( green$0_4.2 <-> green$1_4.2) & ( red$0_4.2 <-> red$1_4.2) &
+! green$0_0.3 & ! red$0_0.3 & green$1_0.3 & ! red$1_0.3 &
+( green$0_4.4 <-> green$1_4.4) & ( red$0_4.4 <-> red$1_4.4) &
+! green$0_0.3 & ! red$0_0.3 & green$1_0.3 & ! red$1_0.3 &
+( green$0_4.5 <-> green$1_4.5) & ( red$0_4.5 <-> red$1_4.5) &
+! green$0_0.3 & ! red$0_0.3 & green$1_0.3 & ! red$1_0.3 &
+( green$0_1.1 <-> green$1_1.1) & ( red$0_1.1 <-> red$1_1.1) &
+! green$0_0.4 & ! red$0_0.4 & green$1_0.4 & ! red$1_0.4 &
+( green$0_1.2 <-> green$1_1.2) & ( red$0_1.2 <-> red$1_1.2) &
+! green$0_0.4 & ! red$0_0.4 & green$1_0.4 & ! red$1_0.4 &
+( green$0_1.3 <-> green$1_1.3) & ( red$0_1.3 <-> red$1_1.3) &
+! green$0_0.4 & ! red$0_0.4 & green$1_0.4 & ! red$1_0.4 &
+( green$0_1.5 <-> green$1_1.5) & ( red$0_1.5 <-> red$1_1.5) &
+! green$0_0.4 & ! red$0_0.4 & green$1_0.4 & ! red$1_0.4 &
+( green$0_2.1 <-> green$1_2.1) & ( red$0_2.1 <-> red$1_2.1) &
+! green$0_0.4 & ! red$0_0.4 & green$1_0.4 & ! red$1_0.4 &
+( green$0_2.2 <-> green$1_2.2) & ( red$0_2.2 <-> red$1_2.2) &
+! green$0_0.4 & ! red$0_0.4 & green$1_0.4 & ! red$1_0.4 &
+( green$0_2.3 <-> green$1_2.3) & ( red$0_2.3 <-> red$1_2.3) &
+! green$0_0.4 & ! red$0_0.4 & green$1_0.4 & ! red$1_0.4 &
+( green$0_2.5 <-> green$1_2.5) & ( red$0_2.5 <-> red$1_2.5) &
+! green$0_0.4 & ! red$0_0.4 & green$1_0.4 & ! red$1_0.4 &
+( green$0_3.1 <-> green$1_3.1) & ( red$0_3.1 <-> red$1_3.1) &
+! green$0_0.4 & ! red$0_0.4 & green$1_0.4 & ! red$1_0.4 &
+( green$0_3.2 <-> green$1_3.2) & ( red$0_3.2 <-> red$1_3.2) &
+! green$0_0.4 & ! red$0_0.4 & green$1_0.4 & ! red$1_0.4 &
+( green$0_3.3 <-> green$1_3.3) & ( red$0_3.3 <-> red$1_3.3) &
+! green$0_0.4 & ! red$0_0.4 & green$1_0.4 & ! red$1_0.4 &
+( green$0_3.5 <-> green$1_3.5) & ( red$0_3.5 <-> red$1_3.5) &
+! green$0_0.4 & ! red$0_0.4 & green$1_0.4 & ! red$1_0.4 &
+( green$0_4.1 <-> green$1_4.1) & ( red$0_4.1 <-> red$1_4.1) &
+! green$0_0.4 & ! red$0_0.4 & green$1_0.4 & ! red$1_0.4 &
+( green$0_4.2 <-> green$1_4.2) & ( red$0_4.2 <-> red$1_4.2) &
+! green$0_0.4 & ! red$0_0.4 & green$1_0.4 & ! red$1_0.4 &
+( green$0_4.3 <-> green$1_4.3) & ( red$0_4.3 <-> red$1_4.3) &
+! green$0_0.4 & ! red$0_0.4 & green$1_0.4 & ! red$1_0.4 &
+( green$0_4.5 <-> green$1_4.5) & ( red$0_4.5 <-> red$1_4.5) &
+! green$0_0.4 & ! red$0_0.4 & green$1_0.4 & ! red$1_0.4 &
+( green$0_1.1 <-> green$1_1.1) & ( red$0_1.1 <-> red$1_1.1) &
+! green$0_0.5 & ! red$0_0.5 & green$1_0.5 & ! red$1_0.5 &
+( green$0_1.2 <-> green$1_1.2) & ( red$0_1.2 <-> red$1_1.2) &
+! green$0_0.5 & ! red$0_0.5 & green$1_0.5 & ! red$1_0.5 &
+( green$0_1.3 <-> green$1_1.3) & ( red$0_1.3 <-> red$1_1.3) &
+! green$0_0.5 & ! red$0_0.5 & green$1_0.5 & ! red$1_0.5 &
+( green$0_1.4 <-> green$1_1.4) & ( red$0_1.4 <-> red$1_1.4) &
+! green$0_0.5 & ! red$0_0.5 & green$1_0.5 & ! red$1_0.5 &
+( green$0_2.1 <-> green$1_2.1) & ( red$0_2.1 <-> red$1_2.1) &
+! green$0_0.5 & ! red$0_0.5 & green$1_0.5 & ! red$1_0.5 &
+( green$0_2.2 <-> green$1_2.2) & ( red$0_2.2 <-> red$1_2.2) &
+! green$0_0.5 & ! red$0_0.5 & green$1_0.5 & ! red$1_0.5 &
+( green$0_2.3 <-> green$1_2.3) & ( red$0_2.3 <-> red$1_2.3) &
+! green$0_0.5 & ! red$0_0.5 & green$1_0.5 & ! red$1_0.5 &
+( green$0_2.4 <-> green$1_2.4) & ( red$0_2.4 <-> red$1_2.4) &
+! green$0_0.5 & ! red$0_0.5 & green$1_0.5 & ! red$1_0.5 &
+( green$0_3.1 <-> green$1_3.1) & ( red$0_3.1 <-> red$1_3.1) &
+! green$0_0.5 & ! red$0_0.5 & green$1_0.5 & ! red$1_0.5 &
+( green$0_3.2 <-> green$1_3.2) & ( red$0_3.2 <-> red$1_3.2) &
+! green$0_0.5 & ! red$0_0.5 & green$1_0.5 & ! red$1_0.5 &
+( green$0_3.3 <-> green$1_3.3) & ( red$0_3.3 <-> red$1_3.3) &
+! green$0_0.5 & ! red$0_0.5 & green$1_0.5 & ! red$1_0.5 &
+( green$0_3.4 <-> green$1_3.4) & ( red$0_3.4 <-> red$1_3.4) &
+! green$0_0.5 & ! red$0_0.5 & green$1_0.5 & ! red$1_0.5 &
+( green$0_4.1 <-> green$1_4.1) & ( red$0_4.1 <-> red$1_4.1) &
+! green$0_0.5 & ! red$0_0.5 & green$1_0.5 & ! red$1_0.5 &
+( green$0_4.2 <-> green$1_4.2) & ( red$0_4.2 <-> red$1_4.2) &
+! green$0_0.5 & ! red$0_0.5 & green$1_0.5 & ! red$1_0.5 &
+( green$0_4.3 <-> green$1_4.3) & ( red$0_4.3 <-> red$1_4.3) &
+! green$0_0.5 & ! red$0_0.5 & green$1_0.5 & ! red$1_0.5 &
+( green$0_4.4 <-> green$1_4.4) & ( red$0_4.4 <-> red$1_4.4) &
+! green$0_0.5 & ! red$0_0.5 & green$1_0.5 & ! red$1_0.5 &
+( green$0_0.3 <-> green$1_0.3) & ( red$0_0.3 <-> red$1_0.3) &
+! green$0_1.2 & ! red$0_1.2 & green$1_1.2 & ! red$1_1.2 &
+( green$0_0.4 <-> green$1_0.4) & ( red$0_0.4 <-> red$1_0.4) &
+! green$0_1.2 & ! red$0_1.2 & green$1_1.2 & ! red$1_1.2 &
+( green$0_0.5 <-> green$1_0.5) & ( red$0_0.5 <-> red$1_0.5) &
+! green$0_1.2 & ! red$0_1.2 & green$1_1.2 & ! red$1_1.2 &
+( green$0_2.3 <-> green$1_2.3) & ( red$0_2.3 <-> red$1_2.3) &
+! green$0_1.2 & ! red$0_1.2 & green$1_1.2 & ! red$1_1.2 &
+( green$0_2.4 <-> green$1_2.4) & ( red$0_2.4 <-> red$1_2.4) &
+! green$0_1.2 & ! red$0_1.2 & green$1_1.2 & ! red$1_1.2 &
+( green$0_2.5 <-> green$1_2.5) & ( red$0_2.5 <-> red$1_2.5) &
+! green$0_1.2 & ! red$0_1.2 & green$1_1.2 & ! red$1_1.2 &
+( green$0_3.3 <-> green$1_3.3) & ( red$0_3.3 <-> red$1_3.3) &
+! green$0_1.2 & ! red$0_1.2 & green$1_1.2 & ! red$1_1.2 &
+( green$0_3.4 <-> green$1_3.4) & ( red$0_3.4 <-> red$1_3.4) &
+! green$0_1.2 & ! red$0_1.2 & green$1_1.2 & ! red$1_1.2 &
+( green$0_3.5 <-> green$1_3.5) & ( red$0_3.5 <-> red$1_3.5) &
+! green$0_1.2 & ! red$0_1.2 & green$1_1.2 & ! red$1_1.2 &
+( green$0_4.3 <-> green$1_4.3) & ( red$0_4.3 <-> red$1_4.3) &
+! green$0_1.2 & ! red$0_1.2 & green$1_1.2 & ! red$1_1.2 &
+( green$0_4.4 <-> green$1_4.4) & ( red$0_4.4 <-> red$1_4.4) &
+! green$0_1.2 & ! red$0_1.2 & green$1_1.2 & ! red$1_1.2 &
+( green$0_4.5 <-> green$1_4.5) & ( red$0_4.5 <-> red$1_4.5) &
+! green$0_1.2 & ! red$0_1.2 & green$1_1.2 & ! red$1_1.2 &
+( green$0_0.2 <-> green$1_0.2) & ( red$0_0.2 <-> red$1_0.2) &
+! green$0_1.3 & ! red$0_1.3 & green$1_1.3 & ! red$1_1.3 &
+( green$0_0.4 <-> green$1_0.4) & ( red$0_0.4 <-> red$1_0.4) &
+! green$0_1.3 & ! red$0_1.3 & green$1_1.3 & ! red$1_1.3 &
+( green$0_0.5 <-> green$1_0.5) & ( red$0_0.5 <-> red$1_0.5) &
+! green$0_1.3 & ! red$0_1.3 & green$1_1.3 & ! red$1_1.3 &
+( green$0_2.2 <-> green$1_2.2) & ( red$0_2.2 <-> red$1_2.2) &
+! green$0_1.3 & ! red$0_1.3 & green$1_1.3 & ! red$1_1.3 &
+( green$0_2.4 <-> green$1_2.4) & ( red$0_2.4 <-> red$1_2.4) &
+! green$0_1.3 & ! red$0_1.3 & green$1_1.3 & ! red$1_1.3 &
+( green$0_2.5 <-> green$1_2.5) & ( red$0_2.5 <-> red$1_2.5) &
+! green$0_1.3 & ! red$0_1.3 & green$1_1.3 & ! red$1_1.3 &
+( green$0_3.2 <-> green$1_3.2) & ( red$0_3.2 <-> red$1_3.2) &
+! green$0_1.3 & ! red$0_1.3 & green$1_1.3 & ! red$1_1.3 &
+( green$0_3.4 <-> green$1_3.4) & ( red$0_3.4 <-> red$1_3.4) &
+! green$0_1.3 & ! red$0_1.3 & green$1_1.3 & ! red$1_1.3 &
+( green$0_3.5 <-> green$1_3.5) & ( red$0_3.5 <-> red$1_3.5) &
+! green$0_1.3 & ! red$0_1.3 & green$1_1.3 & ! red$1_1.3 &
+( green$0_4.2 <-> green$1_4.2) & ( red$0_4.2 <-> red$1_4.2) &
+! green$0_1.3 & ! red$0_1.3 & green$1_1.3 & ! red$1_1.3 &
+( green$0_4.4 <-> green$1_4.4) & ( red$0_4.4 <-> red$1_4.4) &
+! green$0_1.3 & ! red$0_1.3 & green$1_1.3 & ! red$1_1.3 &
+( green$0_4.5 <-> green$1_4.5) & ( red$0_4.5 <-> red$1_4.5) &
+! green$0_1.3 & ! red$0_1.3 & green$1_1.3 & ! red$1_1.3 &
+( green$0_0.2 <-> green$1_0.2) & ( red$0_0.2 <-> red$1_0.2) &
+! green$0_1.4 & ! red$0_1.4 & green$1_1.4 & ! red$1_1.4 &
+( green$0_0.3 <-> green$1_0.3) & ( red$0_0.3 <-> red$1_0.3) &
+! green$0_1.4 & ! red$0_1.4 & green$1_1.4 & ! red$1_1.4 &
+( green$0_0.5 <-> green$1_0.5) & ( red$0_0.5 <-> red$1_0.5) &
+! green$0_1.4 & ! red$0_1.4 & green$1_1.4 & ! red$1_1.4 &
+( green$0_2.2 <-> green$1_2.2) & ( red$0_2.2 <-> red$1_2.2) &
+! green$0_1.4 & ! red$0_1.4 & green$1_1.4 & ! red$1_1.4 &
+( green$0_2.3 <-> green$1_2.3) & ( red$0_2.3 <-> red$1_2.3) &
+! green$0_1.4 & ! red$0_1.4 & green$1_1.4 & ! red$1_1.4 &
+( green$0_2.5 <-> green$1_2.5) & ( red$0_2.5 <-> red$1_2.5) &
+! green$0_1.4 & ! red$0_1.4 & green$1_1.4 & ! red$1_1.4 &
+( green$0_3.2 <-> green$1_3.2) & ( red$0_3.2 <-> red$1_3.2) &
+! green$0_1.4 & ! red$0_1.4 & green$1_1.4 & ! red$1_1.4 &
+( green$0_3.3 <-> green$1_3.3) & ( red$0_3.3 <-> red$1_3.3) &
+! green$0_1.4 & ! red$0_1.4 & green$1_1.4 & ! red$1_1.4 &
+( green$0_3.5 <-> green$1_3.5) & ( red$0_3.5 <-> red$1_3.5) &
+! green$0_1.4 & ! red$0_1.4 & green$1_1.4 & ! red$1_1.4 &
+( green$0_4.2 <-> green$1_4.2) & ( red$0_4.2 <-> red$1_4.2) &
+! green$0_1.4 & ! red$0_1.4 & green$1_1.4 & ! red$1_1.4 &
+( green$0_4.3 <-> green$1_4.3) & ( red$0_4.3 <-> red$1_4.3) &
+! green$0_1.4 & ! red$0_1.4 & green$1_1.4 & ! red$1_1.4 &
+( green$0_4.5 <-> green$1_4.5) & ( red$0_4.5 <-> red$1_4.5) &
+! green$0_1.4 & ! red$0_1.4 & green$1_1.4 & ! red$1_1.4 &
+( green$0_0.2 <-> green$1_0.2) & ( red$0_0.2 <-> red$1_0.2) &
+! green$0_1.5 & ! red$0_1.5 & green$1_1.5 & ! red$1_1.5 &
+( green$0_0.3 <-> green$1_0.3) & ( red$0_0.3 <-> red$1_0.3) &
+! green$0_1.5 & ! red$0_1.5 & green$1_1.5 & ! red$1_1.5 &
+( green$0_0.4 <-> green$1_0.4) & ( red$0_0.4 <-> red$1_0.4) &
+! green$0_1.5 & ! red$0_1.5 & green$1_1.5 & ! red$1_1.5 &
+( green$0_2.2 <-> green$1_2.2) & ( red$0_2.2 <-> red$1_2.2) &
+! green$0_1.5 & ! red$0_1.5 & green$1_1.5 & ! red$1_1.5 &
+( green$0_2.3 <-> green$1_2.3) & ( red$0_2.3 <-> red$1_2.3) &
+! green$0_1.5 & ! red$0_1.5 & green$1_1.5 & ! red$1_1.5 &
+( green$0_2.4 <-> green$1_2.4) & ( red$0_2.4 <-> red$1_2.4) &
+! green$0_1.5 & ! red$0_1.5 & green$1_1.5 & ! red$1_1.5 &
+( green$0_3.2 <-> green$1_3.2) & ( red$0_3.2 <-> red$1_3.2) &
+! green$0_1.5 & ! red$0_1.5 & green$1_1.5 & ! red$1_1.5 &
+( green$0_3.3 <-> green$1_3.3) & ( red$0_3.3 <-> red$1_3.3) &
+! green$0_1.5 & ! red$0_1.5 & green$1_1.5 & ! red$1_1.5 &
+( green$0_3.4 <-> green$1_3.4) & ( red$0_3.4 <-> red$1_3.4) &
+! green$0_1.5 & ! red$0_1.5 & green$1_1.5 & ! red$1_1.5 &
+( green$0_4.2 <-> green$1_4.2) & ( red$0_4.2 <-> red$1_4.2) &
+! green$0_1.5 & ! red$0_1.5 & green$1_1.5 & ! red$1_1.5 &
+( green$0_4.3 <-> green$1_4.3) & ( red$0_4.3 <-> red$1_4.3) &
+! green$0_1.5 & ! red$0_1.5 & green$1_1.5 & ! red$1_1.5 &
+( green$0_4.4 <-> green$1_4.4) & ( red$0_4.4 <-> red$1_4.4) &
+! green$0_1.5 & ! red$0_1.5 & green$1_1.5 & ! red$1_1.5 &
+( green$0_0.4 <-> green$1_0.4) & ( red$0_0.4 <-> red$1_0.4) &
+! green$0_2.3 & ! red$0_2.3 & green$1_2.3 & ! red$1_2.3 &
+( green$0_0.5 <-> green$1_0.5) & ( red$0_0.5 <-> red$1_0.5) &
+! green$0_2.3 & ! red$0_2.3 & green$1_2.3 & ! red$1_2.3 &
+( green$0_1.4 <-> green$1_1.4) & ( red$0_1.4 <-> red$1_1.4) &
+! green$0_2.3 & ! red$0_2.3 & green$1_2.3 & ! red$1_2.3 &
+( green$0_1.5 <-> green$1_1.5) & ( red$0_1.5 <-> red$1_1.5) &
+! green$0_2.3 & ! red$0_2.3 & green$1_2.3 & ! red$1_2.3 &
+( green$0_3.4 <-> green$1_3.4) & ( red$0_3.4 <-> red$1_3.4) &
+! green$0_2.3 & ! red$0_2.3 & green$1_2.3 & ! red$1_2.3 &
+( green$0_3.5 <-> green$1_3.5) & ( red$0_3.5 <-> red$1_3.5) &
+! green$0_2.3 & ! red$0_2.3 & green$1_2.3 & ! red$1_2.3 &
+( green$0_4.4 <-> green$1_4.4) & ( red$0_4.4 <-> red$1_4.4) &
+! green$0_2.3 & ! red$0_2.3 & green$1_2.3 & ! red$1_2.3 &
+( green$0_4.5 <-> green$1_4.5) & ( red$0_4.5 <-> red$1_4.5) &
+! green$0_2.3 & ! red$0_2.3 & green$1_2.3 & ! red$1_2.3 &
+( green$0_0.3 <-> green$1_0.3) & ( red$0_0.3 <-> red$1_0.3) &
+! green$0_2.4 & ! red$0_2.4 & green$1_2.4 & ! red$1_2.4 &
+( green$0_0.5 <-> green$1_0.5) & ( red$0_0.5 <-> red$1_0.5) &
+! green$0_2.4 & ! red$0_2.4 & green$1_2.4 & ! red$1_2.4 &
+( green$0_1.3 <-> green$1_1.3) & ( red$0_1.3 <-> red$1_1.3) &
+! green$0_2.4 & ! red$0_2.4 & green$1_2.4 & ! red$1_2.4 &
+( green$0_1.5 <-> green$1_1.5) & ( red$0_1.5 <-> red$1_1.5) &
+! green$0_2.4 & ! red$0_2.4 & green$1_2.4 & ! red$1_2.4 &
+( green$0_3.3 <-> green$1_3.3) & ( red$0_3.3 <-> red$1_3.3) &
+! green$0_2.4 & ! red$0_2.4 & green$1_2.4 & ! red$1_2.4 &
+( green$0_3.5 <-> green$1_3.5) & ( red$0_3.5 <-> red$1_3.5) &
+! green$0_2.4 & ! red$0_2.4 & green$1_2.4 & ! red$1_2.4 &
+( green$0_4.3 <-> green$1_4.3) & ( red$0_4.3 <-> red$1_4.3) &
+! green$0_2.4 & ! red$0_2.4 & green$1_2.4 & ! red$1_2.4 &
+( green$0_4.5 <-> green$1_4.5) & ( red$0_4.5 <-> red$1_4.5) &
+! green$0_2.4 & ! red$0_2.4 & green$1_2.4 & ! red$1_2.4 &
+( green$0_0.3 <-> green$1_0.3) & ( red$0_0.3 <-> red$1_0.3) &
+! green$0_2.5 & ! red$0_2.5 & green$1_2.5 & ! red$1_2.5 &
+( green$0_0.4 <-> green$1_0.4) & ( red$0_0.4 <-> red$1_0.4) &
+! green$0_2.5 & ! red$0_2.5 & green$1_2.5 & ! red$1_2.5 &
+( green$0_1.3 <-> green$1_1.3) & ( red$0_1.3 <-> red$1_1.3) &
+! green$0_2.5 & ! red$0_2.5 & green$1_2.5 & ! red$1_2.5 &
+( green$0_1.4 <-> green$1_1.4) & ( red$0_1.4 <-> red$1_1.4) &
+! green$0_2.5 & ! red$0_2.5 & green$1_2.5 & ! red$1_2.5 &
+( green$0_3.3 <-> green$1_3.3) & ( red$0_3.3 <-> red$1_3.3) &
+! green$0_2.5 & ! red$0_2.5 & green$1_2.5 & ! red$1_2.5 &
+( green$0_3.4 <-> green$1_3.4) & ( red$0_3.4 <-> red$1_3.4) &
+! green$0_2.5 & ! red$0_2.5 & green$1_2.5 & ! red$1_2.5 &
+( green$0_4.3 <-> green$1_4.3) & ( red$0_4.3 <-> red$1_4.3) &
+! green$0_2.5 & ! red$0_2.5 & green$1_2.5 & ! red$1_2.5 &
+( green$0_4.4 <-> green$1_4.4) & ( red$0_4.4 <-> red$1_4.4) &
+! green$0_2.5 & ! red$0_2.5 & green$1_2.5 & ! red$1_2.5 &
+( green$0_0.5 <-> green$1_0.5) & ( red$0_0.5 <-> red$1_0.5) &
+! green$0_3.4 & ! red$0_3.4 & green$1_3.4 & ! red$1_3.4 &
+( green$0_1.5 <-> green$1_1.5) & ( red$0_1.5 <-> red$1_1.5) &
+! green$0_3.4 & ! red$0_3.4 & green$1_3.4 & ! red$1_3.4 &
+( green$0_2.5 <-> green$1_2.5) & ( red$0_2.5 <-> red$1_2.5) &
+! green$0_3.4 & ! red$0_3.4 & green$1_3.4 & ! red$1_3.4 &
+( green$0_4.5 <-> green$1_4.5) & ( red$0_4.5 <-> red$1_4.5) &
+! green$0_3.4 & ! red$0_3.4 & green$1_3.4 & ! red$1_3.4 &
+( green$0_0.4 <-> green$1_0.4) & ( red$0_0.4 <-> red$1_0.4) &
+! green$0_3.5 & ! red$0_3.5 & green$1_3.5 & ! red$1_3.5 &
+( green$0_1.4 <-> green$1_1.4) & ( red$0_1.4 <-> red$1_1.4) &
+! green$0_3.5 & ! red$0_3.5 & green$1_3.5 & ! red$1_3.5 &
+( green$0_2.4 <-> green$1_2.4) & ( red$0_2.4 <-> red$1_2.4) &
+! green$0_3.5 & ! red$0_3.5 & green$1_3.5 & ! red$1_3.5 &
+( green$0_4.4 <-> green$1_4.4) & ( red$0_4.4 <-> red$1_4.4) &
+! green$0_3.5 & ! red$0_3.5 & green$1_3.5 & ! red$1_3.5 &
+( green$2_1.2 <-> green$3_1.2) & ( red$2_1.2 <-> red$3_1.2) &
+! green$2_0.1 & ! red$2_0.1 & green$3_0.1 & ! red$3_0.1 &
+( green$2_1.3 <-> green$3_1.3) & ( red$2_1.3 <-> red$3_1.3) &
+! green$2_0.1 & ! red$2_0.1 & green$3_0.1 & ! red$3_0.1 &
+( green$2_1.4 <-> green$3_1.4) & ( red$2_1.4 <-> red$3_1.4) &
+! green$2_0.1 & ! red$2_0.1 & green$3_0.1 & ! red$3_0.1 &
+( green$2_1.5 <-> green$3_1.5) & ( red$2_1.5 <-> red$3_1.5) &
+! green$2_0.1 & ! red$2_0.1 & green$3_0.1 & ! red$3_0.1 &
+( green$2_2.2 <-> green$3_2.2) & ( red$2_2.2 <-> red$3_2.2) &
+! green$2_0.1 & ! red$2_0.1 & green$3_0.1 & ! red$3_0.1 &
+( green$2_2.3 <-> green$3_2.3) & ( red$2_2.3 <-> red$3_2.3) &
+! green$2_0.1 & ! red$2_0.1 & green$3_0.1 & ! red$3_0.1 &
+( green$2_2.4 <-> green$3_2.4) & ( red$2_2.4 <-> red$3_2.4) &
+! green$2_0.1 & ! red$2_0.1 & green$3_0.1 & ! red$3_0.1 &
+( green$2_2.5 <-> green$3_2.5) & ( red$2_2.5 <-> red$3_2.5) &
+! green$2_0.1 & ! red$2_0.1 & green$3_0.1 & ! red$3_0.1 &
+( green$2_3.2 <-> green$3_3.2) & ( red$2_3.2 <-> red$3_3.2) &
+! green$2_0.1 & ! red$2_0.1 & green$3_0.1 & ! red$3_0.1 &
+( green$2_3.3 <-> green$3_3.3) & ( red$2_3.3 <-> red$3_3.3) &
+! green$2_0.1 & ! red$2_0.1 & green$3_0.1 & ! red$3_0.1 &
+( green$2_3.4 <-> green$3_3.4) & ( red$2_3.4 <-> red$3_3.4) &
+! green$2_0.1 & ! red$2_0.1 & green$3_0.1 & ! red$3_0.1 &
+( green$2_3.5 <-> green$3_3.5) & ( red$2_3.5 <-> red$3_3.5) &
+! green$2_0.1 & ! red$2_0.1 & green$3_0.1 & ! red$3_0.1 &
+( green$2_4.2 <-> green$3_4.2) & ( red$2_4.2 <-> red$3_4.2) &
+! green$2_0.1 & ! red$2_0.1 & green$3_0.1 & ! red$3_0.1 &
+( green$2_4.3 <-> green$3_4.3) & ( red$2_4.3 <-> red$3_4.3) &
+! green$2_0.1 & ! red$2_0.1 & green$3_0.1 & ! red$3_0.1 &
+( green$2_4.4 <-> green$3_4.4) & ( red$2_4.4 <-> red$3_4.4) &
+! green$2_0.1 & ! red$2_0.1 & green$3_0.1 & ! red$3_0.1 &
+( green$2_4.5 <-> green$3_4.5) & ( red$2_4.5 <-> red$3_4.5) &
+! green$2_0.1 & ! red$2_0.1 & green$3_0.1 & ! red$3_0.1 &
+( green$2_1.1 <-> green$3_1.1) & ( red$2_1.1 <-> red$3_1.1) &
+! green$2_0.2 & ! red$2_0.2 & green$3_0.2 & ! red$3_0.2 &
+( green$2_1.3 <-> green$3_1.3) & ( red$2_1.3 <-> red$3_1.3) &
+! green$2_0.2 & ! red$2_0.2 & green$3_0.2 & ! red$3_0.2 &
+( green$2_1.4 <-> green$3_1.4) & ( red$2_1.4 <-> red$3_1.4) &
+! green$2_0.2 & ! red$2_0.2 & green$3_0.2 & ! red$3_0.2 &
+( green$2_1.5 <-> green$3_1.5) & ( red$2_1.5 <-> red$3_1.5) &
+! green$2_0.2 & ! red$2_0.2 & green$3_0.2 & ! red$3_0.2 &
+( green$2_2.1 <-> green$3_2.1) & ( red$2_2.1 <-> red$3_2.1) &
+! green$2_0.2 & ! red$2_0.2 & green$3_0.2 & ! red$3_0.2 &
+( green$2_2.3 <-> green$3_2.3) & ( red$2_2.3 <-> red$3_2.3) &
+! green$2_0.2 & ! red$2_0.2 & green$3_0.2 & ! red$3_0.2 &
+( green$2_2.4 <-> green$3_2.4) & ( red$2_2.4 <-> red$3_2.4) &
+! green$2_0.2 & ! red$2_0.2 & green$3_0.2 & ! red$3_0.2 &
+( green$2_2.5 <-> green$3_2.5) & ( red$2_2.5 <-> red$3_2.5) &
+! green$2_0.2 & ! red$2_0.2 & green$3_0.2 & ! red$3_0.2 &
+( green$2_3.1 <-> green$3_3.1) & ( red$2_3.1 <-> red$3_3.1) &
+! green$2_0.2 & ! red$2_0.2 & green$3_0.2 & ! red$3_0.2 &
+( green$2_3.3 <-> green$3_3.3) & ( red$2_3.3 <-> red$3_3.3) &
+! green$2_0.2 & ! red$2_0.2 & green$3_0.2 & ! red$3_0.2 &
+( green$2_3.4 <-> green$3_3.4) & ( red$2_3.4 <-> red$3_3.4) &
+! green$2_0.2 & ! red$2_0.2 & green$3_0.2 & ! red$3_0.2 &
+( green$2_3.5 <-> green$3_3.5) & ( red$2_3.5 <-> red$3_3.5) &
+! green$2_0.2 & ! red$2_0.2 & green$3_0.2 & ! red$3_0.2 &
+( green$2_4.1 <-> green$3_4.1) & ( red$2_4.1 <-> red$3_4.1) &
+! green$2_0.2 & ! red$2_0.2 & green$3_0.2 & ! red$3_0.2 &
+( green$2_4.3 <-> green$3_4.3) & ( red$2_4.3 <-> red$3_4.3) &
+! green$2_0.2 & ! red$2_0.2 & green$3_0.2 & ! red$3_0.2 &
+( green$2_4.4 <-> green$3_4.4) & ( red$2_4.4 <-> red$3_4.4) &
+! green$2_0.2 & ! red$2_0.2 & green$3_0.2 & ! red$3_0.2 &
+( green$2_4.5 <-> green$3_4.5) & ( red$2_4.5 <-> red$3_4.5) &
+! green$2_0.2 & ! red$2_0.2 & green$3_0.2 & ! red$3_0.2 &
+( green$2_1.1 <-> green$3_1.1) & ( red$2_1.1 <-> red$3_1.1) &
+! green$2_0.3 & ! red$2_0.3 & green$3_0.3 & ! red$3_0.3 &
+( green$2_1.2 <-> green$3_1.2) & ( red$2_1.2 <-> red$3_1.2) &
+! green$2_0.3 & ! red$2_0.3 & green$3_0.3 & ! red$3_0.3 &
+( green$2_1.4 <-> green$3_1.4) & ( red$2_1.4 <-> red$3_1.4) &
+! green$2_0.3 & ! red$2_0.3 & green$3_0.3 & ! red$3_0.3 &
+( green$2_1.5 <-> green$3_1.5) & ( red$2_1.5 <-> red$3_1.5) &
+! green$2_0.3 & ! red$2_0.3 & green$3_0.3 & ! red$3_0.3 &
+( green$2_2.1 <-> green$3_2.1) & ( red$2_2.1 <-> red$3_2.1) &
+! green$2_0.3 & ! red$2_0.3 & green$3_0.3 & ! red$3_0.3 &
+( green$2_2.2 <-> green$3_2.2) & ( red$2_2.2 <-> red$3_2.2) &
+! green$2_0.3 & ! red$2_0.3 & green$3_0.3 & ! red$3_0.3 &
+( green$2_2.4 <-> green$3_2.4) & ( red$2_2.4 <-> red$3_2.4) &
+! green$2_0.3 & ! red$2_0.3 & green$3_0.3 & ! red$3_0.3 &
+( green$2_2.5 <-> green$3_2.5) & ( red$2_2.5 <-> red$3_2.5) &
+! green$2_0.3 & ! red$2_0.3 & green$3_0.3 & ! red$3_0.3 &
+( green$2_3.1 <-> green$3_3.1) & ( red$2_3.1 <-> red$3_3.1) &
+! green$2_0.3 & ! red$2_0.3 & green$3_0.3 & ! red$3_0.3 &
+( green$2_3.2 <-> green$3_3.2) & ( red$2_3.2 <-> red$3_3.2) &
+! green$2_0.3 & ! red$2_0.3 & green$3_0.3 & ! red$3_0.3 &
+( green$2_3.4 <-> green$3_3.4) & ( red$2_3.4 <-> red$3_3.4) &
+! green$2_0.3 & ! red$2_0.3 & green$3_0.3 & ! red$3_0.3 &
+( green$2_3.5 <-> green$3_3.5) & ( red$2_3.5 <-> red$3_3.5) &
+! green$2_0.3 & ! red$2_0.3 & green$3_0.3 & ! red$3_0.3 &
+( green$2_4.1 <-> green$3_4.1) & ( red$2_4.1 <-> red$3_4.1) &
+! green$2_0.3 & ! red$2_0.3 & green$3_0.3 & ! red$3_0.3 &
+( green$2_4.2 <-> green$3_4.2) & ( red$2_4.2 <-> red$3_4.2) &
+! green$2_0.3 & ! red$2_0.3 & green$3_0.3 & ! red$3_0.3 &
+( green$2_4.4 <-> green$3_4.4) & ( red$2_4.4 <-> red$3_4.4) &
+! green$2_0.3 & ! red$2_0.3 & green$3_0.3 & ! red$3_0.3 &
+( green$2_4.5 <-> green$3_4.5) & ( red$2_4.5 <-> red$3_4.5) &
+! green$2_0.3 & ! red$2_0.3 & green$3_0.3 & ! red$3_0.3 &
+( green$2_1.1 <-> green$3_1.1) & ( red$2_1.1 <-> red$3_1.1) &
+! green$2_0.4 & ! red$2_0.4 & green$3_0.4 & ! red$3_0.4 &
+( green$2_1.2 <-> green$3_1.2) & ( red$2_1.2 <-> red$3_1.2) &
+! green$2_0.4 & ! red$2_0.4 & green$3_0.4 & ! red$3_0.4 &
+( green$2_1.3 <-> green$3_1.3) & ( red$2_1.3 <-> red$3_1.3) &
+! green$2_0.4 & ! red$2_0.4 & green$3_0.4 & ! red$3_0.4 &
+( green$2_1.5 <-> green$3_1.5) & ( red$2_1.5 <-> red$3_1.5) &
+! green$2_0.4 & ! red$2_0.4 & green$3_0.4 & ! red$3_0.4 &
+( green$2_2.1 <-> green$3_2.1) & ( red$2_2.1 <-> red$3_2.1) &
+! green$2_0.4 & ! red$2_0.4 & green$3_0.4 & ! red$3_0.4 &
+( green$2_2.2 <-> green$3_2.2) & ( red$2_2.2 <-> red$3_2.2) &
+! green$2_0.4 & ! red$2_0.4 & green$3_0.4 & ! red$3_0.4 &
+( green$2_2.3 <-> green$3_2.3) & ( red$2_2.3 <-> red$3_2.3) &
+! green$2_0.4 & ! red$2_0.4 & green$3_0.4 & ! red$3_0.4 &
+( green$2_2.5 <-> green$3_2.5) & ( red$2_2.5 <-> red$3_2.5) &
+! green$2_0.4 & ! red$2_0.4 & green$3_0.4 & ! red$3_0.4 &
+( green$2_3.1 <-> green$3_3.1) & ( red$2_3.1 <-> red$3_3.1) &
+! green$2_0.4 & ! red$2_0.4 & green$3_0.4 & ! red$3_0.4 &
+( green$2_3.2 <-> green$3_3.2) & ( red$2_3.2 <-> red$3_3.2) &
+! green$2_0.4 & ! red$2_0.4 & green$3_0.4 & ! red$3_0.4 &
+( green$2_3.3 <-> green$3_3.3) & ( red$2_3.3 <-> red$3_3.3) &
+! green$2_0.4 & ! red$2_0.4 & green$3_0.4 & ! red$3_0.4 &
+( green$2_3.5 <-> green$3_3.5) & ( red$2_3.5 <-> red$3_3.5) &
+! green$2_0.4 & ! red$2_0.4 & green$3_0.4 & ! red$3_0.4 &
+( green$2_4.1 <-> green$3_4.1) & ( red$2_4.1 <-> red$3_4.1) &
+! green$2_0.4 & ! red$2_0.4 & green$3_0.4 & ! red$3_0.4 &
+( green$2_4.2 <-> green$3_4.2) & ( red$2_4.2 <-> red$3_4.2) &
+! green$2_0.4 & ! red$2_0.4 & green$3_0.4 & ! red$3_0.4 &
+( green$2_4.3 <-> green$3_4.3) & ( red$2_4.3 <-> red$3_4.3) &
+! green$2_0.4 & ! red$2_0.4 & green$3_0.4 & ! red$3_0.4 &
+( green$2_4.5 <-> green$3_4.5) & ( red$2_4.5 <-> red$3_4.5) &
+! green$2_0.4 & ! red$2_0.4 & green$3_0.4 & ! red$3_0.4 &
+( green$2_1.1 <-> green$3_1.1) & ( red$2_1.1 <-> red$3_1.1) &
+! green$2_0.5 & ! red$2_0.5 & green$3_0.5 & ! red$3_0.5 &
+( green$2_1.2 <-> green$3_1.2) & ( red$2_1.2 <-> red$3_1.2) &
+! green$2_0.5 & ! red$2_0.5 & green$3_0.5 & ! red$3_0.5 &
+( green$2_1.3 <-> green$3_1.3) & ( red$2_1.3 <-> red$3_1.3) &
+! green$2_0.5 & ! red$2_0.5 & green$3_0.5 & ! red$3_0.5 &
+( green$2_1.4 <-> green$3_1.4) & ( red$2_1.4 <-> red$3_1.4) &
+! green$2_0.5 & ! red$2_0.5 & green$3_0.5 & ! red$3_0.5 &
+( green$2_2.1 <-> green$3_2.1) & ( red$2_2.1 <-> red$3_2.1) &
+! green$2_0.5 & ! red$2_0.5 & green$3_0.5 & ! red$3_0.5 &
+( green$2_2.2 <-> green$3_2.2) & ( red$2_2.2 <-> red$3_2.2) &
+! green$2_0.5 & ! red$2_0.5 & green$3_0.5 & ! red$3_0.5 &
+( green$2_2.3 <-> green$3_2.3) & ( red$2_2.3 <-> red$3_2.3) &
+! green$2_0.5 & ! red$2_0.5 & green$3_0.5 & ! red$3_0.5 &
+( green$2_2.4 <-> green$3_2.4) & ( red$2_2.4 <-> red$3_2.4) &
+! green$2_0.5 & ! red$2_0.5 & green$3_0.5 & ! red$3_0.5 &
+( green$2_3.1 <-> green$3_3.1) & ( red$2_3.1 <-> red$3_3.1) &
+! green$2_0.5 & ! red$2_0.5 & green$3_0.5 & ! red$3_0.5 &
+( green$2_3.2 <-> green$3_3.2) & ( red$2_3.2 <-> red$3_3.2) &
+! green$2_0.5 & ! red$2_0.5 & green$3_0.5 & ! red$3_0.5 &
+( green$2_3.3 <-> green$3_3.3) & ( red$2_3.3 <-> red$3_3.3) &
+! green$2_0.5 & ! red$2_0.5 & green$3_0.5 & ! red$3_0.5 &
+( green$2_3.4 <-> green$3_3.4) & ( red$2_3.4 <-> red$3_3.4) &
+! green$2_0.5 & ! red$2_0.5 & green$3_0.5 & ! red$3_0.5 &
+( green$2_4.1 <-> green$3_4.1) & ( red$2_4.1 <-> red$3_4.1) &
+! green$2_0.5 & ! red$2_0.5 & green$3_0.5 & ! red$3_0.5 &
+( green$2_4.2 <-> green$3_4.2) & ( red$2_4.2 <-> red$3_4.2) &
+! green$2_0.5 & ! red$2_0.5 & green$3_0.5 & ! red$3_0.5 &
+( green$2_4.3 <-> green$3_4.3) & ( red$2_4.3 <-> red$3_4.3) &
+! green$2_0.5 & ! red$2_0.5 & green$3_0.5 & ! red$3_0.5 &
+( green$2_4.4 <-> green$3_4.4) & ( red$2_4.4 <-> red$3_4.4) &
+! green$2_0.5 & ! red$2_0.5 & green$3_0.5 & ! red$3_0.5 &
+( green$2_0.3 <-> green$3_0.3) & ( red$2_0.3 <-> red$3_0.3) &
+! green$2_1.2 & ! red$2_1.2 & green$3_1.2 & ! red$3_1.2 &
+( green$2_0.4 <-> green$3_0.4) & ( red$2_0.4 <-> red$3_0.4) &
+! green$2_1.2 & ! red$2_1.2 & green$3_1.2 & ! red$3_1.2 &
+( green$2_0.5 <-> green$3_0.5) & ( red$2_0.5 <-> red$3_0.5) &
+! green$2_1.2 & ! red$2_1.2 & green$3_1.2 & ! red$3_1.2 &
+( green$2_2.3 <-> green$3_2.3) & ( red$2_2.3 <-> red$3_2.3) &
+! green$2_1.2 & ! red$2_1.2 & green$3_1.2 & ! red$3_1.2 &
+( green$2_2.4 <-> green$3_2.4) & ( red$2_2.4 <-> red$3_2.4) &
+! green$2_1.2 & ! red$2_1.2 & green$3_1.2 & ! red$3_1.2 &
+( green$2_2.5 <-> green$3_2.5) & ( red$2_2.5 <-> red$3_2.5) &
+! green$2_1.2 & ! red$2_1.2 & green$3_1.2 & ! red$3_1.2 &
+( green$2_3.3 <-> green$3_3.3) & ( red$2_3.3 <-> red$3_3.3) &
+! green$2_1.2 & ! red$2_1.2 & green$3_1.2 & ! red$3_1.2 &
+( green$2_3.4 <-> green$3_3.4) & ( red$2_3.4 <-> red$3_3.4) &
+! green$2_1.2 & ! red$2_1.2 & green$3_1.2 & ! red$3_1.2 &
+( green$2_3.5 <-> green$3_3.5) & ( red$2_3.5 <-> red$3_3.5) &
+! green$2_1.2 & ! red$2_1.2 & green$3_1.2 & ! red$3_1.2 &
+( green$2_4.3 <-> green$3_4.3) & ( red$2_4.3 <-> red$3_4.3) &
+! green$2_1.2 & ! red$2_1.2 & green$3_1.2 & ! red$3_1.2 &
+( green$2_4.4 <-> green$3_4.4) & ( red$2_4.4 <-> red$3_4.4) &
+! green$2_1.2 & ! red$2_1.2 & green$3_1.2 & ! red$3_1.2 &
+( green$2_4.5 <-> green$3_4.5) & ( red$2_4.5 <-> red$3_4.5) &
+! green$2_1.2 & ! red$2_1.2 & green$3_1.2 & ! red$3_1.2 &
+( green$2_0.2 <-> green$3_0.2) & ( red$2_0.2 <-> red$3_0.2) &
+! green$2_1.3 & ! red$2_1.3 & green$3_1.3 & ! red$3_1.3 &
+( green$2_0.4 <-> green$3_0.4) & ( red$2_0.4 <-> red$3_0.4) &
+! green$2_1.3 & ! red$2_1.3 & green$3_1.3 & ! red$3_1.3 &
+( green$2_0.5 <-> green$3_0.5) & ( red$2_0.5 <-> red$3_0.5) &
+! green$2_1.3 & ! red$2_1.3 & green$3_1.3 & ! red$3_1.3 &
+( green$2_2.2 <-> green$3_2.2) & ( red$2_2.2 <-> red$3_2.2) &
+! green$2_1.3 & ! red$2_1.3 & green$3_1.3 & ! red$3_1.3 &
+( green$2_2.4 <-> green$3_2.4) & ( red$2_2.4 <-> red$3_2.4) &
+! green$2_1.3 & ! red$2_1.3 & green$3_1.3 & ! red$3_1.3 &
+( green$2_2.5 <-> green$3_2.5) & ( red$2_2.5 <-> red$3_2.5) &
+! green$2_1.3 & ! red$2_1.3 & green$3_1.3 & ! red$3_1.3 &
+( green$2_3.2 <-> green$3_3.2) & ( red$2_3.2 <-> red$3_3.2) &
+! green$2_1.3 & ! red$2_1.3 & green$3_1.3 & ! red$3_1.3 &
+( green$2_3.4 <-> green$3_3.4) & ( red$2_3.4 <-> red$3_3.4) &
+! green$2_1.3 & ! red$2_1.3 & green$3_1.3 & ! red$3_1.3 &
+( green$2_3.5 <-> green$3_3.5) & ( red$2_3.5 <-> red$3_3.5) &
+! green$2_1.3 & ! red$2_1.3 & green$3_1.3 & ! red$3_1.3 &
+( green$2_4.2 <-> green$3_4.2) & ( red$2_4.2 <-> red$3_4.2) &
+! green$2_1.3 & ! red$2_1.3 & green$3_1.3 & ! red$3_1.3 &
+( green$2_4.4 <-> green$3_4.4) & ( red$2_4.4 <-> red$3_4.4) &
+! green$2_1.3 & ! red$2_1.3 & green$3_1.3 & ! red$3_1.3 &
+( green$2_4.5 <-> green$3_4.5) & ( red$2_4.5 <-> red$3_4.5) &
+! green$2_1.3 & ! red$2_1.3 & green$3_1.3 & ! red$3_1.3 &
+( green$2_0.2 <-> green$3_0.2) & ( red$2_0.2 <-> red$3_0.2) &
+! green$2_1.4 & ! red$2_1.4 & green$3_1.4 & ! red$3_1.4 &
+( green$2_0.3 <-> green$3_0.3) & ( red$2_0.3 <-> red$3_0.3) &
+! green$2_1.4 & ! red$2_1.4 & green$3_1.4 & ! red$3_1.4 &
+( green$2_0.5 <-> green$3_0.5) & ( red$2_0.5 <-> red$3_0.5) &
+! green$2_1.4 & ! red$2_1.4 & green$3_1.4 & ! red$3_1.4 &
+( green$2_2.2 <-> green$3_2.2) & ( red$2_2.2 <-> red$3_2.2) &
+! green$2_1.4 & ! red$2_1.4 & green$3_1.4 & ! red$3_1.4 &
+( green$2_2.3 <-> green$3_2.3) & ( red$2_2.3 <-> red$3_2.3) &
+! green$2_1.4 & ! red$2_1.4 & green$3_1.4 & ! red$3_1.4 &
+( green$2_2.5 <-> green$3_2.5) & ( red$2_2.5 <-> red$3_2.5) &
+! green$2_1.4 & ! red$2_1.4 & green$3_1.4 & ! red$3_1.4 &
+( green$2_3.2 <-> green$3_3.2) & ( red$2_3.2 <-> red$3_3.2) &
+! green$2_1.4 & ! red$2_1.4 & green$3_1.4 & ! red$3_1.4 &
+( green$2_3.3 <-> green$3_3.3) & ( red$2_3.3 <-> red$3_3.3) &
+! green$2_1.4 & ! red$2_1.4 & green$3_1.4 & ! red$3_1.4 &
+( green$2_3.5 <-> green$3_3.5) & ( red$2_3.5 <-> red$3_3.5) &
+! green$2_1.4 & ! red$2_1.4 & green$3_1.4 & ! red$3_1.4 &
+( green$2_4.2 <-> green$3_4.2) & ( red$2_4.2 <-> red$3_4.2) &
+! green$2_1.4 & ! red$2_1.4 & green$3_1.4 & ! red$3_1.4 &
+( green$2_4.3 <-> green$3_4.3) & ( red$2_4.3 <-> red$3_4.3) &
+! green$2_1.4 & ! red$2_1.4 & green$3_1.4 & ! red$3_1.4 &
+( green$2_4.5 <-> green$3_4.5) & ( red$2_4.5 <-> red$3_4.5) &
+! green$2_1.4 & ! red$2_1.4 & green$3_1.4 & ! red$3_1.4 &
+( green$2_0.2 <-> green$3_0.2) & ( red$2_0.2 <-> red$3_0.2) &
+! green$2_1.5 & ! red$2_1.5 & green$3_1.5 & ! red$3_1.5 &
+( green$2_0.3 <-> green$3_0.3) & ( red$2_0.3 <-> red$3_0.3) &
+! green$2_1.5 & ! red$2_1.5 & green$3_1.5 & ! red$3_1.5 &
+( green$2_0.4 <-> green$3_0.4) & ( red$2_0.4 <-> red$3_0.4) &
+! green$2_1.5 & ! red$2_1.5 & green$3_1.5 & ! red$3_1.5 &
+( green$2_2.2 <-> green$3_2.2) & ( red$2_2.2 <-> red$3_2.2) &
+! green$2_1.5 & ! red$2_1.5 & green$3_1.5 & ! red$3_1.5 &
+( green$2_2.3 <-> green$3_2.3) & ( red$2_2.3 <-> red$3_2.3) &
+! green$2_1.5 & ! red$2_1.5 & green$3_1.5 & ! red$3_1.5 &
+( green$2_2.4 <-> green$3_2.4) & ( red$2_2.4 <-> red$3_2.4) &
+! green$2_1.5 & ! red$2_1.5 & green$3_1.5 & ! red$3_1.5 &
+( green$2_3.2 <-> green$3_3.2) & ( red$2_3.2 <-> red$3_3.2) &
+! green$2_1.5 & ! red$2_1.5 & green$3_1.5 & ! red$3_1.5 &
+( green$2_3.3 <-> green$3_3.3) & ( red$2_3.3 <-> red$3_3.3) &
+! green$2_1.5 & ! red$2_1.5 & green$3_1.5 & ! red$3_1.5 &
+( green$2_3.4 <-> green$3_3.4) & ( red$2_3.4 <-> red$3_3.4) &
+! green$2_1.5 & ! red$2_1.5 & green$3_1.5 & ! red$3_1.5 &
+( green$2_4.2 <-> green$3_4.2) & ( red$2_4.2 <-> red$3_4.2) &
+! green$2_1.5 & ! red$2_1.5 & green$3_1.5 & ! red$3_1.5 &
+( green$2_4.3 <-> green$3_4.3) & ( red$2_4.3 <-> red$3_4.3) &
+! green$2_1.5 & ! red$2_1.5 & green$3_1.5 & ! red$3_1.5 &
+( green$2_4.4 <-> green$3_4.4) & ( red$2_4.4 <-> red$3_4.4) &
+! green$2_1.5 & ! red$2_1.5 & green$3_1.5 & ! red$3_1.5 &
+( green$2_0.4 <-> green$3_0.4) & ( red$2_0.4 <-> red$3_0.4) &
+! green$2_2.3 & ! red$2_2.3 & green$3_2.3 & ! red$3_2.3 &
+( green$2_0.5 <-> green$3_0.5) & ( red$2_0.5 <-> red$3_0.5) &
+! green$2_2.3 & ! red$2_2.3 & green$3_2.3 & ! red$3_2.3 &
+( green$2_1.4 <-> green$3_1.4) & ( red$2_1.4 <-> red$3_1.4) &
+! green$2_2.3 & ! red$2_2.3 & green$3_2.3 & ! red$3_2.3 &
+( green$2_1.5 <-> green$3_1.5) & ( red$2_1.5 <-> red$3_1.5) &
+! green$2_2.3 & ! red$2_2.3 & green$3_2.3 & ! red$3_2.3 &
+( green$2_3.4 <-> green$3_3.4) & ( red$2_3.4 <-> red$3_3.4) &
+! green$2_2.3 & ! red$2_2.3 & green$3_2.3 & ! red$3_2.3 &
+( green$2_3.5 <-> green$3_3.5) & ( red$2_3.5 <-> red$3_3.5) &
+! green$2_2.3 & ! red$2_2.3 & green$3_2.3 & ! red$3_2.3 &
+( green$2_4.4 <-> green$3_4.4) & ( red$2_4.4 <-> red$3_4.4) &
+! green$2_2.3 & ! red$2_2.3 & green$3_2.3 & ! red$3_2.3 &
+( green$2_4.5 <-> green$3_4.5) & ( red$2_4.5 <-> red$3_4.5) &
+! green$2_2.3 & ! red$2_2.3 & green$3_2.3 & ! red$3_2.3 &
+( green$2_0.3 <-> green$3_0.3) & ( red$2_0.3 <-> red$3_0.3) &
+! green$2_2.4 & ! red$2_2.4 & green$3_2.4 & ! red$3_2.4 &
+( green$2_0.5 <-> green$3_0.5) & ( red$2_0.5 <-> red$3_0.5) &
+! green$2_2.4 & ! red$2_2.4 & green$3_2.4 & ! red$3_2.4 &
+( green$2_1.3 <-> green$3_1.3) & ( red$2_1.3 <-> red$3_1.3) &
+! green$2_2.4 & ! red$2_2.4 & green$3_2.4 & ! red$3_2.4 &
+( green$2_1.5 <-> green$3_1.5) & ( red$2_1.5 <-> red$3_1.5) &
+! green$2_2.4 & ! red$2_2.4 & green$3_2.4 & ! red$3_2.4 &
+( green$2_3.3 <-> green$3_3.3) & ( red$2_3.3 <-> red$3_3.3) &
+! green$2_2.4 & ! red$2_2.4 & green$3_2.4 & ! red$3_2.4 &
+( green$2_3.5 <-> green$3_3.5) & ( red$2_3.5 <-> red$3_3.5) &
+! green$2_2.4 & ! red$2_2.4 & green$3_2.4 & ! red$3_2.4 &
+( green$2_4.3 <-> green$3_4.3) & ( red$2_4.3 <-> red$3_4.3) &
+! green$2_2.4 & ! red$2_2.4 & green$3_2.4 & ! red$3_2.4 &
+( green$2_4.5 <-> green$3_4.5) & ( red$2_4.5 <-> red$3_4.5) &
+! green$2_2.4 & ! red$2_2.4 & green$3_2.4 & ! red$3_2.4 &
+( green$2_0.3 <-> green$3_0.3) & ( red$2_0.3 <-> red$3_0.3) &
+! green$2_2.5 & ! red$2_2.5 & green$3_2.5 & ! red$3_2.5 &
+( green$2_0.4 <-> green$3_0.4) & ( red$2_0.4 <-> red$3_0.4) &
+! green$2_2.5 & ! red$2_2.5 & green$3_2.5 & ! red$3_2.5 &
+( green$2_1.3 <-> green$3_1.3) & ( red$2_1.3 <-> red$3_1.3) &
+! green$2_2.5 & ! red$2_2.5 & green$3_2.5 & ! red$3_2.5 &
+( green$2_1.4 <-> green$3_1.4) & ( red$2_1.4 <-> red$3_1.4) &
+! green$2_2.5 & ! red$2_2.5 & green$3_2.5 & ! red$3_2.5 &
+( green$2_3.3 <-> green$3_3.3) & ( red$2_3.3 <-> red$3_3.3) &
+! green$2_2.5 & ! red$2_2.5 & green$3_2.5 & ! red$3_2.5 &
+( green$2_3.4 <-> green$3_3.4) & ( red$2_3.4 <-> red$3_3.4) &
+! green$2_2.5 & ! red$2_2.5 & green$3_2.5 & ! red$3_2.5 &
+( green$2_4.3 <-> green$3_4.3) & ( red$2_4.3 <-> red$3_4.3) &
+! green$2_2.5 & ! red$2_2.5 & green$3_2.5 & ! red$3_2.5 &
+( green$2_4.4 <-> green$3_4.4) & ( red$2_4.4 <-> red$3_4.4) &
+! green$2_2.5 & ! red$2_2.5 & green$3_2.5 & ! red$3_2.5 &
+( green$2_0.5 <-> green$3_0.5) & ( red$2_0.5 <-> red$3_0.5) &
+! green$2_3.4 & ! red$2_3.4 & green$3_3.4 & ! red$3_3.4 &
+( green$2_1.5 <-> green$3_1.5) & ( red$2_1.5 <-> red$3_1.5) &
+! green$2_3.4 & ! red$2_3.4 & green$3_3.4 & ! red$3_3.4 &
+( green$2_2.5 <-> green$3_2.5) & ( red$2_2.5 <-> red$3_2.5) &
+! green$2_3.4 & ! red$2_3.4 & green$3_3.4 & ! red$3_3.4 &
+( green$2_4.5 <-> green$3_4.5) & ( red$2_4.5 <-> red$3_4.5) &
+! green$2_3.4 & ! red$2_3.4 & green$3_3.4 & ! red$3_3.4 &
+( green$2_0.4 <-> green$3_0.4) & ( red$2_0.4 <-> red$3_0.4) &
+! green$2_3.5 & ! red$2_3.5 & green$3_3.5 & ! red$3_3.5 &
+( green$2_1.4 <-> green$3_1.4) & ( red$2_1.4 <-> red$3_1.4) &
+! green$2_3.5 & ! red$2_3.5 & green$3_3.5 & ! red$3_3.5 &
+( green$2_2.4 <-> green$3_2.4) & ( red$2_2.4 <-> red$3_2.4) &
+! green$2_3.5 & ! red$2_3.5 & green$3_3.5 & ! red$3_3.5 &
+( green$2_4.4 <-> green$3_4.4) & ( red$2_4.4 <-> red$3_4.4) &
+! green$2_3.5 & ! red$2_3.5 & green$3_3.5 & ! red$3_3.5 &
+( green$4_1.2 <-> green$5_1.2) & ( red$4_1.2 <-> red$5_1.2) &
+! green$4_0.1 & ! red$4_0.1 & green$5_0.1 & ! red$5_0.1 &
+( green$4_1.3 <-> green$5_1.3) & ( red$4_1.3 <-> red$5_1.3) &
+! green$4_0.1 & ! red$4_0.1 & green$5_0.1 & ! red$5_0.1 &
+( green$4_1.4 <-> green$5_1.4) & ( red$4_1.4 <-> red$5_1.4) &
+! green$4_0.1 & ! red$4_0.1 & green$5_0.1 & ! red$5_0.1 &
+( green$4_1.5 <-> green$5_1.5) & ( red$4_1.5 <-> red$5_1.5) &
+! green$4_0.1 & ! red$4_0.1 & green$5_0.1 & ! red$5_0.1 &
+( green$4_2.2 <-> green$5_2.2) & ( red$4_2.2 <-> red$5_2.2) &
+! green$4_0.1 & ! red$4_0.1 & green$5_0.1 & ! red$5_0.1 &
+( green$4_2.3 <-> green$5_2.3) & ( red$4_2.3 <-> red$5_2.3) &
+! green$4_0.1 & ! red$4_0.1 & green$5_0.1 & ! red$5_0.1 &
+( green$4_2.4 <-> green$5_2.4) & ( red$4_2.4 <-> red$5_2.4) &
+! green$4_0.1 & ! red$4_0.1 & green$5_0.1 & ! red$5_0.1 &
+( green$4_2.5 <-> green$5_2.5) & ( red$4_2.5 <-> red$5_2.5) &
+! green$4_0.1 & ! red$4_0.1 & green$5_0.1 & ! red$5_0.1 &
+( green$4_3.2 <-> green$5_3.2) & ( red$4_3.2 <-> red$5_3.2) &
+! green$4_0.1 & ! red$4_0.1 & green$5_0.1 & ! red$5_0.1 &
+( green$4_3.3 <-> green$5_3.3) & ( red$4_3.3 <-> red$5_3.3) &
+! green$4_0.1 & ! red$4_0.1 & green$5_0.1 & ! red$5_0.1 &
+( green$4_3.4 <-> green$5_3.4) & ( red$4_3.4 <-> red$5_3.4) &
+! green$4_0.1 & ! red$4_0.1 & green$5_0.1 & ! red$5_0.1 &
+( green$4_3.5 <-> green$5_3.5) & ( red$4_3.5 <-> red$5_3.5) &
+! green$4_0.1 & ! red$4_0.1 & green$5_0.1 & ! red$5_0.1 &
+( green$4_4.2 <-> green$5_4.2) & ( red$4_4.2 <-> red$5_4.2) &
+! green$4_0.1 & ! red$4_0.1 & green$5_0.1 & ! red$5_0.1 &
+( green$4_4.3 <-> green$5_4.3) & ( red$4_4.3 <-> red$5_4.3) &
+! green$4_0.1 & ! red$4_0.1 & green$5_0.1 & ! red$5_0.1 &
+( green$4_4.4 <-> green$5_4.4) & ( red$4_4.4 <-> red$5_4.4) &
+! green$4_0.1 & ! red$4_0.1 & green$5_0.1 & ! red$5_0.1 &
+( green$4_4.5 <-> green$5_4.5) & ( red$4_4.5 <-> red$5_4.5) &
+! green$4_0.1 & ! red$4_0.1 & green$5_0.1 & ! red$5_0.1 &
+( green$4_1.1 <-> green$5_1.1) & ( red$4_1.1 <-> red$5_1.1) &
+! green$4_0.2 & ! red$4_0.2 & green$5_0.2 & ! red$5_0.2 &
+( green$4_1.3 <-> green$5_1.3) & ( red$4_1.3 <-> red$5_1.3) &
+! green$4_0.2 & ! red$4_0.2 & green$5_0.2 & ! red$5_0.2 &
+( green$4_1.4 <-> green$5_1.4) & ( red$4_1.4 <-> red$5_1.4) &
+! green$4_0.2 & ! red$4_0.2 & green$5_0.2 & ! red$5_0.2 &
+( green$4_1.5 <-> green$5_1.5) & ( red$4_1.5 <-> red$5_1.5) &
+! green$4_0.2 & ! red$4_0.2 & green$5_0.2 & ! red$5_0.2 &
+( green$4_2.1 <-> green$5_2.1) & ( red$4_2.1 <-> red$5_2.1) &
+! green$4_0.2 & ! red$4_0.2 & green$5_0.2 & ! red$5_0.2 &
+( green$4_2.3 <-> green$5_2.3) & ( red$4_2.3 <-> red$5_2.3) &
+! green$4_0.2 & ! red$4_0.2 & green$5_0.2 & ! red$5_0.2 &
+( green$4_2.4 <-> green$5_2.4) & ( red$4_2.4 <-> red$5_2.4) &
+! green$4_0.2 & ! red$4_0.2 & green$5_0.2 & ! red$5_0.2 &
+( green$4_2.5 <-> green$5_2.5) & ( red$4_2.5 <-> red$5_2.5) &
+! green$4_0.2 & ! red$4_0.2 & green$5_0.2 & ! red$5_0.2 &
+( green$4_3.1 <-> green$5_3.1) & ( red$4_3.1 <-> red$5_3.1) &
+! green$4_0.2 & ! red$4_0.2 & green$5_0.2 & ! red$5_0.2 &
+( green$4_3.3 <-> green$5_3.3) & ( red$4_3.3 <-> red$5_3.3) &
+! green$4_0.2 & ! red$4_0.2 & green$5_0.2 & ! red$5_0.2 &
+( green$4_3.4 <-> green$5_3.4) & ( red$4_3.4 <-> red$5_3.4) &
+! green$4_0.2 & ! red$4_0.2 & green$5_0.2 & ! red$5_0.2 &
+( green$4_3.5 <-> green$5_3.5) & ( red$4_3.5 <-> red$5_3.5) &
+! green$4_0.2 & ! red$4_0.2 & green$5_0.2 & ! red$5_0.2 &
+( green$4_4.1 <-> green$5_4.1) & ( red$4_4.1 <-> red$5_4.1) &
+! green$4_0.2 & ! red$4_0.2 & green$5_0.2 & ! red$5_0.2 &
+( green$4_4.3 <-> green$5_4.3) & ( red$4_4.3 <-> red$5_4.3) &
+! green$4_0.2 & ! red$4_0.2 & green$5_0.2 & ! red$5_0.2 &
+( green$4_4.4 <-> green$5_4.4) & ( red$4_4.4 <-> red$5_4.4) &
+! green$4_0.2 & ! red$4_0.2 & green$5_0.2 & ! red$5_0.2 &
+( green$4_4.5 <-> green$5_4.5) & ( red$4_4.5 <-> red$5_4.5) &
+! green$4_0.2 & ! red$4_0.2 & green$5_0.2 & ! red$5_0.2 &
+( green$4_1.1 <-> green$5_1.1) & ( red$4_1.1 <-> red$5_1.1) &
+! green$4_0.3 & ! red$4_0.3 & green$5_0.3 & ! red$5_0.3 &
+( green$4_1.2 <-> green$5_1.2) & ( red$4_1.2 <-> red$5_1.2) &
+! green$4_0.3 & ! red$4_0.3 & green$5_0.3 & ! red$5_0.3 &
+( green$4_1.4 <-> green$5_1.4) & ( red$4_1.4 <-> red$5_1.4) &
+! green$4_0.3 & ! red$4_0.3 & green$5_0.3 & ! red$5_0.3 &
+( green$4_1.5 <-> green$5_1.5) & ( red$4_1.5 <-> red$5_1.5) &
+! green$4_0.3 & ! red$4_0.3 & green$5_0.3 & ! red$5_0.3 &
+( green$4_2.1 <-> green$5_2.1) & ( red$4_2.1 <-> red$5_2.1) &
+! green$4_0.3 & ! red$4_0.3 & green$5_0.3 & ! red$5_0.3 &
+( green$4_2.2 <-> green$5_2.2) & ( red$4_2.2 <-> red$5_2.2) &
+! green$4_0.3 & ! red$4_0.3 & green$5_0.3 & ! red$5_0.3 &
+( green$4_2.4 <-> green$5_2.4) & ( red$4_2.4 <-> red$5_2.4) &
+! green$4_0.3 & ! red$4_0.3 & green$5_0.3 & ! red$5_0.3 &
+( green$4_2.5 <-> green$5_2.5) & ( red$4_2.5 <-> red$5_2.5) &
+! green$4_0.3 & ! red$4_0.3 & green$5_0.3 & ! red$5_0.3 &
+( green$4_3.1 <-> green$5_3.1) & ( red$4_3.1 <-> red$5_3.1) &
+! green$4_0.3 & ! red$4_0.3 & green$5_0.3 & ! red$5_0.3 &
+( green$4_3.2 <-> green$5_3.2) & ( red$4_3.2 <-> red$5_3.2) &
+! green$4_0.3 & ! red$4_0.3 & green$5_0.3 & ! red$5_0.3 &
+( green$4_3.4 <-> green$5_3.4) & ( red$4_3.4 <-> red$5_3.4) &
+! green$4_0.3 & ! red$4_0.3 & green$5_0.3 & ! red$5_0.3 &
+( green$4_3.5 <-> green$5_3.5) & ( red$4_3.5 <-> red$5_3.5) &
+! green$4_0.3 & ! red$4_0.3 & green$5_0.3 & ! red$5_0.3 &
+( green$4_4.1 <-> green$5_4.1) & ( red$4_4.1 <-> red$5_4.1) &
+! green$4_0.3 & ! red$4_0.3 & green$5_0.3 & ! red$5_0.3 &
+( green$4_4.2 <-> green$5_4.2) & ( red$4_4.2 <-> red$5_4.2) &
+! green$4_0.3 & ! red$4_0.3 & green$5_0.3 & ! red$5_0.3 &
+( green$4_4.4 <-> green$5_4.4) & ( red$4_4.4 <-> red$5_4.4) &
+! green$4_0.3 & ! red$4_0.3 & green$5_0.3 & ! red$5_0.3 &
+( green$4_4.5 <-> green$5_4.5) & ( red$4_4.5 <-> red$5_4.5) &
+! green$4_0.3 & ! red$4_0.3 & green$5_0.3 & ! red$5_0.3 &
+( green$4_1.1 <-> green$5_1.1) & ( red$4_1.1 <-> red$5_1.1) &
+! green$4_0.4 & ! red$4_0.4 & green$5_0.4 & ! red$5_0.4 &
+( green$4_1.2 <-> green$5_1.2) & ( red$4_1.2 <-> red$5_1.2) &
+! green$4_0.4 & ! red$4_0.4 & green$5_0.4 & ! red$5_0.4 &
+( green$4_1.3 <-> green$5_1.3) & ( red$4_1.3 <-> red$5_1.3) &
+! green$4_0.4 & ! red$4_0.4 & green$5_0.4 & ! red$5_0.4 &
+( green$4_1.5 <-> green$5_1.5) & ( red$4_1.5 <-> red$5_1.5) &
+! green$4_0.4 & ! red$4_0.4 & green$5_0.4 & ! red$5_0.4 &
+( green$4_2.1 <-> green$5_2.1) & ( red$4_2.1 <-> red$5_2.1) &
+! green$4_0.4 & ! red$4_0.4 & green$5_0.4 & ! red$5_0.4 &
+( green$4_2.2 <-> green$5_2.2) & ( red$4_2.2 <-> red$5_2.2) &
+! green$4_0.4 & ! red$4_0.4 & green$5_0.4 & ! red$5_0.4 &
+( green$4_2.3 <-> green$5_2.3) & ( red$4_2.3 <-> red$5_2.3) &
+! green$4_0.4 & ! red$4_0.4 & green$5_0.4 & ! red$5_0.4 &
+( green$4_2.5 <-> green$5_2.5) & ( red$4_2.5 <-> red$5_2.5) &
+! green$4_0.4 & ! red$4_0.4 & green$5_0.4 & ! red$5_0.4 &
+( green$4_3.1 <-> green$5_3.1) & ( red$4_3.1 <-> red$5_3.1) &
+! green$4_0.4 & ! red$4_0.4 & green$5_0.4 & ! red$5_0.4 &
+( green$4_3.2 <-> green$5_3.2) & ( red$4_3.2 <-> red$5_3.2) &
+! green$4_0.4 & ! red$4_0.4 & green$5_0.4 & ! red$5_0.4 &
+( green$4_3.3 <-> green$5_3.3) & ( red$4_3.3 <-> red$5_3.3) &
+! green$4_0.4 & ! red$4_0.4 & green$5_0.4 & ! red$5_0.4 &
+( green$4_3.5 <-> green$5_3.5) & ( red$4_3.5 <-> red$5_3.5) &
+! green$4_0.4 & ! red$4_0.4 & green$5_0.4 & ! red$5_0.4 &
+( green$4_4.1 <-> green$5_4.1) & ( red$4_4.1 <-> red$5_4.1) &
+! green$4_0.4 & ! red$4_0.4 & green$5_0.4 & ! red$5_0.4 &
+( green$4_4.2 <-> green$5_4.2) & ( red$4_4.2 <-> red$5_4.2) &
+! green$4_0.4 & ! red$4_0.4 & green$5_0.4 & ! red$5_0.4 &
+( green$4_4.3 <-> green$5_4.3) & ( red$4_4.3 <-> red$5_4.3) &
+! green$4_0.4 & ! red$4_0.4 & green$5_0.4 & ! red$5_0.4 &
+( green$4_4.5 <-> green$5_4.5) & ( red$4_4.5 <-> red$5_4.5) &
+! green$4_0.4 & ! red$4_0.4 & green$5_0.4 & ! red$5_0.4 &
+( green$4_1.1 <-> green$5_1.1) & ( red$4_1.1 <-> red$5_1.1) &
+! green$4_0.5 & ! red$4_0.5 & green$5_0.5 & ! red$5_0.5 &
+( green$4_1.2 <-> green$5_1.2) & ( red$4_1.2 <-> red$5_1.2) &
+! green$4_0.5 & ! red$4_0.5 & green$5_0.5 & ! red$5_0.5 &
+( green$4_1.3 <-> green$5_1.3) & ( red$4_1.3 <-> red$5_1.3) &
+! green$4_0.5 & ! red$4_0.5 & green$5_0.5 & ! red$5_0.5 &
+( green$4_1.4 <-> green$5_1.4) & ( red$4_1.4 <-> red$5_1.4) &
+! green$4_0.5 & ! red$4_0.5 & green$5_0.5 & ! red$5_0.5 &
+( green$4_2.1 <-> green$5_2.1) & ( red$4_2.1 <-> red$5_2.1) &
+! green$4_0.5 & ! red$4_0.5 & green$5_0.5 & ! red$5_0.5 &
+( green$4_2.2 <-> green$5_2.2) & ( red$4_2.2 <-> red$5_2.2) &
+! green$4_0.5 & ! red$4_0.5 & green$5_0.5 & ! red$5_0.5 &
+( green$4_2.3 <-> green$5_2.3) & ( red$4_2.3 <-> red$5_2.3) &
+! green$4_0.5 & ! red$4_0.5 & green$5_0.5 & ! red$5_0.5 &
+( green$4_2.4 <-> green$5_2.4) & ( red$4_2.4 <-> red$5_2.4) &
+! green$4_0.5 & ! red$4_0.5 & green$5_0.5 & ! red$5_0.5 &
+( green$4_3.1 <-> green$5_3.1) & ( red$4_3.1 <-> red$5_3.1) &
+! green$4_0.5 & ! red$4_0.5 & green$5_0.5 & ! red$5_0.5 &
+( green$4_3.2 <-> green$5_3.2) & ( red$4_3.2 <-> red$5_3.2) &
+! green$4_0.5 & ! red$4_0.5 & green$5_0.5 & ! red$5_0.5 &
+( green$4_3.3 <-> green$5_3.3) & ( red$4_3.3 <-> red$5_3.3) &
+! green$4_0.5 & ! red$4_0.5 & green$5_0.5 & ! red$5_0.5 &
+( green$4_3.4 <-> green$5_3.4) & ( red$4_3.4 <-> red$5_3.4) &
+! green$4_0.5 & ! red$4_0.5 & green$5_0.5 & ! red$5_0.5 &
+( green$4_4.1 <-> green$5_4.1) & ( red$4_4.1 <-> red$5_4.1) &
+! green$4_0.5 & ! red$4_0.5 & green$5_0.5 & ! red$5_0.5 &
+( green$4_4.2 <-> green$5_4.2) & ( red$4_4.2 <-> red$5_4.2) &
+! green$4_0.5 & ! red$4_0.5 & green$5_0.5 & ! red$5_0.5 &
+( green$4_4.3 <-> green$5_4.3) & ( red$4_4.3 <-> red$5_4.3) &
+! green$4_0.5 & ! red$4_0.5 & green$5_0.5 & ! red$5_0.5 &
+( green$4_4.4 <-> green$5_4.4) & ( red$4_4.4 <-> red$5_4.4) &
+! green$4_0.5 & ! red$4_0.5 & green$5_0.5 & ! red$5_0.5 &
+( green$4_0.3 <-> green$5_0.3) & ( red$4_0.3 <-> red$5_0.3) &
+! green$4_1.2 & ! red$4_1.2 & green$5_1.2 & ! red$5_1.2 &
+( green$4_0.4 <-> green$5_0.4) & ( red$4_0.4 <-> red$5_0.4) &
+! green$4_1.2 & ! red$4_1.2 & green$5_1.2 & ! red$5_1.2 &
+( green$4_0.5 <-> green$5_0.5) & ( red$4_0.5 <-> red$5_0.5) &
+! green$4_1.2 & ! red$4_1.2 & green$5_1.2 & ! red$5_1.2 &
+( green$4_2.3 <-> green$5_2.3) & ( red$4_2.3 <-> red$5_2.3) &
+! green$4_1.2 & ! red$4_1.2 & green$5_1.2 & ! red$5_1.2 &
+( green$4_2.4 <-> green$5_2.4) & ( red$4_2.4 <-> red$5_2.4) &
+! green$4_1.2 & ! red$4_1.2 & green$5_1.2 & ! red$5_1.2 &
+( green$4_2.5 <-> green$5_2.5) & ( red$4_2.5 <-> red$5_2.5) &
+! green$4_1.2 & ! red$4_1.2 & green$5_1.2 & ! red$5_1.2 &
+( green$4_3.3 <-> green$5_3.3) & ( red$4_3.3 <-> red$5_3.3) &
+! green$4_1.2 & ! red$4_1.2 & green$5_1.2 & ! red$5_1.2 &
+( green$4_3.4 <-> green$5_3.4) & ( red$4_3.4 <-> red$5_3.4) &
+! green$4_1.2 & ! red$4_1.2 & green$5_1.2 & ! red$5_1.2 &
+( green$4_3.5 <-> green$5_3.5) & ( red$4_3.5 <-> red$5_3.5) &
+! green$4_1.2 & ! red$4_1.2 & green$5_1.2 & ! red$5_1.2 &
+( green$4_4.3 <-> green$5_4.3) & ( red$4_4.3 <-> red$5_4.3) &
+! green$4_1.2 & ! red$4_1.2 & green$5_1.2 & ! red$5_1.2 &
+( green$4_4.4 <-> green$5_4.4) & ( red$4_4.4 <-> red$5_4.4) &
+! green$4_1.2 & ! red$4_1.2 & green$5_1.2 & ! red$5_1.2 &
+( green$4_4.5 <-> green$5_4.5) & ( red$4_4.5 <-> red$5_4.5) &
+! green$4_1.2 & ! red$4_1.2 & green$5_1.2 & ! red$5_1.2 &
+( green$4_0.2 <-> green$5_0.2) & ( red$4_0.2 <-> red$5_0.2) &
+! green$4_1.3 & ! red$4_1.3 & green$5_1.3 & ! red$5_1.3 &
+( green$4_0.4 <-> green$5_0.4) & ( red$4_0.4 <-> red$5_0.4) &
+! green$4_1.3 & ! red$4_1.3 & green$5_1.3 & ! red$5_1.3 &
+( green$4_0.5 <-> green$5_0.5) & ( red$4_0.5 <-> red$5_0.5) &
+! green$4_1.3 & ! red$4_1.3 & green$5_1.3 & ! red$5_1.3 &
+( green$4_2.2 <-> green$5_2.2) & ( red$4_2.2 <-> red$5_2.2) &
+! green$4_1.3 & ! red$4_1.3 & green$5_1.3 & ! red$5_1.3 &
+( green$4_2.4 <-> green$5_2.4) & ( red$4_2.4 <-> red$5_2.4) &
+! green$4_1.3 & ! red$4_1.3 & green$5_1.3 & ! red$5_1.3 &
+( green$4_2.5 <-> green$5_2.5) & ( red$4_2.5 <-> red$5_2.5) &
+! green$4_1.3 & ! red$4_1.3 & green$5_1.3 & ! red$5_1.3 &
+( green$4_3.2 <-> green$5_3.2) & ( red$4_3.2 <-> red$5_3.2) &
+! green$4_1.3 & ! red$4_1.3 & green$5_1.3 & ! red$5_1.3 &
+( green$4_3.4 <-> green$5_3.4) & ( red$4_3.4 <-> red$5_3.4) &
+! green$4_1.3 & ! red$4_1.3 & green$5_1.3 & ! red$5_1.3 &
+( green$4_3.5 <-> green$5_3.5) & ( red$4_3.5 <-> red$5_3.5) &
+! green$4_1.3 & ! red$4_1.3 & green$5_1.3 & ! red$5_1.3 &
+( green$4_4.2 <-> green$5_4.2) & ( red$4_4.2 <-> red$5_4.2) &
+! green$4_1.3 & ! red$4_1.3 & green$5_1.3 & ! red$5_1.3 &
+( green$4_4.4 <-> green$5_4.4) & ( red$4_4.4 <-> red$5_4.4) &
+! green$4_1.3 & ! red$4_1.3 & green$5_1.3 & ! red$5_1.3 &
+( green$4_4.5 <-> green$5_4.5) & ( red$4_4.5 <-> red$5_4.5) &
+! green$4_1.3 & ! red$4_1.3 & green$5_1.3 & ! red$5_1.3 &
+( green$4_0.2 <-> green$5_0.2) & ( red$4_0.2 <-> red$5_0.2) &
+! green$4_1.4 & ! red$4_1.4 & green$5_1.4 & ! red$5_1.4 &
+( green$4_0.3 <-> green$5_0.3) & ( red$4_0.3 <-> red$5_0.3) &
+! green$4_1.4 & ! red$4_1.4 & green$5_1.4 & ! red$5_1.4 &
+( green$4_0.5 <-> green$5_0.5) & ( red$4_0.5 <-> red$5_0.5) &
+! green$4_1.4 & ! red$4_1.4 & green$5_1.4 & ! red$5_1.4 &
+( green$4_2.2 <-> green$5_2.2) & ( red$4_2.2 <-> red$5_2.2) &
+! green$4_1.4 & ! red$4_1.4 & green$5_1.4 & ! red$5_1.4 &
+( green$4_2.3 <-> green$5_2.3) & ( red$4_2.3 <-> red$5_2.3) &
+! green$4_1.4 & ! red$4_1.4 & green$5_1.4 & ! red$5_1.4 &
+( green$4_2.5 <-> green$5_2.5) & ( red$4_2.5 <-> red$5_2.5) &
+! green$4_1.4 & ! red$4_1.4 & green$5_1.4 & ! red$5_1.4 &
+( green$4_3.2 <-> green$5_3.2) & ( red$4_3.2 <-> red$5_3.2) &
+! green$4_1.4 & ! red$4_1.4 & green$5_1.4 & ! red$5_1.4 &
+( green$4_3.3 <-> green$5_3.3) & ( red$4_3.3 <-> red$5_3.3) &
+! green$4_1.4 & ! red$4_1.4 & green$5_1.4 & ! red$5_1.4 &
+( green$4_3.5 <-> green$5_3.5) & ( red$4_3.5 <-> red$5_3.5) &
+! green$4_1.4 & ! red$4_1.4 & green$5_1.4 & ! red$5_1.4 &
+( green$4_4.2 <-> green$5_4.2) & ( red$4_4.2 <-> red$5_4.2) &
+! green$4_1.4 & ! red$4_1.4 & green$5_1.4 & ! red$5_1.4 &
+( green$4_4.3 <-> green$5_4.3) & ( red$4_4.3 <-> red$5_4.3) &
+! green$4_1.4 & ! red$4_1.4 & green$5_1.4 & ! red$5_1.4 &
+( green$4_4.5 <-> green$5_4.5) & ( red$4_4.5 <-> red$5_4.5) &
+! green$4_1.4 & ! red$4_1.4 & green$5_1.4 & ! red$5_1.4 &
+( green$4_0.2 <-> green$5_0.2) & ( red$4_0.2 <-> red$5_0.2) &
+! green$4_1.5 & ! red$4_1.5 & green$5_1.5 & ! red$5_1.5 &
+( green$4_0.3 <-> green$5_0.3) & ( red$4_0.3 <-> red$5_0.3) &
+! green$4_1.5 & ! red$4_1.5 & green$5_1.5 & ! red$5_1.5 &
+( green$4_0.4 <-> green$5_0.4) & ( red$4_0.4 <-> red$5_0.4) &
+! green$4_1.5 & ! red$4_1.5 & green$5_1.5 & ! red$5_1.5 &
+( green$4_2.2 <-> green$5_2.2) & ( red$4_2.2 <-> red$5_2.2) &
+! green$4_1.5 & ! red$4_1.5 & green$5_1.5 & ! red$5_1.5 &
+( green$4_2.3 <-> green$5_2.3) & ( red$4_2.3 <-> red$5_2.3) &
+! green$4_1.5 & ! red$4_1.5 & green$5_1.5 & ! red$5_1.5 &
+( green$4_2.4 <-> green$5_2.4) & ( red$4_2.4 <-> red$5_2.4) &
+! green$4_1.5 & ! red$4_1.5 & green$5_1.5 & ! red$5_1.5 &
+( green$4_3.2 <-> green$5_3.2) & ( red$4_3.2 <-> red$5_3.2) &
+! green$4_1.5 & ! red$4_1.5 & green$5_1.5 & ! red$5_1.5 &
+( green$4_3.3 <-> green$5_3.3) & ( red$4_3.3 <-> red$5_3.3) &
+! green$4_1.5 & ! red$4_1.5 & green$5_1.5 & ! red$5_1.5 &
+( green$4_3.4 <-> green$5_3.4) & ( red$4_3.4 <-> red$5_3.4) &
+! green$4_1.5 & ! red$4_1.5 & green$5_1.5 & ! red$5_1.5 &
+( green$4_4.2 <-> green$5_4.2) & ( red$4_4.2 <-> red$5_4.2) &
+! green$4_1.5 & ! red$4_1.5 & green$5_1.5 & ! red$5_1.5 &
+( green$4_4.3 <-> green$5_4.3) & ( red$4_4.3 <-> red$5_4.3) &
+! green$4_1.5 & ! red$4_1.5 & green$5_1.5 & ! red$5_1.5 &
+( green$4_4.4 <-> green$5_4.4) & ( red$4_4.4 <-> red$5_4.4) &
+! green$4_1.5 & ! red$4_1.5 & green$5_1.5 & ! red$5_1.5 &
+( green$4_0.4 <-> green$5_0.4) & ( red$4_0.4 <-> red$5_0.4) &
+! green$4_2.3 & ! red$4_2.3 & green$5_2.3 & ! red$5_2.3 &
+( green$4_0.5 <-> green$5_0.5) & ( red$4_0.5 <-> red$5_0.5) &
+! green$4_2.3 & ! red$4_2.3 & green$5_2.3 & ! red$5_2.3 &
+( green$4_1.4 <-> green$5_1.4) & ( red$4_1.4 <-> red$5_1.4) &
+! green$4_2.3 & ! red$4_2.3 & green$5_2.3 & ! red$5_2.3 &
+( green$4_1.5 <-> green$5_1.5) & ( red$4_1.5 <-> red$5_1.5) &
+! green$4_2.3 & ! red$4_2.3 & green$5_2.3 & ! red$5_2.3 &
+( green$4_3.4 <-> green$5_3.4) & ( red$4_3.4 <-> red$5_3.4) &
+! green$4_2.3 & ! red$4_2.3 & green$5_2.3 & ! red$5_2.3 &
+( green$4_3.5 <-> green$5_3.5) & ( red$4_3.5 <-> red$5_3.5) &
+! green$4_2.3 & ! red$4_2.3 & green$5_2.3 & ! red$5_2.3 &
+( green$4_4.4 <-> green$5_4.4) & ( red$4_4.4 <-> red$5_4.4) &
+! green$4_2.3 & ! red$4_2.3 & green$5_2.3 & ! red$5_2.3 &
+( green$4_4.5 <-> green$5_4.5) & ( red$4_4.5 <-> red$5_4.5) &
+! green$4_2.3 & ! red$4_2.3 & green$5_2.3 & ! red$5_2.3 &
+( green$4_0.3 <-> green$5_0.3) & ( red$4_0.3 <-> red$5_0.3) &
+! green$4_2.4 & ! red$4_2.4 & green$5_2.4 & ! red$5_2.4 &
+( green$4_0.5 <-> green$5_0.5) & ( red$4_0.5 <-> red$5_0.5) &
+! green$4_2.4 & ! red$4_2.4 & green$5_2.4 & ! red$5_2.4 &
+( green$4_1.3 <-> green$5_1.3) & ( red$4_1.3 <-> red$5_1.3) &
+! green$4_2.4 & ! red$4_2.4 & green$5_2.4 & ! red$5_2.4 &
+( green$4_1.5 <-> green$5_1.5) & ( red$4_1.5 <-> red$5_1.5) &
+! green$4_2.4 & ! red$4_2.4 & green$5_2.4 & ! red$5_2.4 &
+( green$4_3.3 <-> green$5_3.3) & ( red$4_3.3 <-> red$5_3.3) &
+! green$4_2.4 & ! red$4_2.4 & green$5_2.4 & ! red$5_2.4 &
+( green$4_3.5 <-> green$5_3.5) & ( red$4_3.5 <-> red$5_3.5) &
+! green$4_2.4 & ! red$4_2.4 & green$5_2.4 & ! red$5_2.4 &
+( green$4_4.3 <-> green$5_4.3) & ( red$4_4.3 <-> red$5_4.3) &
+! green$4_2.4 & ! red$4_2.4 & green$5_2.4 & ! red$5_2.4 &
+( green$4_4.5 <-> green$5_4.5) & ( red$4_4.5 <-> red$5_4.5) &
+! green$4_2.4 & ! red$4_2.4 & green$5_2.4 & ! red$5_2.4 &
+( green$4_0.3 <-> green$5_0.3) & ( red$4_0.3 <-> red$5_0.3) &
+! green$4_2.5 & ! red$4_2.5 & green$5_2.5 & ! red$5_2.5 &
+( green$4_0.4 <-> green$5_0.4) & ( red$4_0.4 <-> red$5_0.4) &
+! green$4_2.5 & ! red$4_2.5 & green$5_2.5 & ! red$5_2.5 &
+( green$4_1.3 <-> green$5_1.3) & ( red$4_1.3 <-> red$5_1.3) &
+! green$4_2.5 & ! red$4_2.5 & green$5_2.5 & ! red$5_2.5 &
+( green$4_1.4 <-> green$5_1.4) & ( red$4_1.4 <-> red$5_1.4) &
+! green$4_2.5 & ! red$4_2.5 & green$5_2.5 & ! red$5_2.5 &
+( green$4_3.3 <-> green$5_3.3) & ( red$4_3.3 <-> red$5_3.3) &
+! green$4_2.5 & ! red$4_2.5 & green$5_2.5 & ! red$5_2.5 &
+( green$4_3.4 <-> green$5_3.4) & ( red$4_3.4 <-> red$5_3.4) &
+! green$4_2.5 & ! red$4_2.5 & green$5_2.5 & ! red$5_2.5 &
+( green$4_4.3 <-> green$5_4.3) & ( red$4_4.3 <-> red$5_4.3) &
+! green$4_2.5 & ! red$4_2.5 & green$5_2.5 & ! red$5_2.5 &
+( green$4_4.4 <-> green$5_4.4) & ( red$4_4.4 <-> red$5_4.4) &
+! green$4_2.5 & ! red$4_2.5 & green$5_2.5 & ! red$5_2.5 &
+( green$4_0.5 <-> green$5_0.5) & ( red$4_0.5 <-> red$5_0.5) &
+! green$4_3.4 & ! red$4_3.4 & green$5_3.4 & ! red$5_3.4 &
+( green$4_1.5 <-> green$5_1.5) & ( red$4_1.5 <-> red$5_1.5) &
+! green$4_3.4 & ! red$4_3.4 & green$5_3.4 & ! red$5_3.4 &
+( green$4_2.5 <-> green$5_2.5) & ( red$4_2.5 <-> red$5_2.5) &
+! green$4_3.4 & ! red$4_3.4 & green$5_3.4 & ! red$5_3.4 &
+( green$4_4.5 <-> green$5_4.5) & ( red$4_4.5 <-> red$5_4.5) &
+! green$4_3.4 & ! red$4_3.4 & green$5_3.4 & ! red$5_3.4 &
+( green$4_0.4 <-> green$5_0.4) & ( red$4_0.4 <-> red$5_0.4) &
+! green$4_3.5 & ! red$4_3.5 & green$5_3.5 & ! red$5_3.5 &
+( green$4_1.4 <-> green$5_1.4) & ( red$4_1.4 <-> red$5_1.4) &
+! green$4_3.5 & ! red$4_3.5 & green$5_3.5 & ! red$5_3.5 &
+( green$4_2.4 <-> green$5_2.4) & ( red$4_2.4 <-> red$5_2.4) &
+! green$4_3.5 & ! red$4_3.5 & green$5_3.5 & ! red$5_3.5 &
+( green$4_4.4 <-> green$5_4.4) & ( red$4_4.4 <-> red$5_4.4) &
+! green$4_3.5 & ! red$4_3.5 & green$5_3.5 & ! red$5_3.5 &
+( green$6_1.2 <-> green$7_1.2) & ( red$6_1.2 <-> red$7_1.2) &
+! green$6_0.1 & ! red$6_0.1 & green$7_0.1 & ! red$7_0.1 &
+( green$6_1.3 <-> green$7_1.3) & ( red$6_1.3 <-> red$7_1.3) &
+! green$6_0.1 & ! red$6_0.1 & green$7_0.1 & ! red$7_0.1 &
+( green$6_1.4 <-> green$7_1.4) & ( red$6_1.4 <-> red$7_1.4) &
+! green$6_0.1 & ! red$6_0.1 & green$7_0.1 & ! red$7_0.1 &
+( green$6_1.5 <-> green$7_1.5) & ( red$6_1.5 <-> red$7_1.5) &
+! green$6_0.1 & ! red$6_0.1 & green$7_0.1 & ! red$7_0.1 &
+( green$6_2.2 <-> green$7_2.2) & ( red$6_2.2 <-> red$7_2.2) &
+! green$6_0.1 & ! red$6_0.1 & green$7_0.1 & ! red$7_0.1 &
+( green$6_2.3 <-> green$7_2.3) & ( red$6_2.3 <-> red$7_2.3) &
+! green$6_0.1 & ! red$6_0.1 & green$7_0.1 & ! red$7_0.1 &
+( green$6_2.4 <-> green$7_2.4) & ( red$6_2.4 <-> red$7_2.4) &
+! green$6_0.1 & ! red$6_0.1 & green$7_0.1 & ! red$7_0.1 &
+( green$6_2.5 <-> green$7_2.5) & ( red$6_2.5 <-> red$7_2.5) &
+! green$6_0.1 & ! red$6_0.1 & green$7_0.1 & ! red$7_0.1 &
+( green$6_3.2 <-> green$7_3.2) & ( red$6_3.2 <-> red$7_3.2) &
+! green$6_0.1 & ! red$6_0.1 & green$7_0.1 & ! red$7_0.1 &
+( green$6_3.3 <-> green$7_3.3) & ( red$6_3.3 <-> red$7_3.3) &
+! green$6_0.1 & ! red$6_0.1 & green$7_0.1 & ! red$7_0.1 &
+( green$6_3.4 <-> green$7_3.4) & ( red$6_3.4 <-> red$7_3.4) &
+! green$6_0.1 & ! red$6_0.1 & green$7_0.1 & ! red$7_0.1 &
+( green$6_3.5 <-> green$7_3.5) & ( red$6_3.5 <-> red$7_3.5) &
+! green$6_0.1 & ! red$6_0.1 & green$7_0.1 & ! red$7_0.1 &
+( green$6_4.2 <-> green$7_4.2) & ( red$6_4.2 <-> red$7_4.2) &
+! green$6_0.1 & ! red$6_0.1 & green$7_0.1 & ! red$7_0.1 &
+( green$6_4.3 <-> green$7_4.3) & ( red$6_4.3 <-> red$7_4.3) &
+! green$6_0.1 & ! red$6_0.1 & green$7_0.1 & ! red$7_0.1 &
+( green$6_4.4 <-> green$7_4.4) & ( red$6_4.4 <-> red$7_4.4) &
+! green$6_0.1 & ! red$6_0.1 & green$7_0.1 & ! red$7_0.1 &
+( green$6_4.5 <-> green$7_4.5) & ( red$6_4.5 <-> red$7_4.5) &
+! green$6_0.1 & ! red$6_0.1 & green$7_0.1 & ! red$7_0.1 &
+( green$6_1.1 <-> green$7_1.1) & ( red$6_1.1 <-> red$7_1.1) &
+! green$6_0.2 & ! red$6_0.2 & green$7_0.2 & ! red$7_0.2 &
+( green$6_1.3 <-> green$7_1.3) & ( red$6_1.3 <-> red$7_1.3) &
+! green$6_0.2 & ! red$6_0.2 & green$7_0.2 & ! red$7_0.2 &
+( green$6_1.4 <-> green$7_1.4) & ( red$6_1.4 <-> red$7_1.4) &
+! green$6_0.2 & ! red$6_0.2 & green$7_0.2 & ! red$7_0.2 &
+( green$6_1.5 <-> green$7_1.5) & ( red$6_1.5 <-> red$7_1.5) &
+! green$6_0.2 & ! red$6_0.2 & green$7_0.2 & ! red$7_0.2 &
+( green$6_2.1 <-> green$7_2.1) & ( red$6_2.1 <-> red$7_2.1) &
+! green$6_0.2 & ! red$6_0.2 & green$7_0.2 & ! red$7_0.2 &
+( green$6_2.3 <-> green$7_2.3) & ( red$6_2.3 <-> red$7_2.3) &
+! green$6_0.2 & ! red$6_0.2 & green$7_0.2 & ! red$7_0.2 &
+( green$6_2.4 <-> green$7_2.4) & ( red$6_2.4 <-> red$7_2.4) &
+! green$6_0.2 & ! red$6_0.2 & green$7_0.2 & ! red$7_0.2 &
+( green$6_2.5 <-> green$7_2.5) & ( red$6_2.5 <-> red$7_2.5) &
+! green$6_0.2 & ! red$6_0.2 & green$7_0.2 & ! red$7_0.2 &
+( green$6_3.1 <-> green$7_3.1) & ( red$6_3.1 <-> red$7_3.1) &
+! green$6_0.2 & ! red$6_0.2 & green$7_0.2 & ! red$7_0.2 &
+( green$6_3.3 <-> green$7_3.3) & ( red$6_3.3 <-> red$7_3.3) &
+! green$6_0.2 & ! red$6_0.2 & green$7_0.2 & ! red$7_0.2 &
+( green$6_3.4 <-> green$7_3.4) & ( red$6_3.4 <-> red$7_3.4) &
+! green$6_0.2 & ! red$6_0.2 & green$7_0.2 & ! red$7_0.2 &
+( green$6_3.5 <-> green$7_3.5) & ( red$6_3.5 <-> red$7_3.5) &
+! green$6_0.2 & ! red$6_0.2 & green$7_0.2 & ! red$7_0.2 &
+( green$6_4.1 <-> green$7_4.1) & ( red$6_4.1 <-> red$7_4.1) &
+! green$6_0.2 & ! red$6_0.2 & green$7_0.2 & ! red$7_0.2 &
+( green$6_4.3 <-> green$7_4.3) & ( red$6_4.3 <-> red$7_4.3) &
+! green$6_0.2 & ! red$6_0.2 & green$7_0.2 & ! red$7_0.2 &
+( green$6_4.4 <-> green$7_4.4) & ( red$6_4.4 <-> red$7_4.4) &
+! green$6_0.2 & ! red$6_0.2 & green$7_0.2 & ! red$7_0.2 &
+( green$6_4.5 <-> green$7_4.5) & ( red$6_4.5 <-> red$7_4.5) &
+! green$6_0.2 & ! red$6_0.2 & green$7_0.2 & ! red$7_0.2 &
+( green$6_1.1 <-> green$7_1.1) & ( red$6_1.1 <-> red$7_1.1) &
+! green$6_0.3 & ! red$6_0.3 & green$7_0.3 & ! red$7_0.3 &
+( green$6_1.2 <-> green$7_1.2) & ( red$6_1.2 <-> red$7_1.2) &
+! green$6_0.3 & ! red$6_0.3 & green$7_0.3 & ! red$7_0.3 &
+( green$6_1.4 <-> green$7_1.4) & ( red$6_1.4 <-> red$7_1.4) &
+! green$6_0.3 & ! red$6_0.3 & green$7_0.3 & ! red$7_0.3 &
+( green$6_1.5 <-> green$7_1.5) & ( red$6_1.5 <-> red$7_1.5) &
+! green$6_0.3 & ! red$6_0.3 & green$7_0.3 & ! red$7_0.3 &
+( green$6_2.1 <-> green$7_2.1) & ( red$6_2.1 <-> red$7_2.1) &
+! green$6_0.3 & ! red$6_0.3 & green$7_0.3 & ! red$7_0.3 &
+( green$6_2.2 <-> green$7_2.2) & ( red$6_2.2 <-> red$7_2.2) &
+! green$6_0.3 & ! red$6_0.3 & green$7_0.3 & ! red$7_0.3 &
+( green$6_2.4 <-> green$7_2.4) & ( red$6_2.4 <-> red$7_2.4) &
+! green$6_0.3 & ! red$6_0.3 & green$7_0.3 & ! red$7_0.3 &
+( green$6_2.5 <-> green$7_2.5) & ( red$6_2.5 <-> red$7_2.5) &
+! green$6_0.3 & ! red$6_0.3 & green$7_0.3 & ! red$7_0.3 &
+( green$6_3.1 <-> green$7_3.1) & ( red$6_3.1 <-> red$7_3.1) &
+! green$6_0.3 & ! red$6_0.3 & green$7_0.3 & ! red$7_0.3 &
+( green$6_3.2 <-> green$7_3.2) & ( red$6_3.2 <-> red$7_3.2) &
+! green$6_0.3 & ! red$6_0.3 & green$7_0.3 & ! red$7_0.3 &
+( green$6_3.4 <-> green$7_3.4) & ( red$6_3.4 <-> red$7_3.4) &
+! green$6_0.3 & ! red$6_0.3 & green$7_0.3 & ! red$7_0.3 &
+( green$6_3.5 <-> green$7_3.5) & ( red$6_3.5 <-> red$7_3.5) &
+! green$6_0.3 & ! red$6_0.3 & green$7_0.3 & ! red$7_0.3 &
+( green$6_4.1 <-> green$7_4.1) & ( red$6_4.1 <-> red$7_4.1) &
+! green$6_0.3 & ! red$6_0.3 & green$7_0.3 & ! red$7_0.3 &
+( green$6_4.2 <-> green$7_4.2) & ( red$6_4.2 <-> red$7_4.2) &
+! green$6_0.3 & ! red$6_0.3 & green$7_0.3 & ! red$7_0.3 &
+( green$6_4.4 <-> green$7_4.4) & ( red$6_4.4 <-> red$7_4.4) &
+! green$6_0.3 & ! red$6_0.3 & green$7_0.3 & ! red$7_0.3 &
+( green$6_4.5 <-> green$7_4.5) & ( red$6_4.5 <-> red$7_4.5) &
+! green$6_0.3 & ! red$6_0.3 & green$7_0.3 & ! red$7_0.3 &
+( green$6_1.1 <-> green$7_1.1) & ( red$6_1.1 <-> red$7_1.1) &
+! green$6_0.4 & ! red$6_0.4 & green$7_0.4 & ! red$7_0.4 &
+( green$6_1.2 <-> green$7_1.2) & ( red$6_1.2 <-> red$7_1.2) &
+! green$6_0.4 & ! red$6_0.4 & green$7_0.4 & ! red$7_0.4 &
+( green$6_1.3 <-> green$7_1.3) & ( red$6_1.3 <-> red$7_1.3) &
+! green$6_0.4 & ! red$6_0.4 & green$7_0.4 & ! red$7_0.4 &
+( green$6_1.5 <-> green$7_1.5) & ( red$6_1.5 <-> red$7_1.5) &
+! green$6_0.4 & ! red$6_0.4 & green$7_0.4 & ! red$7_0.4 &
+( green$6_2.1 <-> green$7_2.1) & ( red$6_2.1 <-> red$7_2.1) &
+! green$6_0.4 & ! red$6_0.4 & green$7_0.4 & ! red$7_0.4 &
+( green$6_2.2 <-> green$7_2.2) & ( red$6_2.2 <-> red$7_2.2) &
+! green$6_0.4 & ! red$6_0.4 & green$7_0.4 & ! red$7_0.4 &
+( green$6_2.3 <-> green$7_2.3) & ( red$6_2.3 <-> red$7_2.3) &
+! green$6_0.4 & ! red$6_0.4 & green$7_0.4 & ! red$7_0.4 &
+( green$6_2.5 <-> green$7_2.5) & ( red$6_2.5 <-> red$7_2.5) &
+! green$6_0.4 & ! red$6_0.4 & green$7_0.4 & ! red$7_0.4 &
+( green$6_3.1 <-> green$7_3.1) & ( red$6_3.1 <-> red$7_3.1) &
+! green$6_0.4 & ! red$6_0.4 & green$7_0.4 & ! red$7_0.4 &
+( green$6_3.2 <-> green$7_3.2) & ( red$6_3.2 <-> red$7_3.2) &
+! green$6_0.4 & ! red$6_0.4 & green$7_0.4 & ! red$7_0.4 &
+( green$6_3.3 <-> green$7_3.3) & ( red$6_3.3 <-> red$7_3.3) &
+! green$6_0.4 & ! red$6_0.4 & green$7_0.4 & ! red$7_0.4 &
+( green$6_3.5 <-> green$7_3.5) & ( red$6_3.5 <-> red$7_3.5) &
+! green$6_0.4 & ! red$6_0.4 & green$7_0.4 & ! red$7_0.4 &
+( green$6_4.1 <-> green$7_4.1) & ( red$6_4.1 <-> red$7_4.1) &
+! green$6_0.4 & ! red$6_0.4 & green$7_0.4 & ! red$7_0.4 &
+( green$6_4.2 <-> green$7_4.2) & ( red$6_4.2 <-> red$7_4.2) &
+! green$6_0.4 & ! red$6_0.4 & green$7_0.4 & ! red$7_0.4 &
+( green$6_4.3 <-> green$7_4.3) & ( red$6_4.3 <-> red$7_4.3) &
+! green$6_0.4 & ! red$6_0.4 & green$7_0.4 & ! red$7_0.4 &
+( green$6_4.5 <-> green$7_4.5) & ( red$6_4.5 <-> red$7_4.5) &
+! green$6_0.4 & ! red$6_0.4 & green$7_0.4 & ! red$7_0.4 &
+( green$6_1.1 <-> green$7_1.1) & ( red$6_1.1 <-> red$7_1.1) &
+! green$6_0.5 & ! red$6_0.5 & green$7_0.5 & ! red$7_0.5 &
+( green$6_1.2 <-> green$7_1.2) & ( red$6_1.2 <-> red$7_1.2) &
+! green$6_0.5 & ! red$6_0.5 & green$7_0.5 & ! red$7_0.5 &
+( green$6_1.3 <-> green$7_1.3) & ( red$6_1.3 <-> red$7_1.3) &
+! green$6_0.5 & ! red$6_0.5 & green$7_0.5 & ! red$7_0.5 &
+( green$6_1.4 <-> green$7_1.4) & ( red$6_1.4 <-> red$7_1.4) &
+! green$6_0.5 & ! red$6_0.5 & green$7_0.5 & ! red$7_0.5 &
+( green$6_2.1 <-> green$7_2.1) & ( red$6_2.1 <-> red$7_2.1) &
+! green$6_0.5 & ! red$6_0.5 & green$7_0.5 & ! red$7_0.5 &
+( green$6_2.2 <-> green$7_2.2) & ( red$6_2.2 <-> red$7_2.2) &
+! green$6_0.5 & ! red$6_0.5 & green$7_0.5 & ! red$7_0.5 &
+( green$6_2.3 <-> green$7_2.3) & ( red$6_2.3 <-> red$7_2.3) &
+! green$6_0.5 & ! red$6_0.5 & green$7_0.5 & ! red$7_0.5 &
+( green$6_2.4 <-> green$7_2.4) & ( red$6_2.4 <-> red$7_2.4) &
+! green$6_0.5 & ! red$6_0.5 & green$7_0.5 & ! red$7_0.5 &
+( green$6_3.1 <-> green$7_3.1) & ( red$6_3.1 <-> red$7_3.1) &
+! green$6_0.5 & ! red$6_0.5 & green$7_0.5 & ! red$7_0.5 &
+( green$6_3.2 <-> green$7_3.2) & ( red$6_3.2 <-> red$7_3.2) &
+! green$6_0.5 & ! red$6_0.5 & green$7_0.5 & ! red$7_0.5 &
+( green$6_3.3 <-> green$7_3.3) & ( red$6_3.3 <-> red$7_3.3) &
+! green$6_0.5 & ! red$6_0.5 & green$7_0.5 & ! red$7_0.5 &
+( green$6_3.4 <-> green$7_3.4) & ( red$6_3.4 <-> red$7_3.4) &
+! green$6_0.5 & ! red$6_0.5 & green$7_0.5 & ! red$7_0.5 &
+( green$6_4.1 <-> green$7_4.1) & ( red$6_4.1 <-> red$7_4.1) &
+! green$6_0.5 & ! red$6_0.5 & green$7_0.5 & ! red$7_0.5 &
+( green$6_4.2 <-> green$7_4.2) & ( red$6_4.2 <-> red$7_4.2) &
+! green$6_0.5 & ! red$6_0.5 & green$7_0.5 & ! red$7_0.5 &
+( green$6_4.3 <-> green$7_4.3) & ( red$6_4.3 <-> red$7_4.3) &
+! green$6_0.5 & ! red$6_0.5 & green$7_0.5 & ! red$7_0.5 &
+( green$6_4.4 <-> green$7_4.4) & ( red$6_4.4 <-> red$7_4.4) &
+! green$6_0.5 & ! red$6_0.5 & green$7_0.5 & ! red$7_0.5 &
+( green$6_0.3 <-> green$7_0.3) & ( red$6_0.3 <-> red$7_0.3) &
+! green$6_1.2 & ! red$6_1.2 & green$7_1.2 & ! red$7_1.2 &
+( green$6_0.4 <-> green$7_0.4) & ( red$6_0.4 <-> red$7_0.4) &
+! green$6_1.2 & ! red$6_1.2 & green$7_1.2 & ! red$7_1.2 &
+( green$6_0.5 <-> green$7_0.5) & ( red$6_0.5 <-> red$7_0.5) &
+! green$6_1.2 & ! red$6_1.2 & green$7_1.2 & ! red$7_1.2 &
+( green$6_2.3 <-> green$7_2.3) & ( red$6_2.3 <-> red$7_2.3) &
+! green$6_1.2 & ! red$6_1.2 & green$7_1.2 & ! red$7_1.2 &
+( green$6_2.4 <-> green$7_2.4) & ( red$6_2.4 <-> red$7_2.4) &
+! green$6_1.2 & ! red$6_1.2 & green$7_1.2 & ! red$7_1.2 &
+( green$6_2.5 <-> green$7_2.5) & ( red$6_2.5 <-> red$7_2.5) &
+! green$6_1.2 & ! red$6_1.2 & green$7_1.2 & ! red$7_1.2 &
+( green$6_3.3 <-> green$7_3.3) & ( red$6_3.3 <-> red$7_3.3) &
+! green$6_1.2 & ! red$6_1.2 & green$7_1.2 & ! red$7_1.2 &
+( green$6_3.4 <-> green$7_3.4) & ( red$6_3.4 <-> red$7_3.4) &
+! green$6_1.2 & ! red$6_1.2 & green$7_1.2 & ! red$7_1.2 &
+( green$6_3.5 <-> green$7_3.5) & ( red$6_3.5 <-> red$7_3.5) &
+! green$6_1.2 & ! red$6_1.2 & green$7_1.2 & ! red$7_1.2 &
+( green$6_4.3 <-> green$7_4.3) & ( red$6_4.3 <-> red$7_4.3) &
+! green$6_1.2 & ! red$6_1.2 & green$7_1.2 & ! red$7_1.2 &
+( green$6_4.4 <-> green$7_4.4) & ( red$6_4.4 <-> red$7_4.4) &
+! green$6_1.2 & ! red$6_1.2 & green$7_1.2 & ! red$7_1.2 &
+( green$6_4.5 <-> green$7_4.5) & ( red$6_4.5 <-> red$7_4.5) &
+! green$6_1.2 & ! red$6_1.2 & green$7_1.2 & ! red$7_1.2 &
+( green$6_0.2 <-> green$7_0.2) & ( red$6_0.2 <-> red$7_0.2) &
+! green$6_1.3 & ! red$6_1.3 & green$7_1.3 & ! red$7_1.3 &
+( green$6_0.4 <-> green$7_0.4) & ( red$6_0.4 <-> red$7_0.4) &
+! green$6_1.3 & ! red$6_1.3 & green$7_1.3 & ! red$7_1.3 &
+( green$6_0.5 <-> green$7_0.5) & ( red$6_0.5 <-> red$7_0.5) &
+! green$6_1.3 & ! red$6_1.3 & green$7_1.3 & ! red$7_1.3 &
+( green$6_2.2 <-> green$7_2.2) & ( red$6_2.2 <-> red$7_2.2) &
+! green$6_1.3 & ! red$6_1.3 & green$7_1.3 & ! red$7_1.3 &
+( green$6_2.4 <-> green$7_2.4) & ( red$6_2.4 <-> red$7_2.4) &
+! green$6_1.3 & ! red$6_1.3 & green$7_1.3 & ! red$7_1.3 &
+( green$6_2.5 <-> green$7_2.5) & ( red$6_2.5 <-> red$7_2.5) &
+! green$6_1.3 & ! red$6_1.3 & green$7_1.3 & ! red$7_1.3 &
+( green$6_3.2 <-> green$7_3.2) & ( red$6_3.2 <-> red$7_3.2) &
+! green$6_1.3 & ! red$6_1.3 & green$7_1.3 & ! red$7_1.3 &
+( green$6_3.4 <-> green$7_3.4) & ( red$6_3.4 <-> red$7_3.4) &
+! green$6_1.3 & ! red$6_1.3 & green$7_1.3 & ! red$7_1.3 &
+( green$6_3.5 <-> green$7_3.5) & ( red$6_3.5 <-> red$7_3.5) &
+! green$6_1.3 & ! red$6_1.3 & green$7_1.3 & ! red$7_1.3 &
+( green$6_4.2 <-> green$7_4.2) & ( red$6_4.2 <-> red$7_4.2) &
+! green$6_1.3 & ! red$6_1.3 & green$7_1.3 & ! red$7_1.3 &
+( green$6_4.4 <-> green$7_4.4) & ( red$6_4.4 <-> red$7_4.4) &
+! green$6_1.3 & ! red$6_1.3 & green$7_1.3 & ! red$7_1.3 &
+( green$6_4.5 <-> green$7_4.5) & ( red$6_4.5 <-> red$7_4.5) &
+! green$6_1.3 & ! red$6_1.3 & green$7_1.3 & ! red$7_1.3 &
+( green$6_0.2 <-> green$7_0.2) & ( red$6_0.2 <-> red$7_0.2) &
+! green$6_1.4 & ! red$6_1.4 & green$7_1.4 & ! red$7_1.4 &
+( green$6_0.3 <-> green$7_0.3) & ( red$6_0.3 <-> red$7_0.3) &
+! green$6_1.4 & ! red$6_1.4 & green$7_1.4 & ! red$7_1.4 &
+( green$6_0.5 <-> green$7_0.5) & ( red$6_0.5 <-> red$7_0.5) &
+! green$6_1.4 & ! red$6_1.4 & green$7_1.4 & ! red$7_1.4 &
+( green$6_2.2 <-> green$7_2.2) & ( red$6_2.2 <-> red$7_2.2) &
+! green$6_1.4 & ! red$6_1.4 & green$7_1.4 & ! red$7_1.4 &
+( green$6_2.3 <-> green$7_2.3) & ( red$6_2.3 <-> red$7_2.3) &
+! green$6_1.4 & ! red$6_1.4 & green$7_1.4 & ! red$7_1.4 &
+( green$6_2.5 <-> green$7_2.5) & ( red$6_2.5 <-> red$7_2.5) &
+! green$6_1.4 & ! red$6_1.4 & green$7_1.4 & ! red$7_1.4 &
+( green$6_3.2 <-> green$7_3.2) & ( red$6_3.2 <-> red$7_3.2) &
+! green$6_1.4 & ! red$6_1.4 & green$7_1.4 & ! red$7_1.4 &
+( green$6_3.3 <-> green$7_3.3) & ( red$6_3.3 <-> red$7_3.3) &
+! green$6_1.4 & ! red$6_1.4 & green$7_1.4 & ! red$7_1.4 &
+( green$6_3.5 <-> green$7_3.5) & ( red$6_3.5 <-> red$7_3.5) &
+! green$6_1.4 & ! red$6_1.4 & green$7_1.4 & ! red$7_1.4 &
+( green$6_4.2 <-> green$7_4.2) & ( red$6_4.2 <-> red$7_4.2) &
+! green$6_1.4 & ! red$6_1.4 & green$7_1.4 & ! red$7_1.4 &
+( green$6_4.3 <-> green$7_4.3) & ( red$6_4.3 <-> red$7_4.3) &
+! green$6_1.4 & ! red$6_1.4 & green$7_1.4 & ! red$7_1.4 &
+( green$6_4.5 <-> green$7_4.5) & ( red$6_4.5 <-> red$7_4.5) &
+! green$6_1.4 & ! red$6_1.4 & green$7_1.4 & ! red$7_1.4 &
+( green$6_0.2 <-> green$7_0.2) & ( red$6_0.2 <-> red$7_0.2) &
+! green$6_1.5 & ! red$6_1.5 & green$7_1.5 & ! red$7_1.5 &
+( green$6_0.3 <-> green$7_0.3) & ( red$6_0.3 <-> red$7_0.3) &
+! green$6_1.5 & ! red$6_1.5 & green$7_1.5 & ! red$7_1.5 &
+( green$6_0.4 <-> green$7_0.4) & ( red$6_0.4 <-> red$7_0.4) &
+! green$6_1.5 & ! red$6_1.5 & green$7_1.5 & ! red$7_1.5 &
+( green$6_2.2 <-> green$7_2.2) & ( red$6_2.2 <-> red$7_2.2) &
+! green$6_1.5 & ! red$6_1.5 & green$7_1.5 & ! red$7_1.5 &
+( green$6_2.3 <-> green$7_2.3) & ( red$6_2.3 <-> red$7_2.3) &
+! green$6_1.5 & ! red$6_1.5 & green$7_1.5 & ! red$7_1.5 &
+( green$6_2.4 <-> green$7_2.4) & ( red$6_2.4 <-> red$7_2.4) &
+! green$6_1.5 & ! red$6_1.5 & green$7_1.5 & ! red$7_1.5 &
+( green$6_3.2 <-> green$7_3.2) & ( red$6_3.2 <-> red$7_3.2) &
+! green$6_1.5 & ! red$6_1.5 & green$7_1.5 & ! red$7_1.5 &
+( green$6_3.3 <-> green$7_3.3) & ( red$6_3.3 <-> red$7_3.3) &
+! green$6_1.5 & ! red$6_1.5 & green$7_1.5 & ! red$7_1.5 &
+( green$6_3.4 <-> green$7_3.4) & ( red$6_3.4 <-> red$7_3.4) &
+! green$6_1.5 & ! red$6_1.5 & green$7_1.5 & ! red$7_1.5 &
+( green$6_4.2 <-> green$7_4.2) & ( red$6_4.2 <-> red$7_4.2) &
+! green$6_1.5 & ! red$6_1.5 & green$7_1.5 & ! red$7_1.5 &
+( green$6_4.3 <-> green$7_4.3) & ( red$6_4.3 <-> red$7_4.3) &
+! green$6_1.5 & ! red$6_1.5 & green$7_1.5 & ! red$7_1.5 &
+( green$6_4.4 <-> green$7_4.4) & ( red$6_4.4 <-> red$7_4.4) &
+! green$6_1.5 & ! red$6_1.5 & green$7_1.5 & ! red$7_1.5 &
+( green$6_0.4 <-> green$7_0.4) & ( red$6_0.4 <-> red$7_0.4) &
+! green$6_2.3 & ! red$6_2.3 & green$7_2.3 & ! red$7_2.3 &
+( green$6_0.5 <-> green$7_0.5) & ( red$6_0.5 <-> red$7_0.5) &
+! green$6_2.3 & ! red$6_2.3 & green$7_2.3 & ! red$7_2.3 &
+( green$6_1.4 <-> green$7_1.4) & ( red$6_1.4 <-> red$7_1.4) &
+! green$6_2.3 & ! red$6_2.3 & green$7_2.3 & ! red$7_2.3 &
+( green$6_1.5 <-> green$7_1.5) & ( red$6_1.5 <-> red$7_1.5) &
+! green$6_2.3 & ! red$6_2.3 & green$7_2.3 & ! red$7_2.3 &
+( green$6_3.4 <-> green$7_3.4) & ( red$6_3.4 <-> red$7_3.4) &
+! green$6_2.3 & ! red$6_2.3 & green$7_2.3 & ! red$7_2.3 &
+( green$6_3.5 <-> green$7_3.5) & ( red$6_3.5 <-> red$7_3.5) &
+! green$6_2.3 & ! red$6_2.3 & green$7_2.3 & ! red$7_2.3 &
+( green$6_4.4 <-> green$7_4.4) & ( red$6_4.4 <-> red$7_4.4) &
+! green$6_2.3 & ! red$6_2.3 & green$7_2.3 & ! red$7_2.3 &
+( green$6_4.5 <-> green$7_4.5) & ( red$6_4.5 <-> red$7_4.5) &
+! green$6_2.3 & ! red$6_2.3 & green$7_2.3 & ! red$7_2.3 &
+( green$6_0.3 <-> green$7_0.3) & ( red$6_0.3 <-> red$7_0.3) &
+! green$6_2.4 & ! red$6_2.4 & green$7_2.4 & ! red$7_2.4 &
+( green$6_0.5 <-> green$7_0.5) & ( red$6_0.5 <-> red$7_0.5) &
+! green$6_2.4 & ! red$6_2.4 & green$7_2.4 & ! red$7_2.4 &
+( green$6_1.3 <-> green$7_1.3) & ( red$6_1.3 <-> red$7_1.3) &
+! green$6_2.4 & ! red$6_2.4 & green$7_2.4 & ! red$7_2.4 &
+( green$6_1.5 <-> green$7_1.5) & ( red$6_1.5 <-> red$7_1.5) &
+! green$6_2.4 & ! red$6_2.4 & green$7_2.4 & ! red$7_2.4 &
+( green$6_3.3 <-> green$7_3.3) & ( red$6_3.3 <-> red$7_3.3) &
+! green$6_2.4 & ! red$6_2.4 & green$7_2.4 & ! red$7_2.4 &
+( green$6_3.5 <-> green$7_3.5) & ( red$6_3.5 <-> red$7_3.5) &
+! green$6_2.4 & ! red$6_2.4 & green$7_2.4 & ! red$7_2.4 &
+( green$6_4.3 <-> green$7_4.3) & ( red$6_4.3 <-> red$7_4.3) &
+! green$6_2.4 & ! red$6_2.4 & green$7_2.4 & ! red$7_2.4 &
+( green$6_4.5 <-> green$7_4.5) & ( red$6_4.5 <-> red$7_4.5) &
+! green$6_2.4 & ! red$6_2.4 & green$7_2.4 & ! red$7_2.4 &
+( green$6_0.3 <-> green$7_0.3) & ( red$6_0.3 <-> red$7_0.3) &
+! green$6_2.5 & ! red$6_2.5 & green$7_2.5 & ! red$7_2.5 &
+( green$6_0.4 <-> green$7_0.4) & ( red$6_0.4 <-> red$7_0.4) &
+! green$6_2.5 & ! red$6_2.5 & green$7_2.5 & ! red$7_2.5 &
+( green$6_1.3 <-> green$7_1.3) & ( red$6_1.3 <-> red$7_1.3) &
+! green$6_2.5 & ! red$6_2.5 & green$7_2.5 & ! red$7_2.5 &
+( green$6_1.4 <-> green$7_1.4) & ( red$6_1.4 <-> red$7_1.4) &
+! green$6_2.5 & ! red$6_2.5 & green$7_2.5 & ! red$7_2.5 &
+( green$6_3.3 <-> green$7_3.3) & ( red$6_3.3 <-> red$7_3.3) &
+! green$6_2.5 & ! red$6_2.5 & green$7_2.5 & ! red$7_2.5 &
+( green$6_3.4 <-> green$7_3.4) & ( red$6_3.4 <-> red$7_3.4) &
+! green$6_2.5 & ! red$6_2.5 & green$7_2.5 & ! red$7_2.5 &
+( green$6_4.3 <-> green$7_4.3) & ( red$6_4.3 <-> red$7_4.3) &
+! green$6_2.5 & ! red$6_2.5 & green$7_2.5 & ! red$7_2.5 &
+( green$6_4.4 <-> green$7_4.4) & ( red$6_4.4 <-> red$7_4.4) &
+! green$6_2.5 & ! red$6_2.5 & green$7_2.5 & ! red$7_2.5 &
+( green$6_0.5 <-> green$7_0.5) & ( red$6_0.5 <-> red$7_0.5) &
+! green$6_3.4 & ! red$6_3.4 & green$7_3.4 & ! red$7_3.4 &
+( green$6_1.5 <-> green$7_1.5) & ( red$6_1.5 <-> red$7_1.5) &
+! green$6_3.4 & ! red$6_3.4 & green$7_3.4 & ! red$7_3.4 &
+( green$6_2.5 <-> green$7_2.5) & ( red$6_2.5 <-> red$7_2.5) &
+! green$6_3.4 & ! red$6_3.4 & green$7_3.4 & ! red$7_3.4 &
+( green$6_4.5 <-> green$7_4.5) & ( red$6_4.5 <-> red$7_4.5) &
+! green$6_3.4 & ! red$6_3.4 & green$7_3.4 & ! red$7_3.4 &
+( green$6_0.4 <-> green$7_0.4) & ( red$6_0.4 <-> red$7_0.4) &
+! green$6_3.5 & ! red$6_3.5 & green$7_3.5 & ! red$7_3.5 &
+( green$6_1.4 <-> green$7_1.4) & ( red$6_1.4 <-> red$7_1.4) &
+! green$6_3.5 & ! red$6_3.5 & green$7_3.5 & ! red$7_3.5 &
+( green$6_2.4 <-> green$7_2.4) & ( red$6_2.4 <-> red$7_2.4) &
+! green$6_3.5 & ! red$6_3.5 & green$7_3.5 & ! red$7_3.5 &
+( green$6_4.4 <-> green$7_4.4) & ( red$6_4.4 <-> red$7_4.4) &
+! green$6_3.5 & ! red$6_3.5 & green$7_3.5 & ! red$7_3.5 &
+( green$8_1.2 <-> green$9_1.2) & ( red$8_1.2 <-> red$9_1.2) &
+! green$8_0.1 & ! red$8_0.1 & green$9_0.1 & ! red$9_0.1 &
+( green$8_1.3 <-> green$9_1.3) & ( red$8_1.3 <-> red$9_1.3) &
+! green$8_0.1 & ! red$8_0.1 & green$9_0.1 & ! red$9_0.1 &
+( green$8_1.4 <-> green$9_1.4) & ( red$8_1.4 <-> red$9_1.4) &
+! green$8_0.1 & ! red$8_0.1 & green$9_0.1 & ! red$9_0.1 &
+( green$8_1.5 <-> green$9_1.5) & ( red$8_1.5 <-> red$9_1.5) &
+! green$8_0.1 & ! red$8_0.1 & green$9_0.1 & ! red$9_0.1 &
+( green$8_2.2 <-> green$9_2.2) & ( red$8_2.2 <-> red$9_2.2) &
+! green$8_0.1 & ! red$8_0.1 & green$9_0.1 & ! red$9_0.1 &
+( green$8_2.3 <-> green$9_2.3) & ( red$8_2.3 <-> red$9_2.3) &
+! green$8_0.1 & ! red$8_0.1 & green$9_0.1 & ! red$9_0.1 &
+( green$8_2.4 <-> green$9_2.4) & ( red$8_2.4 <-> red$9_2.4) &
+! green$8_0.1 & ! red$8_0.1 & green$9_0.1 & ! red$9_0.1 &
+( green$8_2.5 <-> green$9_2.5) & ( red$8_2.5 <-> red$9_2.5) &
+! green$8_0.1 & ! red$8_0.1 & green$9_0.1 & ! red$9_0.1 &
+( green$8_3.2 <-> green$9_3.2) & ( red$8_3.2 <-> red$9_3.2) &
+! green$8_0.1 & ! red$8_0.1 & green$9_0.1 & ! red$9_0.1 &
+( green$8_3.3 <-> green$9_3.3) & ( red$8_3.3 <-> red$9_3.3) &
+! green$8_0.1 & ! red$8_0.1 & green$9_0.1 & ! red$9_0.1 &
+( green$8_3.4 <-> green$9_3.4) & ( red$8_3.4 <-> red$9_3.4) &
+! green$8_0.1 & ! red$8_0.1 & green$9_0.1 & ! red$9_0.1 &
+( green$8_3.5 <-> green$9_3.5) & ( red$8_3.5 <-> red$9_3.5) &
+! green$8_0.1 & ! red$8_0.1 & green$9_0.1 & ! red$9_0.1 &
+( green$8_4.2 <-> green$9_4.2) & ( red$8_4.2 <-> red$9_4.2) &
+! green$8_0.1 & ! red$8_0.1 & green$9_0.1 & ! red$9_0.1 &
+( green$8_4.3 <-> green$9_4.3) & ( red$8_4.3 <-> red$9_4.3) &
+! green$8_0.1 & ! red$8_0.1 & green$9_0.1 & ! red$9_0.1 &
+( green$8_4.4 <-> green$9_4.4) & ( red$8_4.4 <-> red$9_4.4) &
+! green$8_0.1 & ! red$8_0.1 & green$9_0.1 & ! red$9_0.1 &
+( green$8_4.5 <-> green$9_4.5) & ( red$8_4.5 <-> red$9_4.5) &
+! green$8_0.1 & ! red$8_0.1 & green$9_0.1 & ! red$9_0.1 &
+( green$8_1.1 <-> green$9_1.1) & ( red$8_1.1 <-> red$9_1.1) &
+! green$8_0.2 & ! red$8_0.2 & green$9_0.2 & ! red$9_0.2 &
+( green$8_1.3 <-> green$9_1.3) & ( red$8_1.3 <-> red$9_1.3) &
+! green$8_0.2 & ! red$8_0.2 & green$9_0.2 & ! red$9_0.2 &
+( green$8_1.4 <-> green$9_1.4) & ( red$8_1.4 <-> red$9_1.4) &
+! green$8_0.2 & ! red$8_0.2 & green$9_0.2 & ! red$9_0.2 &
+( green$8_1.5 <-> green$9_1.5) & ( red$8_1.5 <-> red$9_1.5) &
+! green$8_0.2 & ! red$8_0.2 & green$9_0.2 & ! red$9_0.2 &
+( green$8_2.1 <-> green$9_2.1) & ( red$8_2.1 <-> red$9_2.1) &
+! green$8_0.2 & ! red$8_0.2 & green$9_0.2 & ! red$9_0.2 &
+( green$8_2.3 <-> green$9_2.3) & ( red$8_2.3 <-> red$9_2.3) &
+! green$8_0.2 & ! red$8_0.2 & green$9_0.2 & ! red$9_0.2 &
+( green$8_2.4 <-> green$9_2.4) & ( red$8_2.4 <-> red$9_2.4) &
+! green$8_0.2 & ! red$8_0.2 & green$9_0.2 & ! red$9_0.2 &
+( green$8_2.5 <-> green$9_2.5) & ( red$8_2.5 <-> red$9_2.5) &
+! green$8_0.2 & ! red$8_0.2 & green$9_0.2 & ! red$9_0.2 &
+( green$8_3.1 <-> green$9_3.1) & ( red$8_3.1 <-> red$9_3.1) &
+! green$8_0.2 & ! red$8_0.2 & green$9_0.2 & ! red$9_0.2 &
+( green$8_3.3 <-> green$9_3.3) & ( red$8_3.3 <-> red$9_3.3) &
+! green$8_0.2 & ! red$8_0.2 & green$9_0.2 & ! red$9_0.2 &
+( green$8_3.4 <-> green$9_3.4) & ( red$8_3.4 <-> red$9_3.4) &
+! green$8_0.2 & ! red$8_0.2 & green$9_0.2 & ! red$9_0.2 &
+( green$8_3.5 <-> green$9_3.5) & ( red$8_3.5 <-> red$9_3.5) &
+! green$8_0.2 & ! red$8_0.2 & green$9_0.2 & ! red$9_0.2 &
+( green$8_4.1 <-> green$9_4.1) & ( red$8_4.1 <-> red$9_4.1) &
+! green$8_0.2 & ! red$8_0.2 & green$9_0.2 & ! red$9_0.2 &
+( green$8_4.3 <-> green$9_4.3) & ( red$8_4.3 <-> red$9_4.3) &
+! green$8_0.2 & ! red$8_0.2 & green$9_0.2 & ! red$9_0.2 &
+( green$8_4.4 <-> green$9_4.4) & ( red$8_4.4 <-> red$9_4.4) &
+! green$8_0.2 & ! red$8_0.2 & green$9_0.2 & ! red$9_0.2 &
+( green$8_4.5 <-> green$9_4.5) & ( red$8_4.5 <-> red$9_4.5) &
+! green$8_0.2 & ! red$8_0.2 & green$9_0.2 & ! red$9_0.2 &
+( green$8_1.1 <-> green$9_1.1) & ( red$8_1.1 <-> red$9_1.1) &
+! green$8_0.3 & ! red$8_0.3 & green$9_0.3 & ! red$9_0.3 &
+( green$8_1.2 <-> green$9_1.2) & ( red$8_1.2 <-> red$9_1.2) &
+! green$8_0.3 & ! red$8_0.3 & green$9_0.3 & ! red$9_0.3 &
+( green$8_1.4 <-> green$9_1.4) & ( red$8_1.4 <-> red$9_1.4) &
+! green$8_0.3 & ! red$8_0.3 & green$9_0.3 & ! red$9_0.3 &
+( green$8_1.5 <-> green$9_1.5) & ( red$8_1.5 <-> red$9_1.5) &
+! green$8_0.3 & ! red$8_0.3 & green$9_0.3 & ! red$9_0.3 &
+( green$8_2.1 <-> green$9_2.1) & ( red$8_2.1 <-> red$9_2.1) &
+! green$8_0.3 & ! red$8_0.3 & green$9_0.3 & ! red$9_0.3 &
+( green$8_2.2 <-> green$9_2.2) & ( red$8_2.2 <-> red$9_2.2) &
+! green$8_0.3 & ! red$8_0.3 & green$9_0.3 & ! red$9_0.3 &
+( green$8_2.4 <-> green$9_2.4) & ( red$8_2.4 <-> red$9_2.4) &
+! green$8_0.3 & ! red$8_0.3 & green$9_0.3 & ! red$9_0.3 &
+( green$8_2.5 <-> green$9_2.5) & ( red$8_2.5 <-> red$9_2.5) &
+! green$8_0.3 & ! red$8_0.3 & green$9_0.3 & ! red$9_0.3 &
+( green$8_3.1 <-> green$9_3.1) & ( red$8_3.1 <-> red$9_3.1) &
+! green$8_0.3 & ! red$8_0.3 & green$9_0.3 & ! red$9_0.3 &
+( green$8_3.2 <-> green$9_3.2) & ( red$8_3.2 <-> red$9_3.2) &
+! green$8_0.3 & ! red$8_0.3 & green$9_0.3 & ! red$9_0.3 &
+( green$8_3.4 <-> green$9_3.4) & ( red$8_3.4 <-> red$9_3.4) &
+! green$8_0.3 & ! red$8_0.3 & green$9_0.3 & ! red$9_0.3 &
+( green$8_3.5 <-> green$9_3.5) & ( red$8_3.5 <-> red$9_3.5) &
+! green$8_0.3 & ! red$8_0.3 & green$9_0.3 & ! red$9_0.3 &
+( green$8_4.1 <-> green$9_4.1) & ( red$8_4.1 <-> red$9_4.1) &
+! green$8_0.3 & ! red$8_0.3 & green$9_0.3 & ! red$9_0.3 &
+( green$8_4.2 <-> green$9_4.2) & ( red$8_4.2 <-> red$9_4.2) &
+! green$8_0.3 & ! red$8_0.3 & green$9_0.3 & ! red$9_0.3 &
+( green$8_4.4 <-> green$9_4.4) & ( red$8_4.4 <-> red$9_4.4) &
+! green$8_0.3 & ! red$8_0.3 & green$9_0.3 & ! red$9_0.3 &
+( green$8_4.5 <-> green$9_4.5) & ( red$8_4.5 <-> red$9_4.5) &
+! green$8_0.3 & ! red$8_0.3 & green$9_0.3 & ! red$9_0.3 &
+( green$8_1.1 <-> green$9_1.1) & ( red$8_1.1 <-> red$9_1.1) &
+! green$8_0.4 & ! red$8_0.4 & green$9_0.4 & ! red$9_0.4 &
+( green$8_1.2 <-> green$9_1.2) & ( red$8_1.2 <-> red$9_1.2) &
+! green$8_0.4 & ! red$8_0.4 & green$9_0.4 & ! red$9_0.4 &
+( green$8_1.3 <-> green$9_1.3) & ( red$8_1.3 <-> red$9_1.3) &
+! green$8_0.4 & ! red$8_0.4 & green$9_0.4 & ! red$9_0.4 &
+( green$8_1.5 <-> green$9_1.5) & ( red$8_1.5 <-> red$9_1.5) &
+! green$8_0.4 & ! red$8_0.4 & green$9_0.4 & ! red$9_0.4 &
+( green$8_2.1 <-> green$9_2.1) & ( red$8_2.1 <-> red$9_2.1) &
+! green$8_0.4 & ! red$8_0.4 & green$9_0.4 & ! red$9_0.4 &
+( green$8_2.2 <-> green$9_2.2) & ( red$8_2.2 <-> red$9_2.2) &
+! green$8_0.4 & ! red$8_0.4 & green$9_0.4 & ! red$9_0.4 &
+( green$8_2.3 <-> green$9_2.3) & ( red$8_2.3 <-> red$9_2.3) &
+! green$8_0.4 & ! red$8_0.4 & green$9_0.4 & ! red$9_0.4 &
+( green$8_2.5 <-> green$9_2.5) & ( red$8_2.5 <-> red$9_2.5) &
+! green$8_0.4 & ! red$8_0.4 & green$9_0.4 & ! red$9_0.4 &
+( green$8_3.1 <-> green$9_3.1) & ( red$8_3.1 <-> red$9_3.1) &
+! green$8_0.4 & ! red$8_0.4 & green$9_0.4 & ! red$9_0.4 &
+( green$8_3.2 <-> green$9_3.2) & ( red$8_3.2 <-> red$9_3.2) &
+! green$8_0.4 & ! red$8_0.4 & green$9_0.4 & ! red$9_0.4 &
+( green$8_3.3 <-> green$9_3.3) & ( red$8_3.3 <-> red$9_3.3) &
+! green$8_0.4 & ! red$8_0.4 & green$9_0.4 & ! red$9_0.4 &
+( green$8_3.5 <-> green$9_3.5) & ( red$8_3.5 <-> red$9_3.5) &
+! green$8_0.4 & ! red$8_0.4 & green$9_0.4 & ! red$9_0.4 &
+( green$8_4.1 <-> green$9_4.1) & ( red$8_4.1 <-> red$9_4.1) &
+! green$8_0.4 & ! red$8_0.4 & green$9_0.4 & ! red$9_0.4 &
+( green$8_4.2 <-> green$9_4.2) & ( red$8_4.2 <-> red$9_4.2) &
+! green$8_0.4 & ! red$8_0.4 & green$9_0.4 & ! red$9_0.4 &
+( green$8_4.3 <-> green$9_4.3) & ( red$8_4.3 <-> red$9_4.3) &
+! green$8_0.4 & ! red$8_0.4 & green$9_0.4 & ! red$9_0.4 &
+( green$8_4.5 <-> green$9_4.5) & ( red$8_4.5 <-> red$9_4.5) &
+! green$8_0.4 & ! red$8_0.4 & green$9_0.4 & ! red$9_0.4 &
+( green$8_1.1 <-> green$9_1.1) & ( red$8_1.1 <-> red$9_1.1) &
+! green$8_0.5 & ! red$8_0.5 & green$9_0.5 & ! red$9_0.5 &
+( green$8_1.2 <-> green$9_1.2) & ( red$8_1.2 <-> red$9_1.2) &
+! green$8_0.5 & ! red$8_0.5 & green$9_0.5 & ! red$9_0.5 &
+( green$8_1.3 <-> green$9_1.3) & ( red$8_1.3 <-> red$9_1.3) &
+! green$8_0.5 & ! red$8_0.5 & green$9_0.5 & ! red$9_0.5 &
+( green$8_1.4 <-> green$9_1.4) & ( red$8_1.4 <-> red$9_1.4) &
+! green$8_0.5 & ! red$8_0.5 & green$9_0.5 & ! red$9_0.5 &
+( green$8_2.1 <-> green$9_2.1) & ( red$8_2.1 <-> red$9_2.1) &
+! green$8_0.5 & ! red$8_0.5 & green$9_0.5 & ! red$9_0.5 &
+( green$8_2.2 <-> green$9_2.2) & ( red$8_2.2 <-> red$9_2.2) &
+! green$8_0.5 & ! red$8_0.5 & green$9_0.5 & ! red$9_0.5 &
+( green$8_2.3 <-> green$9_2.3) & ( red$8_2.3 <-> red$9_2.3) &
+! green$8_0.5 & ! red$8_0.5 & green$9_0.5 & ! red$9_0.5 &
+( green$8_2.4 <-> green$9_2.4) & ( red$8_2.4 <-> red$9_2.4) &
+! green$8_0.5 & ! red$8_0.5 & green$9_0.5 & ! red$9_0.5 &
+( green$8_3.1 <-> green$9_3.1) & ( red$8_3.1 <-> red$9_3.1) &
+! green$8_0.5 & ! red$8_0.5 & green$9_0.5 & ! red$9_0.5 &
+( green$8_3.2 <-> green$9_3.2) & ( red$8_3.2 <-> red$9_3.2) &
+! green$8_0.5 & ! red$8_0.5 & green$9_0.5 & ! red$9_0.5 &
+( green$8_3.3 <-> green$9_3.3) & ( red$8_3.3 <-> red$9_3.3) &
+! green$8_0.5 & ! red$8_0.5 & green$9_0.5 & ! red$9_0.5 &
+( green$8_3.4 <-> green$9_3.4) & ( red$8_3.4 <-> red$9_3.4) &
+! green$8_0.5 & ! red$8_0.5 & green$9_0.5 & ! red$9_0.5 &
+( green$8_4.1 <-> green$9_4.1) & ( red$8_4.1 <-> red$9_4.1) &
+! green$8_0.5 & ! red$8_0.5 & green$9_0.5 & ! red$9_0.5 &
+( green$8_4.2 <-> green$9_4.2) & ( red$8_4.2 <-> red$9_4.2) &
+! green$8_0.5 & ! red$8_0.5 & green$9_0.5 & ! red$9_0.5 &
+( green$8_4.3 <-> green$9_4.3) & ( red$8_4.3 <-> red$9_4.3) &
+! green$8_0.5 & ! red$8_0.5 & green$9_0.5 & ! red$9_0.5 &
+( green$8_4.4 <-> green$9_4.4) & ( red$8_4.4 <-> red$9_4.4) &
+! green$8_0.5 & ! red$8_0.5 & green$9_0.5 & ! red$9_0.5 &
+( green$8_0.3 <-> green$9_0.3) & ( red$8_0.3 <-> red$9_0.3) &
+! green$8_1.2 & ! red$8_1.2 & green$9_1.2 & ! red$9_1.2 &
+( green$8_0.4 <-> green$9_0.4) & ( red$8_0.4 <-> red$9_0.4) &
+! green$8_1.2 & ! red$8_1.2 & green$9_1.2 & ! red$9_1.2 &
+( green$8_0.5 <-> green$9_0.5) & ( red$8_0.5 <-> red$9_0.5) &
+! green$8_1.2 & ! red$8_1.2 & green$9_1.2 & ! red$9_1.2 &
+( green$8_2.3 <-> green$9_2.3) & ( red$8_2.3 <-> red$9_2.3) &
+! green$8_1.2 & ! red$8_1.2 & green$9_1.2 & ! red$9_1.2 &
+( green$8_2.4 <-> green$9_2.4) & ( red$8_2.4 <-> red$9_2.4) &
+! green$8_1.2 & ! red$8_1.2 & green$9_1.2 & ! red$9_1.2 &
+( green$8_2.5 <-> green$9_2.5) & ( red$8_2.5 <-> red$9_2.5) &
+! green$8_1.2 & ! red$8_1.2 & green$9_1.2 & ! red$9_1.2 &
+( green$8_3.3 <-> green$9_3.3) & ( red$8_3.3 <-> red$9_3.3) &
+! green$8_1.2 & ! red$8_1.2 & green$9_1.2 & ! red$9_1.2 &
+( green$8_3.4 <-> green$9_3.4) & ( red$8_3.4 <-> red$9_3.4) &
+! green$8_1.2 & ! red$8_1.2 & green$9_1.2 & ! red$9_1.2 &
+( green$8_3.5 <-> green$9_3.5) & ( red$8_3.5 <-> red$9_3.5) &
+! green$8_1.2 & ! red$8_1.2 & green$9_1.2 & ! red$9_1.2 &
+( green$8_4.3 <-> green$9_4.3) & ( red$8_4.3 <-> red$9_4.3) &
+! green$8_1.2 & ! red$8_1.2 & green$9_1.2 & ! red$9_1.2 &
+( green$8_4.4 <-> green$9_4.4) & ( red$8_4.4 <-> red$9_4.4) &
+! green$8_1.2 & ! red$8_1.2 & green$9_1.2 & ! red$9_1.2 &
+( green$8_4.5 <-> green$9_4.5) & ( red$8_4.5 <-> red$9_4.5) &
+! green$8_1.2 & ! red$8_1.2 & green$9_1.2 & ! red$9_1.2 &
+( green$8_0.2 <-> green$9_0.2) & ( red$8_0.2 <-> red$9_0.2) &
+! green$8_1.3 & ! red$8_1.3 & green$9_1.3 & ! red$9_1.3 &
+( green$8_0.4 <-> green$9_0.4) & ( red$8_0.4 <-> red$9_0.4) &
+! green$8_1.3 & ! red$8_1.3 & green$9_1.3 & ! red$9_1.3 &
+( green$8_0.5 <-> green$9_0.5) & ( red$8_0.5 <-> red$9_0.5) &
+! green$8_1.3 & ! red$8_1.3 & green$9_1.3 & ! red$9_1.3 &
+( green$8_2.2 <-> green$9_2.2) & ( red$8_2.2 <-> red$9_2.2) &
+! green$8_1.3 & ! red$8_1.3 & green$9_1.3 & ! red$9_1.3 &
+( green$8_2.4 <-> green$9_2.4) & ( red$8_2.4 <-> red$9_2.4) &
+! green$8_1.3 & ! red$8_1.3 & green$9_1.3 & ! red$9_1.3 &
+( green$8_2.5 <-> green$9_2.5) & ( red$8_2.5 <-> red$9_2.5) &
+! green$8_1.3 & ! red$8_1.3 & green$9_1.3 & ! red$9_1.3 &
+( green$8_3.2 <-> green$9_3.2) & ( red$8_3.2 <-> red$9_3.2) &
+! green$8_1.3 & ! red$8_1.3 & green$9_1.3 & ! red$9_1.3 &
+( green$8_3.4 <-> green$9_3.4) & ( red$8_3.4 <-> red$9_3.4) &
+! green$8_1.3 & ! red$8_1.3 & green$9_1.3 & ! red$9_1.3 &
+( green$8_3.5 <-> green$9_3.5) & ( red$8_3.5 <-> red$9_3.5) &
+! green$8_1.3 & ! red$8_1.3 & green$9_1.3 & ! red$9_1.3 &
+( green$8_4.2 <-> green$9_4.2) & ( red$8_4.2 <-> red$9_4.2) &
+! green$8_1.3 & ! red$8_1.3 & green$9_1.3 & ! red$9_1.3 &
+( green$8_4.4 <-> green$9_4.4) & ( red$8_4.4 <-> red$9_4.4) &
+! green$8_1.3 & ! red$8_1.3 & green$9_1.3 & ! red$9_1.3 &
+( green$8_4.5 <-> green$9_4.5) & ( red$8_4.5 <-> red$9_4.5) &
+! green$8_1.3 & ! red$8_1.3 & green$9_1.3 & ! red$9_1.3 &
+( green$8_0.2 <-> green$9_0.2) & ( red$8_0.2 <-> red$9_0.2) &
+! green$8_1.4 & ! red$8_1.4 & green$9_1.4 & ! red$9_1.4 &
+( green$8_0.3 <-> green$9_0.3) & ( red$8_0.3 <-> red$9_0.3) &
+! green$8_1.4 & ! red$8_1.4 & green$9_1.4 & ! red$9_1.4 &
+( green$8_0.5 <-> green$9_0.5) & ( red$8_0.5 <-> red$9_0.5) &
+! green$8_1.4 & ! red$8_1.4 & green$9_1.4 & ! red$9_1.4 &
+( green$8_2.2 <-> green$9_2.2) & ( red$8_2.2 <-> red$9_2.2) &
+! green$8_1.4 & ! red$8_1.4 & green$9_1.4 & ! red$9_1.4 &
+( green$8_2.3 <-> green$9_2.3) & ( red$8_2.3 <-> red$9_2.3) &
+! green$8_1.4 & ! red$8_1.4 & green$9_1.4 & ! red$9_1.4 &
+( green$8_2.5 <-> green$9_2.5) & ( red$8_2.5 <-> red$9_2.5) &
+! green$8_1.4 & ! red$8_1.4 & green$9_1.4 & ! red$9_1.4 &
+( green$8_3.2 <-> green$9_3.2) & ( red$8_3.2 <-> red$9_3.2) &
+! green$8_1.4 & ! red$8_1.4 & green$9_1.4 & ! red$9_1.4 &
+( green$8_3.3 <-> green$9_3.3) & ( red$8_3.3 <-> red$9_3.3) &
+! green$8_1.4 & ! red$8_1.4 & green$9_1.4 & ! red$9_1.4 &
+( green$8_3.5 <-> green$9_3.5) & ( red$8_3.5 <-> red$9_3.5) &
+! green$8_1.4 & ! red$8_1.4 & green$9_1.4 & ! red$9_1.4 &
+( green$8_4.2 <-> green$9_4.2) & ( red$8_4.2 <-> red$9_4.2) &
+! green$8_1.4 & ! red$8_1.4 & green$9_1.4 & ! red$9_1.4 &
+( green$8_4.3 <-> green$9_4.3) & ( red$8_4.3 <-> red$9_4.3) &
+! green$8_1.4 & ! red$8_1.4 & green$9_1.4 & ! red$9_1.4 &
+( green$8_4.5 <-> green$9_4.5) & ( red$8_4.5 <-> red$9_4.5) &
+! green$8_1.4 & ! red$8_1.4 & green$9_1.4 & ! red$9_1.4 &
+( green$8_0.2 <-> green$9_0.2) & ( red$8_0.2 <-> red$9_0.2) &
+! green$8_1.5 & ! red$8_1.5 & green$9_1.5 & ! red$9_1.5 &
+( green$8_0.3 <-> green$9_0.3) & ( red$8_0.3 <-> red$9_0.3) &
+! green$8_1.5 & ! red$8_1.5 & green$9_1.5 & ! red$9_1.5 &
+( green$8_0.4 <-> green$9_0.4) & ( red$8_0.4 <-> red$9_0.4) &
+! green$8_1.5 & ! red$8_1.5 & green$9_1.5 & ! red$9_1.5 &
+( green$8_2.2 <-> green$9_2.2) & ( red$8_2.2 <-> red$9_2.2) &
+! green$8_1.5 & ! red$8_1.5 & green$9_1.5 & ! red$9_1.5 &
+( green$8_2.3 <-> green$9_2.3) & ( red$8_2.3 <-> red$9_2.3) &
+! green$8_1.5 & ! red$8_1.5 & green$9_1.5 & ! red$9_1.5 &
+( green$8_2.4 <-> green$9_2.4) & ( red$8_2.4 <-> red$9_2.4) &
+! green$8_1.5 & ! red$8_1.5 & green$9_1.5 & ! red$9_1.5 &
+( green$8_3.2 <-> green$9_3.2) & ( red$8_3.2 <-> red$9_3.2) &
+! green$8_1.5 & ! red$8_1.5 & green$9_1.5 & ! red$9_1.5 &
+( green$8_3.3 <-> green$9_3.3) & ( red$8_3.3 <-> red$9_3.3) &
+! green$8_1.5 & ! red$8_1.5 & green$9_1.5 & ! red$9_1.5 &
+( green$8_3.4 <-> green$9_3.4) & ( red$8_3.4 <-> red$9_3.4) &
+! green$8_1.5 & ! red$8_1.5 & green$9_1.5 & ! red$9_1.5 &
+( green$8_4.2 <-> green$9_4.2) & ( red$8_4.2 <-> red$9_4.2) &
+! green$8_1.5 & ! red$8_1.5 & green$9_1.5 & ! red$9_1.5 &
+( green$8_4.3 <-> green$9_4.3) & ( red$8_4.3 <-> red$9_4.3) &
+! green$8_1.5 & ! red$8_1.5 & green$9_1.5 & ! red$9_1.5 &
+( green$8_4.4 <-> green$9_4.4) & ( red$8_4.4 <-> red$9_4.4) &
+! green$8_1.5 & ! red$8_1.5 & green$9_1.5 & ! red$9_1.5 &
+( green$8_0.4 <-> green$9_0.4) & ( red$8_0.4 <-> red$9_0.4) &
+! green$8_2.3 & ! red$8_2.3 & green$9_2.3 & ! red$9_2.3 &
+( green$8_0.5 <-> green$9_0.5) & ( red$8_0.5 <-> red$9_0.5) &
+! green$8_2.3 & ! red$8_2.3 & green$9_2.3 & ! red$9_2.3 &
+( green$8_1.4 <-> green$9_1.4) & ( red$8_1.4 <-> red$9_1.4) &
+! green$8_2.3 & ! red$8_2.3 & green$9_2.3 & ! red$9_2.3 &
+( green$8_1.5 <-> green$9_1.5) & ( red$8_1.5 <-> red$9_1.5) &
+! green$8_2.3 & ! red$8_2.3 & green$9_2.3 & ! red$9_2.3 &
+( green$8_3.4 <-> green$9_3.4) & ( red$8_3.4 <-> red$9_3.4) &
+! green$8_2.3 & ! red$8_2.3 & green$9_2.3 & ! red$9_2.3 &
+( green$8_3.5 <-> green$9_3.5) & ( red$8_3.5 <-> red$9_3.5) &
+! green$8_2.3 & ! red$8_2.3 & green$9_2.3 & ! red$9_2.3 &
+( green$8_4.4 <-> green$9_4.4) & ( red$8_4.4 <-> red$9_4.4) &
+! green$8_2.3 & ! red$8_2.3 & green$9_2.3 & ! red$9_2.3 &
+( green$8_4.5 <-> green$9_4.5) & ( red$8_4.5 <-> red$9_4.5) &
+! green$8_2.3 & ! red$8_2.3 & green$9_2.3 & ! red$9_2.3 &
+( green$8_0.3 <-> green$9_0.3) & ( red$8_0.3 <-> red$9_0.3) &
+! green$8_2.4 & ! red$8_2.4 & green$9_2.4 & ! red$9_2.4 &
+( green$8_0.5 <-> green$9_0.5) & ( red$8_0.5 <-> red$9_0.5) &
+! green$8_2.4 & ! red$8_2.4 & green$9_2.4 & ! red$9_2.4 &
+( green$8_1.3 <-> green$9_1.3) & ( red$8_1.3 <-> red$9_1.3) &
+! green$8_2.4 & ! red$8_2.4 & green$9_2.4 & ! red$9_2.4 &
+( green$8_1.5 <-> green$9_1.5) & ( red$8_1.5 <-> red$9_1.5) &
+! green$8_2.4 & ! red$8_2.4 & green$9_2.4 & ! red$9_2.4 &
+( green$8_3.3 <-> green$9_3.3) & ( red$8_3.3 <-> red$9_3.3) &
+! green$8_2.4 & ! red$8_2.4 & green$9_2.4 & ! red$9_2.4 &
+( green$8_3.5 <-> green$9_3.5) & ( red$8_3.5 <-> red$9_3.5) &
+! green$8_2.4 & ! red$8_2.4 & green$9_2.4 & ! red$9_2.4 &
+( green$8_4.3 <-> green$9_4.3) & ( red$8_4.3 <-> red$9_4.3) &
+! green$8_2.4 & ! red$8_2.4 & green$9_2.4 & ! red$9_2.4 &
+( green$8_4.5 <-> green$9_4.5) & ( red$8_4.5 <-> red$9_4.5) &
+! green$8_2.4 & ! red$8_2.4 & green$9_2.4 & ! red$9_2.4 &
+( green$8_0.3 <-> green$9_0.3) & ( red$8_0.3 <-> red$9_0.3) &
+! green$8_2.5 & ! red$8_2.5 & green$9_2.5 & ! red$9_2.5 &
+( green$8_0.4 <-> green$9_0.4) & ( red$8_0.4 <-> red$9_0.4) &
+! green$8_2.5 & ! red$8_2.5 & green$9_2.5 & ! red$9_2.5 &
+( green$8_1.3 <-> green$9_1.3) & ( red$8_1.3 <-> red$9_1.3) &
+! green$8_2.5 & ! red$8_2.5 & green$9_2.5 & ! red$9_2.5 &
+( green$8_1.4 <-> green$9_1.4) & ( red$8_1.4 <-> red$9_1.4) &
+! green$8_2.5 & ! red$8_2.5 & green$9_2.5 & ! red$9_2.5 &
+( green$8_3.3 <-> green$9_3.3) & ( red$8_3.3 <-> red$9_3.3) &
+! green$8_2.5 & ! red$8_2.5 & green$9_2.5 & ! red$9_2.5 &
+( green$8_3.4 <-> green$9_3.4) & ( red$8_3.4 <-> red$9_3.4) &
+! green$8_2.5 & ! red$8_2.5 & green$9_2.5 & ! red$9_2.5 &
+( green$8_4.3 <-> green$9_4.3) & ( red$8_4.3 <-> red$9_4.3) &
+! green$8_2.5 & ! red$8_2.5 & green$9_2.5 & ! red$9_2.5 &
+( green$8_4.4 <-> green$9_4.4) & ( red$8_4.4 <-> red$9_4.4) &
+! green$8_2.5 & ! red$8_2.5 & green$9_2.5 & ! red$9_2.5 &
+( green$8_0.5 <-> green$9_0.5) & ( red$8_0.5 <-> red$9_0.5) &
+! green$8_3.4 & ! red$8_3.4 & green$9_3.4 & ! red$9_3.4 &
+( green$8_1.5 <-> green$9_1.5) & ( red$8_1.5 <-> red$9_1.5) &
+! green$8_3.4 & ! red$8_3.4 & green$9_3.4 & ! red$9_3.4 &
+( green$8_2.5 <-> green$9_2.5) & ( red$8_2.5 <-> red$9_2.5) &
+! green$8_3.4 & ! red$8_3.4 & green$9_3.4 & ! red$9_3.4 &
+( green$8_4.5 <-> green$9_4.5) & ( red$8_4.5 <-> red$9_4.5) &
+! green$8_3.4 & ! red$8_3.4 & green$9_3.4 & ! red$9_3.4 &
+( green$8_0.4 <-> green$9_0.4) & ( red$8_0.4 <-> red$9_0.4) &
+! green$8_3.5 & ! red$8_3.5 & green$9_3.5 & ! red$9_3.5 &
+( green$8_1.4 <-> green$9_1.4) & ( red$8_1.4 <-> red$9_1.4) &
+! green$8_3.5 & ! red$8_3.5 & green$9_3.5 & ! red$9_3.5 &
+( green$8_2.4 <-> green$9_2.4) & ( red$8_2.4 <-> red$9_2.4) &
+! green$8_3.5 & ! red$8_3.5 & green$9_3.5 & ! red$9_3.5 &
+( green$8_4.4 <-> green$9_4.4) & ( red$8_4.4 <-> red$9_4.4) &
+! green$8_3.5 & ! red$8_3.5 & green$9_3.5 & ! red$9_3.5% player red:
+( green$1_1.2 <-> green$2_1.2) & ( red$1_1.2 <-> red$2_1.2) &
+! green$1_0.1 & ! red$1_0.1 & ! green$2_0.1 & red$2_0.1 &
+( green$1_1.3 <-> green$2_1.3) & ( red$1_1.3 <-> red$2_1.3) &
+! green$1_0.1 & ! red$1_0.1 & ! green$2_0.1 & red$2_0.1 &
+( green$1_1.4 <-> green$2_1.4) & ( red$1_1.4 <-> red$2_1.4) &
+! green$1_0.1 & ! red$1_0.1 & ! green$2_0.1 & red$2_0.1 &
+( green$1_1.5 <-> green$2_1.5) & ( red$1_1.5 <-> red$2_1.5) &
+! green$1_0.1 & ! red$1_0.1 & ! green$2_0.1 & red$2_0.1 &
+( green$1_2.2 <-> green$2_2.2) & ( red$1_2.2 <-> red$2_2.2) &
+! green$1_0.1 & ! red$1_0.1 & ! green$2_0.1 & red$2_0.1 &
+( green$1_2.3 <-> green$2_2.3) & ( red$1_2.3 <-> red$2_2.3) &
+! green$1_0.1 & ! red$1_0.1 & ! green$2_0.1 & red$2_0.1 &
+( green$1_2.4 <-> green$2_2.4) & ( red$1_2.4 <-> red$2_2.4) &
+! green$1_0.1 & ! red$1_0.1 & ! green$2_0.1 & red$2_0.1 &
+( green$1_2.5 <-> green$2_2.5) & ( red$1_2.5 <-> red$2_2.5) &
+! green$1_0.1 & ! red$1_0.1 & ! green$2_0.1 & red$2_0.1 &
+( green$1_3.2 <-> green$2_3.2) & ( red$1_3.2 <-> red$2_3.2) &
+! green$1_0.1 & ! red$1_0.1 & ! green$2_0.1 & red$2_0.1 &
+( green$1_3.3 <-> green$2_3.3) & ( red$1_3.3 <-> red$2_3.3) &
+! green$1_0.1 & ! red$1_0.1 & ! green$2_0.1 & red$2_0.1 &
+( green$1_3.4 <-> green$2_3.4) & ( red$1_3.4 <-> red$2_3.4) &
+! green$1_0.1 & ! red$1_0.1 & ! green$2_0.1 & red$2_0.1 &
+( green$1_3.5 <-> green$2_3.5) & ( red$1_3.5 <-> red$2_3.5) &
+! green$1_0.1 & ! red$1_0.1 & ! green$2_0.1 & red$2_0.1 &
+( green$1_4.2 <-> green$2_4.2) & ( red$1_4.2 <-> red$2_4.2) &
+! green$1_0.1 & ! red$1_0.1 & ! green$2_0.1 & red$2_0.1 &
+( green$1_4.3 <-> green$2_4.3) & ( red$1_4.3 <-> red$2_4.3) &
+! green$1_0.1 & ! red$1_0.1 & ! green$2_0.1 & red$2_0.1 &
+( green$1_4.4 <-> green$2_4.4) & ( red$1_4.4 <-> red$2_4.4) &
+! green$1_0.1 & ! red$1_0.1 & ! green$2_0.1 & red$2_0.1 &
+( green$1_4.5 <-> green$2_4.5) & ( red$1_4.5 <-> red$2_4.5) &
+! green$1_0.1 & ! red$1_0.1 & ! green$2_0.1 & red$2_0.1 &
+( green$1_1.1 <-> green$2_1.1) & ( red$1_1.1 <-> red$2_1.1) &
+! green$1_0.2 & ! red$1_0.2 & ! green$2_0.2 & red$2_0.2 &
+( green$1_1.3 <-> green$2_1.3) & ( red$1_1.3 <-> red$2_1.3) &
+! green$1_0.2 & ! red$1_0.2 & ! green$2_0.2 & red$2_0.2 &
+( green$1_1.4 <-> green$2_1.4) & ( red$1_1.4 <-> red$2_1.4) &
+! green$1_0.2 & ! red$1_0.2 & ! green$2_0.2 & red$2_0.2 &
+( green$1_1.5 <-> green$2_1.5) & ( red$1_1.5 <-> red$2_1.5) &
+! green$1_0.2 & ! red$1_0.2 & ! green$2_0.2 & red$2_0.2 &
+( green$1_2.1 <-> green$2_2.1) & ( red$1_2.1 <-> red$2_2.1) &
+! green$1_0.2 & ! red$1_0.2 & ! green$2_0.2 & red$2_0.2 &
+( green$1_2.3 <-> green$2_2.3) & ( red$1_2.3 <-> red$2_2.3) &
+! green$1_0.2 & ! red$1_0.2 & ! green$2_0.2 & red$2_0.2 &
+( green$1_2.4 <-> green$2_2.4) & ( red$1_2.4 <-> red$2_2.4) &
+! green$1_0.2 & ! red$1_0.2 & ! green$2_0.2 & red$2_0.2 &
+( green$1_2.5 <-> green$2_2.5) & ( red$1_2.5 <-> red$2_2.5) &
+! green$1_0.2 & ! red$1_0.2 & ! green$2_0.2 & red$2_0.2 &
+( green$1_3.1 <-> green$2_3.1) & ( red$1_3.1 <-> red$2_3.1) &
+! green$1_0.2 & ! red$1_0.2 & ! green$2_0.2 & red$2_0.2 &
+( green$1_3.3 <-> green$2_3.3) & ( red$1_3.3 <-> red$2_3.3) &
+! green$1_0.2 & ! red$1_0.2 & ! green$2_0.2 & red$2_0.2 &
+( green$1_3.4 <-> green$2_3.4) & ( red$1_3.4 <-> red$2_3.4) &
+! green$1_0.2 & ! red$1_0.2 & ! green$2_0.2 & red$2_0.2 &
+( green$1_3.5 <-> green$2_3.5) & ( red$1_3.5 <-> red$2_3.5) &
+! green$1_0.2 & ! red$1_0.2 & ! green$2_0.2 & red$2_0.2 &
+( green$1_4.1 <-> green$2_4.1) & ( red$1_4.1 <-> red$2_4.1) &
+! green$1_0.2 & ! red$1_0.2 & ! green$2_0.2 & red$2_0.2 &
+( green$1_4.3 <-> green$2_4.3) & ( red$1_4.3 <-> red$2_4.3) &
+! green$1_0.2 & ! red$1_0.2 & ! green$2_0.2 & red$2_0.2 &
+( green$1_4.4 <-> green$2_4.4) & ( red$1_4.4 <-> red$2_4.4) &
+! green$1_0.2 & ! red$1_0.2 & ! green$2_0.2 & red$2_0.2 &
+( green$1_4.5 <-> green$2_4.5) & ( red$1_4.5 <-> red$2_4.5) &
+! green$1_0.2 & ! red$1_0.2 & ! green$2_0.2 & red$2_0.2 &
+( green$1_1.1 <-> green$2_1.1) & ( red$1_1.1 <-> red$2_1.1) &
+! green$1_0.3 & ! red$1_0.3 & ! green$2_0.3 & red$2_0.3 &
+( green$1_1.2 <-> green$2_1.2) & ( red$1_1.2 <-> red$2_1.2) &
+! green$1_0.3 & ! red$1_0.3 & ! green$2_0.3 & red$2_0.3 &
+( green$1_1.4 <-> green$2_1.4) & ( red$1_1.4 <-> red$2_1.4) &
+! green$1_0.3 & ! red$1_0.3 & ! green$2_0.3 & red$2_0.3 &
+( green$1_1.5 <-> green$2_1.5) & ( red$1_1.5 <-> red$2_1.5) &
+! green$1_0.3 & ! red$1_0.3 & ! green$2_0.3 & red$2_0.3 &
+( green$1_2.1 <-> green$2_2.1) & ( red$1_2.1 <-> red$2_2.1) &
+! green$1_0.3 & ! red$1_0.3 & ! green$2_0.3 & red$2_0.3 &
+( green$1_2.2 <-> green$2_2.2) & ( red$1_2.2 <-> red$2_2.2) &
+! green$1_0.3 & ! red$1_0.3 & ! green$2_0.3 & red$2_0.3 &
+( green$1_2.4 <-> green$2_2.4) & ( red$1_2.4 <-> red$2_2.4) &
+! green$1_0.3 & ! red$1_0.3 & ! green$2_0.3 & red$2_0.3 &
+( green$1_2.5 <-> green$2_2.5) & ( red$1_2.5 <-> red$2_2.5) &
+! green$1_0.3 & ! red$1_0.3 & ! green$2_0.3 & red$2_0.3 &
+( green$1_3.1 <-> green$2_3.1) & ( red$1_3.1 <-> red$2_3.1) &
+! green$1_0.3 & ! red$1_0.3 & ! green$2_0.3 & red$2_0.3 &
+( green$1_3.2 <-> green$2_3.2) & ( red$1_3.2 <-> red$2_3.2) &
+! green$1_0.3 & ! red$1_0.3 & ! green$2_0.3 & red$2_0.3 &
+( green$1_3.4 <-> green$2_3.4) & ( red$1_3.4 <-> red$2_3.4) &
+! green$1_0.3 & ! red$1_0.3 & ! green$2_0.3 & red$2_0.3 &
+( green$1_3.5 <-> green$2_3.5) & ( red$1_3.5 <-> red$2_3.5) &
+! green$1_0.3 & ! red$1_0.3 & ! green$2_0.3 & red$2_0.3 &
+( green$1_4.1 <-> green$2_4.1) & ( red$1_4.1 <-> red$2_4.1) &
+! green$1_0.3 & ! red$1_0.3 & ! green$2_0.3 & red$2_0.3 &
+( green$1_4.2 <-> green$2_4.2) & ( red$1_4.2 <-> red$2_4.2) &
+! green$1_0.3 & ! red$1_0.3 & ! green$2_0.3 & red$2_0.3 &
+( green$1_4.4 <-> green$2_4.4) & ( red$1_4.4 <-> red$2_4.4) &
+! green$1_0.3 & ! red$1_0.3 & ! green$2_0.3 & red$2_0.3 &
+( green$1_4.5 <-> green$2_4.5) & ( red$1_4.5 <-> red$2_4.5) &
+! green$1_0.3 & ! red$1_0.3 & ! green$2_0.3 & red$2_0.3 &
+( green$1_1.1 <-> green$2_1.1) & ( red$1_1.1 <-> red$2_1.1) &
+! green$1_0.4 & ! red$1_0.4 & ! green$2_0.4 & red$2_0.4 &
+( green$1_1.2 <-> green$2_1.2) & ( red$1_1.2 <-> red$2_1.2) &
+! green$1_0.4 & ! red$1_0.4 & ! green$2_0.4 & red$2_0.4 &
+( green$1_1.3 <-> green$2_1.3) & ( red$1_1.3 <-> red$2_1.3) &
+! green$1_0.4 & ! red$1_0.4 & ! green$2_0.4 & red$2_0.4 &
+( green$1_1.5 <-> green$2_1.5) & ( red$1_1.5 <-> red$2_1.5) &
+! green$1_0.4 & ! red$1_0.4 & ! green$2_0.4 & red$2_0.4 &
+( green$1_2.1 <-> green$2_2.1) & ( red$1_2.1 <-> red$2_2.1) &
+! green$1_0.4 & ! red$1_0.4 & ! green$2_0.4 & red$2_0.4 &
+( green$1_2.2 <-> green$2_2.2) & ( red$1_2.2 <-> red$2_2.2) &
+! green$1_0.4 & ! red$1_0.4 & ! green$2_0.4 & red$2_0.4 &
+( green$1_2.3 <-> green$2_2.3) & ( red$1_2.3 <-> red$2_2.3) &
+! green$1_0.4 & ! red$1_0.4 & ! green$2_0.4 & red$2_0.4 &
+( green$1_2.5 <-> green$2_2.5) & ( red$1_2.5 <-> red$2_2.5) &
+! green$1_0.4 & ! red$1_0.4 & ! green$2_0.4 & red$2_0.4 &
+( green$1_3.1 <-> green$2_3.1) & ( red$1_3.1 <-> red$2_3.1) &
+! green$1_0.4 & ! red$1_0.4 & ! green$2_0.4 & red$2_0.4 &
+( green$1_3.2 <-> green$2_3.2) & ( red$1_3.2 <-> red$2_3.2) &
+! green$1_0.4 & ! red$1_0.4 & ! green$2_0.4 & red$2_0.4 &
+( green$1_3.3 <-> green$2_3.3) & ( red$1_3.3 <-> red$2_3.3) &
+! green$1_0.4 & ! red$1_0.4 & ! green$2_0.4 & red$2_0.4 &
+( green$1_3.5 <-> green$2_3.5) & ( red$1_3.5 <-> red$2_3.5) &
+! green$1_0.4 & ! red$1_0.4 & ! green$2_0.4 & red$2_0.4 &
+( green$1_4.1 <-> green$2_4.1) & ( red$1_4.1 <-> red$2_4.1) &
+! green$1_0.4 & ! red$1_0.4 & ! green$2_0.4 & red$2_0.4 &
+( green$1_4.2 <-> green$2_4.2) & ( red$1_4.2 <-> red$2_4.2) &
+! green$1_0.4 & ! red$1_0.4 & ! green$2_0.4 & red$2_0.4 &
+( green$1_4.3 <-> green$2_4.3) & ( red$1_4.3 <-> red$2_4.3) &
+! green$1_0.4 & ! red$1_0.4 & ! green$2_0.4 & red$2_0.4 &
+( green$1_4.5 <-> green$2_4.5) & ( red$1_4.5 <-> red$2_4.5) &
+! green$1_0.4 & ! red$1_0.4 & ! green$2_0.4 & red$2_0.4 &
+( green$1_1.1 <-> green$2_1.1) & ( red$1_1.1 <-> red$2_1.1) &
+! green$1_0.5 & ! red$1_0.5 & ! green$2_0.5 & red$2_0.5 &
+( green$1_1.2 <-> green$2_1.2) & ( red$1_1.2 <-> red$2_1.2) &
+! green$1_0.5 & ! red$1_0.5 & ! green$2_0.5 & red$2_0.5 &
+( green$1_1.3 <-> green$2_1.3) & ( red$1_1.3 <-> red$2_1.3) &
+! green$1_0.5 & ! red$1_0.5 & ! green$2_0.5 & red$2_0.5 &
+( green$1_1.4 <-> green$2_1.4) & ( red$1_1.4 <-> red$2_1.4) &
+! green$1_0.5 & ! red$1_0.5 & ! green$2_0.5 & red$2_0.5 &
+( green$1_2.1 <-> green$2_2.1) & ( red$1_2.1 <-> red$2_2.1) &
+! green$1_0.5 & ! red$1_0.5 & ! green$2_0.5 & red$2_0.5 &
+( green$1_2.2 <-> green$2_2.2) & ( red$1_2.2 <-> red$2_2.2) &
+! green$1_0.5 & ! red$1_0.5 & ! green$2_0.5 & red$2_0.5 &
+( green$1_2.3 <-> green$2_2.3) & ( red$1_2.3 <-> red$2_2.3) &
+! green$1_0.5 & ! red$1_0.5 & ! green$2_0.5 & red$2_0.5 &
+( green$1_2.4 <-> green$2_2.4) & ( red$1_2.4 <-> red$2_2.4) &
+! green$1_0.5 & ! red$1_0.5 & ! green$2_0.5 & red$2_0.5 &
+( green$1_3.1 <-> green$2_3.1) & ( red$1_3.1 <-> red$2_3.1) &
+! green$1_0.5 & ! red$1_0.5 & ! green$2_0.5 & red$2_0.5 &
+( green$1_3.2 <-> green$2_3.2) & ( red$1_3.2 <-> red$2_3.2) &
+! green$1_0.5 & ! red$1_0.5 & ! green$2_0.5 & red$2_0.5 &
+( green$1_3.3 <-> green$2_3.3) & ( red$1_3.3 <-> red$2_3.3) &
+! green$1_0.5 & ! red$1_0.5 & ! green$2_0.5 & red$2_0.5 &
+( green$1_3.4 <-> green$2_3.4) & ( red$1_3.4 <-> red$2_3.4) &
+! green$1_0.5 & ! red$1_0.5 & ! green$2_0.5 & red$2_0.5 &
+( green$1_4.1 <-> green$2_4.1) & ( red$1_4.1 <-> red$2_4.1) &
+! green$1_0.5 & ! red$1_0.5 & ! green$2_0.5 & red$2_0.5 &
+( green$1_4.2 <-> green$2_4.2) & ( red$1_4.2 <-> red$2_4.2) &
+! green$1_0.5 & ! red$1_0.5 & ! green$2_0.5 & red$2_0.5 &
+( green$1_4.3 <-> green$2_4.3) & ( red$1_4.3 <-> red$2_4.3) &
+! green$1_0.5 & ! red$1_0.5 & ! green$2_0.5 & red$2_0.5 &
+( green$1_4.4 <-> green$2_4.4) & ( red$1_4.4 <-> red$2_4.4) &
+! green$1_0.5 & ! red$1_0.5 & ! green$2_0.5 & red$2_0.5 &
+( green$1_0.3 <-> green$2_0.3) & ( red$1_0.3 <-> red$2_0.3) &
+! green$1_1.2 & ! red$1_1.2 & ! green$2_1.2 & red$2_1.2 &
+( green$1_0.4 <-> green$2_0.4) & ( red$1_0.4 <-> red$2_0.4) &
+! green$1_1.2 & ! red$1_1.2 & ! green$2_1.2 & red$2_1.2 &
+( green$1_0.5 <-> green$2_0.5) & ( red$1_0.5 <-> red$2_0.5) &
+! green$1_1.2 & ! red$1_1.2 & ! green$2_1.2 & red$2_1.2 &
+( green$1_2.3 <-> green$2_2.3) & ( red$1_2.3 <-> red$2_2.3) &
+! green$1_1.2 & ! red$1_1.2 & ! green$2_1.2 & red$2_1.2 &
+( green$1_2.4 <-> green$2_2.4) & ( red$1_2.4 <-> red$2_2.4) &
+! green$1_1.2 & ! red$1_1.2 & ! green$2_1.2 & red$2_1.2 &
+( green$1_2.5 <-> green$2_2.5) & ( red$1_2.5 <-> red$2_2.5) &
+! green$1_1.2 & ! red$1_1.2 & ! green$2_1.2 & red$2_1.2 &
+( green$1_3.3 <-> green$2_3.3) & ( red$1_3.3 <-> red$2_3.3) &
+! green$1_1.2 & ! red$1_1.2 & ! green$2_1.2 & red$2_1.2 &
+( green$1_3.4 <-> green$2_3.4) & ( red$1_3.4 <-> red$2_3.4) &
+! green$1_1.2 & ! red$1_1.2 & ! green$2_1.2 & red$2_1.2 &
+( green$1_3.5 <-> green$2_3.5) & ( red$1_3.5 <-> red$2_3.5) &
+! green$1_1.2 & ! red$1_1.2 & ! green$2_1.2 & red$2_1.2 &
+( green$1_4.3 <-> green$2_4.3) & ( red$1_4.3 <-> red$2_4.3) &
+! green$1_1.2 & ! red$1_1.2 & ! green$2_1.2 & red$2_1.2 &
+( green$1_4.4 <-> green$2_4.4) & ( red$1_4.4 <-> red$2_4.4) &
+! green$1_1.2 & ! red$1_1.2 & ! green$2_1.2 & red$2_1.2 &
+( green$1_4.5 <-> green$2_4.5) & ( red$1_4.5 <-> red$2_4.5) &
+! green$1_1.2 & ! red$1_1.2 & ! green$2_1.2 & red$2_1.2 &
+( green$1_0.2 <-> green$2_0.2) & ( red$1_0.2 <-> red$2_0.2) &
+! green$1_1.3 & ! red$1_1.3 & ! green$2_1.3 & red$2_1.3 &
+( green$1_0.4 <-> green$2_0.4) & ( red$1_0.4 <-> red$2_0.4) &
+! green$1_1.3 & ! red$1_1.3 & ! green$2_1.3 & red$2_1.3 &
+( green$1_0.5 <-> green$2_0.5) & ( red$1_0.5 <-> red$2_0.5) &
+! green$1_1.3 & ! red$1_1.3 & ! green$2_1.3 & red$2_1.3 &
+( green$1_2.2 <-> green$2_2.2) & ( red$1_2.2 <-> red$2_2.2) &
+! green$1_1.3 & ! red$1_1.3 & ! green$2_1.3 & red$2_1.3 &
+( green$1_2.4 <-> green$2_2.4) & ( red$1_2.4 <-> red$2_2.4) &
+! green$1_1.3 & ! red$1_1.3 & ! green$2_1.3 & red$2_1.3 &
+( green$1_2.5 <-> green$2_2.5) & ( red$1_2.5 <-> red$2_2.5) &
+! green$1_1.3 & ! red$1_1.3 & ! green$2_1.3 & red$2_1.3 &
+( green$1_3.2 <-> green$2_3.2) & ( red$1_3.2 <-> red$2_3.2) &
+! green$1_1.3 & ! red$1_1.3 & ! green$2_1.3 & red$2_1.3 &
+( green$1_3.4 <-> green$2_3.4) & ( red$1_3.4 <-> red$2_3.4) &
+! green$1_1.3 & ! red$1_1.3 & ! green$2_1.3 & red$2_1.3 &
+( green$1_3.5 <-> green$2_3.5) & ( red$1_3.5 <-> red$2_3.5) &
+! green$1_1.3 & ! red$1_1.3 & ! green$2_1.3 & red$2_1.3 &
+( green$1_4.2 <-> green$2_4.2) & ( red$1_4.2 <-> red$2_4.2) &
+! green$1_1.3 & ! red$1_1.3 & ! green$2_1.3 & red$2_1.3 &
+( green$1_4.4 <-> green$2_4.4) & ( red$1_4.4 <-> red$2_4.4) &
+! green$1_1.3 & ! red$1_1.3 & ! green$2_1.3 & red$2_1.3 &
+( green$1_4.5 <-> green$2_4.5) & ( red$1_4.5 <-> red$2_4.5) &
+! green$1_1.3 & ! red$1_1.3 & ! green$2_1.3 & red$2_1.3 &
+( green$1_0.2 <-> green$2_0.2) & ( red$1_0.2 <-> red$2_0.2) &
+! green$1_1.4 & ! red$1_1.4 & ! green$2_1.4 & red$2_1.4 &
+( green$1_0.3 <-> green$2_0.3) & ( red$1_0.3 <-> red$2_0.3) &
+! green$1_1.4 & ! red$1_1.4 & ! green$2_1.4 & red$2_1.4 &
+( green$1_0.5 <-> green$2_0.5) & ( red$1_0.5 <-> red$2_0.5) &
+! green$1_1.4 & ! red$1_1.4 & ! green$2_1.4 & red$2_1.4 &
+( green$1_2.2 <-> green$2_2.2) & ( red$1_2.2 <-> red$2_2.2) &
+! green$1_1.4 & ! red$1_1.4 & ! green$2_1.4 & red$2_1.4 &
+( green$1_2.3 <-> green$2_2.3) & ( red$1_2.3 <-> red$2_2.3) &
+! green$1_1.4 & ! red$1_1.4 & ! green$2_1.4 & red$2_1.4 &
+( green$1_2.5 <-> green$2_2.5) & ( red$1_2.5 <-> red$2_2.5) &
+! green$1_1.4 & ! red$1_1.4 & ! green$2_1.4 & red$2_1.4 &
+( green$1_3.2 <-> green$2_3.2) & ( red$1_3.2 <-> red$2_3.2) &
+! green$1_1.4 & ! red$1_1.4 & ! green$2_1.4 & red$2_1.4 &
+( green$1_3.3 <-> green$2_3.3) & ( red$1_3.3 <-> red$2_3.3) &
+! green$1_1.4 & ! red$1_1.4 & ! green$2_1.4 & red$2_1.4 &
+( green$1_3.5 <-> green$2_3.5) & ( red$1_3.5 <-> red$2_3.5) &
+! green$1_1.4 & ! red$1_1.4 & ! green$2_1.4 & red$2_1.4 &
+( green$1_4.2 <-> green$2_4.2) & ( red$1_4.2 <-> red$2_4.2) &
+! green$1_1.4 & ! red$1_1.4 & ! green$2_1.4 & red$2_1.4 &
+( green$1_4.3 <-> green$2_4.3) & ( red$1_4.3 <-> red$2_4.3) &
+! green$1_1.4 & ! red$1_1.4 & ! green$2_1.4 & red$2_1.4 &
+( green$1_4.5 <-> green$2_4.5) & ( red$1_4.5 <-> red$2_4.5) &
+! green$1_1.4 & ! red$1_1.4 & ! green$2_1.4 & red$2_1.4 &
+( green$1_0.2 <-> green$2_0.2) & ( red$1_0.2 <-> red$2_0.2) &
+! green$1_1.5 & ! red$1_1.5 & ! green$2_1.5 & red$2_1.5 &
+( green$1_0.3 <-> green$2_0.3) & ( red$1_0.3 <-> red$2_0.3) &
+! green$1_1.5 & ! red$1_1.5 & ! green$2_1.5 & red$2_1.5 &
+( green$1_0.4 <-> green$2_0.4) & ( red$1_0.4 <-> red$2_0.4) &
+! green$1_1.5 & ! red$1_1.5 & ! green$2_1.5 & red$2_1.5 &
+( green$1_2.2 <-> green$2_2.2) & ( red$1_2.2 <-> red$2_2.2) &
+! green$1_1.5 & ! red$1_1.5 & ! green$2_1.5 & red$2_1.5 &
+( green$1_2.3 <-> green$2_2.3) & ( red$1_2.3 <-> red$2_2.3) &
+! green$1_1.5 & ! red$1_1.5 & ! green$2_1.5 & red$2_1.5 &
+( green$1_2.4 <-> green$2_2.4) & ( red$1_2.4 <-> red$2_2.4) &
+! green$1_1.5 & ! red$1_1.5 & ! green$2_1.5 & red$2_1.5 &
+( green$1_3.2 <-> green$2_3.2) & ( red$1_3.2 <-> red$2_3.2) &
+! green$1_1.5 & ! red$1_1.5 & ! green$2_1.5 & red$2_1.5 &
+( green$1_3.3 <-> green$2_3.3) & ( red$1_3.3 <-> red$2_3.3) &
+! green$1_1.5 & ! red$1_1.5 & ! green$2_1.5 & red$2_1.5 &
+( green$1_3.4 <-> green$2_3.4) & ( red$1_3.4 <-> red$2_3.4) &
+! green$1_1.5 & ! red$1_1.5 & ! green$2_1.5 & red$2_1.5 &
+( green$1_4.2 <-> green$2_4.2) & ( red$1_4.2 <-> red$2_4.2) &
+! green$1_1.5 & ! red$1_1.5 & ! green$2_1.5 & red$2_1.5 &
+( green$1_4.3 <-> green$2_4.3) & ( red$1_4.3 <-> red$2_4.3) &
+! green$1_1.5 & ! red$1_1.5 & ! green$2_1.5 & red$2_1.5 &
+( green$1_4.4 <-> green$2_4.4) & ( red$1_4.4 <-> red$2_4.4) &
+! green$1_1.5 & ! red$1_1.5 & ! green$2_1.5 & red$2_1.5 &
+( green$1_0.4 <-> green$2_0.4) & ( red$1_0.4 <-> red$2_0.4) &
+! green$1_2.3 & ! red$1_2.3 & ! green$2_2.3 & red$2_2.3 &
+( green$1_0.5 <-> green$2_0.5) & ( red$1_0.5 <-> red$2_0.5) &
+! green$1_2.3 & ! red$1_2.3 & ! green$2_2.3 & red$2_2.3 &
+( green$1_1.4 <-> green$2_1.4) & ( red$1_1.4 <-> red$2_1.4) &
+! green$1_2.3 & ! red$1_2.3 & ! green$2_2.3 & red$2_2.3 &
+( green$1_1.5 <-> green$2_1.5) & ( red$1_1.5 <-> red$2_1.5) &
+! green$1_2.3 & ! red$1_2.3 & ! green$2_2.3 & red$2_2.3 &
+( green$1_3.4 <-> green$2_3.4) & ( red$1_3.4 <-> red$2_3.4) &
+! green$1_2.3 & ! red$1_2.3 & ! green$2_2.3 & red$2_2.3 &
+( green$1_3.5 <-> green$2_3.5) & ( red$1_3.5 <-> red$2_3.5) &
+! green$1_2.3 & ! red$1_2.3 & ! green$2_2.3 & red$2_2.3 &
+( green$1_4.4 <-> green$2_4.4) & ( red$1_4.4 <-> red$2_4.4) &
+! green$1_2.3 & ! red$1_2.3 & ! green$2_2.3 & red$2_2.3 &
+( green$1_4.5 <-> green$2_4.5) & ( red$1_4.5 <-> red$2_4.5) &
+! green$1_2.3 & ! red$1_2.3 & ! green$2_2.3 & red$2_2.3 &
+( green$1_0.3 <-> green$2_0.3) & ( red$1_0.3 <-> red$2_0.3) &
+! green$1_2.4 & ! red$1_2.4 & ! green$2_2.4 & red$2_2.4 &
+( green$1_0.5 <-> green$2_0.5) & ( red$1_0.5 <-> red$2_0.5) &
+! green$1_2.4 & ! red$1_2.4 & ! green$2_2.4 & red$2_2.4 &
+( green$1_1.3 <-> green$2_1.3) & ( red$1_1.3 <-> red$2_1.3) &
+! green$1_2.4 & ! red$1_2.4 & ! green$2_2.4 & red$2_2.4 &
+( green$1_1.5 <-> green$2_1.5) & ( red$1_1.5 <-> red$2_1.5) &
+! green$1_2.4 & ! red$1_2.4 & ! green$2_2.4 & red$2_2.4 &
+( green$1_3.3 <-> green$2_3.3) & ( red$1_3.3 <-> red$2_3.3) &
+! green$1_2.4 & ! red$1_2.4 & ! green$2_2.4 & red$2_2.4 &
+( green$1_3.5 <-> green$2_3.5) & ( red$1_3.5 <-> red$2_3.5) &
+! green$1_2.4 & ! red$1_2.4 & ! green$2_2.4 & red$2_2.4 &
+( green$1_4.3 <-> green$2_4.3) & ( red$1_4.3 <-> red$2_4.3) &
+! green$1_2.4 & ! red$1_2.4 & ! green$2_2.4 & red$2_2.4 &
+( green$1_4.5 <-> green$2_4.5) & ( red$1_4.5 <-> red$2_4.5) &
+! green$1_2.4 & ! red$1_2.4 & ! green$2_2.4 & red$2_2.4 &
+( green$1_0.3 <-> green$2_0.3) & ( red$1_0.3 <-> red$2_0.3) &
+! green$1_2.5 & ! red$1_2.5 & ! green$2_2.5 & red$2_2.5 &
+( green$1_0.4 <-> green$2_0.4) & ( red$1_0.4 <-> red$2_0.4) &
+! green$1_2.5 & ! red$1_2.5 & ! green$2_2.5 & red$2_2.5 &
+( green$1_1.3 <-> green$2_1.3) & ( red$1_1.3 <-> red$2_1.3) &
+! green$1_2.5 & ! red$1_2.5 & ! green$2_2.5 & red$2_2.5 &
+( green$1_1.4 <-> green$2_1.4) & ( red$1_1.4 <-> red$2_1.4) &
+! green$1_2.5 & ! red$1_2.5 & ! green$2_2.5 & red$2_2.5 &
+( green$1_3.3 <-> green$2_3.3) & ( red$1_3.3 <-> red$2_3.3) &
+! green$1_2.5 & ! red$1_2.5 & ! green$2_2.5 & red$2_2.5 &
+( green$1_3.4 <-> green$2_3.4) & ( red$1_3.4 <-> red$2_3.4) &
+! green$1_2.5 & ! red$1_2.5 & ! green$2_2.5 & red$2_2.5 &
+( green$1_4.3 <-> green$2_4.3) & ( red$1_4.3 <-> red$2_4.3) &
+! green$1_2.5 & ! red$1_2.5 & ! green$2_2.5 & red$2_2.5 &
+( green$1_4.4 <-> green$2_4.4) & ( red$1_4.4 <-> red$2_4.4) &
+! green$1_2.5 & ! red$1_2.5 & ! green$2_2.5 & red$2_2.5 &
+( green$1_0.5 <-> green$2_0.5) & ( red$1_0.5 <-> red$2_0.5) &
+! green$1_3.4 & ! red$1_3.4 & ! green$2_3.4 & red$2_3.4 &
+( green$1_1.5 <-> green$2_1.5) & ( red$1_1.5 <-> red$2_1.5) &
+! green$1_3.4 & ! red$1_3.4 & ! green$2_3.4 & red$2_3.4 &
+( green$1_2.5 <-> green$2_2.5) & ( red$1_2.5 <-> red$2_2.5) &
+! green$1_3.4 & ! red$1_3.4 & ! green$2_3.4 & red$2_3.4 &
+( green$1_4.5 <-> green$2_4.5) & ( red$1_4.5 <-> red$2_4.5) &
+! green$1_3.4 & ! red$1_3.4 & ! green$2_3.4 & red$2_3.4 &
+( green$1_0.4 <-> green$2_0.4) & ( red$1_0.4 <-> red$2_0.4) &
+! green$1_3.5 & ! red$1_3.5 & ! green$2_3.5 & red$2_3.5 &
+( green$1_1.4 <-> green$2_1.4) & ( red$1_1.4 <-> red$2_1.4) &
+! green$1_3.5 & ! red$1_3.5 & ! green$2_3.5 & red$2_3.5 &
+( green$1_2.4 <-> green$2_2.4) & ( red$1_2.4 <-> red$2_2.4) &
+! green$1_3.5 & ! red$1_3.5 & ! green$2_3.5 & red$2_3.5 &
+( green$1_4.4 <-> green$2_4.4) & ( red$1_4.4 <-> red$2_4.4) &
+! green$1_3.5 & ! red$1_3.5 & ! green$2_3.5 & red$2_3.5 &
+( green$3_1.2 <-> green$4_1.2) & ( red$3_1.2 <-> red$4_1.2) &
+! green$3_0.1 & ! red$3_0.1 & ! green$4_0.1 & red$4_0.1 &
+( green$3_1.3 <-> green$4_1.3) & ( red$3_1.3 <-> red$4_1.3) &
+! green$3_0.1 & ! red$3_0.1 & ! green$4_0.1 & red$4_0.1 &
+( green$3_1.4 <-> green$4_1.4) & ( red$3_1.4 <-> red$4_1.4) &
+! green$3_0.1 & ! red$3_0.1 & ! green$4_0.1 & red$4_0.1 &
+( green$3_1.5 <-> green$4_1.5) & ( red$3_1.5 <-> red$4_1.5) &
+! green$3_0.1 & ! red$3_0.1 & ! green$4_0.1 & red$4_0.1 &
+( green$3_2.2 <-> green$4_2.2) & ( red$3_2.2 <-> red$4_2.2) &
+! green$3_0.1 & ! red$3_0.1 & ! green$4_0.1 & red$4_0.1 &
+( green$3_2.3 <-> green$4_2.3) & ( red$3_2.3 <-> red$4_2.3) &
+! green$3_0.1 & ! red$3_0.1 & ! green$4_0.1 & red$4_0.1 &
+( green$3_2.4 <-> green$4_2.4) & ( red$3_2.4 <-> red$4_2.4) &
+! green$3_0.1 & ! red$3_0.1 & ! green$4_0.1 & red$4_0.1 &
+( green$3_2.5 <-> green$4_2.5) & ( red$3_2.5 <-> red$4_2.5) &
+! green$3_0.1 & ! red$3_0.1 & ! green$4_0.1 & red$4_0.1 &
+( green$3_3.2 <-> green$4_3.2) & ( red$3_3.2 <-> red$4_3.2) &
+! green$3_0.1 & ! red$3_0.1 & ! green$4_0.1 & red$4_0.1 &
+( green$3_3.3 <-> green$4_3.3) & ( red$3_3.3 <-> red$4_3.3) &
+! green$3_0.1 & ! red$3_0.1 & ! green$4_0.1 & red$4_0.1 &
+( green$3_3.4 <-> green$4_3.4) & ( red$3_3.4 <-> red$4_3.4) &
+! green$3_0.1 & ! red$3_0.1 & ! green$4_0.1 & red$4_0.1 &
+( green$3_3.5 <-> green$4_3.5) & ( red$3_3.5 <-> red$4_3.5) &
+! green$3_0.1 & ! red$3_0.1 & ! green$4_0.1 & red$4_0.1 &
+( green$3_4.2 <-> green$4_4.2) & ( red$3_4.2 <-> red$4_4.2) &
+! green$3_0.1 & ! red$3_0.1 & ! green$4_0.1 & red$4_0.1 &
+( green$3_4.3 <-> green$4_4.3) & ( red$3_4.3 <-> red$4_4.3) &
+! green$3_0.1 & ! red$3_0.1 & ! green$4_0.1 & red$4_0.1 &
+( green$3_4.4 <-> green$4_4.4) & ( red$3_4.4 <-> red$4_4.4) &
+! green$3_0.1 & ! red$3_0.1 & ! green$4_0.1 & red$4_0.1 &
+( green$3_4.5 <-> green$4_4.5) & ( red$3_4.5 <-> red$4_4.5) &
+! green$3_0.1 & ! red$3_0.1 & ! green$4_0.1 & red$4_0.1 &
+( green$3_1.1 <-> green$4_1.1) & ( red$3_1.1 <-> red$4_1.1) &
+! green$3_0.2 & ! red$3_0.2 & ! green$4_0.2 & red$4_0.2 &
+( green$3_1.3 <-> green$4_1.3) & ( red$3_1.3 <-> red$4_1.3) &
+! green$3_0.2 & ! red$3_0.2 & ! green$4_0.2 & red$4_0.2 &
+( green$3_1.4 <-> green$4_1.4) & ( red$3_1.4 <-> red$4_1.4) &
+! green$3_0.2 & ! red$3_0.2 & ! green$4_0.2 & red$4_0.2 &
+( green$3_1.5 <-> green$4_1.5) & ( red$3_1.5 <-> red$4_1.5) &
+! green$3_0.2 & ! red$3_0.2 & ! green$4_0.2 & red$4_0.2 &
+( green$3_2.1 <-> green$4_2.1) & ( red$3_2.1 <-> red$4_2.1) &
+! green$3_0.2 & ! red$3_0.2 & ! green$4_0.2 & red$4_0.2 &
+( green$3_2.3 <-> green$4_2.3) & ( red$3_2.3 <-> red$4_2.3) &
+! green$3_0.2 & ! red$3_0.2 & ! green$4_0.2 & red$4_0.2 &
+( green$3_2.4 <-> green$4_2.4) & ( red$3_2.4 <-> red$4_2.4) &
+! green$3_0.2 & ! red$3_0.2 & ! green$4_0.2 & red$4_0.2 &
+( green$3_2.5 <-> green$4_2.5) & ( red$3_2.5 <-> red$4_2.5) &
+! green$3_0.2 & ! red$3_0.2 & ! green$4_0.2 & red$4_0.2 &
+( green$3_3.1 <-> green$4_3.1) & ( red$3_3.1 <-> red$4_3.1) &
+! green$3_0.2 & ! red$3_0.2 & ! green$4_0.2 & red$4_0.2 &
+( green$3_3.3 <-> green$4_3.3) & ( red$3_3.3 <-> red$4_3.3) &
+! green$3_0.2 & ! red$3_0.2 & ! green$4_0.2 & red$4_0.2 &
+( green$3_3.4 <-> green$4_3.4) & ( red$3_3.4 <-> red$4_3.4) &
+! green$3_0.2 & ! red$3_0.2 & ! green$4_0.2 & red$4_0.2 &
+( green$3_3.5 <-> green$4_3.5) & ( red$3_3.5 <-> red$4_3.5) &
+! green$3_0.2 & ! red$3_0.2 & ! green$4_0.2 & red$4_0.2 &
+( green$3_4.1 <-> green$4_4.1) & ( red$3_4.1 <-> red$4_4.1) &
+! green$3_0.2 & ! red$3_0.2 & ! green$4_0.2 & red$4_0.2 &
+( green$3_4.3 <-> green$4_4.3) & ( red$3_4.3 <-> red$4_4.3) &
+! green$3_0.2 & ! red$3_0.2 & ! green$4_0.2 & red$4_0.2 &
+( green$3_4.4 <-> green$4_4.4) & ( red$3_4.4 <-> red$4_4.4) &
+! green$3_0.2 & ! red$3_0.2 & ! green$4_0.2 & red$4_0.2 &
+( green$3_4.5 <-> green$4_4.5) & ( red$3_4.5 <-> red$4_4.5) &
+! green$3_0.2 & ! red$3_0.2 & ! green$4_0.2 & red$4_0.2 &
+( green$3_1.1 <-> green$4_1.1) & ( red$3_1.1 <-> red$4_1.1) &
+! green$3_0.3 & ! red$3_0.3 & ! green$4_0.3 & red$4_0.3 &
+( green$3_1.2 <-> green$4_1.2) & ( red$3_1.2 <-> red$4_1.2) &
+! green$3_0.3 & ! red$3_0.3 & ! green$4_0.3 & red$4_0.3 &
+( green$3_1.4 <-> green$4_1.4) & ( red$3_1.4 <-> red$4_1.4) &
+! green$3_0.3 & ! red$3_0.3 & ! green$4_0.3 & red$4_0.3 &
+( green$3_1.5 <-> green$4_1.5) & ( red$3_1.5 <-> red$4_1.5) &
+! green$3_0.3 & ! red$3_0.3 & ! green$4_0.3 & red$4_0.3 &
+( green$3_2.1 <-> green$4_2.1) & ( red$3_2.1 <-> red$4_2.1) &
+! green$3_0.3 & ! red$3_0.3 & ! green$4_0.3 & red$4_0.3 &
+( green$3_2.2 <-> green$4_2.2) & ( red$3_2.2 <-> red$4_2.2) &
+! green$3_0.3 & ! red$3_0.3 & ! green$4_0.3 & red$4_0.3 &
+( green$3_2.4 <-> green$4_2.4) & ( red$3_2.4 <-> red$4_2.4) &
+! green$3_0.3 & ! red$3_0.3 & ! green$4_0.3 & red$4_0.3 &
+( green$3_2.5 <-> green$4_2.5) & ( red$3_2.5 <-> red$4_2.5) &
+! green$3_0.3 & ! red$3_0.3 & ! green$4_0.3 & red$4_0.3 &
+( green$3_3.1 <-> green$4_3.1) & ( red$3_3.1 <-> red$4_3.1) &
+! green$3_0.3 & ! red$3_0.3 & ! green$4_0.3 & red$4_0.3 &
+( green$3_3.2 <-> green$4_3.2) & ( red$3_3.2 <-> red$4_3.2) &
+! green$3_0.3 & ! red$3_0.3 & ! green$4_0.3 & red$4_0.3 &
+( green$3_3.4 <-> green$4_3.4) & ( red$3_3.4 <-> red$4_3.4) &
+! green$3_0.3 & ! red$3_0.3 & ! green$4_0.3 & red$4_0.3 &
+( green$3_3.5 <-> green$4_3.5) & ( red$3_3.5 <-> red$4_3.5) &
+! green$3_0.3 & ! red$3_0.3 & ! green$4_0.3 & red$4_0.3 &
+( green$3_4.1 <-> green$4_4.1) & ( red$3_4.1 <-> red$4_4.1) &
+! green$3_0.3 & ! red$3_0.3 & ! green$4_0.3 & red$4_0.3 &
+( green$3_4.2 <-> green$4_4.2) & ( red$3_4.2 <-> red$4_4.2) &
+! green$3_0.3 & ! red$3_0.3 & ! green$4_0.3 & red$4_0.3 &
+( green$3_4.4 <-> green$4_4.4) & ( red$3_4.4 <-> red$4_4.4) &
+! green$3_0.3 & ! red$3_0.3 & ! green$4_0.3 & red$4_0.3 &
+( green$3_4.5 <-> green$4_4.5) & ( red$3_4.5 <-> red$4_4.5) &
+! green$3_0.3 & ! red$3_0.3 & ! green$4_0.3 & red$4_0.3 &
+( green$3_1.1 <-> green$4_1.1) & ( red$3_1.1 <-> red$4_1.1) &
+! green$3_0.4 & ! red$3_0.4 & ! green$4_0.4 & red$4_0.4 &
+( green$3_1.2 <-> green$4_1.2) & ( red$3_1.2 <-> red$4_1.2) &
+! green$3_0.4 & ! red$3_0.4 & ! green$4_0.4 & red$4_0.4 &
+( green$3_1.3 <-> green$4_1.3) & ( red$3_1.3 <-> red$4_1.3) &
+! green$3_0.4 & ! red$3_0.4 & ! green$4_0.4 & red$4_0.4 &
+( green$3_1.5 <-> green$4_1.5) & ( red$3_1.5 <-> red$4_1.5) &
+! green$3_0.4 & ! red$3_0.4 & ! green$4_0.4 & red$4_0.4 &
+( green$3_2.1 <-> green$4_2.1) & ( red$3_2.1 <-> red$4_2.1) &
+! green$3_0.4 & ! red$3_0.4 & ! green$4_0.4 & red$4_0.4 &
+( green$3_2.2 <-> green$4_2.2) & ( red$3_2.2 <-> red$4_2.2) &
+! green$3_0.4 & ! red$3_0.4 & ! green$4_0.4 & red$4_0.4 &
+( green$3_2.3 <-> green$4_2.3) & ( red$3_2.3 <-> red$4_2.3) &
+! green$3_0.4 & ! red$3_0.4 & ! green$4_0.4 & red$4_0.4 &
+( green$3_2.5 <-> green$4_2.5) & ( red$3_2.5 <-> red$4_2.5) &
+! green$3_0.4 & ! red$3_0.4 & ! green$4_0.4 & red$4_0.4 &
+( green$3_3.1 <-> green$4_3.1) & ( red$3_3.1 <-> red$4_3.1) &
+! green$3_0.4 & ! red$3_0.4 & ! green$4_0.4 & red$4_0.4 &
+( green$3_3.2 <-> green$4_3.2) & ( red$3_3.2 <-> red$4_3.2) &
+! green$3_0.4 & ! red$3_0.4 & ! green$4_0.4 & red$4_0.4 &
+( green$3_3.3 <-> green$4_3.3) & ( red$3_3.3 <-> red$4_3.3) &
+! green$3_0.4 & ! red$3_0.4 & ! green$4_0.4 & red$4_0.4 &
+( green$3_3.5 <-> green$4_3.5) & ( red$3_3.5 <-> red$4_3.5) &
+! green$3_0.4 & ! red$3_0.4 & ! green$4_0.4 & red$4_0.4 &
+( green$3_4.1 <-> green$4_4.1) & ( red$3_4.1 <-> red$4_4.1) &
+! green$3_0.4 & ! red$3_0.4 & ! green$4_0.4 & red$4_0.4 &
+( green$3_4.2 <-> green$4_4.2) & ( red$3_4.2 <-> red$4_4.2) &
+! green$3_0.4 & ! red$3_0.4 & ! green$4_0.4 & red$4_0.4 &
+( green$3_4.3 <-> green$4_4.3) & ( red$3_4.3 <-> red$4_4.3) &
+! green$3_0.4 & ! red$3_0.4 & ! green$4_0.4 & red$4_0.4 &
+( green$3_4.5 <-> green$4_4.5) & ( red$3_4.5 <-> red$4_4.5) &
+! green$3_0.4 & ! red$3_0.4 & ! green$4_0.4 & red$4_0.4 &
+( green$3_1.1 <-> green$4_1.1) & ( red$3_1.1 <-> red$4_1.1) &
+! green$3_0.5 & ! red$3_0.5 & ! green$4_0.5 & red$4_0.5 &
+( green$3_1.2 <-> green$4_1.2) & ( red$3_1.2 <-> red$4_1.2) &
+! green$3_0.5 & ! red$3_0.5 & ! green$4_0.5 & red$4_0.5 &
+( green$3_1.3 <-> green$4_1.3) & ( red$3_1.3 <-> red$4_1.3) &
+! green$3_0.5 & ! red$3_0.5 & ! green$4_0.5 & red$4_0.5 &
+( green$3_1.4 <-> green$4_1.4) & ( red$3_1.4 <-> red$4_1.4) &
+! green$3_0.5 & ! red$3_0.5 & ! green$4_0.5 & red$4_0.5 &
+( green$3_2.1 <-> green$4_2.1) & ( red$3_2.1 <-> red$4_2.1) &
+! green$3_0.5 & ! red$3_0.5 & ! green$4_0.5 & red$4_0.5 &
+( green$3_2.2 <-> green$4_2.2) & ( red$3_2.2 <-> red$4_2.2) &
+! green$3_0.5 & ! red$3_0.5 & ! green$4_0.5 & red$4_0.5 &
+( green$3_2.3 <-> green$4_2.3) & ( red$3_2.3 <-> red$4_2.3) &
+! green$3_0.5 & ! red$3_0.5 & ! green$4_0.5 & red$4_0.5 &
+( green$3_2.4 <-> green$4_2.4) & ( red$3_2.4 <-> red$4_2.4) &
+! green$3_0.5 & ! red$3_0.5 & ! green$4_0.5 & red$4_0.5 &
+( green$3_3.1 <-> green$4_3.1) & ( red$3_3.1 <-> red$4_3.1) &
+! green$3_0.5 & ! red$3_0.5 & ! green$4_0.5 & red$4_0.5 &
+( green$3_3.2 <-> green$4_3.2) & ( red$3_3.2 <-> red$4_3.2) &
+! green$3_0.5 & ! red$3_0.5 & ! green$4_0.5 & red$4_0.5 &
+( green$3_3.3 <-> green$4_3.3) & ( red$3_3.3 <-> red$4_3.3) &
+! green$3_0.5 & ! red$3_0.5 & ! green$4_0.5 & red$4_0.5 &
+( green$3_3.4 <-> green$4_3.4) & ( red$3_3.4 <-> red$4_3.4) &
+! green$3_0.5 & ! red$3_0.5 & ! green$4_0.5 & red$4_0.5 &
+( green$3_4.1 <-> green$4_4.1) & ( red$3_4.1 <-> red$4_4.1) &
+! green$3_0.5 & ! red$3_0.5 & ! green$4_0.5 & red$4_0.5 &
+( green$3_4.2 <-> green$4_4.2) & ( red$3_4.2 <-> red$4_4.2) &
+! green$3_0.5 & ! red$3_0.5 & ! green$4_0.5 & red$4_0.5 &
+( green$3_4.3 <-> green$4_4.3) & ( red$3_4.3 <-> red$4_4.3) &
+! green$3_0.5 & ! red$3_0.5 & ! green$4_0.5 & red$4_0.5 &
+( green$3_4.4 <-> green$4_4.4) & ( red$3_4.4 <-> red$4_4.4) &
+! green$3_0.5 & ! red$3_0.5 & ! green$4_0.5 & red$4_0.5 &
+( green$3_0.3 <-> green$4_0.3) & ( red$3_0.3 <-> red$4_0.3) &
+! green$3_1.2 & ! red$3_1.2 & ! green$4_1.2 & red$4_1.2 &
+( green$3_0.4 <-> green$4_0.4) & ( red$3_0.4 <-> red$4_0.4) &
+! green$3_1.2 & ! red$3_1.2 & ! green$4_1.2 & red$4_1.2 &
+( green$3_0.5 <-> green$4_0.5) & ( red$3_0.5 <-> red$4_0.5) &
+! green$3_1.2 & ! red$3_1.2 & ! green$4_1.2 & red$4_1.2 &
+( green$3_2.3 <-> green$4_2.3) & ( red$3_2.3 <-> red$4_2.3) &
+! green$3_1.2 & ! red$3_1.2 & ! green$4_1.2 & red$4_1.2 &
+( green$3_2.4 <-> green$4_2.4) & ( red$3_2.4 <-> red$4_2.4) &
+! green$3_1.2 & ! red$3_1.2 & ! green$4_1.2 & red$4_1.2 &
+( green$3_2.5 <-> green$4_2.5) & ( red$3_2.5 <-> red$4_2.5) &
+! green$3_1.2 & ! red$3_1.2 & ! green$4_1.2 & red$4_1.2 &
+( green$3_3.3 <-> green$4_3.3) & ( red$3_3.3 <-> red$4_3.3) &
+! green$3_1.2 & ! red$3_1.2 & ! green$4_1.2 & red$4_1.2 &
+( green$3_3.4 <-> green$4_3.4) & ( red$3_3.4 <-> red$4_3.4) &
+! green$3_1.2 & ! red$3_1.2 & ! green$4_1.2 & red$4_1.2 &
+( green$3_3.5 <-> green$4_3.5) & ( red$3_3.5 <-> red$4_3.5) &
+! green$3_1.2 & ! red$3_1.2 & ! green$4_1.2 & red$4_1.2 &
+( green$3_4.3 <-> green$4_4.3) & ( red$3_4.3 <-> red$4_4.3) &
+! green$3_1.2 & ! red$3_1.2 & ! green$4_1.2 & red$4_1.2 &
+( green$3_4.4 <-> green$4_4.4) & ( red$3_4.4 <-> red$4_4.4) &
+! green$3_1.2 & ! red$3_1.2 & ! green$4_1.2 & red$4_1.2 &
+( green$3_4.5 <-> green$4_4.5) & ( red$3_4.5 <-> red$4_4.5) &
+! green$3_1.2 & ! red$3_1.2 & ! green$4_1.2 & red$4_1.2 &
+( green$3_0.2 <-> green$4_0.2) & ( red$3_0.2 <-> red$4_0.2) &
+! green$3_1.3 & ! red$3_1.3 & ! green$4_1.3 & red$4_1.3 &
+( green$3_0.4 <-> green$4_0.4) & ( red$3_0.4 <-> red$4_0.4) &
+! green$3_1.3 & ! red$3_1.3 & ! green$4_1.3 & red$4_1.3 &
+( green$3_0.5 <-> green$4_0.5) & ( red$3_0.5 <-> red$4_0.5) &
+! green$3_1.3 & ! red$3_1.3 & ! green$4_1.3 & red$4_1.3 &
+( green$3_2.2 <-> green$4_2.2) & ( red$3_2.2 <-> red$4_2.2) &
+! green$3_1.3 & ! red$3_1.3 & ! green$4_1.3 & red$4_1.3 &
+( green$3_2.4 <-> green$4_2.4) & ( red$3_2.4 <-> red$4_2.4) &
+! green$3_1.3 & ! red$3_1.3 & ! green$4_1.3 & red$4_1.3 &
+( green$3_2.5 <-> green$4_2.5) & ( red$3_2.5 <-> red$4_2.5) &
+! green$3_1.3 & ! red$3_1.3 & ! green$4_1.3 & red$4_1.3 &
+( green$3_3.2 <-> green$4_3.2) & ( red$3_3.2 <-> red$4_3.2) &
+! green$3_1.3 & ! red$3_1.3 & ! green$4_1.3 & red$4_1.3 &
+( green$3_3.4 <-> green$4_3.4) & ( red$3_3.4 <-> red$4_3.4) &
+! green$3_1.3 & ! red$3_1.3 & ! green$4_1.3 & red$4_1.3 &
+( green$3_3.5 <-> green$4_3.5) & ( red$3_3.5 <-> red$4_3.5) &
+! green$3_1.3 & ! red$3_1.3 & ! green$4_1.3 & red$4_1.3 &
+( green$3_4.2 <-> green$4_4.2) & ( red$3_4.2 <-> red$4_4.2) &
+! green$3_1.3 & ! red$3_1.3 & ! green$4_1.3 & red$4_1.3 &
+( green$3_4.4 <-> green$4_4.4) & ( red$3_4.4 <-> red$4_4.4) &
+! green$3_1.3 & ! red$3_1.3 & ! green$4_1.3 & red$4_1.3 &
+( green$3_4.5 <-> green$4_4.5) & ( red$3_4.5 <-> red$4_4.5) &
+! green$3_1.3 & ! red$3_1.3 & ! green$4_1.3 & red$4_1.3 &
+( green$3_0.2 <-> green$4_0.2) & ( red$3_0.2 <-> red$4_0.2) &
+! green$3_1.4 & ! red$3_1.4 & ! green$4_1.4 & red$4_1.4 &
+( green$3_0.3 <-> green$4_0.3) & ( red$3_0.3 <-> red$4_0.3) &
+! green$3_1.4 & ! red$3_1.4 & ! green$4_1.4 & red$4_1.4 &
+( green$3_0.5 <-> green$4_0.5) & ( red$3_0.5 <-> red$4_0.5) &
+! green$3_1.4 & ! red$3_1.4 & ! green$4_1.4 & red$4_1.4 &
+( green$3_2.2 <-> green$4_2.2) & ( red$3_2.2 <-> red$4_2.2) &
+! green$3_1.4 & ! red$3_1.4 & ! green$4_1.4 & red$4_1.4 &
+( green$3_2.3 <-> green$4_2.3) & ( red$3_2.3 <-> red$4_2.3) &
+! green$3_1.4 & ! red$3_1.4 & ! green$4_1.4 & red$4_1.4 &
+( green$3_2.5 <-> green$4_2.5) & ( red$3_2.5 <-> red$4_2.5) &
+! green$3_1.4 & ! red$3_1.4 & ! green$4_1.4 & red$4_1.4 &
+( green$3_3.2 <-> green$4_3.2) & ( red$3_3.2 <-> red$4_3.2) &
+! green$3_1.4 & ! red$3_1.4 & ! green$4_1.4 & red$4_1.4 &
+( green$3_3.3 <-> green$4_3.3) & ( red$3_3.3 <-> red$4_3.3) &
+! green$3_1.4 & ! red$3_1.4 & ! green$4_1.4 & red$4_1.4 &
+( green$3_3.5 <-> green$4_3.5) & ( red$3_3.5 <-> red$4_3.5) &
+! green$3_1.4 & ! red$3_1.4 & ! green$4_1.4 & red$4_1.4 &
+( green$3_4.2 <-> green$4_4.2) & ( red$3_4.2 <-> red$4_4.2) &
+! green$3_1.4 & ! red$3_1.4 & ! green$4_1.4 & red$4_1.4 &
+( green$3_4.3 <-> green$4_4.3) & ( red$3_4.3 <-> red$4_4.3) &
+! green$3_1.4 & ! red$3_1.4 & ! green$4_1.4 & red$4_1.4 &
+( green$3_4.5 <-> green$4_4.5) & ( red$3_4.5 <-> red$4_4.5) &
+! green$3_1.4 & ! red$3_1.4 & ! green$4_1.4 & red$4_1.4 &
+( green$3_0.2 <-> green$4_0.2) & ( red$3_0.2 <-> red$4_0.2) &
+! green$3_1.5 & ! red$3_1.5 & ! green$4_1.5 & red$4_1.5 &
+( green$3_0.3 <-> green$4_0.3) & ( red$3_0.3 <-> red$4_0.3) &
+! green$3_1.5 & ! red$3_1.5 & ! green$4_1.5 & red$4_1.5 &
+( green$3_0.4 <-> green$4_0.4) & ( red$3_0.4 <-> red$4_0.4) &
+! green$3_1.5 & ! red$3_1.5 & ! green$4_1.5 & red$4_1.5 &
+( green$3_2.2 <-> green$4_2.2) & ( red$3_2.2 <-> red$4_2.2) &
+! green$3_1.5 & ! red$3_1.5 & ! green$4_1.5 & red$4_1.5 &
+( green$3_2.3 <-> green$4_2.3) & ( red$3_2.3 <-> red$4_2.3) &
+! green$3_1.5 & ! red$3_1.5 & ! green$4_1.5 & red$4_1.5 &
+( green$3_2.4 <-> green$4_2.4) & ( red$3_2.4 <-> red$4_2.4) &
+! green$3_1.5 & ! red$3_1.5 & ! green$4_1.5 & red$4_1.5 &
+( green$3_3.2 <-> green$4_3.2) & ( red$3_3.2 <-> red$4_3.2) &
+! green$3_1.5 & ! red$3_1.5 & ! green$4_1.5 & red$4_1.5 &
+( green$3_3.3 <-> green$4_3.3) & ( red$3_3.3 <-> red$4_3.3) &
+! green$3_1.5 & ! red$3_1.5 & ! green$4_1.5 & red$4_1.5 &
+( green$3_3.4 <-> green$4_3.4) & ( red$3_3.4 <-> red$4_3.4) &
+! green$3_1.5 & ! red$3_1.5 & ! green$4_1.5 & red$4_1.5 &
+( green$3_4.2 <-> green$4_4.2) & ( red$3_4.2 <-> red$4_4.2) &
+! green$3_1.5 & ! red$3_1.5 & ! green$4_1.5 & red$4_1.5 &
+( green$3_4.3 <-> green$4_4.3) & ( red$3_4.3 <-> red$4_4.3) &
+! green$3_1.5 & ! red$3_1.5 & ! green$4_1.5 & red$4_1.5 &
+( green$3_4.4 <-> green$4_4.4) & ( red$3_4.4 <-> red$4_4.4) &
+! green$3_1.5 & ! red$3_1.5 & ! green$4_1.5 & red$4_1.5 &
+( green$3_0.4 <-> green$4_0.4) & ( red$3_0.4 <-> red$4_0.4) &
+! green$3_2.3 & ! red$3_2.3 & ! green$4_2.3 & red$4_2.3 &
+( green$3_0.5 <-> green$4_0.5) & ( red$3_0.5 <-> red$4_0.5) &
+! green$3_2.3 & ! red$3_2.3 & ! green$4_2.3 & red$4_2.3 &
+( green$3_1.4 <-> green$4_1.4) & ( red$3_1.4 <-> red$4_1.4) &
+! green$3_2.3 & ! red$3_2.3 & ! green$4_2.3 & red$4_2.3 &
+( green$3_1.5 <-> green$4_1.5) & ( red$3_1.5 <-> red$4_1.5) &
+! green$3_2.3 & ! red$3_2.3 & ! green$4_2.3 & red$4_2.3 &
+( green$3_3.4 <-> green$4_3.4) & ( red$3_3.4 <-> red$4_3.4) &
+! green$3_2.3 & ! red$3_2.3 & ! green$4_2.3 & red$4_2.3 &
+( green$3_3.5 <-> green$4_3.5) & ( red$3_3.5 <-> red$4_3.5) &
+! green$3_2.3 & ! red$3_2.3 & ! green$4_2.3 & red$4_2.3 &
+( green$3_4.4 <-> green$4_4.4) & ( red$3_4.4 <-> red$4_4.4) &
+! green$3_2.3 & ! red$3_2.3 & ! green$4_2.3 & red$4_2.3 &
+( green$3_4.5 <-> green$4_4.5) & ( red$3_4.5 <-> red$4_4.5) &
+! green$3_2.3 & ! red$3_2.3 & ! green$4_2.3 & red$4_2.3 &
+( green$3_0.3 <-> green$4_0.3) & ( red$3_0.3 <-> red$4_0.3) &
+! green$3_2.4 & ! red$3_2.4 & ! green$4_2.4 & red$4_2.4 &
+( green$3_0.5 <-> green$4_0.5) & ( red$3_0.5 <-> red$4_0.5) &
+! green$3_2.4 & ! red$3_2.4 & ! green$4_2.4 & red$4_2.4 &
+( green$3_1.3 <-> green$4_1.3) & ( red$3_1.3 <-> red$4_1.3) &
+! green$3_2.4 & ! red$3_2.4 & ! green$4_2.4 & red$4_2.4 &
+( green$3_1.5 <-> green$4_1.5) & ( red$3_1.5 <-> red$4_1.5) &
+! green$3_2.4 & ! red$3_2.4 & ! green$4_2.4 & red$4_2.4 &
+( green$3_3.3 <-> green$4_3.3) & ( red$3_3.3 <-> red$4_3.3) &
+! green$3_2.4 & ! red$3_2.4 & ! green$4_2.4 & red$4_2.4 &
+( green$3_3.5 <-> green$4_3.5) & ( red$3_3.5 <-> red$4_3.5) &
+! green$3_2.4 & ! red$3_2.4 & ! green$4_2.4 & red$4_2.4 &
+( green$3_4.3 <-> green$4_4.3) & ( red$3_4.3 <-> red$4_4.3) &
+! green$3_2.4 & ! red$3_2.4 & ! green$4_2.4 & red$4_2.4 &
+( green$3_4.5 <-> green$4_4.5) & ( red$3_4.5 <-> red$4_4.5) &
+! green$3_2.4 & ! red$3_2.4 & ! green$4_2.4 & red$4_2.4 &
+( green$3_0.3 <-> green$4_0.3) & ( red$3_0.3 <-> red$4_0.3) &
+! green$3_2.5 & ! red$3_2.5 & ! green$4_2.5 & red$4_2.5 &
+( green$3_0.4 <-> green$4_0.4) & ( red$3_0.4 <-> red$4_0.4) &
+! green$3_2.5 & ! red$3_2.5 & ! green$4_2.5 & red$4_2.5 &
+( green$3_1.3 <-> green$4_1.3) & ( red$3_1.3 <-> red$4_1.3) &
+! green$3_2.5 & ! red$3_2.5 & ! green$4_2.5 & red$4_2.5 &
+( green$3_1.4 <-> green$4_1.4) & ( red$3_1.4 <-> red$4_1.4) &
+! green$3_2.5 & ! red$3_2.5 & ! green$4_2.5 & red$4_2.5 &
+( green$3_3.3 <-> green$4_3.3) & ( red$3_3.3 <-> red$4_3.3) &
+! green$3_2.5 & ! red$3_2.5 & ! green$4_2.5 & red$4_2.5 &
+( green$3_3.4 <-> green$4_3.4) & ( red$3_3.4 <-> red$4_3.4) &
+! green$3_2.5 & ! red$3_2.5 & ! green$4_2.5 & red$4_2.5 &
+( green$3_4.3 <-> green$4_4.3) & ( red$3_4.3 <-> red$4_4.3) &
+! green$3_2.5 & ! red$3_2.5 & ! green$4_2.5 & red$4_2.5 &
+( green$3_4.4 <-> green$4_4.4) & ( red$3_4.4 <-> red$4_4.4) &
+! green$3_2.5 & ! red$3_2.5 & ! green$4_2.5 & red$4_2.5 &
+( green$3_0.5 <-> green$4_0.5) & ( red$3_0.5 <-> red$4_0.5) &
+! green$3_3.4 & ! red$3_3.4 & ! green$4_3.4 & red$4_3.4 &
+( green$3_1.5 <-> green$4_1.5) & ( red$3_1.5 <-> red$4_1.5) &
+! green$3_3.4 & ! red$3_3.4 & ! green$4_3.4 & red$4_3.4 &
+( green$3_2.5 <-> green$4_2.5) & ( red$3_2.5 <-> red$4_2.5) &
+! green$3_3.4 & ! red$3_3.4 & ! green$4_3.4 & red$4_3.4 &
+( green$3_4.5 <-> green$4_4.5) & ( red$3_4.5 <-> red$4_4.5) &
+! green$3_3.4 & ! red$3_3.4 & ! green$4_3.4 & red$4_3.4 &
+( green$3_0.4 <-> green$4_0.4) & ( red$3_0.4 <-> red$4_0.4) &
+! green$3_3.5 & ! red$3_3.5 & ! green$4_3.5 & red$4_3.5 &
+( green$3_1.4 <-> green$4_1.4) & ( red$3_1.4 <-> red$4_1.4) &
+! green$3_3.5 & ! red$3_3.5 & ! green$4_3.5 & red$4_3.5 &
+( green$3_2.4 <-> green$4_2.4) & ( red$3_2.4 <-> red$4_2.4) &
+! green$3_3.5 & ! red$3_3.5 & ! green$4_3.5 & red$4_3.5 &
+( green$3_4.4 <-> green$4_4.4) & ( red$3_4.4 <-> red$4_4.4) &
+! green$3_3.5 & ! red$3_3.5 & ! green$4_3.5 & red$4_3.5 &
+( green$5_1.2 <-> green$6_1.2) & ( red$5_1.2 <-> red$6_1.2) &
+! green$5_0.1 & ! red$5_0.1 & ! green$6_0.1 & red$6_0.1 &
+( green$5_1.3 <-> green$6_1.3) & ( red$5_1.3 <-> red$6_1.3) &
+! green$5_0.1 & ! red$5_0.1 & ! green$6_0.1 & red$6_0.1 &
+( green$5_1.4 <-> green$6_1.4) & ( red$5_1.4 <-> red$6_1.4) &
+! green$5_0.1 & ! red$5_0.1 & ! green$6_0.1 & red$6_0.1 &
+( green$5_1.5 <-> green$6_1.5) & ( red$5_1.5 <-> red$6_1.5) &
+! green$5_0.1 & ! red$5_0.1 & ! green$6_0.1 & red$6_0.1 &
+( green$5_2.2 <-> green$6_2.2) & ( red$5_2.2 <-> red$6_2.2) &
+! green$5_0.1 & ! red$5_0.1 & ! green$6_0.1 & red$6_0.1 &
+( green$5_2.3 <-> green$6_2.3) & ( red$5_2.3 <-> red$6_2.3) &
+! green$5_0.1 & ! red$5_0.1 & ! green$6_0.1 & red$6_0.1 &
+( green$5_2.4 <-> green$6_2.4) & ( red$5_2.4 <-> red$6_2.4) &
+! green$5_0.1 & ! red$5_0.1 & ! green$6_0.1 & red$6_0.1 &
+( green$5_2.5 <-> green$6_2.5) & ( red$5_2.5 <-> red$6_2.5) &
+! green$5_0.1 & ! red$5_0.1 & ! green$6_0.1 & red$6_0.1 &
+( green$5_3.2 <-> green$6_3.2) & ( red$5_3.2 <-> red$6_3.2) &
+! green$5_0.1 & ! red$5_0.1 & ! green$6_0.1 & red$6_0.1 &
+( green$5_3.3 <-> green$6_3.3) & ( red$5_3.3 <-> red$6_3.3) &
+! green$5_0.1 & ! red$5_0.1 & ! green$6_0.1 & red$6_0.1 &
+( green$5_3.4 <-> green$6_3.4) & ( red$5_3.4 <-> red$6_3.4) &
+! green$5_0.1 & ! red$5_0.1 & ! green$6_0.1 & red$6_0.1 &
+( green$5_3.5 <-> green$6_3.5) & ( red$5_3.5 <-> red$6_3.5) &
+! green$5_0.1 & ! red$5_0.1 & ! green$6_0.1 & red$6_0.1 &
+( green$5_4.2 <-> green$6_4.2) & ( red$5_4.2 <-> red$6_4.2) &
+! green$5_0.1 & ! red$5_0.1 & ! green$6_0.1 & red$6_0.1 &
+( green$5_4.3 <-> green$6_4.3) & ( red$5_4.3 <-> red$6_4.3) &
+! green$5_0.1 & ! red$5_0.1 & ! green$6_0.1 & red$6_0.1 &
+( green$5_4.4 <-> green$6_4.4) & ( red$5_4.4 <-> red$6_4.4) &
+! green$5_0.1 & ! red$5_0.1 & ! green$6_0.1 & red$6_0.1 &
+( green$5_4.5 <-> green$6_4.5) & ( red$5_4.5 <-> red$6_4.5) &
+! green$5_0.1 & ! red$5_0.1 & ! green$6_0.1 & red$6_0.1 &
+( green$5_1.1 <-> green$6_1.1) & ( red$5_1.1 <-> red$6_1.1) &
+! green$5_0.2 & ! red$5_0.2 & ! green$6_0.2 & red$6_0.2 &
+( green$5_1.3 <-> green$6_1.3) & ( red$5_1.3 <-> red$6_1.3) &
+! green$5_0.2 & ! red$5_0.2 & ! green$6_0.2 & red$6_0.2 &
+( green$5_1.4 <-> green$6_1.4) & ( red$5_1.4 <-> red$6_1.4) &
+! green$5_0.2 & ! red$5_0.2 & ! green$6_0.2 & red$6_0.2 &
+( green$5_1.5 <-> green$6_1.5) & ( red$5_1.5 <-> red$6_1.5) &
+! green$5_0.2 & ! red$5_0.2 & ! green$6_0.2 & red$6_0.2 &
+( green$5_2.1 <-> green$6_2.1) & ( red$5_2.1 <-> red$6_2.1) &
+! green$5_0.2 & ! red$5_0.2 & ! green$6_0.2 & red$6_0.2 &
+( green$5_2.3 <-> green$6_2.3) & ( red$5_2.3 <-> red$6_2.3) &
+! green$5_0.2 & ! red$5_0.2 & ! green$6_0.2 & red$6_0.2 &
+( green$5_2.4 <-> green$6_2.4) & ( red$5_2.4 <-> red$6_2.4) &
+! green$5_0.2 & ! red$5_0.2 & ! green$6_0.2 & red$6_0.2 &
+( green$5_2.5 <-> green$6_2.5) & ( red$5_2.5 <-> red$6_2.5) &
+! green$5_0.2 & ! red$5_0.2 & ! green$6_0.2 & red$6_0.2 &
+( green$5_3.1 <-> green$6_3.1) & ( red$5_3.1 <-> red$6_3.1) &
+! green$5_0.2 & ! red$5_0.2 & ! green$6_0.2 & red$6_0.2 &
+( green$5_3.3 <-> green$6_3.3) & ( red$5_3.3 <-> red$6_3.3) &
+! green$5_0.2 & ! red$5_0.2 & ! green$6_0.2 & red$6_0.2 &
+( green$5_3.4 <-> green$6_3.4) & ( red$5_3.4 <-> red$6_3.4) &
+! green$5_0.2 & ! red$5_0.2 & ! green$6_0.2 & red$6_0.2 &
+( green$5_3.5 <-> green$6_3.5) & ( red$5_3.5 <-> red$6_3.5) &
+! green$5_0.2 & ! red$5_0.2 & ! green$6_0.2 & red$6_0.2 &
+( green$5_4.1 <-> green$6_4.1) & ( red$5_4.1 <-> red$6_4.1) &
+! green$5_0.2 & ! red$5_0.2 & ! green$6_0.2 & red$6_0.2 &
+( green$5_4.3 <-> green$6_4.3) & ( red$5_4.3 <-> red$6_4.3) &
+! green$5_0.2 & ! red$5_0.2 & ! green$6_0.2 & red$6_0.2 &
+( green$5_4.4 <-> green$6_4.4) & ( red$5_4.4 <-> red$6_4.4) &
+! green$5_0.2 & ! red$5_0.2 & ! green$6_0.2 & red$6_0.2 &
+( green$5_4.5 <-> green$6_4.5) & ( red$5_4.5 <-> red$6_4.5) &
+! green$5_0.2 & ! red$5_0.2 & ! green$6_0.2 & red$6_0.2 &
+( green$5_1.1 <-> green$6_1.1) & ( red$5_1.1 <-> red$6_1.1) &
+! green$5_0.3 & ! red$5_0.3 & ! green$6_0.3 & red$6_0.3 &
+( green$5_1.2 <-> green$6_1.2) & ( red$5_1.2 <-> red$6_1.2) &
+! green$5_0.3 & ! red$5_0.3 & ! green$6_0.3 & red$6_0.3 &
+( green$5_1.4 <-> green$6_1.4) & ( red$5_1.4 <-> red$6_1.4) &
+! green$5_0.3 & ! red$5_0.3 & ! green$6_0.3 & red$6_0.3 &
+( green$5_1.5 <-> green$6_1.5) & ( red$5_1.5 <-> red$6_1.5) &
+! green$5_0.3 & ! red$5_0.3 & ! green$6_0.3 & red$6_0.3 &
+( green$5_2.1 <-> green$6_2.1) & ( red$5_2.1 <-> red$6_2.1) &
+! green$5_0.3 & ! red$5_0.3 & ! green$6_0.3 & red$6_0.3 &
+( green$5_2.2 <-> green$6_2.2) & ( red$5_2.2 <-> red$6_2.2) &
+! green$5_0.3 & ! red$5_0.3 & ! green$6_0.3 & red$6_0.3 &
+( green$5_2.4 <-> green$6_2.4) & ( red$5_2.4 <-> red$6_2.4) &
+! green$5_0.3 & ! red$5_0.3 & ! green$6_0.3 & red$6_0.3 &
+( green$5_2.5 <-> green$6_2.5) & ( red$5_2.5 <-> red$6_2.5) &
+! green$5_0.3 & ! red$5_0.3 & ! green$6_0.3 & red$6_0.3 &
+( green$5_3.1 <-> green$6_3.1) & ( red$5_3.1 <-> red$6_3.1) &
+! green$5_0.3 & ! red$5_0.3 & ! green$6_0.3 & red$6_0.3 &
+( green$5_3.2 <-> green$6_3.2) & ( red$5_3.2 <-> red$6_3.2) &
+! green$5_0.3 & ! red$5_0.3 & ! green$6_0.3 & red$6_0.3 &
+( green$5_3.4 <-> green$6_3.4) & ( red$5_3.4 <-> red$6_3.4) &
+! green$5_0.3 & ! red$5_0.3 & ! green$6_0.3 & red$6_0.3 &
+( green$5_3.5 <-> green$6_3.5) & ( red$5_3.5 <-> red$6_3.5) &
+! green$5_0.3 & ! red$5_0.3 & ! green$6_0.3 & red$6_0.3 &
+( green$5_4.1 <-> green$6_4.1) & ( red$5_4.1 <-> red$6_4.1) &
+! green$5_0.3 & ! red$5_0.3 & ! green$6_0.3 & red$6_0.3 &
+( green$5_4.2 <-> green$6_4.2) & ( red$5_4.2 <-> red$6_4.2) &
+! green$5_0.3 & ! red$5_0.3 & ! green$6_0.3 & red$6_0.3 &
+( green$5_4.4 <-> green$6_4.4) & ( red$5_4.4 <-> red$6_4.4) &
+! green$5_0.3 & ! red$5_0.3 & ! green$6_0.3 & red$6_0.3 &
+( green$5_4.5 <-> green$6_4.5) & ( red$5_4.5 <-> red$6_4.5) &
+! green$5_0.3 & ! red$5_0.3 & ! green$6_0.3 & red$6_0.3 &
+( green$5_1.1 <-> green$6_1.1) & ( red$5_1.1 <-> red$6_1.1) &
+! green$5_0.4 & ! red$5_0.4 & ! green$6_0.4 & red$6_0.4 &
+( green$5_1.2 <-> green$6_1.2) & ( red$5_1.2 <-> red$6_1.2) &
+! green$5_0.4 & ! red$5_0.4 & ! green$6_0.4 & red$6_0.4 &
+( green$5_1.3 <-> green$6_1.3) & ( red$5_1.3 <-> red$6_1.3) &
+! green$5_0.4 & ! red$5_0.4 & ! green$6_0.4 & red$6_0.4 &
+( green$5_1.5 <-> green$6_1.5) & ( red$5_1.5 <-> red$6_1.5) &
+! green$5_0.4 & ! red$5_0.4 & ! green$6_0.4 & red$6_0.4 &
+( green$5_2.1 <-> green$6_2.1) & ( red$5_2.1 <-> red$6_2.1) &
+! green$5_0.4 & ! red$5_0.4 & ! green$6_0.4 & red$6_0.4 &
+( green$5_2.2 <-> green$6_2.2) & ( red$5_2.2 <-> red$6_2.2) &
+! green$5_0.4 & ! red$5_0.4 & ! green$6_0.4 & red$6_0.4 &
+( green$5_2.3 <-> green$6_2.3) & ( red$5_2.3 <-> red$6_2.3) &
+! green$5_0.4 & ! red$5_0.4 & ! green$6_0.4 & red$6_0.4 &
+( green$5_2.5 <-> green$6_2.5) & ( red$5_2.5 <-> red$6_2.5) &
+! green$5_0.4 & ! red$5_0.4 & ! green$6_0.4 & red$6_0.4 &
+( green$5_3.1 <-> green$6_3.1) & ( red$5_3.1 <-> red$6_3.1) &
+! green$5_0.4 & ! red$5_0.4 & ! green$6_0.4 & red$6_0.4 &
+( green$5_3.2 <-> green$6_3.2) & ( red$5_3.2 <-> red$6_3.2) &
+! green$5_0.4 & ! red$5_0.4 & ! green$6_0.4 & red$6_0.4 &
+( green$5_3.3 <-> green$6_3.3) & ( red$5_3.3 <-> red$6_3.3) &
+! green$5_0.4 & ! red$5_0.4 & ! green$6_0.4 & red$6_0.4 &
+( green$5_3.5 <-> green$6_3.5) & ( red$5_3.5 <-> red$6_3.5) &
+! green$5_0.4 & ! red$5_0.4 & ! green$6_0.4 & red$6_0.4 &
+( green$5_4.1 <-> green$6_4.1) & ( red$5_4.1 <-> red$6_4.1) &
+! green$5_0.4 & ! red$5_0.4 & ! green$6_0.4 & red$6_0.4 &
+( green$5_4.2 <-> green$6_4.2) & ( red$5_4.2 <-> red$6_4.2) &
+! green$5_0.4 & ! red$5_0.4 & ! green$6_0.4 & red$6_0.4 &
+( green$5_4.3 <-> green$6_4.3) & ( red$5_4.3 <-> red$6_4.3) &
+! green$5_0.4 & ! red$5_0.4 & ! green$6_0.4 & red$6_0.4 &
+( green$5_4.5 <-> green$6_4.5) & ( red$5_4.5 <-> red$6_4.5) &
+! green$5_0.4 & ! red$5_0.4 & ! green$6_0.4 & red$6_0.4 &
+( green$5_1.1 <-> green$6_1.1) & ( red$5_1.1 <-> red$6_1.1) &
+! green$5_0.5 & ! red$5_0.5 & ! green$6_0.5 & red$6_0.5 &
+( green$5_1.2 <-> green$6_1.2) & ( red$5_1.2 <-> red$6_1.2) &
+! green$5_0.5 & ! red$5_0.5 & ! green$6_0.5 & red$6_0.5 &
+( green$5_1.3 <-> green$6_1.3) & ( red$5_1.3 <-> red$6_1.3) &
+! green$5_0.5 & ! red$5_0.5 & ! green$6_0.5 & red$6_0.5 &
+( green$5_1.4 <-> green$6_1.4) & ( red$5_1.4 <-> red$6_1.4) &
+! green$5_0.5 & ! red$5_0.5 & ! green$6_0.5 & red$6_0.5 &
+( green$5_2.1 <-> green$6_2.1) & ( red$5_2.1 <-> red$6_2.1) &
+! green$5_0.5 & ! red$5_0.5 & ! green$6_0.5 & red$6_0.5 &
+( green$5_2.2 <-> green$6_2.2) & ( red$5_2.2 <-> red$6_2.2) &
+! green$5_0.5 & ! red$5_0.5 & ! green$6_0.5 & red$6_0.5 &
+( green$5_2.3 <-> green$6_2.3) & ( red$5_2.3 <-> red$6_2.3) &
+! green$5_0.5 & ! red$5_0.5 & ! green$6_0.5 & red$6_0.5 &
+( green$5_2.4 <-> green$6_2.4) & ( red$5_2.4 <-> red$6_2.4) &
+! green$5_0.5 & ! red$5_0.5 & ! green$6_0.5 & red$6_0.5 &
+( green$5_3.1 <-> green$6_3.1) & ( red$5_3.1 <-> red$6_3.1) &
+! green$5_0.5 & ! red$5_0.5 & ! green$6_0.5 & red$6_0.5 &
+( green$5_3.2 <-> green$6_3.2) & ( red$5_3.2 <-> red$6_3.2) &
+! green$5_0.5 & ! red$5_0.5 & ! green$6_0.5 & red$6_0.5 &
+( green$5_3.3 <-> green$6_3.3) & ( red$5_3.3 <-> red$6_3.3) &
+! green$5_0.5 & ! red$5_0.5 & ! green$6_0.5 & red$6_0.5 &
+( green$5_3.4 <-> green$6_3.4) & ( red$5_3.4 <-> red$6_3.4) &
+! green$5_0.5 & ! red$5_0.5 & ! green$6_0.5 & red$6_0.5 &
+( green$5_4.1 <-> green$6_4.1) & ( red$5_4.1 <-> red$6_4.1) &
+! green$5_0.5 & ! red$5_0.5 & ! green$6_0.5 & red$6_0.5 &
+( green$5_4.2 <-> green$6_4.2) & ( red$5_4.2 <-> red$6_4.2) &
+! green$5_0.5 & ! red$5_0.5 & ! green$6_0.5 & red$6_0.5 &
+( green$5_4.3 <-> green$6_4.3) & ( red$5_4.3 <-> red$6_4.3) &
+! green$5_0.5 & ! red$5_0.5 & ! green$6_0.5 & red$6_0.5 &
+( green$5_4.4 <-> green$6_4.4) & ( red$5_4.4 <-> red$6_4.4) &
+! green$5_0.5 & ! red$5_0.5 & ! green$6_0.5 & red$6_0.5 &
+( green$5_0.3 <-> green$6_0.3) & ( red$5_0.3 <-> red$6_0.3) &
+! green$5_1.2 & ! red$5_1.2 & ! green$6_1.2 & red$6_1.2 &
+( green$5_0.4 <-> green$6_0.4) & ( red$5_0.4 <-> red$6_0.4) &
+! green$5_1.2 & ! red$5_1.2 & ! green$6_1.2 & red$6_1.2 &
+( green$5_0.5 <-> green$6_0.5) & ( red$5_0.5 <-> red$6_0.5) &
+! green$5_1.2 & ! red$5_1.2 & ! green$6_1.2 & red$6_1.2 &
+( green$5_2.3 <-> green$6_2.3) & ( red$5_2.3 <-> red$6_2.3) &
+! green$5_1.2 & ! red$5_1.2 & ! green$6_1.2 & red$6_1.2 &
+( green$5_2.4 <-> green$6_2.4) & ( red$5_2.4 <-> red$6_2.4) &
+! green$5_1.2 & ! red$5_1.2 & ! green$6_1.2 & red$6_1.2 &
+( green$5_2.5 <-> green$6_2.5) & ( red$5_2.5 <-> red$6_2.5) &
+! green$5_1.2 & ! red$5_1.2 & ! green$6_1.2 & red$6_1.2 &
+( green$5_3.3 <-> green$6_3.3) & ( red$5_3.3 <-> red$6_3.3) &
+! green$5_1.2 & ! red$5_1.2 & ! green$6_1.2 & red$6_1.2 &
+( green$5_3.4 <-> green$6_3.4) & ( red$5_3.4 <-> red$6_3.4) &
+! green$5_1.2 & ! red$5_1.2 & ! green$6_1.2 & red$6_1.2 &
+( green$5_3.5 <-> green$6_3.5) & ( red$5_3.5 <-> red$6_3.5) &
+! green$5_1.2 & ! red$5_1.2 & ! green$6_1.2 & red$6_1.2 &
+( green$5_4.3 <-> green$6_4.3) & ( red$5_4.3 <-> red$6_4.3) &
+! green$5_1.2 & ! red$5_1.2 & ! green$6_1.2 & red$6_1.2 &
+( green$5_4.4 <-> green$6_4.4) & ( red$5_4.4 <-> red$6_4.4) &
+! green$5_1.2 & ! red$5_1.2 & ! green$6_1.2 & red$6_1.2 &
+( green$5_4.5 <-> green$6_4.5) & ( red$5_4.5 <-> red$6_4.5) &
+! green$5_1.2 & ! red$5_1.2 & ! green$6_1.2 & red$6_1.2 &
+( green$5_0.2 <-> green$6_0.2) & ( red$5_0.2 <-> red$6_0.2) &
+! green$5_1.3 & ! red$5_1.3 & ! green$6_1.3 & red$6_1.3 &
+( green$5_0.4 <-> green$6_0.4) & ( red$5_0.4 <-> red$6_0.4) &
+! green$5_1.3 & ! red$5_1.3 & ! green$6_1.3 & red$6_1.3 &
+( green$5_0.5 <-> green$6_0.5) & ( red$5_0.5 <-> red$6_0.5) &
+! green$5_1.3 & ! red$5_1.3 & ! green$6_1.3 & red$6_1.3 &
+( green$5_2.2 <-> green$6_2.2) & ( red$5_2.2 <-> red$6_2.2) &
+! green$5_1.3 & ! red$5_1.3 & ! green$6_1.3 & red$6_1.3 &
+( green$5_2.4 <-> green$6_2.4) & ( red$5_2.4 <-> red$6_2.4) &
+! green$5_1.3 & ! red$5_1.3 & ! green$6_1.3 & red$6_1.3 &
+( green$5_2.5 <-> green$6_2.5) & ( red$5_2.5 <-> red$6_2.5) &
+! green$5_1.3 & ! red$5_1.3 & ! green$6_1.3 & red$6_1.3 &
+( green$5_3.2 <-> green$6_3.2) & ( red$5_3.2 <-> red$6_3.2) &
+! green$5_1.3 & ! red$5_1.3 & ! green$6_1.3 & red$6_1.3 &
+( green$5_3.4 <-> green$6_3.4) & ( red$5_3.4 <-> red$6_3.4) &
+! green$5_1.3 & ! red$5_1.3 & ! green$6_1.3 & red$6_1.3 &
+( green$5_3.5 <-> green$6_3.5) & ( red$5_3.5 <-> red$6_3.5) &
+! green$5_1.3 & ! red$5_1.3 & ! green$6_1.3 & red$6_1.3 &
+( green$5_4.2 <-> green$6_4.2) & ( red$5_4.2 <-> red$6_4.2) &
+! green$5_1.3 & ! red$5_1.3 & ! green$6_1.3 & red$6_1.3 &
+( green$5_4.4 <-> green$6_4.4) & ( red$5_4.4 <-> red$6_4.4) &
+! green$5_1.3 & ! red$5_1.3 & ! green$6_1.3 & red$6_1.3 &
+( green$5_4.5 <-> green$6_4.5) & ( red$5_4.5 <-> red$6_4.5) &
+! green$5_1.3 & ! red$5_1.3 & ! green$6_1.3 & red$6_1.3 &
+( green$5_0.2 <-> green$6_0.2) & ( red$5_0.2 <-> red$6_0.2) &
+! green$5_1.4 & ! red$5_1.4 & ! green$6_1.4 & red$6_1.4 &
+( green$5_0.3 <-> green$6_0.3) & ( red$5_0.3 <-> red$6_0.3) &
+! green$5_1.4 & ! red$5_1.4 & ! green$6_1.4 & red$6_1.4 &
+( green$5_0.5 <-> green$6_0.5) & ( red$5_0.5 <-> red$6_0.5) &
+! green$5_1.4 & ! red$5_1.4 & ! green$6_1.4 & red$6_1.4 &
+( green$5_2.2 <-> green$6_2.2) & ( red$5_2.2 <-> red$6_2.2) &
+! green$5_1.4 & ! red$5_1.4 & ! green$6_1.4 & red$6_1.4 &
+( green$5_2.3 <-> green$6_2.3) & ( red$5_2.3 <-> red$6_2.3) &
+! green$5_1.4 & ! red$5_1.4 & ! green$6_1.4 & red$6_1.4 &
+( green$5_2.5 <-> green$6_2.5) & ( red$5_2.5 <-> red$6_2.5) &
+! green$5_1.4 & ! red$5_1.4 & ! green$6_1.4 & red$6_1.4 &
+( green$5_3.2 <-> green$6_3.2) & ( red$5_3.2 <-> red$6_3.2) &
+! green$5_1.4 & ! red$5_1.4 & ! green$6_1.4 & red$6_1.4 &
+( green$5_3.3 <-> green$6_3.3) & ( red$5_3.3 <-> red$6_3.3) &
+! green$5_1.4 & ! red$5_1.4 & ! green$6_1.4 & red$6_1.4 &
+( green$5_3.5 <-> green$6_3.5) & ( red$5_3.5 <-> red$6_3.5) &
+! green$5_1.4 & ! red$5_1.4 & ! green$6_1.4 & red$6_1.4 &
+( green$5_4.2 <-> green$6_4.2) & ( red$5_4.2 <-> red$6_4.2) &
+! green$5_1.4 & ! red$5_1.4 & ! green$6_1.4 & red$6_1.4 &
+( green$5_4.3 <-> green$6_4.3) & ( red$5_4.3 <-> red$6_4.3) &
+! green$5_1.4 & ! red$5_1.4 & ! green$6_1.4 & red$6_1.4 &
+( green$5_4.5 <-> green$6_4.5) & ( red$5_4.5 <-> red$6_4.5) &
+! green$5_1.4 & ! red$5_1.4 & ! green$6_1.4 & red$6_1.4 &
+( green$5_0.2 <-> green$6_0.2) & ( red$5_0.2 <-> red$6_0.2) &
+! green$5_1.5 & ! red$5_1.5 & ! green$6_1.5 & red$6_1.5 &
+( green$5_0.3 <-> green$6_0.3) & ( red$5_0.3 <-> red$6_0.3) &
+! green$5_1.5 & ! red$5_1.5 & ! green$6_1.5 & red$6_1.5 &
+( green$5_0.4 <-> green$6_0.4) & ( red$5_0.4 <-> red$6_0.4) &
+! green$5_1.5 & ! red$5_1.5 & ! green$6_1.5 & red$6_1.5 &
+( green$5_2.2 <-> green$6_2.2) & ( red$5_2.2 <-> red$6_2.2) &
+! green$5_1.5 & ! red$5_1.5 & ! green$6_1.5 & red$6_1.5 &
+( green$5_2.3 <-> green$6_2.3) & ( red$5_2.3 <-> red$6_2.3) &
+! green$5_1.5 & ! red$5_1.5 & ! green$6_1.5 & red$6_1.5 &
+( green$5_2.4 <-> green$6_2.4) & ( red$5_2.4 <-> red$6_2.4) &
+! green$5_1.5 & ! red$5_1.5 & ! green$6_1.5 & red$6_1.5 &
+( green$5_3.2 <-> green$6_3.2) & ( red$5_3.2 <-> red$6_3.2) &
+! green$5_1.5 & ! red$5_1.5 & ! green$6_1.5 & red$6_1.5 &
+( green$5_3.3 <-> green$6_3.3) & ( red$5_3.3 <-> red$6_3.3) &
+! green$5_1.5 & ! red$5_1.5 & ! green$6_1.5 & red$6_1.5 &
+( green$5_3.4 <-> green$6_3.4) & ( red$5_3.4 <-> red$6_3.4) &
+! green$5_1.5 & ! red$5_1.5 & ! green$6_1.5 & red$6_1.5 &
+( green$5_4.2 <-> green$6_4.2) & ( red$5_4.2 <-> red$6_4.2) &
+! green$5_1.5 & ! red$5_1.5 & ! green$6_1.5 & red$6_1.5 &
+( green$5_4.3 <-> green$6_4.3) & ( red$5_4.3 <-> red$6_4.3) &
+! green$5_1.5 & ! red$5_1.5 & ! green$6_1.5 & red$6_1.5 &
+( green$5_4.4 <-> green$6_4.4) & ( red$5_4.4 <-> red$6_4.4) &
+! green$5_1.5 & ! red$5_1.5 & ! green$6_1.5 & red$6_1.5 &
+( green$5_0.4 <-> green$6_0.4) & ( red$5_0.4 <-> red$6_0.4) &
+! green$5_2.3 & ! red$5_2.3 & ! green$6_2.3 & red$6_2.3 &
+( green$5_0.5 <-> green$6_0.5) & ( red$5_0.5 <-> red$6_0.5) &
+! green$5_2.3 & ! red$5_2.3 & ! green$6_2.3 & red$6_2.3 &
+( green$5_1.4 <-> green$6_1.4) & ( red$5_1.4 <-> red$6_1.4) &
+! green$5_2.3 & ! red$5_2.3 & ! green$6_2.3 & red$6_2.3 &
+( green$5_1.5 <-> green$6_1.5) & ( red$5_1.5 <-> red$6_1.5) &
+! green$5_2.3 & ! red$5_2.3 & ! green$6_2.3 & red$6_2.3 &
+( green$5_3.4 <-> green$6_3.4) & ( red$5_3.4 <-> red$6_3.4) &
+! green$5_2.3 & ! red$5_2.3 & ! green$6_2.3 & red$6_2.3 &
+( green$5_3.5 <-> green$6_3.5) & ( red$5_3.5 <-> red$6_3.5) &
+! green$5_2.3 & ! red$5_2.3 & ! green$6_2.3 & red$6_2.3 &
+( green$5_4.4 <-> green$6_4.4) & ( red$5_4.4 <-> red$6_4.4) &
+! green$5_2.3 & ! red$5_2.3 & ! green$6_2.3 & red$6_2.3 &
+( green$5_4.5 <-> green$6_4.5) & ( red$5_4.5 <-> red$6_4.5) &
+! green$5_2.3 & ! red$5_2.3 & ! green$6_2.3 & red$6_2.3 &
+( green$5_0.3 <-> green$6_0.3) & ( red$5_0.3 <-> red$6_0.3) &
+! green$5_2.4 & ! red$5_2.4 & ! green$6_2.4 & red$6_2.4 &
+( green$5_0.5 <-> green$6_0.5) & ( red$5_0.5 <-> red$6_0.5) &
+! green$5_2.4 & ! red$5_2.4 & ! green$6_2.4 & red$6_2.4 &
+( green$5_1.3 <-> green$6_1.3) & ( red$5_1.3 <-> red$6_1.3) &
+! green$5_2.4 & ! red$5_2.4 & ! green$6_2.4 & red$6_2.4 &
+( green$5_1.5 <-> green$6_1.5) & ( red$5_1.5 <-> red$6_1.5) &
+! green$5_2.4 & ! red$5_2.4 & ! green$6_2.4 & red$6_2.4 &
+( green$5_3.3 <-> green$6_3.3) & ( red$5_3.3 <-> red$6_3.3) &
+! green$5_2.4 & ! red$5_2.4 & ! green$6_2.4 & red$6_2.4 &
+( green$5_3.5 <-> green$6_3.5) & ( red$5_3.5 <-> red$6_3.5) &
+! green$5_2.4 & ! red$5_2.4 & ! green$6_2.4 & red$6_2.4 &
+( green$5_4.3 <-> green$6_4.3) & ( red$5_4.3 <-> red$6_4.3) &
+! green$5_2.4 & ! red$5_2.4 & ! green$6_2.4 & red$6_2.4 &
+( green$5_4.5 <-> green$6_4.5) & ( red$5_4.5 <-> red$6_4.5) &
+! green$5_2.4 & ! red$5_2.4 & ! green$6_2.4 & red$6_2.4 &
+( green$5_0.3 <-> green$6_0.3) & ( red$5_0.3 <-> red$6_0.3) &
+! green$5_2.5 & ! red$5_2.5 & ! green$6_2.5 & red$6_2.5 &
+( green$5_0.4 <-> green$6_0.4) & ( red$5_0.4 <-> red$6_0.4) &
+! green$5_2.5 & ! red$5_2.5 & ! green$6_2.5 & red$6_2.5 &
+( green$5_1.3 <-> green$6_1.3) & ( red$5_1.3 <-> red$6_1.3) &
+! green$5_2.5 & ! red$5_2.5 & ! green$6_2.5 & red$6_2.5 &
+( green$5_1.4 <-> green$6_1.4) & ( red$5_1.4 <-> red$6_1.4) &
+! green$5_2.5 & ! red$5_2.5 & ! green$6_2.5 & red$6_2.5 &
+( green$5_3.3 <-> green$6_3.3) & ( red$5_3.3 <-> red$6_3.3) &
+! green$5_2.5 & ! red$5_2.5 & ! green$6_2.5 & red$6_2.5 &
+( green$5_3.4 <-> green$6_3.4) & ( red$5_3.4 <-> red$6_3.4) &
+! green$5_2.5 & ! red$5_2.5 & ! green$6_2.5 & red$6_2.5 &
+( green$5_4.3 <-> green$6_4.3) & ( red$5_4.3 <-> red$6_4.3) &
+! green$5_2.5 & ! red$5_2.5 & ! green$6_2.5 & red$6_2.5 &
+( green$5_4.4 <-> green$6_4.4) & ( red$5_4.4 <-> red$6_4.4) &
+! green$5_2.5 & ! red$5_2.5 & ! green$6_2.5 & red$6_2.5 &
+( green$5_0.5 <-> green$6_0.5) & ( red$5_0.5 <-> red$6_0.5) &
+! green$5_3.4 & ! red$5_3.4 & ! green$6_3.4 & red$6_3.4 &
+( green$5_1.5 <-> green$6_1.5) & ( red$5_1.5 <-> red$6_1.5) &
+! green$5_3.4 & ! red$5_3.4 & ! green$6_3.4 & red$6_3.4 &
+( green$5_2.5 <-> green$6_2.5) & ( red$5_2.5 <-> red$6_2.5) &
+! green$5_3.4 & ! red$5_3.4 & ! green$6_3.4 & red$6_3.4 &
+( green$5_4.5 <-> green$6_4.5) & ( red$5_4.5 <-> red$6_4.5) &
+! green$5_3.4 & ! red$5_3.4 & ! green$6_3.4 & red$6_3.4 &
+( green$5_0.4 <-> green$6_0.4) & ( red$5_0.4 <-> red$6_0.4) &
+! green$5_3.5 & ! red$5_3.5 & ! green$6_3.5 & red$6_3.5 &
+( green$5_1.4 <-> green$6_1.4) & ( red$5_1.4 <-> red$6_1.4) &
+! green$5_3.5 & ! red$5_3.5 & ! green$6_3.5 & red$6_3.5 &
+( green$5_2.4 <-> green$6_2.4) & ( red$5_2.4 <-> red$6_2.4) &
+! green$5_3.5 & ! red$5_3.5 & ! green$6_3.5 & red$6_3.5 &
+( green$5_4.4 <-> green$6_4.4) & ( red$5_4.4 <-> red$6_4.4) &
+! green$5_3.5 & ! red$5_3.5 & ! green$6_3.5 & red$6_3.5 &
+( green$7_1.2 <-> green$8_1.2) & ( red$7_1.2 <-> red$8_1.2) &
+! green$7_0.1 & ! red$7_0.1 & ! green$8_0.1 & red$8_0.1 &
+( green$7_1.3 <-> green$8_1.3) & ( red$7_1.3 <-> red$8_1.3) &
+! green$7_0.1 & ! red$7_0.1 & ! green$8_0.1 & red$8_0.1 &
+( green$7_1.4 <-> green$8_1.4) & ( red$7_1.4 <-> red$8_1.4) &
+! green$7_0.1 & ! red$7_0.1 & ! green$8_0.1 & red$8_0.1 &
+( green$7_1.5 <-> green$8_1.5) & ( red$7_1.5 <-> red$8_1.5) &
+! green$7_0.1 & ! red$7_0.1 & ! green$8_0.1 & red$8_0.1 &
+( green$7_2.2 <-> green$8_2.2) & ( red$7_2.2 <-> red$8_2.2) &
+! green$7_0.1 & ! red$7_0.1 & ! green$8_0.1 & red$8_0.1 &
+( green$7_2.3 <-> green$8_2.3) & ( red$7_2.3 <-> red$8_2.3) &
+! green$7_0.1 & ! red$7_0.1 & ! green$8_0.1 & red$8_0.1 &
+( green$7_2.4 <-> green$8_2.4) & ( red$7_2.4 <-> red$8_2.4) &
+! green$7_0.1 & ! red$7_0.1 & ! green$8_0.1 & red$8_0.1 &
+( green$7_2.5 <-> green$8_2.5) & ( red$7_2.5 <-> red$8_2.5) &
+! green$7_0.1 & ! red$7_0.1 & ! green$8_0.1 & red$8_0.1 &
+( green$7_3.2 <-> green$8_3.2) & ( red$7_3.2 <-> red$8_3.2) &
+! green$7_0.1 & ! red$7_0.1 & ! green$8_0.1 & red$8_0.1 &
+( green$7_3.3 <-> green$8_3.3) & ( red$7_3.3 <-> red$8_3.3) &
+! green$7_0.1 & ! red$7_0.1 & ! green$8_0.1 & red$8_0.1 &
+( green$7_3.4 <-> green$8_3.4) & ( red$7_3.4 <-> red$8_3.4) &
+! green$7_0.1 & ! red$7_0.1 & ! green$8_0.1 & red$8_0.1 &
+( green$7_3.5 <-> green$8_3.5) & ( red$7_3.5 <-> red$8_3.5) &
+! green$7_0.1 & ! red$7_0.1 & ! green$8_0.1 & red$8_0.1 &
+( green$7_4.2 <-> green$8_4.2) & ( red$7_4.2 <-> red$8_4.2) &
+! green$7_0.1 & ! red$7_0.1 & ! green$8_0.1 & red$8_0.1 &
+( green$7_4.3 <-> green$8_4.3) & ( red$7_4.3 <-> red$8_4.3) &
+! green$7_0.1 & ! red$7_0.1 & ! green$8_0.1 & red$8_0.1 &
+( green$7_4.4 <-> green$8_4.4) & ( red$7_4.4 <-> red$8_4.4) &
+! green$7_0.1 & ! red$7_0.1 & ! green$8_0.1 & red$8_0.1 &
+( green$7_4.5 <-> green$8_4.5) & ( red$7_4.5 <-> red$8_4.5) &
+! green$7_0.1 & ! red$7_0.1 & ! green$8_0.1 & red$8_0.1 &
+( green$7_1.1 <-> green$8_1.1) & ( red$7_1.1 <-> red$8_1.1) &
+! green$7_0.2 & ! red$7_0.2 & ! green$8_0.2 & red$8_0.2 &
+( green$7_1.3 <-> green$8_1.3) & ( red$7_1.3 <-> red$8_1.3) &
+! green$7_0.2 & ! red$7_0.2 & ! green$8_0.2 & red$8_0.2 &
+( green$7_1.4 <-> green$8_1.4) & ( red$7_1.4 <-> red$8_1.4) &
+! green$7_0.2 & ! red$7_0.2 & ! green$8_0.2 & red$8_0.2 &
+( green$7_1.5 <-> green$8_1.5) & ( red$7_1.5 <-> red$8_1.5) &
+! green$7_0.2 & ! red$7_0.2 & ! green$8_0.2 & red$8_0.2 &
+( green$7_2.1 <-> green$8_2.1) & ( red$7_2.1 <-> red$8_2.1) &
+! green$7_0.2 & ! red$7_0.2 & ! green$8_0.2 & red$8_0.2 &
+( green$7_2.3 <-> green$8_2.3) & ( red$7_2.3 <-> red$8_2.3) &
+! green$7_0.2 & ! red$7_0.2 & ! green$8_0.2 & red$8_0.2 &
+( green$7_2.4 <-> green$8_2.4) & ( red$7_2.4 <-> red$8_2.4) &
+! green$7_0.2 & ! red$7_0.2 & ! green$8_0.2 & red$8_0.2 &
+( green$7_2.5 <-> green$8_2.5) & ( red$7_2.5 <-> red$8_2.5) &
+! green$7_0.2 & ! red$7_0.2 & ! green$8_0.2 & red$8_0.2 &
+( green$7_3.1 <-> green$8_3.1) & ( red$7_3.1 <-> red$8_3.1) &
+! green$7_0.2 & ! red$7_0.2 & ! green$8_0.2 & red$8_0.2 &
+( green$7_3.3 <-> green$8_3.3) & ( red$7_3.3 <-> red$8_3.3) &
+! green$7_0.2 & ! red$7_0.2 & ! green$8_0.2 & red$8_0.2 &
+( green$7_3.4 <-> green$8_3.4) & ( red$7_3.4 <-> red$8_3.4) &
+! green$7_0.2 & ! red$7_0.2 & ! green$8_0.2 & red$8_0.2 &
+( green$7_3.5 <-> green$8_3.5) & ( red$7_3.5 <-> red$8_3.5) &
+! green$7_0.2 & ! red$7_0.2 & ! green$8_0.2 & red$8_0.2 &
+( green$7_4.1 <-> green$8_4.1) & ( red$7_4.1 <-> red$8_4.1) &
+! green$7_0.2 & ! red$7_0.2 & ! green$8_0.2 & red$8_0.2 &
+( green$7_4.3 <-> green$8_4.3) & ( red$7_4.3 <-> red$8_4.3) &
+! green$7_0.2 & ! red$7_0.2 & ! green$8_0.2 & red$8_0.2 &
+( green$7_4.4 <-> green$8_4.4) & ( red$7_4.4 <-> red$8_4.4) &
+! green$7_0.2 & ! red$7_0.2 & ! green$8_0.2 & red$8_0.2 &
+( green$7_4.5 <-> green$8_4.5) & ( red$7_4.5 <-> red$8_4.5) &
+! green$7_0.2 & ! red$7_0.2 & ! green$8_0.2 & red$8_0.2 &
+( green$7_1.1 <-> green$8_1.1) & ( red$7_1.1 <-> red$8_1.1) &
+! green$7_0.3 & ! red$7_0.3 & ! green$8_0.3 & red$8_0.3 &
+( green$7_1.2 <-> green$8_1.2) & ( red$7_1.2 <-> red$8_1.2) &
+! green$7_0.3 & ! red$7_0.3 & ! green$8_0.3 & red$8_0.3 &
+( green$7_1.4 <-> green$8_1.4) & ( red$7_1.4 <-> red$8_1.4) &
+! green$7_0.3 & ! red$7_0.3 & ! green$8_0.3 & red$8_0.3 &
+( green$7_1.5 <-> green$8_1.5) & ( red$7_1.5 <-> red$8_1.5) &
+! green$7_0.3 & ! red$7_0.3 & ! green$8_0.3 & red$8_0.3 &
+( green$7_2.1 <-> green$8_2.1) & ( red$7_2.1 <-> red$8_2.1) &
+! green$7_0.3 & ! red$7_0.3 & ! green$8_0.3 & red$8_0.3 &
+( green$7_2.2 <-> green$8_2.2) & ( red$7_2.2 <-> red$8_2.2) &
+! green$7_0.3 & ! red$7_0.3 & ! green$8_0.3 & red$8_0.3 &
+( green$7_2.4 <-> green$8_2.4) & ( red$7_2.4 <-> red$8_2.4) &
+! green$7_0.3 & ! red$7_0.3 & ! green$8_0.3 & red$8_0.3 &
+( green$7_2.5 <-> green$8_2.5) & ( red$7_2.5 <-> red$8_2.5) &
+! green$7_0.3 & ! red$7_0.3 & ! green$8_0.3 & red$8_0.3 &
+( green$7_3.1 <-> green$8_3.1) & ( red$7_3.1 <-> red$8_3.1) &
+! green$7_0.3 & ! red$7_0.3 & ! green$8_0.3 & red$8_0.3 &
+( green$7_3.2 <-> green$8_3.2) & ( red$7_3.2 <-> red$8_3.2) &
+! green$7_0.3 & ! red$7_0.3 & ! green$8_0.3 & red$8_0.3 &
+( green$7_3.4 <-> green$8_3.4) & ( red$7_3.4 <-> red$8_3.4) &
+! green$7_0.3 & ! red$7_0.3 & ! green$8_0.3 & red$8_0.3 &
+( green$7_3.5 <-> green$8_3.5) & ( red$7_3.5 <-> red$8_3.5) &
+! green$7_0.3 & ! red$7_0.3 & ! green$8_0.3 & red$8_0.3 &
+( green$7_4.1 <-> green$8_4.1) & ( red$7_4.1 <-> red$8_4.1) &
+! green$7_0.3 & ! red$7_0.3 & ! green$8_0.3 & red$8_0.3 &
+( green$7_4.2 <-> green$8_4.2) & ( red$7_4.2 <-> red$8_4.2) &
+! green$7_0.3 & ! red$7_0.3 & ! green$8_0.3 & red$8_0.3 &
+( green$7_4.4 <-> green$8_4.4) & ( red$7_4.4 <-> red$8_4.4) &
+! green$7_0.3 & ! red$7_0.3 & ! green$8_0.3 & red$8_0.3 &
+( green$7_4.5 <-> green$8_4.5) & ( red$7_4.5 <-> red$8_4.5) &
+! green$7_0.3 & ! red$7_0.3 & ! green$8_0.3 & red$8_0.3 &
+( green$7_1.1 <-> green$8_1.1) & ( red$7_1.1 <-> red$8_1.1) &
+! green$7_0.4 & ! red$7_0.4 & ! green$8_0.4 & red$8_0.4 &
+( green$7_1.2 <-> green$8_1.2) & ( red$7_1.2 <-> red$8_1.2) &
+! green$7_0.4 & ! red$7_0.4 & ! green$8_0.4 & red$8_0.4 &
+( green$7_1.3 <-> green$8_1.3) & ( red$7_1.3 <-> red$8_1.3) &
+! green$7_0.4 & ! red$7_0.4 & ! green$8_0.4 & red$8_0.4 &
+( green$7_1.5 <-> green$8_1.5) & ( red$7_1.5 <-> red$8_1.5) &
+! green$7_0.4 & ! red$7_0.4 & ! green$8_0.4 & red$8_0.4 &
+( green$7_2.1 <-> green$8_2.1) & ( red$7_2.1 <-> red$8_2.1) &
+! green$7_0.4 & ! red$7_0.4 & ! green$8_0.4 & red$8_0.4 &
+( green$7_2.2 <-> green$8_2.2) & ( red$7_2.2 <-> red$8_2.2) &
+! green$7_0.4 & ! red$7_0.4 & ! green$8_0.4 & red$8_0.4 &
+( green$7_2.3 <-> green$8_2.3) & ( red$7_2.3 <-> red$8_2.3) &
+! green$7_0.4 & ! red$7_0.4 & ! green$8_0.4 & red$8_0.4 &
+( green$7_2.5 <-> green$8_2.5) & ( red$7_2.5 <-> red$8_2.5) &
+! green$7_0.4 & ! red$7_0.4 & ! green$8_0.4 & red$8_0.4 &
+( green$7_3.1 <-> green$8_3.1) & ( red$7_3.1 <-> red$8_3.1) &
+! green$7_0.4 & ! red$7_0.4 & ! green$8_0.4 & red$8_0.4 &
+( green$7_3.2 <-> green$8_3.2) & ( red$7_3.2 <-> red$8_3.2) &
+! green$7_0.4 & ! red$7_0.4 & ! green$8_0.4 & red$8_0.4 &
+( green$7_3.3 <-> green$8_3.3) & ( red$7_3.3 <-> red$8_3.3) &
+! green$7_0.4 & ! red$7_0.4 & ! green$8_0.4 & red$8_0.4 &
+( green$7_3.5 <-> green$8_3.5) & ( red$7_3.5 <-> red$8_3.5) &
+! green$7_0.4 & ! red$7_0.4 & ! green$8_0.4 & red$8_0.4 &
+( green$7_4.1 <-> green$8_4.1) & ( red$7_4.1 <-> red$8_4.1) &
+! green$7_0.4 & ! red$7_0.4 & ! green$8_0.4 & red$8_0.4 &
+( green$7_4.2 <-> green$8_4.2) & ( red$7_4.2 <-> red$8_4.2) &
+! green$7_0.4 & ! red$7_0.4 & ! green$8_0.4 & red$8_0.4 &
+( green$7_4.3 <-> green$8_4.3) & ( red$7_4.3 <-> red$8_4.3) &
+! green$7_0.4 & ! red$7_0.4 & ! green$8_0.4 & red$8_0.4 &
+( green$7_4.5 <-> green$8_4.5) & ( red$7_4.5 <-> red$8_4.5) &
+! green$7_0.4 & ! red$7_0.4 & ! green$8_0.4 & red$8_0.4 &
+( green$7_1.1 <-> green$8_1.1) & ( red$7_1.1 <-> red$8_1.1) &
+! green$7_0.5 & ! red$7_0.5 & ! green$8_0.5 & red$8_0.5 &
+( green$7_1.2 <-> green$8_1.2) & ( red$7_1.2 <-> red$8_1.2) &
+! green$7_0.5 & ! red$7_0.5 & ! green$8_0.5 & red$8_0.5 &
+( green$7_1.3 <-> green$8_1.3) & ( red$7_1.3 <-> red$8_1.3) &
+! green$7_0.5 & ! red$7_0.5 & ! green$8_0.5 & red$8_0.5 &
+( green$7_1.4 <-> green$8_1.4) & ( red$7_1.4 <-> red$8_1.4) &
+! green$7_0.5 & ! red$7_0.5 & ! green$8_0.5 & red$8_0.5 &
+( green$7_2.1 <-> green$8_2.1) & ( red$7_2.1 <-> red$8_2.1) &
+! green$7_0.5 & ! red$7_0.5 & ! green$8_0.5 & red$8_0.5 &
+( green$7_2.2 <-> green$8_2.2) & ( red$7_2.2 <-> red$8_2.2) &
+! green$7_0.5 & ! red$7_0.5 & ! green$8_0.5 & red$8_0.5 &
+( green$7_2.3 <-> green$8_2.3) & ( red$7_2.3 <-> red$8_2.3) &
+! green$7_0.5 & ! red$7_0.5 & ! green$8_0.5 & red$8_0.5 &
+( green$7_2.4 <-> green$8_2.4) & ( red$7_2.4 <-> red$8_2.4) &
+! green$7_0.5 & ! red$7_0.5 & ! green$8_0.5 & red$8_0.5 &
+( green$7_3.1 <-> green$8_3.1) & ( red$7_3.1 <-> red$8_3.1) &
+! green$7_0.5 & ! red$7_0.5 & ! green$8_0.5 & red$8_0.5 &
+( green$7_3.2 <-> green$8_3.2) & ( red$7_3.2 <-> red$8_3.2) &
+! green$7_0.5 & ! red$7_0.5 & ! green$8_0.5 & red$8_0.5 &
+( green$7_3.3 <-> green$8_3.3) & ( red$7_3.3 <-> red$8_3.3) &
+! green$7_0.5 & ! red$7_0.5 & ! green$8_0.5 & red$8_0.5 &
+( green$7_3.4 <-> green$8_3.4) & ( red$7_3.4 <-> red$8_3.4) &
+! green$7_0.5 & ! red$7_0.5 & ! green$8_0.5 & red$8_0.5 &
+( green$7_4.1 <-> green$8_4.1) & ( red$7_4.1 <-> red$8_4.1) &
+! green$7_0.5 & ! red$7_0.5 & ! green$8_0.5 & red$8_0.5 &
+( green$7_4.2 <-> green$8_4.2) & ( red$7_4.2 <-> red$8_4.2) &
+! green$7_0.5 & ! red$7_0.5 & ! green$8_0.5 & red$8_0.5 &
+( green$7_4.3 <-> green$8_4.3) & ( red$7_4.3 <-> red$8_4.3) &
+! green$7_0.5 & ! red$7_0.5 & ! green$8_0.5 & red$8_0.5 &
+( green$7_4.4 <-> green$8_4.4) & ( red$7_4.4 <-> red$8_4.4) &
+! green$7_0.5 & ! red$7_0.5 & ! green$8_0.5 & red$8_0.5 &
+( green$7_0.3 <-> green$8_0.3) & ( red$7_0.3 <-> red$8_0.3) &
+! green$7_1.2 & ! red$7_1.2 & ! green$8_1.2 & red$8_1.2 &
+( green$7_0.4 <-> green$8_0.4) & ( red$7_0.4 <-> red$8_0.4) &
+! green$7_1.2 & ! red$7_1.2 & ! green$8_1.2 & red$8_1.2 &
+( green$7_0.5 <-> green$8_0.5) & ( red$7_0.5 <-> red$8_0.5) &
+! green$7_1.2 & ! red$7_1.2 & ! green$8_1.2 & red$8_1.2 &
+( green$7_2.3 <-> green$8_2.3) & ( red$7_2.3 <-> red$8_2.3) &
+! green$7_1.2 & ! red$7_1.2 & ! green$8_1.2 & red$8_1.2 &
+( green$7_2.4 <-> green$8_2.4) & ( red$7_2.4 <-> red$8_2.4) &
+! green$7_1.2 & ! red$7_1.2 & ! green$8_1.2 & red$8_1.2 &
+( green$7_2.5 <-> green$8_2.5) & ( red$7_2.5 <-> red$8_2.5) &
+! green$7_1.2 & ! red$7_1.2 & ! green$8_1.2 & red$8_1.2 &
+( green$7_3.3 <-> green$8_3.3) & ( red$7_3.3 <-> red$8_3.3) &
+! green$7_1.2 & ! red$7_1.2 & ! green$8_1.2 & red$8_1.2 &
+( green$7_3.4 <-> green$8_3.4) & ( red$7_3.4 <-> red$8_3.4) &
+! green$7_1.2 & ! red$7_1.2 & ! green$8_1.2 & red$8_1.2 &
+( green$7_3.5 <-> green$8_3.5) & ( red$7_3.5 <-> red$8_3.5) &
+! green$7_1.2 & ! red$7_1.2 & ! green$8_1.2 & red$8_1.2 &
+( green$7_4.3 <-> green$8_4.3) & ( red$7_4.3 <-> red$8_4.3) &
+! green$7_1.2 & ! red$7_1.2 & ! green$8_1.2 & red$8_1.2 &
+( green$7_4.4 <-> green$8_4.4) & ( red$7_4.4 <-> red$8_4.4) &
+! green$7_1.2 & ! red$7_1.2 & ! green$8_1.2 & red$8_1.2 &
+( green$7_4.5 <-> green$8_4.5) & ( red$7_4.5 <-> red$8_4.5) &
+! green$7_1.2 & ! red$7_1.2 & ! green$8_1.2 & red$8_1.2 &
+( green$7_0.2 <-> green$8_0.2) & ( red$7_0.2 <-> red$8_0.2) &
+! green$7_1.3 & ! red$7_1.3 & ! green$8_1.3 & red$8_1.3 &
+( green$7_0.4 <-> green$8_0.4) & ( red$7_0.4 <-> red$8_0.4) &
+! green$7_1.3 & ! red$7_1.3 & ! green$8_1.3 & red$8_1.3 &
+( green$7_0.5 <-> green$8_0.5) & ( red$7_0.5 <-> red$8_0.5) &
+! green$7_1.3 & ! red$7_1.3 & ! green$8_1.3 & red$8_1.3 &
+( green$7_2.2 <-> green$8_2.2) & ( red$7_2.2 <-> red$8_2.2) &
+! green$7_1.3 & ! red$7_1.3 & ! green$8_1.3 & red$8_1.3 &
+( green$7_2.4 <-> green$8_2.4) & ( red$7_2.4 <-> red$8_2.4) &
+! green$7_1.3 & ! red$7_1.3 & ! green$8_1.3 & red$8_1.3 &
+( green$7_2.5 <-> green$8_2.5) & ( red$7_2.5 <-> red$8_2.5) &
+! green$7_1.3 & ! red$7_1.3 & ! green$8_1.3 & red$8_1.3 &
+( green$7_3.2 <-> green$8_3.2) & ( red$7_3.2 <-> red$8_3.2) &
+! green$7_1.3 & ! red$7_1.3 & ! green$8_1.3 & red$8_1.3 &
+( green$7_3.4 <-> green$8_3.4) & ( red$7_3.4 <-> red$8_3.4) &
+! green$7_1.3 & ! red$7_1.3 & ! green$8_1.3 & red$8_1.3 &
+( green$7_3.5 <-> green$8_3.5) & ( red$7_3.5 <-> red$8_3.5) &
+! green$7_1.3 & ! red$7_1.3 & ! green$8_1.3 & red$8_1.3 &
+( green$7_4.2 <-> green$8_4.2) & ( red$7_4.2 <-> red$8_4.2) &
+! green$7_1.3 & ! red$7_1.3 & ! green$8_1.3 & red$8_1.3 &
+( green$7_4.4 <-> green$8_4.4) & ( red$7_4.4 <-> red$8_4.4) &
+! green$7_1.3 & ! red$7_1.3 & ! green$8_1.3 & red$8_1.3 &
+( green$7_4.5 <-> green$8_4.5) & ( red$7_4.5 <-> red$8_4.5) &
+! green$7_1.3 & ! red$7_1.3 & ! green$8_1.3 & red$8_1.3 &
+( green$7_0.2 <-> green$8_0.2) & ( red$7_0.2 <-> red$8_0.2) &
+! green$7_1.4 & ! red$7_1.4 & ! green$8_1.4 & red$8_1.4 &
+( green$7_0.3 <-> green$8_0.3) & ( red$7_0.3 <-> red$8_0.3) &
+! green$7_1.4 & ! red$7_1.4 & ! green$8_1.4 & red$8_1.4 &
+( green$7_0.5 <-> green$8_0.5) & ( red$7_0.5 <-> red$8_0.5) &
+! green$7_1.4 & ! red$7_1.4 & ! green$8_1.4 & red$8_1.4 &
+( green$7_2.2 <-> green$8_2.2) & ( red$7_2.2 <-> red$8_2.2) &
+! green$7_1.4 & ! red$7_1.4 & ! green$8_1.4 & red$8_1.4 &
+( green$7_2.3 <-> green$8_2.3) & ( red$7_2.3 <-> red$8_2.3) &
+! green$7_1.4 & ! red$7_1.4 & ! green$8_1.4 & red$8_1.4 &
+( green$7_2.5 <-> green$8_2.5) & ( red$7_2.5 <-> red$8_2.5) &
+! green$7_1.4 & ! red$7_1.4 & ! green$8_1.4 & red$8_1.4 &
+( green$7_3.2 <-> green$8_3.2) & ( red$7_3.2 <-> red$8_3.2) &
+! green$7_1.4 & ! red$7_1.4 & ! green$8_1.4 & red$8_1.4 &
+( green$7_3.3 <-> green$8_3.3) & ( red$7_3.3 <-> red$8_3.3) &
+! green$7_1.4 & ! red$7_1.4 & ! green$8_1.4 & red$8_1.4 &
+( green$7_3.5 <-> green$8_3.5) & ( red$7_3.5 <-> red$8_3.5) &
+! green$7_1.4 & ! red$7_1.4 & ! green$8_1.4 & red$8_1.4 &
+( green$7_4.2 <-> green$8_4.2) & ( red$7_4.2 <-> red$8_4.2) &
+! green$7_1.4 & ! red$7_1.4 & ! green$8_1.4 & red$8_1.4 &
+( green$7_4.3 <-> green$8_4.3) & ( red$7_4.3 <-> red$8_4.3) &
+! green$7_1.4 & ! red$7_1.4 & ! green$8_1.4 & red$8_1.4 &
+( green$7_4.5 <-> green$8_4.5) & ( red$7_4.5 <-> red$8_4.5) &
+! green$7_1.4 & ! red$7_1.4 & ! green$8_1.4 & red$8_1.4 &
+( green$7_0.2 <-> green$8_0.2) & ( red$7_0.2 <-> red$8_0.2) &
+! green$7_1.5 & ! red$7_1.5 & ! green$8_1.5 & red$8_1.5 &
+( green$7_0.3 <-> green$8_0.3) & ( red$7_0.3 <-> red$8_0.3) &
+! green$7_1.5 & ! red$7_1.5 & ! green$8_1.5 & red$8_1.5 &
+( green$7_0.4 <-> green$8_0.4) & ( red$7_0.4 <-> red$8_0.4) &
+! green$7_1.5 & ! red$7_1.5 & ! green$8_1.5 & red$8_1.5 &
+( green$7_2.2 <-> green$8_2.2) & ( red$7_2.2 <-> red$8_2.2) &
+! green$7_1.5 & ! red$7_1.5 & ! green$8_1.5 & red$8_1.5 &
+( green$7_2.3 <-> green$8_2.3) & ( red$7_2.3 <-> red$8_2.3) &
+! green$7_1.5 & ! red$7_1.5 & ! green$8_1.5 & red$8_1.5 &
+( green$7_2.4 <-> green$8_2.4) & ( red$7_2.4 <-> red$8_2.4) &
+! green$7_1.5 & ! red$7_1.5 & ! green$8_1.5 & red$8_1.5 &
+( green$7_3.2 <-> green$8_3.2) & ( red$7_3.2 <-> red$8_3.2) &
+! green$7_1.5 & ! red$7_1.5 & ! green$8_1.5 & red$8_1.5 &
+( green$7_3.3 <-> green$8_3.3) & ( red$7_3.3 <-> red$8_3.3) &
+! green$7_1.5 & ! red$7_1.5 & ! green$8_1.5 & red$8_1.5 &
+( green$7_3.4 <-> green$8_3.4) & ( red$7_3.4 <-> red$8_3.4) &
+! green$7_1.5 & ! red$7_1.5 & ! green$8_1.5 & red$8_1.5 &
+( green$7_4.2 <-> green$8_4.2) & ( red$7_4.2 <-> red$8_4.2) &
+! green$7_1.5 & ! red$7_1.5 & ! green$8_1.5 & red$8_1.5 &
+( green$7_4.3 <-> green$8_4.3) & ( red$7_4.3 <-> red$8_4.3) &
+! green$7_1.5 & ! red$7_1.5 & ! green$8_1.5 & red$8_1.5 &
+( green$7_4.4 <-> green$8_4.4) & ( red$7_4.4 <-> red$8_4.4) &
+! green$7_1.5 & ! red$7_1.5 & ! green$8_1.5 & red$8_1.5 &
+( green$7_0.4 <-> green$8_0.4) & ( red$7_0.4 <-> red$8_0.4) &
+! green$7_2.3 & ! red$7_2.3 & ! green$8_2.3 & red$8_2.3 &
+( green$7_0.5 <-> green$8_0.5) & ( red$7_0.5 <-> red$8_0.5) &
+! green$7_2.3 & ! red$7_2.3 & ! green$8_2.3 & red$8_2.3 &
+( green$7_1.4 <-> green$8_1.4) & ( red$7_1.4 <-> red$8_1.4) &
+! green$7_2.3 & ! red$7_2.3 & ! green$8_2.3 & red$8_2.3 &
+( green$7_1.5 <-> green$8_1.5) & ( red$7_1.5 <-> red$8_1.5) &
+! green$7_2.3 & ! red$7_2.3 & ! green$8_2.3 & red$8_2.3 &
+( green$7_3.4 <-> green$8_3.4) & ( red$7_3.4 <-> red$8_3.4) &
+! green$7_2.3 & ! red$7_2.3 & ! green$8_2.3 & red$8_2.3 &
+( green$7_3.5 <-> green$8_3.5) & ( red$7_3.5 <-> red$8_3.5) &
+! green$7_2.3 & ! red$7_2.3 & ! green$8_2.3 & red$8_2.3 &
+( green$7_4.4 <-> green$8_4.4) & ( red$7_4.4 <-> red$8_4.4) &
+! green$7_2.3 & ! red$7_2.3 & ! green$8_2.3 & red$8_2.3 &
+( green$7_4.5 <-> green$8_4.5) & ( red$7_4.5 <-> red$8_4.5) &
+! green$7_2.3 & ! red$7_2.3 & ! green$8_2.3 & red$8_2.3 &
+( green$7_0.3 <-> green$8_0.3) & ( red$7_0.3 <-> red$8_0.3) &
+! green$7_2.4 & ! red$7_2.4 & ! green$8_2.4 & red$8_2.4 &
+( green$7_0.5 <-> green$8_0.5) & ( red$7_0.5 <-> red$8_0.5) &
+! green$7_2.4 & ! red$7_2.4 & ! green$8_2.4 & red$8_2.4 &
+( green$7_1.3 <-> green$8_1.3) & ( red$7_1.3 <-> red$8_1.3) &
+! green$7_2.4 & ! red$7_2.4 & ! green$8_2.4 & red$8_2.4 &
+( green$7_1.5 <-> green$8_1.5) & ( red$7_1.5 <-> red$8_1.5) &
+! green$7_2.4 & ! red$7_2.4 & ! green$8_2.4 & red$8_2.4 &
+( green$7_3.3 <-> green$8_3.3) & ( red$7_3.3 <-> red$8_3.3) &
+! green$7_2.4 & ! red$7_2.4 & ! green$8_2.4 & red$8_2.4 &
+( green$7_3.5 <-> green$8_3.5) & ( red$7_3.5 <-> red$8_3.5) &
+! green$7_2.4 & ! red$7_2.4 & ! green$8_2.4 & red$8_2.4 &
+( green$7_4.3 <-> green$8_4.3) & ( red$7_4.3 <-> red$8_4.3) &
+! green$7_2.4 & ! red$7_2.4 & ! green$8_2.4 & red$8_2.4 &
+( green$7_4.5 <-> green$8_4.5) & ( red$7_4.5 <-> red$8_4.5) &
+! green$7_2.4 & ! red$7_2.4 & ! green$8_2.4 & red$8_2.4 &
+( green$7_0.3 <-> green$8_0.3) & ( red$7_0.3 <-> red$8_0.3) &
+! green$7_2.5 & ! red$7_2.5 & ! green$8_2.5 & red$8_2.5 &
+( green$7_0.4 <-> green$8_0.4) & ( red$7_0.4 <-> red$8_0.4) &
+! green$7_2.5 & ! red$7_2.5 & ! green$8_2.5 & red$8_2.5 &
+( green$7_1.3 <-> green$8_1.3) & ( red$7_1.3 <-> red$8_1.3) &
+! green$7_2.5 & ! red$7_2.5 & ! green$8_2.5 & red$8_2.5 &
+( green$7_1.4 <-> green$8_1.4) & ( red$7_1.4 <-> red$8_1.4) &
+! green$7_2.5 & ! red$7_2.5 & ! green$8_2.5 & red$8_2.5 &
+( green$7_3.3 <-> green$8_3.3) & ( red$7_3.3 <-> red$8_3.3) &
+! green$7_2.5 & ! red$7_2.5 & ! green$8_2.5 & red$8_2.5 &
+( green$7_3.4 <-> green$8_3.4) & ( red$7_3.4 <-> red$8_3.4) &
+! green$7_2.5 & ! red$7_2.5 & ! green$8_2.5 & red$8_2.5 &
+( green$7_4.3 <-> green$8_4.3) & ( red$7_4.3 <-> red$8_4.3) &
+! green$7_2.5 & ! red$7_2.5 & ! green$8_2.5 & red$8_2.5 &
+( green$7_4.4 <-> green$8_4.4) & ( red$7_4.4 <-> red$8_4.4) &
+! green$7_2.5 & ! red$7_2.5 & ! green$8_2.5 & red$8_2.5 &
+( green$7_0.5 <-> green$8_0.5) & ( red$7_0.5 <-> red$8_0.5) &
+! green$7_3.4 & ! red$7_3.4 & ! green$8_3.4 & red$8_3.4 &
+( green$7_1.5 <-> green$8_1.5) & ( red$7_1.5 <-> red$8_1.5) &
+! green$7_3.4 & ! red$7_3.4 & ! green$8_3.4 & red$8_3.4 &
+( green$7_2.5 <-> green$8_2.5) & ( red$7_2.5 <-> red$8_2.5) &
+! green$7_3.4 & ! red$7_3.4 & ! green$8_3.4 & red$8_3.4 &
+( green$7_4.5 <-> green$8_4.5) & ( red$7_4.5 <-> red$8_4.5) &
+! green$7_3.4 & ! red$7_3.4 & ! green$8_3.4 & red$8_3.4 &
+( green$7_0.4 <-> green$8_0.4) & ( red$7_0.4 <-> red$8_0.4) &
+! green$7_3.5 & ! red$7_3.5 & ! green$8_3.5 & red$8_3.5 &
+( green$7_1.4 <-> green$8_1.4) & ( red$7_1.4 <-> red$8_1.4) &
+! green$7_3.5 & ! red$7_3.5 & ! green$8_3.5 & red$8_3.5 &
+( green$7_2.4 <-> green$8_2.4) & ( red$7_2.4 <-> red$8_2.4) &
+! green$7_3.5 & ! red$7_3.5 & ! green$8_3.5 & red$8_3.5 &
+( green$7_4.4 <-> green$8_4.4) & ( red$7_4.4 <-> red$8_4.4) &
+! green$7_3.5 & ! red$7_3.5 & ! green$8_3.5 & red$8_3.5 &
+( green$9_1.2 <-> green$10_1.2) & ( red$9_1.2 <-> red$10_1.2) &
+! green$9_0.1 & ! red$9_0.1 & ! green$10_0.1 & red$10_0.1 &
+( green$9_1.3 <-> green$10_1.3) & ( red$9_1.3 <-> red$10_1.3) &
+! green$9_0.1 & ! red$9_0.1 & ! green$10_0.1 & red$10_0.1 &
+( green$9_1.4 <-> green$10_1.4) & ( red$9_1.4 <-> red$10_1.4) &
+! green$9_0.1 & ! red$9_0.1 & ! green$10_0.1 & red$10_0.1 &
+( green$9_1.5 <-> green$10_1.5) & ( red$9_1.5 <-> red$10_1.5) &
+! green$9_0.1 & ! red$9_0.1 & ! green$10_0.1 & red$10_0.1 &
+( green$9_2.2 <-> green$10_2.2) & ( red$9_2.2 <-> red$10_2.2) &
+! green$9_0.1 & ! red$9_0.1 & ! green$10_0.1 & red$10_0.1 &
+( green$9_2.3 <-> green$10_2.3) & ( red$9_2.3 <-> red$10_2.3) &
+! green$9_0.1 & ! red$9_0.1 & ! green$10_0.1 & red$10_0.1 &
+( green$9_2.4 <-> green$10_2.4) & ( red$9_2.4 <-> red$10_2.4) &
+! green$9_0.1 & ! red$9_0.1 & ! green$10_0.1 & red$10_0.1 &
+( green$9_2.5 <-> green$10_2.5) & ( red$9_2.5 <-> red$10_2.5) &
+! green$9_0.1 & ! red$9_0.1 & ! green$10_0.1 & red$10_0.1 &
+( green$9_3.2 <-> green$10_3.2) & ( red$9_3.2 <-> red$10_3.2) &
+! green$9_0.1 & ! red$9_0.1 & ! green$10_0.1 & red$10_0.1 &
+( green$9_3.3 <-> green$10_3.3) & ( red$9_3.3 <-> red$10_3.3) &
+! green$9_0.1 & ! red$9_0.1 & ! green$10_0.1 & red$10_0.1 &
+( green$9_3.4 <-> green$10_3.4) & ( red$9_3.4 <-> red$10_3.4) &
+! green$9_0.1 & ! red$9_0.1 & ! green$10_0.1 & red$10_0.1 &
+( green$9_3.5 <-> green$10_3.5) & ( red$9_3.5 <-> red$10_3.5) &
+! green$9_0.1 & ! red$9_0.1 & ! green$10_0.1 & red$10_0.1 &
+( green$9_4.2 <-> green$10_4.2) & ( red$9_4.2 <-> red$10_4.2) &
+! green$9_0.1 & ! red$9_0.1 & ! green$10_0.1 & red$10_0.1 &
+( green$9_4.3 <-> green$10_4.3) & ( red$9_4.3 <-> red$10_4.3) &
+! green$9_0.1 & ! red$9_0.1 & ! green$10_0.1 & red$10_0.1 &
+( green$9_4.4 <-> green$10_4.4) & ( red$9_4.4 <-> red$10_4.4) &
+! green$9_0.1 & ! red$9_0.1 & ! green$10_0.1 & red$10_0.1 &
+( green$9_4.5 <-> green$10_4.5) & ( red$9_4.5 <-> red$10_4.5) &
+! green$9_0.1 & ! red$9_0.1 & ! green$10_0.1 & red$10_0.1 &
+( green$9_1.1 <-> green$10_1.1) & ( red$9_1.1 <-> red$10_1.1) &
+! green$9_0.2 & ! red$9_0.2 & ! green$10_0.2 & red$10_0.2 &
+( green$9_1.3 <-> green$10_1.3) & ( red$9_1.3 <-> red$10_1.3) &
+! green$9_0.2 & ! red$9_0.2 & ! green$10_0.2 & red$10_0.2 &
+( green$9_1.4 <-> green$10_1.4) & ( red$9_1.4 <-> red$10_1.4) &
+! green$9_0.2 & ! red$9_0.2 & ! green$10_0.2 & red$10_0.2 &
+( green$9_1.5 <-> green$10_1.5) & ( red$9_1.5 <-> red$10_1.5) &
+! green$9_0.2 & ! red$9_0.2 & ! green$10_0.2 & red$10_0.2 &
+( green$9_2.1 <-> green$10_2.1) & ( red$9_2.1 <-> red$10_2.1) &
+! green$9_0.2 & ! red$9_0.2 & ! green$10_0.2 & red$10_0.2 &
+( green$9_2.3 <-> green$10_2.3) & ( red$9_2.3 <-> red$10_2.3) &
+! green$9_0.2 & ! red$9_0.2 & ! green$10_0.2 & red$10_0.2 &
+( green$9_2.4 <-> green$10_2.4) & ( red$9_2.4 <-> red$10_2.4) &
+! green$9_0.2 & ! red$9_0.2 & ! green$10_0.2 & red$10_0.2 &
+( green$9_2.5 <-> green$10_2.5) & ( red$9_2.5 <-> red$10_2.5) &
+! green$9_0.2 & ! red$9_0.2 & ! green$10_0.2 & red$10_0.2 &
+( green$9_3.1 <-> green$10_3.1) & ( red$9_3.1 <-> red$10_3.1) &
+! green$9_0.2 & ! red$9_0.2 & ! green$10_0.2 & red$10_0.2 &
+( green$9_3.3 <-> green$10_3.3) & ( red$9_3.3 <-> red$10_3.3) &
+! green$9_0.2 & ! red$9_0.2 & ! green$10_0.2 & red$10_0.2 &
+( green$9_3.4 <-> green$10_3.4) & ( red$9_3.4 <-> red$10_3.4) &
+! green$9_0.2 & ! red$9_0.2 & ! green$10_0.2 & red$10_0.2 &
+( green$9_3.5 <-> green$10_3.5) & ( red$9_3.5 <-> red$10_3.5) &
+! green$9_0.2 & ! red$9_0.2 & ! green$10_0.2 & red$10_0.2 &
+( green$9_4.1 <-> green$10_4.1) & ( red$9_4.1 <-> red$10_4.1) &
+! green$9_0.2 & ! red$9_0.2 & ! green$10_0.2 & red$10_0.2 &
+( green$9_4.3 <-> green$10_4.3) & ( red$9_4.3 <-> red$10_4.3) &
+! green$9_0.2 & ! red$9_0.2 & ! green$10_0.2 & red$10_0.2 &
+( green$9_4.4 <-> green$10_4.4) & ( red$9_4.4 <-> red$10_4.4) &
+! green$9_0.2 & ! red$9_0.2 & ! green$10_0.2 & red$10_0.2 &
+( green$9_4.5 <-> green$10_4.5) & ( red$9_4.5 <-> red$10_4.5) &
+! green$9_0.2 & ! red$9_0.2 & ! green$10_0.2 & red$10_0.2 &
+( green$9_1.1 <-> green$10_1.1) & ( red$9_1.1 <-> red$10_1.1) &
+! green$9_0.3 & ! red$9_0.3 & ! green$10_0.3 & red$10_0.3 &
+( green$9_1.2 <-> green$10_1.2) & ( red$9_1.2 <-> red$10_1.2) &
+! green$9_0.3 & ! red$9_0.3 & ! green$10_0.3 & red$10_0.3 &
+( green$9_1.4 <-> green$10_1.4) & ( red$9_1.4 <-> red$10_1.4) &
+! green$9_0.3 & ! red$9_0.3 & ! green$10_0.3 & red$10_0.3 &
+( green$9_1.5 <-> green$10_1.5) & ( red$9_1.5 <-> red$10_1.5) &
+! green$9_0.3 & ! red$9_0.3 & ! green$10_0.3 & red$10_0.3 &
+( green$9_2.1 <-> green$10_2.1) & ( red$9_2.1 <-> red$10_2.1) &
+! green$9_0.3 & ! red$9_0.3 & ! green$10_0.3 & red$10_0.3 &
+( green$9_2.2 <-> green$10_2.2) & ( red$9_2.2 <-> red$10_2.2) &
+! green$9_0.3 & ! red$9_0.3 & ! green$10_0.3 & red$10_0.3 &
+( green$9_2.4 <-> green$10_2.4) & ( red$9_2.4 <-> red$10_2.4) &
+! green$9_0.3 & ! red$9_0.3 & ! green$10_0.3 & red$10_0.3 &
+( green$9_2.5 <-> green$10_2.5) & ( red$9_2.5 <-> red$10_2.5) &
+! green$9_0.3 & ! red$9_0.3 & ! green$10_0.3 & red$10_0.3 &
+( green$9_3.1 <-> green$10_3.1) & ( red$9_3.1 <-> red$10_3.1) &
+! green$9_0.3 & ! red$9_0.3 & ! green$10_0.3 & red$10_0.3 &
+( green$9_3.2 <-> green$10_3.2) & ( red$9_3.2 <-> red$10_3.2) &
+! green$9_0.3 & ! red$9_0.3 & ! green$10_0.3 & red$10_0.3 &
+( green$9_3.4 <-> green$10_3.4) & ( red$9_3.4 <-> red$10_3.4) &
+! green$9_0.3 & ! red$9_0.3 & ! green$10_0.3 & red$10_0.3 &
+( green$9_3.5 <-> green$10_3.5) & ( red$9_3.5 <-> red$10_3.5) &
+! green$9_0.3 & ! red$9_0.3 & ! green$10_0.3 & red$10_0.3 &
+( green$9_4.1 <-> green$10_4.1) & ( red$9_4.1 <-> red$10_4.1) &
+! green$9_0.3 & ! red$9_0.3 & ! green$10_0.3 & red$10_0.3 &
+( green$9_4.2 <-> green$10_4.2) & ( red$9_4.2 <-> red$10_4.2) &
+! green$9_0.3 & ! red$9_0.3 & ! green$10_0.3 & red$10_0.3 &
+( green$9_4.4 <-> green$10_4.4) & ( red$9_4.4 <-> red$10_4.4) &
+! green$9_0.3 & ! red$9_0.3 & ! green$10_0.3 & red$10_0.3 &
+( green$9_4.5 <-> green$10_4.5) & ( red$9_4.5 <-> red$10_4.5) &
+! green$9_0.3 & ! red$9_0.3 & ! green$10_0.3 & red$10_0.3 &
+( green$9_1.1 <-> green$10_1.1) & ( red$9_1.1 <-> red$10_1.1) &
+! green$9_0.4 & ! red$9_0.4 & ! green$10_0.4 & red$10_0.4 &
+( green$9_1.2 <-> green$10_1.2) & ( red$9_1.2 <-> red$10_1.2) &
+! green$9_0.4 & ! red$9_0.4 & ! green$10_0.4 & red$10_0.4 &
+( green$9_1.3 <-> green$10_1.3) & ( red$9_1.3 <-> red$10_1.3) &
+! green$9_0.4 & ! red$9_0.4 & ! green$10_0.4 & red$10_0.4 &
+( green$9_1.5 <-> green$10_1.5) & ( red$9_1.5 <-> red$10_1.5) &
+! green$9_0.4 & ! red$9_0.4 & ! green$10_0.4 & red$10_0.4 &
+( green$9_2.1 <-> green$10_2.1) & ( red$9_2.1 <-> red$10_2.1) &
+! green$9_0.4 & ! red$9_0.4 & ! green$10_0.4 & red$10_0.4 &
+( green$9_2.2 <-> green$10_2.2) & ( red$9_2.2 <-> red$10_2.2) &
+! green$9_0.4 & ! red$9_0.4 & ! green$10_0.4 & red$10_0.4 &
+( green$9_2.3 <-> green$10_2.3) & ( red$9_2.3 <-> red$10_2.3) &
+! green$9_0.4 & ! red$9_0.4 & ! green$10_0.4 & red$10_0.4 &
+( green$9_2.5 <-> green$10_2.5) & ( red$9_2.5 <-> red$10_2.5) &
+! green$9_0.4 & ! red$9_0.4 & ! green$10_0.4 & red$10_0.4 &
+( green$9_3.1 <-> green$10_3.1) & ( red$9_3.1 <-> red$10_3.1) &
+! green$9_0.4 & ! red$9_0.4 & ! green$10_0.4 & red$10_0.4 &
+( green$9_3.2 <-> green$10_3.2) & ( red$9_3.2 <-> red$10_3.2) &
+! green$9_0.4 & ! red$9_0.4 & ! green$10_0.4 & red$10_0.4 &
+( green$9_3.3 <-> green$10_3.3) & ( red$9_3.3 <-> red$10_3.3) &
+! green$9_0.4 & ! red$9_0.4 & ! green$10_0.4 & red$10_0.4 &
+( green$9_3.5 <-> green$10_3.5) & ( red$9_3.5 <-> red$10_3.5) &
+! green$9_0.4 & ! red$9_0.4 & ! green$10_0.4 & red$10_0.4 &
+( green$9_4.1 <-> green$10_4.1) & ( red$9_4.1 <-> red$10_4.1) &
+! green$9_0.4 & ! red$9_0.4 & ! green$10_0.4 & red$10_0.4 &
+( green$9_4.2 <-> green$10_4.2) & ( red$9_4.2 <-> red$10_4.2) &
+! green$9_0.4 & ! red$9_0.4 & ! green$10_0.4 & red$10_0.4 &
+( green$9_4.3 <-> green$10_4.3) & ( red$9_4.3 <-> red$10_4.3) &
+! green$9_0.4 & ! red$9_0.4 & ! green$10_0.4 & red$10_0.4 &
+( green$9_4.5 <-> green$10_4.5) & ( red$9_4.5 <-> red$10_4.5) &
+! green$9_0.4 & ! red$9_0.4 & ! green$10_0.4 & red$10_0.4 &
+( green$9_1.1 <-> green$10_1.1) & ( red$9_1.1 <-> red$10_1.1) &
+! green$9_0.5 & ! red$9_0.5 & ! green$10_0.5 & red$10_0.5 &
+( green$9_1.2 <-> green$10_1.2) & ( red$9_1.2 <-> red$10_1.2) &
+! green$9_0.5 & ! red$9_0.5 & ! green$10_0.5 & red$10_0.5 &
+( green$9_1.3 <-> green$10_1.3) & ( red$9_1.3 <-> red$10_1.3) &
+! green$9_0.5 & ! red$9_0.5 & ! green$10_0.5 & red$10_0.5 &
+( green$9_1.4 <-> green$10_1.4) & ( red$9_1.4 <-> red$10_1.4) &
+! green$9_0.5 & ! red$9_0.5 & ! green$10_0.5 & red$10_0.5 &
+( green$9_2.1 <-> green$10_2.1) & ( red$9_2.1 <-> red$10_2.1) &
+! green$9_0.5 & ! red$9_0.5 & ! green$10_0.5 & red$10_0.5 &
+( green$9_2.2 <-> green$10_2.2) & ( red$9_2.2 <-> red$10_2.2) &
+! green$9_0.5 & ! red$9_0.5 & ! green$10_0.5 & red$10_0.5 &
+( green$9_2.3 <-> green$10_2.3) & ( red$9_2.3 <-> red$10_2.3) &
+! green$9_0.5 & ! red$9_0.5 & ! green$10_0.5 & red$10_0.5 &
+( green$9_2.4 <-> green$10_2.4) & ( red$9_2.4 <-> red$10_2.4) &
+! green$9_0.5 & ! red$9_0.5 & ! green$10_0.5 & red$10_0.5 &
+( green$9_3.1 <-> green$10_3.1) & ( red$9_3.1 <-> red$10_3.1) &
+! green$9_0.5 & ! red$9_0.5 & ! green$10_0.5 & red$10_0.5 &
+( green$9_3.2 <-> green$10_3.2) & ( red$9_3.2 <-> red$10_3.2) &
+! green$9_0.5 & ! red$9_0.5 & ! green$10_0.5 & red$10_0.5 &
+( green$9_3.3 <-> green$10_3.3) & ( red$9_3.3 <-> red$10_3.3) &
+! green$9_0.5 & ! red$9_0.5 & ! green$10_0.5 & red$10_0.5 &
+( green$9_3.4 <-> green$10_3.4) & ( red$9_3.4 <-> red$10_3.4) &
+! green$9_0.5 & ! red$9_0.5 & ! green$10_0.5 & red$10_0.5 &
+( green$9_4.1 <-> green$10_4.1) & ( red$9_4.1 <-> red$10_4.1) &
+! green$9_0.5 & ! red$9_0.5 & ! green$10_0.5 & red$10_0.5 &
+( green$9_4.2 <-> green$10_4.2) & ( red$9_4.2 <-> red$10_4.2) &
+! green$9_0.5 & ! red$9_0.5 & ! green$10_0.5 & red$10_0.5 &
+( green$9_4.3 <-> green$10_4.3) & ( red$9_4.3 <-> red$10_4.3) &
+! green$9_0.5 & ! red$9_0.5 & ! green$10_0.5 & red$10_0.5 &
+( green$9_4.4 <-> green$10_4.4) & ( red$9_4.4 <-> red$10_4.4) &
+! green$9_0.5 & ! red$9_0.5 & ! green$10_0.5 & red$10_0.5 &
+( green$9_0.3 <-> green$10_0.3) & ( red$9_0.3 <-> red$10_0.3) &
+! green$9_1.2 & ! red$9_1.2 & ! green$10_1.2 & red$10_1.2 &
+( green$9_0.4 <-> green$10_0.4) & ( red$9_0.4 <-> red$10_0.4) &
+! green$9_1.2 & ! red$9_1.2 & ! green$10_1.2 & red$10_1.2 &
+( green$9_0.5 <-> green$10_0.5) & ( red$9_0.5 <-> red$10_0.5) &
+! green$9_1.2 & ! red$9_1.2 & ! green$10_1.2 & red$10_1.2 &
+( green$9_2.3 <-> green$10_2.3) & ( red$9_2.3 <-> red$10_2.3) &
+! green$9_1.2 & ! red$9_1.2 & ! green$10_1.2 & red$10_1.2 &
+( green$9_2.4 <-> green$10_2.4) & ( red$9_2.4 <-> red$10_2.4) &
+! green$9_1.2 & ! red$9_1.2 & ! green$10_1.2 & red$10_1.2 &
+( green$9_2.5 <-> green$10_2.5) & ( red$9_2.5 <-> red$10_2.5) &
+! green$9_1.2 & ! red$9_1.2 & ! green$10_1.2 & red$10_1.2 &
+( green$9_3.3 <-> green$10_3.3) & ( red$9_3.3 <-> red$10_3.3) &
+! green$9_1.2 & ! red$9_1.2 & ! green$10_1.2 & red$10_1.2 &
+( green$9_3.4 <-> green$10_3.4) & ( red$9_3.4 <-> red$10_3.4) &
+! green$9_1.2 & ! red$9_1.2 & ! green$10_1.2 & red$10_1.2 &
+( green$9_3.5 <-> green$10_3.5) & ( red$9_3.5 <-> red$10_3.5) &
+! green$9_1.2 & ! red$9_1.2 & ! green$10_1.2 & red$10_1.2 &
+( green$9_4.3 <-> green$10_4.3) & ( red$9_4.3 <-> red$10_4.3) &
+! green$9_1.2 & ! red$9_1.2 & ! green$10_1.2 & red$10_1.2 &
+( green$9_4.4 <-> green$10_4.4) & ( red$9_4.4 <-> red$10_4.4) &
+! green$9_1.2 & ! red$9_1.2 & ! green$10_1.2 & red$10_1.2 &
+( green$9_4.5 <-> green$10_4.5) & ( red$9_4.5 <-> red$10_4.5) &
+! green$9_1.2 & ! red$9_1.2 & ! green$10_1.2 & red$10_1.2 &
+( green$9_0.2 <-> green$10_0.2) & ( red$9_0.2 <-> red$10_0.2) &
+! green$9_1.3 & ! red$9_1.3 & ! green$10_1.3 & red$10_1.3 &
+( green$9_0.4 <-> green$10_0.4) & ( red$9_0.4 <-> red$10_0.4) &
+! green$9_1.3 & ! red$9_1.3 & ! green$10_1.3 & red$10_1.3 &
+( green$9_0.5 <-> green$10_0.5) & ( red$9_0.5 <-> red$10_0.5) &
+! green$9_1.3 & ! red$9_1.3 & ! green$10_1.3 & red$10_1.3 &
+( green$9_2.2 <-> green$10_2.2) & ( red$9_2.2 <-> red$10_2.2) &
+! green$9_1.3 & ! red$9_1.3 & ! green$10_1.3 & red$10_1.3 &
+( green$9_2.4 <-> green$10_2.4) & ( red$9_2.4 <-> red$10_2.4) &
+! green$9_1.3 & ! red$9_1.3 & ! green$10_1.3 & red$10_1.3 &
+( green$9_2.5 <-> green$10_2.5) & ( red$9_2.5 <-> red$10_2.5) &
+! green$9_1.3 & ! red$9_1.3 & ! green$10_1.3 & red$10_1.3 &
+( green$9_3.2 <-> green$10_3.2) & ( red$9_3.2 <-> red$10_3.2) &
+! green$9_1.3 & ! red$9_1.3 & ! green$10_1.3 & red$10_1.3 &
+( green$9_3.4 <-> green$10_3.4) & ( red$9_3.4 <-> red$10_3.4) &
+! green$9_1.3 & ! red$9_1.3 & ! green$10_1.3 & red$10_1.3 &
+( green$9_3.5 <-> green$10_3.5) & ( red$9_3.5 <-> red$10_3.5) &
+! green$9_1.3 & ! red$9_1.3 & ! green$10_1.3 & red$10_1.3 &
+( green$9_4.2 <-> green$10_4.2) & ( red$9_4.2 <-> red$10_4.2) &
+! green$9_1.3 & ! red$9_1.3 & ! green$10_1.3 & red$10_1.3 &
+( green$9_4.4 <-> green$10_4.4) & ( red$9_4.4 <-> red$10_4.4) &
+! green$9_1.3 & ! red$9_1.3 & ! green$10_1.3 & red$10_1.3 &
+( green$9_4.5 <-> green$10_4.5) & ( red$9_4.5 <-> red$10_4.5) &
+! green$9_1.3 & ! red$9_1.3 & ! green$10_1.3 & red$10_1.3 &
+( green$9_0.2 <-> green$10_0.2) & ( red$9_0.2 <-> red$10_0.2) &
+! green$9_1.4 & ! red$9_1.4 & ! green$10_1.4 & red$10_1.4 &
+( green$9_0.3 <-> green$10_0.3) & ( red$9_0.3 <-> red$10_0.3) &
+! green$9_1.4 & ! red$9_1.4 & ! green$10_1.4 & red$10_1.4 &
+( green$9_0.5 <-> green$10_0.5) & ( red$9_0.5 <-> red$10_0.5) &
+! green$9_1.4 & ! red$9_1.4 & ! green$10_1.4 & red$10_1.4 &
+( green$9_2.2 <-> green$10_2.2) & ( red$9_2.2 <-> red$10_2.2) &
+! green$9_1.4 & ! red$9_1.4 & ! green$10_1.4 & red$10_1.4 &
+( green$9_2.3 <-> green$10_2.3) & ( red$9_2.3 <-> red$10_2.3) &
+! green$9_1.4 & ! red$9_1.4 & ! green$10_1.4 & red$10_1.4 &
+( green$9_2.5 <-> green$10_2.5) & ( red$9_2.5 <-> red$10_2.5) &
+! green$9_1.4 & ! red$9_1.4 & ! green$10_1.4 & red$10_1.4 &
+( green$9_3.2 <-> green$10_3.2) & ( red$9_3.2 <-> red$10_3.2) &
+! green$9_1.4 & ! red$9_1.4 & ! green$10_1.4 & red$10_1.4 &
+( green$9_3.3 <-> green$10_3.3) & ( red$9_3.3 <-> red$10_3.3) &
+! green$9_1.4 & ! red$9_1.4 & ! green$10_1.4 & red$10_1.4 &
+( green$9_3.5 <-> green$10_3.5) & ( red$9_3.5 <-> red$10_3.5) &
+! green$9_1.4 & ! red$9_1.4 & ! green$10_1.4 & red$10_1.4 &
+( green$9_4.2 <-> green$10_4.2) & ( red$9_4.2 <-> red$10_4.2) &
+! green$9_1.4 & ! red$9_1.4 & ! green$10_1.4 & red$10_1.4 &
+( green$9_4.3 <-> green$10_4.3) & ( red$9_4.3 <-> red$10_4.3) &
+! green$9_1.4 & ! red$9_1.4 & ! green$10_1.4 & red$10_1.4 &
+( green$9_4.5 <-> green$10_4.5) & ( red$9_4.5 <-> red$10_4.5) &
+! green$9_1.4 & ! red$9_1.4 & ! green$10_1.4 & red$10_1.4 &
+( green$9_0.2 <-> green$10_0.2) & ( red$9_0.2 <-> red$10_0.2) &
+! green$9_1.5 & ! red$9_1.5 & ! green$10_1.5 & red$10_1.5 &
+( green$9_0.3 <-> green$10_0.3) & ( red$9_0.3 <-> red$10_0.3) &
+! green$9_1.5 & ! red$9_1.5 & ! green$10_1.5 & red$10_1.5 &
+( green$9_0.4 <-> green$10_0.4) & ( red$9_0.4 <-> red$10_0.4) &
+! green$9_1.5 & ! red$9_1.5 & ! green$10_1.5 & red$10_1.5 &
+( green$9_2.2 <-> green$10_2.2) & ( red$9_2.2 <-> red$10_2.2) &
+! green$9_1.5 & ! red$9_1.5 & ! green$10_1.5 & red$10_1.5 &
+( green$9_2.3 <-> green$10_2.3) & ( red$9_2.3 <-> red$10_2.3) &
+! green$9_1.5 & ! red$9_1.5 & ! green$10_1.5 & red$10_1.5 &
+( green$9_2.4 <-> green$10_2.4) & ( red$9_2.4 <-> red$10_2.4) &
+! green$9_1.5 & ! red$9_1.5 & ! green$10_1.5 & red$10_1.5 &
+( green$9_3.2 <-> green$10_3.2) & ( red$9_3.2 <-> red$10_3.2) &
+! green$9_1.5 & ! red$9_1.5 & ! green$10_1.5 & red$10_1.5 &
+( green$9_3.3 <-> green$10_3.3) & ( red$9_3.3 <-> red$10_3.3) &
+! green$9_1.5 & ! red$9_1.5 & ! green$10_1.5 & red$10_1.5 &
+( green$9_3.4 <-> green$10_3.4) & ( red$9_3.4 <-> red$10_3.4) &
+! green$9_1.5 & ! red$9_1.5 & ! green$10_1.5 & red$10_1.5 &
+( green$9_4.2 <-> green$10_4.2) & ( red$9_4.2 <-> red$10_4.2) &
+! green$9_1.5 & ! red$9_1.5 & ! green$10_1.5 & red$10_1.5 &
+( green$9_4.3 <-> green$10_4.3) & ( red$9_4.3 <-> red$10_4.3) &
+! green$9_1.5 & ! red$9_1.5 & ! green$10_1.5 & red$10_1.5 &
+( green$9_4.4 <-> green$10_4.4) & ( red$9_4.4 <-> red$10_4.4) &
+! green$9_1.5 & ! red$9_1.5 & ! green$10_1.5 & red$10_1.5 &
+( green$9_0.4 <-> green$10_0.4) & ( red$9_0.4 <-> red$10_0.4) &
+! green$9_2.3 & ! red$9_2.3 & ! green$10_2.3 & red$10_2.3 &
+( green$9_0.5 <-> green$10_0.5) & ( red$9_0.5 <-> red$10_0.5) &
+! green$9_2.3 & ! red$9_2.3 & ! green$10_2.3 & red$10_2.3 &
+( green$9_1.4 <-> green$10_1.4) & ( red$9_1.4 <-> red$10_1.4) &
+! green$9_2.3 & ! red$9_2.3 & ! green$10_2.3 & red$10_2.3 &
+( green$9_1.5 <-> green$10_1.5) & ( red$9_1.5 <-> red$10_1.5) &
+! green$9_2.3 & ! red$9_2.3 & ! green$10_2.3 & red$10_2.3 &
+( green$9_3.4 <-> green$10_3.4) & ( red$9_3.4 <-> red$10_3.4) &
+! green$9_2.3 & ! red$9_2.3 & ! green$10_2.3 & red$10_2.3 &
+( green$9_3.5 <-> green$10_3.5) & ( red$9_3.5 <-> red$10_3.5) &
+! green$9_2.3 & ! red$9_2.3 & ! green$10_2.3 & red$10_2.3 &
+( green$9_4.4 <-> green$10_4.4) & ( red$9_4.4 <-> red$10_4.4) &
+! green$9_2.3 & ! red$9_2.3 & ! green$10_2.3 & red$10_2.3 &
+( green$9_4.5 <-> green$10_4.5) & ( red$9_4.5 <-> red$10_4.5) &
+! green$9_2.3 & ! red$9_2.3 & ! green$10_2.3 & red$10_2.3 &
+( green$9_0.3 <-> green$10_0.3) & ( red$9_0.3 <-> red$10_0.3) &
+! green$9_2.4 & ! red$9_2.4 & ! green$10_2.4 & red$10_2.4 &
+( green$9_0.5 <-> green$10_0.5) & ( red$9_0.5 <-> red$10_0.5) &
+! green$9_2.4 & ! red$9_2.4 & ! green$10_2.4 & red$10_2.4 &
+( green$9_1.3 <-> green$10_1.3) & ( red$9_1.3 <-> red$10_1.3) &
+! green$9_2.4 & ! red$9_2.4 & ! green$10_2.4 & red$10_2.4 &
+( green$9_1.5 <-> green$10_1.5) & ( red$9_1.5 <-> red$10_1.5) &
+! green$9_2.4 & ! red$9_2.4 & ! green$10_2.4 & red$10_2.4 &
+( green$9_3.3 <-> green$10_3.3) & ( red$9_3.3 <-> red$10_3.3) &
+! green$9_2.4 & ! red$9_2.4 & ! green$10_2.4 & red$10_2.4 &
+( green$9_3.5 <-> green$10_3.5) & ( red$9_3.5 <-> red$10_3.5) &
+! green$9_2.4 & ! red$9_2.4 & ! green$10_2.4 & red$10_2.4 &
+( green$9_4.3 <-> green$10_4.3) & ( red$9_4.3 <-> red$10_4.3) &
+! green$9_2.4 & ! red$9_2.4 & ! green$10_2.4 & red$10_2.4 &
+( green$9_4.5 <-> green$10_4.5) & ( red$9_4.5 <-> red$10_4.5) &
+! green$9_2.4 & ! red$9_2.4 & ! green$10_2.4 & red$10_2.4 &
+( green$9_0.3 <-> green$10_0.3) & ( red$9_0.3 <-> red$10_0.3) &
+! green$9_2.5 & ! red$9_2.5 & ! green$10_2.5 & red$10_2.5 &
+( green$9_0.4 <-> green$10_0.4) & ( red$9_0.4 <-> red$10_0.4) &
+! green$9_2.5 & ! red$9_2.5 & ! green$10_2.5 & red$10_2.5 &
+( green$9_1.3 <-> green$10_1.3) & ( red$9_1.3 <-> red$10_1.3) &
+! green$9_2.5 & ! red$9_2.5 & ! green$10_2.5 & red$10_2.5 &
+( green$9_1.4 <-> green$10_1.4) & ( red$9_1.4 <-> red$10_1.4) &
+! green$9_2.5 & ! red$9_2.5 & ! green$10_2.5 & red$10_2.5 &
+( green$9_3.3 <-> green$10_3.3) & ( red$9_3.3 <-> red$10_3.3) &
+! green$9_2.5 & ! red$9_2.5 & ! green$10_2.5 & red$10_2.5 &
+( green$9_3.4 <-> green$10_3.4) & ( red$9_3.4 <-> red$10_3.4) &
+! green$9_2.5 & ! red$9_2.5 & ! green$10_2.5 & red$10_2.5 &
+( green$9_4.3 <-> green$10_4.3) & ( red$9_4.3 <-> red$10_4.3) &
+! green$9_2.5 & ! red$9_2.5 & ! green$10_2.5 & red$10_2.5 &
+( green$9_4.4 <-> green$10_4.4) & ( red$9_4.4 <-> red$10_4.4) &
+! green$9_2.5 & ! red$9_2.5 & ! green$10_2.5 & red$10_2.5 &
+( green$9_0.5 <-> green$10_0.5) & ( red$9_0.5 <-> red$10_0.5) &
+! green$9_3.4 & ! red$9_3.4 & ! green$10_3.4 & red$10_3.4 &
+( green$9_1.5 <-> green$10_1.5) & ( red$9_1.5 <-> red$10_1.5) &
+! green$9_3.4 & ! red$9_3.4 & ! green$10_3.4 & red$10_3.4 &
+( green$9_2.5 <-> green$10_2.5) & ( red$9_2.5 <-> red$10_2.5) &
+! green$9_3.4 & ! red$9_3.4 & ! green$10_3.4 & red$10_3.4 &
+( green$9_4.5 <-> green$10_4.5) & ( red$9_4.5 <-> red$10_4.5) &
+! green$9_3.4 & ! red$9_3.4 & ! green$10_3.4 & red$10_3.4 &
+( green$9_0.4 <-> green$10_0.4) & ( red$9_0.4 <-> red$10_0.4) &
+! green$9_3.5 & ! red$9_3.5 & ! green$10_3.5 & red$10_3.5 &
+( green$9_1.4 <-> green$10_1.4) & ( red$9_1.4 <-> red$10_1.4) &
+! green$9_3.5 & ! red$9_3.5 & ! green$10_3.5 & red$10_3.5 &
+( green$9_2.4 <-> green$10_2.4) & ( red$9_2.4 <-> red$10_2.4) &
+! green$9_3.5 & ! red$9_3.5 & ! green$10_3.5 & red$10_3.5 &
+( green$9_4.4 <-> green$10_4.4) & ( red$9_4.4 <-> red$10_4.4) &
+! green$9_3.5 & ! red$9_3.5 & ! green$10_3.5 & red$10_3.5
