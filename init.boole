@@ -299,36 +299,6 @@
 ? red$9_3.5
 ? green$9_4.5
 ? red$9_4.5
-# green$10_0.1
-# red$10_0.1
-# green$10_0.2
-# red$10_0.2
-# green$10_0.3
-# red$10_0.3
-# green$10_0.4
-# red$10_0.4
-# green$10_0.5
-# red$10_0.5
-# green$10_1.2
-# red$10_1.2
-# green$10_1.3
-# red$10_1.3
-# green$10_1.4
-# red$10_1.4
-# green$10_1.5
-# red$10_1.5
-# green$10_2.3
-# red$10_2.3
-# green$10_2.4
-# red$10_2.4
-# green$10_2.5
-# red$10_2.5
-# green$10_3.4
-# red$10_3.4
-# green$10_3.5
-# red$10_3.5
-# green$10_4.5
-# red$10_4
 % init board with all positions to empty
 ! green$0_0.1 &
 ! red$0_0.1 &
@@ -361,6 +331,7 @@
 ! green$0_4.5 &
 ! red$0_4.5 &
 % define moves of players
+(
 (
 ( green$0_0.2 <-> green$1_0.2) & ( red$0_0.2 <-> red$1_0.2) &
 ( green$0_0.3 <-> green$1_0.3) & ( red$0_0.3 <-> red$1_0.3) &
@@ -601,9 +572,11 @@
 ( green$0_3.4 <-> green$1_3.4) & ( red$0_3.4 <-> red$1_3.4) &
 ( green$0_3.5 <-> green$1_3.5) & ( red$0_3.5 <-> red$1_3.5) &
 ! green$0_4.5 & ! red$0_4.5 & green$1_4.5 & ! red$1_4.5
-) &
+) ) &
 % next players move
-((
+(
+(
+(
 ( green$1_0.2 <-> green$2_0.2) & ( red$1_0.2 <-> red$2_0.2) &
 ( green$1_0.3 <-> green$2_0.3) & ( red$1_0.3 <-> red$2_0.3) &
 ( green$1_0.4 <-> green$2_0.4) & ( red$1_0.4 <-> red$2_0.4) &
@@ -843,7 +816,8 @@
 ( green$1_3.4 <-> green$2_3.4) & ( red$1_3.4 <-> red$2_3.4) &
 ( green$1_3.5 <-> green$2_3.5) & ( red$1_3.5 <-> red$2_3.5) &
 ! green$1_4.5 & ! red$1_4.5 & ! green$2_4.5 & red$2_4.5
-) ) -> (
+) ) ->
+(
 (
 ( green$2_0.2 <-> green$3_0.2) & ( red$2_0.2 <-> red$3_0.2) &
 ( green$2_0.3 <-> green$3_0.3) & ( red$2_0.3 <-> red$3_0.3) &
@@ -1084,9 +1058,11 @@
 ( green$2_3.4 <-> green$3_3.4) & ( red$2_3.4 <-> red$3_3.4) &
 ( green$2_3.5 <-> green$3_3.5) & ( red$2_3.5 <-> red$3_3.5) &
 ! green$2_4.5 & ! red$2_4.5 & green$3_4.5 & ! red$3_4.5
-) ) &
+) )) &
 % next players move
-((
+(
+(
+(
 ( green$3_0.2 <-> green$4_0.2) & ( red$3_0.2 <-> red$4_0.2) &
 ( green$3_0.3 <-> green$4_0.3) & ( red$3_0.3 <-> red$4_0.3) &
 ( green$3_0.4 <-> green$4_0.4) & ( red$3_0.4 <-> red$4_0.4) &
@@ -1326,7 +1302,8 @@
 ( green$3_3.4 <-> green$4_3.4) & ( red$3_3.4 <-> red$4_3.4) &
 ( green$3_3.5 <-> green$4_3.5) & ( red$3_3.5 <-> red$4_3.5) &
 ! green$3_4.5 & ! red$3_4.5 & ! green$4_4.5 & red$4_4.5
-) ) -> (
+) ) ->
+(
 (
 ( green$4_0.2 <-> green$5_0.2) & ( red$4_0.2 <-> red$5_0.2) &
 ( green$4_0.3 <-> green$5_0.3) & ( red$4_0.3 <-> red$5_0.3) &
@@ -1567,9 +1544,11 @@
 ( green$4_3.4 <-> green$5_3.4) & ( red$4_3.4 <-> red$5_3.4) &
 ( green$4_3.5 <-> green$5_3.5) & ( red$4_3.5 <-> red$5_3.5) &
 ! green$4_4.5 & ! red$4_4.5 & green$5_4.5 & ! red$5_4.5
-) ) &
+) )) &
 % next players move
-((
+(
+(
+(
 ( green$5_0.2 <-> green$6_0.2) & ( red$5_0.2 <-> red$6_0.2) &
 ( green$5_0.3 <-> green$6_0.3) & ( red$5_0.3 <-> red$6_0.3) &
 ( green$5_0.4 <-> green$6_0.4) & ( red$5_0.4 <-> red$6_0.4) &
@@ -1809,7 +1788,8 @@
 ( green$5_3.4 <-> green$6_3.4) & ( red$5_3.4 <-> red$6_3.4) &
 ( green$5_3.5 <-> green$6_3.5) & ( red$5_3.5 <-> red$6_3.5) &
 ! green$5_4.5 & ! red$5_4.5 & ! green$6_4.5 & red$6_4.5
-) ) -> (
+) ) ->
+(
 (
 ( green$6_0.2 <-> green$7_0.2) & ( red$6_0.2 <-> red$7_0.2) &
 ( green$6_0.3 <-> green$7_0.3) & ( red$6_0.3 <-> red$7_0.3) &
@@ -2050,9 +2030,11 @@
 ( green$6_3.4 <-> green$7_3.4) & ( red$6_3.4 <-> red$7_3.4) &
 ( green$6_3.5 <-> green$7_3.5) & ( red$6_3.5 <-> red$7_3.5) &
 ! green$6_4.5 & ! red$6_4.5 & green$7_4.5 & ! red$7_4.5
-) ) &
+) )) &
 % next players move
-((
+(
+(
+(
 ( green$7_0.2 <-> green$8_0.2) & ( red$7_0.2 <-> red$8_0.2) &
 ( green$7_0.3 <-> green$8_0.3) & ( red$7_0.3 <-> red$8_0.3) &
 ( green$7_0.4 <-> green$8_0.4) & ( red$7_0.4 <-> red$8_0.4) &
@@ -2292,7 +2274,8 @@
 ( green$7_3.4 <-> green$8_3.4) & ( red$7_3.4 <-> red$8_3.4) &
 ( green$7_3.5 <-> green$8_3.5) & ( red$7_3.5 <-> red$8_3.5) &
 ! green$7_4.5 & ! red$7_4.5 & ! green$8_4.5 & red$8_4.5
-) ) -> (
+) ) ->
+(
 (
 ( green$8_0.2 <-> green$9_0.2) & ( red$8_0.2 <-> red$9_0.2) &
 ( green$8_0.3 <-> green$9_0.3) & ( red$8_0.3 <-> red$9_0.3) &
@@ -2533,9 +2516,10 @@
 ( green$8_3.4 <-> green$9_3.4) & ( red$8_3.4 <-> red$9_3.4) &
 ( green$8_3.5 <-> green$9_3.5) & ( red$8_3.5 <-> red$9_3.5) &
 ! green$8_4.5 & ! red$8_4.5 & green$9_4.5 & ! red$9_4.5
-) ) &
+) )) &
 % next players move
-((
+(
+(
 ( green$9_0.2 <-> green$10_0.2) & ( red$9_0.2 <-> red$10_0.2) &
 ( green$9_0.3 <-> green$10_0.3) & ( red$9_0.3 <-> red$10_0.3) &
 ( green$9_0.4 <-> green$10_0.4) & ( red$9_0.4 <-> red$10_0.4) &
@@ -2777,23 +2761,23 @@
 ! green$9_4.5 & ! red$9_4.5 & ! green$10_4.5 & red$10_4.5
 ) ) &
 % define goal states
-green$10_0.2 & green$10_0.1 & green$10_1.2 |
-green$10_0.3 & green$10_0.1 & green$10_1.3 |
-green$10_0.3 & green$10_0.2 & green$10_2.3 |
-green$10_0.4 & green$10_0.1 & green$10_1.4 |
-green$10_0.4 & green$10_0.2 & green$10_2.4 |
-green$10_0.4 & green$10_0.3 & green$10_3.4 |
-green$10_0.5 & green$10_0.1 & green$10_1.5 |
-green$10_0.5 & green$10_0.2 & green$10_2.5 |
-green$10_0.5 & green$10_0.3 & green$10_3.5 |
-green$10_0.5 & green$10_0.4 & green$10_4.5 |
-green$10_1.3 & green$10_1.2 & green$10_2.3 |
-green$10_1.4 & green$10_1.2 & green$10_2.4 |
-green$10_1.4 & green$10_1.3 & green$10_3.4 |
-green$10_1.5 & green$10_1.2 & green$10_2.5 |
-green$10_1.5 & green$10_1.3 & green$10_3.5 |
-green$10_1.5 & green$10_1.4 & green$10_4.5 |
-green$10_2.4 & green$10_2.3 & green$10_3.4 |
-green$10_2.5 & green$10_2.3 & green$10_3.5 |
-green$10_2.5 & green$10_2.4 & green$10_4.5 |
-green$10_3.5 & green$10_3.4 & green$10_4.5
+red$10_0.2 & red$10_0.1 & red$10_1.2 |
+red$10_0.3 & red$10_0.1 & red$10_1.3 |
+red$10_0.3 & red$10_0.2 & red$10_2.3 |
+red$10_0.4 & red$10_0.1 & red$10_1.4 |
+red$10_0.4 & red$10_0.2 & red$10_2.4 |
+red$10_0.4 & red$10_0.3 & red$10_3.4 |
+red$10_0.5 & red$10_0.1 & red$10_1.5 |
+red$10_0.5 & red$10_0.2 & red$10_2.5 |
+red$10_0.5 & red$10_0.3 & red$10_3.5 |
+red$10_0.5 & red$10_0.4 & red$10_4.5 |
+red$10_1.3 & red$10_1.2 & red$10_2.3 |
+red$10_1.4 & red$10_1.2 & red$10_2.4 |
+red$10_1.4 & red$10_1.3 & red$10_3.4 |
+red$10_1.5 & red$10_1.2 & red$10_2.5 |
+red$10_1.5 & red$10_1.3 & red$10_3.5 |
+red$10_1.5 & red$10_1.4 & red$10_4.5 |
+red$10_2.4 & red$10_2.3 & red$10_3.4 |
+red$10_2.5 & red$10_2.3 & red$10_3.5 |
+red$10_2.5 & red$10_2.4 & red$10_4.5 |
+red$10_3.5 & red$10_3.4 & red$10_4.5
