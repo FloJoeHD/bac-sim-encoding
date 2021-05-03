@@ -15,11 +15,9 @@ for s in range(1, 10):  # TODO: run through all states from 1 to 10 (included) o
     for i in range(0, 5):
         for j in range(i + 1, 6):
             if s % 2 != 0:  # every odd state, we use an existential quantifier '?'
-                # list_of_segments.append("? ")
                 list_of_segments.append("? green$" + str(s) + "_" + str(i) + "." + str(j) + "\n")
                 list_of_segments.append("? red$" + str(s) + "_" + str(i) + "." + str(j) + "\n")
             else:  # every even state, we use a for all quantifier '#'
-                # list_of_segments.append("# ")
                 list_of_segments.append("# green$" + str(s) + "_" + str(i) + "." + str(j) + "\n")
                 list_of_segments.append("# red$" + str(s) + "_" + str(i) + "." + str(j) + "\n")
 
@@ -76,6 +74,7 @@ list_of_segments[-1] = list_of_segments[-1][:-3] + "&"  # change last element so
 
 # append goal state formula --------------------------------------------------------------------------------------------
 list_of_segments.append("\n% define goal states\n")
+list_of_segments.append("( ")
 for i in range(0, 4):
     for j in range(i + 1, 6):
         for y in range(i + 1, j):
@@ -84,6 +83,7 @@ for i in range(0, 4):
                                     " & red$10_" + str(i) + "." + str(y) +
                                     " & red$10_" + str(y) + "." + str(j) + " |\n")
 list_of_segments[-1] = list_of_segments[-1][:-3]  # cut off last part since this is the end of the formula
+list_of_segments.append(" )")
 # ----------------------------------------------------------------------------------------------------------------------
 segments = ''.join(list_of_segments)
 # print(segments)
