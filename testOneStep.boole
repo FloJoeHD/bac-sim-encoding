@@ -273,231 +273,6130 @@
 ( green$0_3.5 <-> green$1_3.5) & ( red$0_3.5 <-> red$1_3.5) &
 ! green$0_4.5 & ! red$0_4.5 & green$1_4.5 & ! red$1_4.5
 ) )
+(
+(
+(
+( green$1_0.2 <-> green$2_0.2) & ( red$1_0.2 <-> red$2_0.2) &
+( green$1_0.3 <-> green$2_0.3) & ( red$1_0.3 <-> red$2_0.3) &
+( green$1_0.4 <-> green$2_0.4) & ( red$1_0.4 <-> red$2_0.4) &
+( green$1_0.5 <-> green$2_0.5) & ( red$1_0.5 <-> red$2_0.5) &
+( green$1_1.2 <-> green$2_1.2) & ( red$1_1.2 <-> red$2_1.2) &
+( green$1_1.3 <-> green$2_1.3) & ( red$1_1.3 <-> red$2_1.3) &
+( green$1_1.4 <-> green$2_1.4) & ( red$1_1.4 <-> red$2_1.4) &
+( green$1_1.5 <-> green$2_1.5) & ( red$1_1.5 <-> red$2_1.5) &
+( green$1_2.3 <-> green$2_2.3) & ( red$1_2.3 <-> red$2_2.3) &
+( green$1_2.4 <-> green$2_2.4) & ( red$1_2.4 <-> red$2_2.4) &
+( green$1_2.5 <-> green$2_2.5) & ( red$1_2.5 <-> red$2_2.5) &
+( green$1_3.4 <-> green$2_3.4) & ( red$1_3.4 <-> red$2_3.4) &
+( green$1_3.5 <-> green$2_3.5) & ( red$1_3.5 <-> red$2_3.5) &
+( green$1_4.5 <-> green$2_4.5) & ( red$1_4.5 <-> red$2_4.5) &
+! green$1_0.1 & ! red$1_0.1 & ! green$2_0.1 & red$2_0.1
+) | (
+( green$1_0.1 <-> green$2_0.1) & ( red$1_0.1 <-> red$2_0.1) &
+( green$1_0.3 <-> green$2_0.3) & ( red$1_0.3 <-> red$2_0.3) &
+( green$1_0.4 <-> green$2_0.4) & ( red$1_0.4 <-> red$2_0.4) &
+( green$1_0.5 <-> green$2_0.5) & ( red$1_0.5 <-> red$2_0.5) &
+( green$1_1.2 <-> green$2_1.2) & ( red$1_1.2 <-> red$2_1.2) &
+( green$1_1.3 <-> green$2_1.3) & ( red$1_1.3 <-> red$2_1.3) &
+( green$1_1.4 <-> green$2_1.4) & ( red$1_1.4 <-> red$2_1.4) &
+( green$1_1.5 <-> green$2_1.5) & ( red$1_1.5 <-> red$2_1.5) &
+( green$1_2.3 <-> green$2_2.3) & ( red$1_2.3 <-> red$2_2.3) &
+( green$1_2.4 <-> green$2_2.4) & ( red$1_2.4 <-> red$2_2.4) &
+( green$1_2.5 <-> green$2_2.5) & ( red$1_2.5 <-> red$2_2.5) &
+( green$1_3.4 <-> green$2_3.4) & ( red$1_3.4 <-> red$2_3.4) &
+( green$1_3.5 <-> green$2_3.5) & ( red$1_3.5 <-> red$2_3.5) &
+( green$1_4.5 <-> green$2_4.5) & ( red$1_4.5 <-> red$2_4.5) &
+! green$1_0.2 & ! red$1_0.2 & ! green$2_0.2 & red$2_0.2
+) | (
+( green$1_0.1 <-> green$2_0.1) & ( red$1_0.1 <-> red$2_0.1) &
+( green$1_0.2 <-> green$2_0.2) & ( red$1_0.2 <-> red$2_0.2) &
+( green$1_0.4 <-> green$2_0.4) & ( red$1_0.4 <-> red$2_0.4) &
+( green$1_0.5 <-> green$2_0.5) & ( red$1_0.5 <-> red$2_0.5) &
+( green$1_1.2 <-> green$2_1.2) & ( red$1_1.2 <-> red$2_1.2) &
+( green$1_1.3 <-> green$2_1.3) & ( red$1_1.3 <-> red$2_1.3) &
+( green$1_1.4 <-> green$2_1.4) & ( red$1_1.4 <-> red$2_1.4) &
+( green$1_1.5 <-> green$2_1.5) & ( red$1_1.5 <-> red$2_1.5) &
+( green$1_2.3 <-> green$2_2.3) & ( red$1_2.3 <-> red$2_2.3) &
+( green$1_2.4 <-> green$2_2.4) & ( red$1_2.4 <-> red$2_2.4) &
+( green$1_2.5 <-> green$2_2.5) & ( red$1_2.5 <-> red$2_2.5) &
+( green$1_3.4 <-> green$2_3.4) & ( red$1_3.4 <-> red$2_3.4) &
+( green$1_3.5 <-> green$2_3.5) & ( red$1_3.5 <-> red$2_3.5) &
+( green$1_4.5 <-> green$2_4.5) & ( red$1_4.5 <-> red$2_4.5) &
+! green$1_0.3 & ! red$1_0.3 & ! green$2_0.3 & red$2_0.3
+) | (
+( green$1_0.1 <-> green$2_0.1) & ( red$1_0.1 <-> red$2_0.1) &
+( green$1_0.2 <-> green$2_0.2) & ( red$1_0.2 <-> red$2_0.2) &
+( green$1_0.3 <-> green$2_0.3) & ( red$1_0.3 <-> red$2_0.3) &
+( green$1_0.5 <-> green$2_0.5) & ( red$1_0.5 <-> red$2_0.5) &
+( green$1_1.2 <-> green$2_1.2) & ( red$1_1.2 <-> red$2_1.2) &
+( green$1_1.3 <-> green$2_1.3) & ( red$1_1.3 <-> red$2_1.3) &
+( green$1_1.4 <-> green$2_1.4) & ( red$1_1.4 <-> red$2_1.4) &
+( green$1_1.5 <-> green$2_1.5) & ( red$1_1.5 <-> red$2_1.5) &
+( green$1_2.3 <-> green$2_2.3) & ( red$1_2.3 <-> red$2_2.3) &
+( green$1_2.4 <-> green$2_2.4) & ( red$1_2.4 <-> red$2_2.4) &
+( green$1_2.5 <-> green$2_2.5) & ( red$1_2.5 <-> red$2_2.5) &
+( green$1_3.4 <-> green$2_3.4) & ( red$1_3.4 <-> red$2_3.4) &
+( green$1_3.5 <-> green$2_3.5) & ( red$1_3.5 <-> red$2_3.5) &
+( green$1_4.5 <-> green$2_4.5) & ( red$1_4.5 <-> red$2_4.5) &
+! green$1_0.4 & ! red$1_0.4 & ! green$2_0.4 & red$2_0.4
+) | (
+( green$1_0.1 <-> green$2_0.1) & ( red$1_0.1 <-> red$2_0.1) &
+( green$1_0.2 <-> green$2_0.2) & ( red$1_0.2 <-> red$2_0.2) &
+( green$1_0.3 <-> green$2_0.3) & ( red$1_0.3 <-> red$2_0.3) &
+( green$1_0.4 <-> green$2_0.4) & ( red$1_0.4 <-> red$2_0.4) &
+( green$1_1.2 <-> green$2_1.2) & ( red$1_1.2 <-> red$2_1.2) &
+( green$1_1.3 <-> green$2_1.3) & ( red$1_1.3 <-> red$2_1.3) &
+( green$1_1.4 <-> green$2_1.4) & ( red$1_1.4 <-> red$2_1.4) &
+( green$1_1.5 <-> green$2_1.5) & ( red$1_1.5 <-> red$2_1.5) &
+( green$1_2.3 <-> green$2_2.3) & ( red$1_2.3 <-> red$2_2.3) &
+( green$1_2.4 <-> green$2_2.4) & ( red$1_2.4 <-> red$2_2.4) &
+( green$1_2.5 <-> green$2_2.5) & ( red$1_2.5 <-> red$2_2.5) &
+( green$1_3.4 <-> green$2_3.4) & ( red$1_3.4 <-> red$2_3.4) &
+( green$1_3.5 <-> green$2_3.5) & ( red$1_3.5 <-> red$2_3.5) &
+( green$1_4.5 <-> green$2_4.5) & ( red$1_4.5 <-> red$2_4.5) &
+! green$1_0.5 & ! red$1_0.5 & ! green$2_0.5 & red$2_0.5
+) | (
+( green$1_0.1 <-> green$2_0.1) & ( red$1_0.1 <-> red$2_0.1) &
+( green$1_0.2 <-> green$2_0.2) & ( red$1_0.2 <-> red$2_0.2) &
+( green$1_0.3 <-> green$2_0.3) & ( red$1_0.3 <-> red$2_0.3) &
+( green$1_0.4 <-> green$2_0.4) & ( red$1_0.4 <-> red$2_0.4) &
+( green$1_0.5 <-> green$2_0.5) & ( red$1_0.5 <-> red$2_0.5) &
+( green$1_1.3 <-> green$2_1.3) & ( red$1_1.3 <-> red$2_1.3) &
+( green$1_1.4 <-> green$2_1.4) & ( red$1_1.4 <-> red$2_1.4) &
+( green$1_1.5 <-> green$2_1.5) & ( red$1_1.5 <-> red$2_1.5) &
+( green$1_2.3 <-> green$2_2.3) & ( red$1_2.3 <-> red$2_2.3) &
+( green$1_2.4 <-> green$2_2.4) & ( red$1_2.4 <-> red$2_2.4) &
+( green$1_2.5 <-> green$2_2.5) & ( red$1_2.5 <-> red$2_2.5) &
+( green$1_3.4 <-> green$2_3.4) & ( red$1_3.4 <-> red$2_3.4) &
+( green$1_3.5 <-> green$2_3.5) & ( red$1_3.5 <-> red$2_3.5) &
+( green$1_4.5 <-> green$2_4.5) & ( red$1_4.5 <-> red$2_4.5) &
+! green$1_1.2 & ! red$1_1.2 & ! green$2_1.2 & red$2_1.2
+) | (
+( green$1_0.1 <-> green$2_0.1) & ( red$1_0.1 <-> red$2_0.1) &
+( green$1_0.2 <-> green$2_0.2) & ( red$1_0.2 <-> red$2_0.2) &
+( green$1_0.3 <-> green$2_0.3) & ( red$1_0.3 <-> red$2_0.3) &
+( green$1_0.4 <-> green$2_0.4) & ( red$1_0.4 <-> red$2_0.4) &
+( green$1_0.5 <-> green$2_0.5) & ( red$1_0.5 <-> red$2_0.5) &
+( green$1_1.2 <-> green$2_1.2) & ( red$1_1.2 <-> red$2_1.2) &
+( green$1_1.4 <-> green$2_1.4) & ( red$1_1.4 <-> red$2_1.4) &
+( green$1_1.5 <-> green$2_1.5) & ( red$1_1.5 <-> red$2_1.5) &
+( green$1_2.3 <-> green$2_2.3) & ( red$1_2.3 <-> red$2_2.3) &
+( green$1_2.4 <-> green$2_2.4) & ( red$1_2.4 <-> red$2_2.4) &
+( green$1_2.5 <-> green$2_2.5) & ( red$1_2.5 <-> red$2_2.5) &
+( green$1_3.4 <-> green$2_3.4) & ( red$1_3.4 <-> red$2_3.4) &
+( green$1_3.5 <-> green$2_3.5) & ( red$1_3.5 <-> red$2_3.5) &
+( green$1_4.5 <-> green$2_4.5) & ( red$1_4.5 <-> red$2_4.5) &
+! green$1_1.3 & ! red$1_1.3 & ! green$2_1.3 & red$2_1.3
+) | (
+( green$1_0.1 <-> green$2_0.1) & ( red$1_0.1 <-> red$2_0.1) &
+( green$1_0.2 <-> green$2_0.2) & ( red$1_0.2 <-> red$2_0.2) &
+( green$1_0.3 <-> green$2_0.3) & ( red$1_0.3 <-> red$2_0.3) &
+( green$1_0.4 <-> green$2_0.4) & ( red$1_0.4 <-> red$2_0.4) &
+( green$1_0.5 <-> green$2_0.5) & ( red$1_0.5 <-> red$2_0.5) &
+( green$1_1.2 <-> green$2_1.2) & ( red$1_1.2 <-> red$2_1.2) &
+( green$1_1.3 <-> green$2_1.3) & ( red$1_1.3 <-> red$2_1.3) &
+( green$1_1.5 <-> green$2_1.5) & ( red$1_1.5 <-> red$2_1.5) &
+( green$1_2.3 <-> green$2_2.3) & ( red$1_2.3 <-> red$2_2.3) &
+( green$1_2.4 <-> green$2_2.4) & ( red$1_2.4 <-> red$2_2.4) &
+( green$1_2.5 <-> green$2_2.5) & ( red$1_2.5 <-> red$2_2.5) &
+( green$1_3.4 <-> green$2_3.4) & ( red$1_3.4 <-> red$2_3.4) &
+( green$1_3.5 <-> green$2_3.5) & ( red$1_3.5 <-> red$2_3.5) &
+( green$1_4.5 <-> green$2_4.5) & ( red$1_4.5 <-> red$2_4.5) &
+! green$1_1.4 & ! red$1_1.4 & ! green$2_1.4 & red$2_1.4
+) | (
+( green$1_0.1 <-> green$2_0.1) & ( red$1_0.1 <-> red$2_0.1) &
+( green$1_0.2 <-> green$2_0.2) & ( red$1_0.2 <-> red$2_0.2) &
+( green$1_0.3 <-> green$2_0.3) & ( red$1_0.3 <-> red$2_0.3) &
+( green$1_0.4 <-> green$2_0.4) & ( red$1_0.4 <-> red$2_0.4) &
+( green$1_0.5 <-> green$2_0.5) & ( red$1_0.5 <-> red$2_0.5) &
+( green$1_1.2 <-> green$2_1.2) & ( red$1_1.2 <-> red$2_1.2) &
+( green$1_1.3 <-> green$2_1.3) & ( red$1_1.3 <-> red$2_1.3) &
+( green$1_1.4 <-> green$2_1.4) & ( red$1_1.4 <-> red$2_1.4) &
+( green$1_2.3 <-> green$2_2.3) & ( red$1_2.3 <-> red$2_2.3) &
+( green$1_2.4 <-> green$2_2.4) & ( red$1_2.4 <-> red$2_2.4) &
+( green$1_2.5 <-> green$2_2.5) & ( red$1_2.5 <-> red$2_2.5) &
+( green$1_3.4 <-> green$2_3.4) & ( red$1_3.4 <-> red$2_3.4) &
+( green$1_3.5 <-> green$2_3.5) & ( red$1_3.5 <-> red$2_3.5) &
+( green$1_4.5 <-> green$2_4.5) & ( red$1_4.5 <-> red$2_4.5) &
+! green$1_1.5 & ! red$1_1.5 & ! green$2_1.5 & red$2_1.5
+) | (
+( green$1_0.1 <-> green$2_0.1) & ( red$1_0.1 <-> red$2_0.1) &
+( green$1_0.2 <-> green$2_0.2) & ( red$1_0.2 <-> red$2_0.2) &
+( green$1_0.3 <-> green$2_0.3) & ( red$1_0.3 <-> red$2_0.3) &
+( green$1_0.4 <-> green$2_0.4) & ( red$1_0.4 <-> red$2_0.4) &
+( green$1_0.5 <-> green$2_0.5) & ( red$1_0.5 <-> red$2_0.5) &
+( green$1_1.2 <-> green$2_1.2) & ( red$1_1.2 <-> red$2_1.2) &
+( green$1_1.3 <-> green$2_1.3) & ( red$1_1.3 <-> red$2_1.3) &
+( green$1_1.4 <-> green$2_1.4) & ( red$1_1.4 <-> red$2_1.4) &
+( green$1_1.5 <-> green$2_1.5) & ( red$1_1.5 <-> red$2_1.5) &
+( green$1_2.4 <-> green$2_2.4) & ( red$1_2.4 <-> red$2_2.4) &
+( green$1_2.5 <-> green$2_2.5) & ( red$1_2.5 <-> red$2_2.5) &
+( green$1_3.4 <-> green$2_3.4) & ( red$1_3.4 <-> red$2_3.4) &
+( green$1_3.5 <-> green$2_3.5) & ( red$1_3.5 <-> red$2_3.5) &
+( green$1_4.5 <-> green$2_4.5) & ( red$1_4.5 <-> red$2_4.5) &
+! green$1_2.3 & ! red$1_2.3 & ! green$2_2.3 & red$2_2.3
+) | (
+( green$1_0.1 <-> green$2_0.1) & ( red$1_0.1 <-> red$2_0.1) &
+( green$1_0.2 <-> green$2_0.2) & ( red$1_0.2 <-> red$2_0.2) &
+( green$1_0.3 <-> green$2_0.3) & ( red$1_0.3 <-> red$2_0.3) &
+( green$1_0.4 <-> green$2_0.4) & ( red$1_0.4 <-> red$2_0.4) &
+( green$1_0.5 <-> green$2_0.5) & ( red$1_0.5 <-> red$2_0.5) &
+( green$1_1.2 <-> green$2_1.2) & ( red$1_1.2 <-> red$2_1.2) &
+( green$1_1.3 <-> green$2_1.3) & ( red$1_1.3 <-> red$2_1.3) &
+( green$1_1.4 <-> green$2_1.4) & ( red$1_1.4 <-> red$2_1.4) &
+( green$1_1.5 <-> green$2_1.5) & ( red$1_1.5 <-> red$2_1.5) &
+( green$1_2.3 <-> green$2_2.3) & ( red$1_2.3 <-> red$2_2.3) &
+( green$1_2.5 <-> green$2_2.5) & ( red$1_2.5 <-> red$2_2.5) &
+( green$1_3.4 <-> green$2_3.4) & ( red$1_3.4 <-> red$2_3.4) &
+( green$1_3.5 <-> green$2_3.5) & ( red$1_3.5 <-> red$2_3.5) &
+( green$1_4.5 <-> green$2_4.5) & ( red$1_4.5 <-> red$2_4.5) &
+! green$1_2.4 & ! red$1_2.4 & ! green$2_2.4 & red$2_2.4
+) | (
+( green$1_0.1 <-> green$2_0.1) & ( red$1_0.1 <-> red$2_0.1) &
+( green$1_0.2 <-> green$2_0.2) & ( red$1_0.2 <-> red$2_0.2) &
+( green$1_0.3 <-> green$2_0.3) & ( red$1_0.3 <-> red$2_0.3) &
+( green$1_0.4 <-> green$2_0.4) & ( red$1_0.4 <-> red$2_0.4) &
+( green$1_0.5 <-> green$2_0.5) & ( red$1_0.5 <-> red$2_0.5) &
+( green$1_1.2 <-> green$2_1.2) & ( red$1_1.2 <-> red$2_1.2) &
+( green$1_1.3 <-> green$2_1.3) & ( red$1_1.3 <-> red$2_1.3) &
+( green$1_1.4 <-> green$2_1.4) & ( red$1_1.4 <-> red$2_1.4) &
+( green$1_1.5 <-> green$2_1.5) & ( red$1_1.5 <-> red$2_1.5) &
+( green$1_2.3 <-> green$2_2.3) & ( red$1_2.3 <-> red$2_2.3) &
+( green$1_2.4 <-> green$2_2.4) & ( red$1_2.4 <-> red$2_2.4) &
+( green$1_3.4 <-> green$2_3.4) & ( red$1_3.4 <-> red$2_3.4) &
+( green$1_3.5 <-> green$2_3.5) & ( red$1_3.5 <-> red$2_3.5) &
+( green$1_4.5 <-> green$2_4.5) & ( red$1_4.5 <-> red$2_4.5) &
+! green$1_2.5 & ! red$1_2.5 & ! green$2_2.5 & red$2_2.5
+) | (
+( green$1_0.1 <-> green$2_0.1) & ( red$1_0.1 <-> red$2_0.1) &
+( green$1_0.2 <-> green$2_0.2) & ( red$1_0.2 <-> red$2_0.2) &
+( green$1_0.3 <-> green$2_0.3) & ( red$1_0.3 <-> red$2_0.3) &
+( green$1_0.4 <-> green$2_0.4) & ( red$1_0.4 <-> red$2_0.4) &
+( green$1_0.5 <-> green$2_0.5) & ( red$1_0.5 <-> red$2_0.5) &
+( green$1_1.2 <-> green$2_1.2) & ( red$1_1.2 <-> red$2_1.2) &
+( green$1_1.3 <-> green$2_1.3) & ( red$1_1.3 <-> red$2_1.3) &
+( green$1_1.4 <-> green$2_1.4) & ( red$1_1.4 <-> red$2_1.4) &
+( green$1_1.5 <-> green$2_1.5) & ( red$1_1.5 <-> red$2_1.5) &
+( green$1_2.3 <-> green$2_2.3) & ( red$1_2.3 <-> red$2_2.3) &
+( green$1_2.4 <-> green$2_2.4) & ( red$1_2.4 <-> red$2_2.4) &
+( green$1_2.5 <-> green$2_2.5) & ( red$1_2.5 <-> red$2_2.5) &
+( green$1_3.5 <-> green$2_3.5) & ( red$1_3.5 <-> red$2_3.5) &
+( green$1_4.5 <-> green$2_4.5) & ( red$1_4.5 <-> red$2_4.5) &
+! green$1_3.4 & ! red$1_3.4 & ! green$2_3.4 & red$2_3.4
+) | (
+( green$1_0.1 <-> green$2_0.1) & ( red$1_0.1 <-> red$2_0.1) &
+( green$1_0.2 <-> green$2_0.2) & ( red$1_0.2 <-> red$2_0.2) &
+( green$1_0.3 <-> green$2_0.3) & ( red$1_0.3 <-> red$2_0.3) &
+( green$1_0.4 <-> green$2_0.4) & ( red$1_0.4 <-> red$2_0.4) &
+( green$1_0.5 <-> green$2_0.5) & ( red$1_0.5 <-> red$2_0.5) &
+( green$1_1.2 <-> green$2_1.2) & ( red$1_1.2 <-> red$2_1.2) &
+( green$1_1.3 <-> green$2_1.3) & ( red$1_1.3 <-> red$2_1.3) &
+( green$1_1.4 <-> green$2_1.4) & ( red$1_1.4 <-> red$2_1.4) &
+( green$1_1.5 <-> green$2_1.5) & ( red$1_1.5 <-> red$2_1.5) &
+( green$1_2.3 <-> green$2_2.3) & ( red$1_2.3 <-> red$2_2.3) &
+( green$1_2.4 <-> green$2_2.4) & ( red$1_2.4 <-> red$2_2.4) &
+( green$1_2.5 <-> green$2_2.5) & ( red$1_2.5 <-> red$2_2.5) &
+( green$1_3.4 <-> green$2_3.4) & ( red$1_3.4 <-> red$2_3.4) &
+( green$1_4.5 <-> green$2_4.5) & ( red$1_4.5 <-> red$2_4.5) &
+! green$1_3.5 & ! red$1_3.5 & ! green$2_3.5 & red$2_3.5
+) | (
+( green$1_0.1 <-> green$2_0.1) & ( red$1_0.1 <-> red$2_0.1) &
+( green$1_0.2 <-> green$2_0.2) & ( red$1_0.2 <-> red$2_0.2) &
+( green$1_0.3 <-> green$2_0.3) & ( red$1_0.3 <-> red$2_0.3) &
+( green$1_0.4 <-> green$2_0.4) & ( red$1_0.4 <-> red$2_0.4) &
+( green$1_0.5 <-> green$2_0.5) & ( red$1_0.5 <-> red$2_0.5) &
+( green$1_1.2 <-> green$2_1.2) & ( red$1_1.2 <-> red$2_1.2) &
+( green$1_1.3 <-> green$2_1.3) & ( red$1_1.3 <-> red$2_1.3) &
+( green$1_1.4 <-> green$2_1.4) & ( red$1_1.4 <-> red$2_1.4) &
+( green$1_1.5 <-> green$2_1.5) & ( red$1_1.5 <-> red$2_1.5) &
+( green$1_2.3 <-> green$2_2.3) & ( red$1_2.3 <-> red$2_2.3) &
+( green$1_2.4 <-> green$2_2.4) & ( red$1_2.4 <-> red$2_2.4) &
+( green$1_2.5 <-> green$2_2.5) & ( red$1_2.5 <-> red$2_2.5) &
+( green$1_3.4 <-> green$2_3.4) & ( red$1_3.4 <-> red$2_3.4) &
+( green$1_3.5 <-> green$2_3.5) & ( red$1_3.5 <-> red$2_3.5) &
+! green$1_4.5 & ! red$1_4.5 & ! green$2_4.5 & red$2_4.5
+) )
 &
-% define possible states after one step
-( ( ! green$1_0.2 &
-! green$1_0.3 &
-! green$1_0.4 &
-! green$1_0.5 &
-! green$1_1.2 &
-! green$1_1.3 &
-! green$1_1.4 &
-! green$1_1.5 &
-! green$1_2.3 &
-! green$1_2.4 &
-! green$1_2.5 &
-! green$1_3.4 &
-! green$1_3.5 &
-! green$1_4.5 &
-green$1_0.1 ) |
-( ! green$1_0.1 &
-! green$1_0.3 &
-! green$1_0.4 &
-! green$1_0.5 &
-! green$1_1.2 &
-! green$1_1.3 &
-! green$1_1.4 &
-! green$1_1.5 &
-! green$1_2.3 &
-! green$1_2.4 &
-! green$1_2.5 &
-! green$1_3.4 &
-! green$1_3.5 &
-! green$1_4.5 &
-green$1_0.2 ) |
-( ! green$1_0.1 &
-! green$1_0.2 &
-! green$1_0.4 &
-! green$1_0.5 &
-! green$1_1.2 &
-! green$1_1.3 &
-! green$1_1.4 &
-! green$1_1.5 &
-! green$1_2.3 &
-! green$1_2.4 &
-! green$1_2.5 &
-! green$1_3.4 &
-! green$1_3.5 &
-! green$1_4.5 &
-green$1_0.3 ) |
-( ! green$1_0.1 &
-! green$1_0.2 &
-! green$1_0.3 &
-! green$1_0.5 &
-! green$1_1.2 &
-! green$1_1.3 &
-! green$1_1.4 &
-! green$1_1.5 &
-! green$1_2.3 &
-! green$1_2.4 &
-! green$1_2.5 &
-! green$1_3.4 &
-! green$1_3.5 &
-! green$1_4.5 &
-green$1_0.4 ) |
-( ! green$1_0.1 &
-! green$1_0.2 &
-! green$1_0.3 &
-! green$1_0.4 &
-! green$1_1.2 &
-! green$1_1.3 &
-! green$1_1.4 &
-! green$1_1.5 &
-! green$1_2.3 &
-! green$1_2.4 &
-! green$1_2.5 &
-! green$1_3.4 &
-! green$1_3.5 &
-! green$1_4.5 &
-green$1_0.5 ) |
-( ! green$1_0.1 &
-! green$1_0.2 &
-! green$1_0.3 &
-! green$1_0.4 &
-! green$1_0.5 &
-! green$1_1.3 &
-! green$1_1.4 &
-! green$1_1.5 &
-! green$1_2.3 &
-! green$1_2.4 &
-! green$1_2.5 &
-! green$1_3.4 &
-! green$1_3.5 &
-! green$1_4.5 &
-green$1_1.2 ) |
-( ! green$1_0.1 &
-! green$1_0.2 &
-! green$1_0.3 &
-! green$1_0.4 &
-! green$1_0.5 &
-! green$1_1.2 &
-! green$1_1.4 &
-! green$1_1.5 &
-! green$1_2.3 &
-! green$1_2.4 &
-! green$1_2.5 &
-! green$1_3.4 &
-! green$1_3.5 &
-! green$1_4.5 &
-green$1_1.3 ) |
-( ! green$1_0.1 &
-! green$1_0.2 &
-! green$1_0.3 &
-! green$1_0.4 &
-! green$1_0.5 &
-! green$1_1.2 &
-! green$1_1.3 &
-! green$1_1.5 &
-! green$1_2.3 &
-! green$1_2.4 &
-! green$1_2.5 &
-! green$1_3.4 &
-! green$1_3.5 &
-! green$1_4.5 &
-green$1_1.4 ) |
-( ! green$1_0.1 &
-! green$1_0.2 &
-! green$1_0.3 &
-! green$1_0.4 &
-! green$1_0.5 &
-! green$1_1.2 &
-! green$1_1.3 &
-! green$1_1.4 &
-! green$1_2.3 &
-! green$1_2.4 &
-! green$1_2.5 &
-! green$1_3.4 &
-! green$1_3.5 &
-! green$1_4.5 &
-green$1_1.5 ) |
-( ! green$1_0.1 &
-! green$1_0.2 &
-! green$1_0.3 &
-! green$1_0.4 &
-! green$1_0.5 &
-! green$1_1.2 &
-! green$1_1.3 &
-! green$1_1.4 &
-! green$1_1.5 &
-! green$1_2.4 &
-! green$1_2.5 &
-! green$1_3.4 &
-! green$1_3.5 &
-! green$1_4.5 &
-green$1_2.3 ) |
-( ! green$1_0.1 &
-! green$1_0.2 &
-! green$1_0.3 &
-! green$1_0.4 &
-! green$1_0.5 &
-! green$1_1.2 &
-! green$1_1.3 &
-! green$1_1.4 &
-! green$1_1.5 &
-! green$1_2.3 &
-! green$1_2.5 &
-! green$1_3.4 &
-! green$1_3.5 &
-! green$1_4.5 &
-green$1_2.4 ) |
-( ! green$1_0.1 &
-! green$1_0.2 &
-! green$1_0.3 &
-! green$1_0.4 &
-! green$1_0.5 &
-! green$1_1.2 &
-! green$1_1.3 &
-! green$1_1.4 &
-! green$1_1.5 &
-! green$1_2.3 &
-! green$1_2.4 &
-! green$1_3.4 &
-! green$1_3.5 &
-! green$1_4.5 &
-green$1_2.5 ) |
-( ! green$1_0.1 &
-! green$1_0.2 &
-! green$1_0.3 &
-! green$1_0.4 &
-! green$1_0.5 &
-! green$1_1.2 &
-! green$1_1.3 &
-! green$1_1.4 &
-! green$1_1.5 &
-! green$1_2.3 &
-! green$1_2.4 &
-! green$1_2.5 &
-! green$1_3.5 &
-! green$1_4.5 &
-green$1_3.4 ) |
-( ! green$1_0.1 &
-! green$1_0.2 &
-! green$1_0.3 &
-! green$1_0.4 &
-! green$1_0.5 &
-! green$1_1.2 &
-! green$1_1.3 &
-! green$1_1.4 &
-! green$1_1.5 &
-! green$1_2.3 &
-! green$1_2.4 &
-! green$1_2.5 &
-! green$1_3.4 &
-! green$1_4.5 &
-green$1_3.5 ) |
-( ! green$1_0.1 &
-! green$1_0.2 &
-! green$1_0.3 &
-! green$1_0.4 &
-! green$1_0.5 &
-! green$1_1.2 &
-! green$1_1.3 &
-! green$1_1.4 &
-! green$1_1.5 &
-! green$1_2.3 &
-! green$1_2.4 &
-! green$1_2.5 &
-! green$1_3.4 &
-! green$1_3.5 &
-green$1_4.5 ) )
-& ! green$1_0.2
+% define possible states after two steps
+(
+( green$2_0.1 &
+red$2_0.2 &
+! green$2_0.3 &
+! red$2_0.3 &
+! green$2_0.4 &
+! red$2_0.4 &
+! green$2_0.5 &
+! red$2_0.5 &
+! green$2_1.2 &
+! red$2_1.2 &
+! green$2_1.3 &
+! red$2_1.3 &
+! green$2_1.4 &
+! red$2_1.4 &
+! green$2_1.5 &
+! red$2_1.5 &
+! green$2_2.3 &
+! red$2_2.3 &
+! green$2_2.4 &
+! red$2_2.4 &
+! green$2_2.5 &
+! red$2_2.5 &
+! green$2_3.4 &
+! red$2_3.4 &
+! green$2_3.5 &
+! red$2_3.5 &
+! green$2_4.5 &
+! red$2_4.5 ) |
+( green$2_0.1 &
+red$2_0.3 &
+! green$2_0.2 &
+! red$2_0.2 &
+! green$2_0.4 &
+! red$2_0.4 &
+! green$2_0.5 &
+! red$2_0.5 &
+! green$2_1.2 &
+! red$2_1.2 &
+! green$2_1.3 &
+! red$2_1.3 &
+! green$2_1.4 &
+! red$2_1.4 &
+! green$2_1.5 &
+! red$2_1.5 &
+! green$2_2.3 &
+! red$2_2.3 &
+! green$2_2.4 &
+! red$2_2.4 &
+! green$2_2.5 &
+! red$2_2.5 &
+! green$2_3.4 &
+! red$2_3.4 &
+! green$2_3.5 &
+! red$2_3.5 &
+! green$2_4.5 &
+! red$2_4.5 ) |
+( green$2_0.1 &
+red$2_0.4 &
+! green$2_0.2 &
+! red$2_0.2 &
+! green$2_0.3 &
+! red$2_0.3 &
+! green$2_0.5 &
+! red$2_0.5 &
+! green$2_1.2 &
+! red$2_1.2 &
+! green$2_1.3 &
+! red$2_1.3 &
+! green$2_1.4 &
+! red$2_1.4 &
+! green$2_1.5 &
+! red$2_1.5 &
+! green$2_2.3 &
+! red$2_2.3 &
+! green$2_2.4 &
+! red$2_2.4 &
+! green$2_2.5 &
+! red$2_2.5 &
+! green$2_3.4 &
+! red$2_3.4 &
+! green$2_3.5 &
+! red$2_3.5 &
+! green$2_4.5 &
+! red$2_4.5 ) |
+( green$2_0.1 &
+red$2_0.5 &
+! green$2_0.2 &
+! red$2_0.2 &
+! green$2_0.3 &
+! red$2_0.3 &
+! green$2_0.4 &
+! red$2_0.4 &
+! green$2_1.2 &
+! red$2_1.2 &
+! green$2_1.3 &
+! red$2_1.3 &
+! green$2_1.4 &
+! red$2_1.4 &
+! green$2_1.5 &
+! red$2_1.5 &
+! green$2_2.3 &
+! red$2_2.3 &
+! green$2_2.4 &
+! red$2_2.4 &
+! green$2_2.5 &
+! red$2_2.5 &
+! green$2_3.4 &
+! red$2_3.4 &
+! green$2_3.5 &
+! red$2_3.5 &
+! green$2_4.5 &
+! red$2_4.5 ) |
+( green$2_0.1 &
+red$2_1.2 &
+! green$2_0.2 &
+! red$2_0.2 &
+! green$2_0.3 &
+! red$2_0.3 &
+! green$2_0.4 &
+! red$2_0.4 &
+! green$2_0.5 &
+! red$2_0.5 &
+! green$2_1.3 &
+! red$2_1.3 &
+! green$2_1.4 &
+! red$2_1.4 &
+! green$2_1.5 &
+! red$2_1.5 &
+! green$2_2.3 &
+! red$2_2.3 &
+! green$2_2.4 &
+! red$2_2.4 &
+! green$2_2.5 &
+! red$2_2.5 &
+! green$2_3.4 &
+! red$2_3.4 &
+! green$2_3.5 &
+! red$2_3.5 &
+! green$2_4.5 &
+! red$2_4.5 ) |
+( green$2_0.1 &
+red$2_1.3 &
+! green$2_0.2 &
+! red$2_0.2 &
+! green$2_0.3 &
+! red$2_0.3 &
+! green$2_0.4 &
+! red$2_0.4 &
+! green$2_0.5 &
+! red$2_0.5 &
+! green$2_1.2 &
+! red$2_1.2 &
+! green$2_1.4 &
+! red$2_1.4 &
+! green$2_1.5 &
+! red$2_1.5 &
+! green$2_2.3 &
+! red$2_2.3 &
+! green$2_2.4 &
+! red$2_2.4 &
+! green$2_2.5 &
+! red$2_2.5 &
+! green$2_3.4 &
+! red$2_3.4 &
+! green$2_3.5 &
+! red$2_3.5 &
+! green$2_4.5 &
+! red$2_4.5 ) |
+( green$2_0.1 &
+red$2_1.4 &
+! green$2_0.2 &
+! red$2_0.2 &
+! green$2_0.3 &
+! red$2_0.3 &
+! green$2_0.4 &
+! red$2_0.4 &
+! green$2_0.5 &
+! red$2_0.5 &
+! green$2_1.2 &
+! red$2_1.2 &
+! green$2_1.3 &
+! red$2_1.3 &
+! green$2_1.5 &
+! red$2_1.5 &
+! green$2_2.3 &
+! red$2_2.3 &
+! green$2_2.4 &
+! red$2_2.4 &
+! green$2_2.5 &
+! red$2_2.5 &
+! green$2_3.4 &
+! red$2_3.4 &
+! green$2_3.5 &
+! red$2_3.5 &
+! green$2_4.5 &
+! red$2_4.5 ) |
+( green$2_0.1 &
+red$2_1.5 &
+! green$2_0.2 &
+! red$2_0.2 &
+! green$2_0.3 &
+! red$2_0.3 &
+! green$2_0.4 &
+! red$2_0.4 &
+! green$2_0.5 &
+! red$2_0.5 &
+! green$2_1.2 &
+! red$2_1.2 &
+! green$2_1.3 &
+! red$2_1.3 &
+! green$2_1.4 &
+! red$2_1.4 &
+! green$2_2.3 &
+! red$2_2.3 &
+! green$2_2.4 &
+! red$2_2.4 &
+! green$2_2.5 &
+! red$2_2.5 &
+! green$2_3.4 &
+! red$2_3.4 &
+! green$2_3.5 &
+! red$2_3.5 &
+! green$2_4.5 &
+! red$2_4.5 ) |
+( green$2_0.1 &
+red$2_2.3 &
+! green$2_0.2 &
+! red$2_0.2 &
+! green$2_0.3 &
+! red$2_0.3 &
+! green$2_0.4 &
+! red$2_0.4 &
+! green$2_0.5 &
+! red$2_0.5 &
+! green$2_1.2 &
+! red$2_1.2 &
+! green$2_1.3 &
+! red$2_1.3 &
+! green$2_1.4 &
+! red$2_1.4 &
+! green$2_1.5 &
+! red$2_1.5 &
+! green$2_2.4 &
+! red$2_2.4 &
+! green$2_2.5 &
+! red$2_2.5 &
+! green$2_3.4 &
+! red$2_3.4 &
+! green$2_3.5 &
+! red$2_3.5 &
+! green$2_4.5 &
+! red$2_4.5 ) |
+( green$2_0.1 &
+red$2_2.4 &
+! green$2_0.2 &
+! red$2_0.2 &
+! green$2_0.3 &
+! red$2_0.3 &
+! green$2_0.4 &
+! red$2_0.4 &
+! green$2_0.5 &
+! red$2_0.5 &
+! green$2_1.2 &
+! red$2_1.2 &
+! green$2_1.3 &
+! red$2_1.3 &
+! green$2_1.4 &
+! red$2_1.4 &
+! green$2_1.5 &
+! red$2_1.5 &
+! green$2_2.3 &
+! red$2_2.3 &
+! green$2_2.5 &
+! red$2_2.5 &
+! green$2_3.4 &
+! red$2_3.4 &
+! green$2_3.5 &
+! red$2_3.5 &
+! green$2_4.5 &
+! red$2_4.5 ) |
+( green$2_0.1 &
+red$2_2.5 &
+! green$2_0.2 &
+! red$2_0.2 &
+! green$2_0.3 &
+! red$2_0.3 &
+! green$2_0.4 &
+! red$2_0.4 &
+! green$2_0.5 &
+! red$2_0.5 &
+! green$2_1.2 &
+! red$2_1.2 &
+! green$2_1.3 &
+! red$2_1.3 &
+! green$2_1.4 &
+! red$2_1.4 &
+! green$2_1.5 &
+! red$2_1.5 &
+! green$2_2.3 &
+! red$2_2.3 &
+! green$2_2.4 &
+! red$2_2.4 &
+! green$2_3.4 &
+! red$2_3.4 &
+! green$2_3.5 &
+! red$2_3.5 &
+! green$2_4.5 &
+! red$2_4.5 ) |
+( green$2_0.1 &
+red$2_3.4 &
+! green$2_0.2 &
+! red$2_0.2 &
+! green$2_0.3 &
+! red$2_0.3 &
+! green$2_0.4 &
+! red$2_0.4 &
+! green$2_0.5 &
+! red$2_0.5 &
+! green$2_1.2 &
+! red$2_1.2 &
+! green$2_1.3 &
+! red$2_1.3 &
+! green$2_1.4 &
+! red$2_1.4 &
+! green$2_1.5 &
+! red$2_1.5 &
+! green$2_2.3 &
+! red$2_2.3 &
+! green$2_2.4 &
+! red$2_2.4 &
+! green$2_2.5 &
+! red$2_2.5 &
+! green$2_3.5 &
+! red$2_3.5 &
+! green$2_4.5 &
+! red$2_4.5 ) |
+( green$2_0.1 &
+red$2_3.5 &
+! green$2_0.2 &
+! red$2_0.2 &
+! green$2_0.3 &
+! red$2_0.3 &
+! green$2_0.4 &
+! red$2_0.4 &
+! green$2_0.5 &
+! red$2_0.5 &
+! green$2_1.2 &
+! red$2_1.2 &
+! green$2_1.3 &
+! red$2_1.3 &
+! green$2_1.4 &
+! red$2_1.4 &
+! green$2_1.5 &
+! red$2_1.5 &
+! green$2_2.3 &
+! red$2_2.3 &
+! green$2_2.4 &
+! red$2_2.4 &
+! green$2_2.5 &
+! red$2_2.5 &
+! green$2_3.4 &
+! red$2_3.4 &
+! green$2_4.5 &
+! red$2_4.5 ) |
+( green$2_0.1 &
+red$2_4.5 &
+! green$2_0.2 &
+! red$2_0.2 &
+! green$2_0.3 &
+! red$2_0.3 &
+! green$2_0.4 &
+! red$2_0.4 &
+! green$2_0.5 &
+! red$2_0.5 &
+! green$2_1.2 &
+! red$2_1.2 &
+! green$2_1.3 &
+! red$2_1.3 &
+! green$2_1.4 &
+! red$2_1.4 &
+! green$2_1.5 &
+! red$2_1.5 &
+! green$2_2.3 &
+! red$2_2.3 &
+! green$2_2.4 &
+! red$2_2.4 &
+! green$2_2.5 &
+! red$2_2.5 &
+! green$2_3.4 &
+! red$2_3.4 &
+! green$2_3.5 &
+! red$2_3.5 ) |
+( green$2_0.2 &
+red$2_0.1 &
+! green$2_0.3 &
+! red$2_0.3 &
+! green$2_0.4 &
+! red$2_0.4 &
+! green$2_0.5 &
+! red$2_0.5 &
+! green$2_1.2 &
+! red$2_1.2 &
+! green$2_1.3 &
+! red$2_1.3 &
+! green$2_1.4 &
+! red$2_1.4 &
+! green$2_1.5 &
+! red$2_1.5 &
+! green$2_2.3 &
+! red$2_2.3 &
+! green$2_2.4 &
+! red$2_2.4 &
+! green$2_2.5 &
+! red$2_2.5 &
+! green$2_3.4 &
+! red$2_3.4 &
+! green$2_3.5 &
+! red$2_3.5 &
+! green$2_4.5 &
+! red$2_4.5 ) |
+( green$2_0.2 &
+red$2_0.3 &
+! green$2_0.1 &
+! red$2_0.1 &
+! green$2_0.4 &
+! red$2_0.4 &
+! green$2_0.5 &
+! red$2_0.5 &
+! green$2_1.2 &
+! red$2_1.2 &
+! green$2_1.3 &
+! red$2_1.3 &
+! green$2_1.4 &
+! red$2_1.4 &
+! green$2_1.5 &
+! red$2_1.5 &
+! green$2_2.3 &
+! red$2_2.3 &
+! green$2_2.4 &
+! red$2_2.4 &
+! green$2_2.5 &
+! red$2_2.5 &
+! green$2_3.4 &
+! red$2_3.4 &
+! green$2_3.5 &
+! red$2_3.5 &
+! green$2_4.5 &
+! red$2_4.5 ) |
+( green$2_0.2 &
+red$2_0.4 &
+! green$2_0.1 &
+! red$2_0.1 &
+! green$2_0.3 &
+! red$2_0.3 &
+! green$2_0.5 &
+! red$2_0.5 &
+! green$2_1.2 &
+! red$2_1.2 &
+! green$2_1.3 &
+! red$2_1.3 &
+! green$2_1.4 &
+! red$2_1.4 &
+! green$2_1.5 &
+! red$2_1.5 &
+! green$2_2.3 &
+! red$2_2.3 &
+! green$2_2.4 &
+! red$2_2.4 &
+! green$2_2.5 &
+! red$2_2.5 &
+! green$2_3.4 &
+! red$2_3.4 &
+! green$2_3.5 &
+! red$2_3.5 &
+! green$2_4.5 &
+! red$2_4.5 ) |
+( green$2_0.2 &
+red$2_0.5 &
+! green$2_0.1 &
+! red$2_0.1 &
+! green$2_0.3 &
+! red$2_0.3 &
+! green$2_0.4 &
+! red$2_0.4 &
+! green$2_1.2 &
+! red$2_1.2 &
+! green$2_1.3 &
+! red$2_1.3 &
+! green$2_1.4 &
+! red$2_1.4 &
+! green$2_1.5 &
+! red$2_1.5 &
+! green$2_2.3 &
+! red$2_2.3 &
+! green$2_2.4 &
+! red$2_2.4 &
+! green$2_2.5 &
+! red$2_2.5 &
+! green$2_3.4 &
+! red$2_3.4 &
+! green$2_3.5 &
+! red$2_3.5 &
+! green$2_4.5 &
+! red$2_4.5 ) |
+( green$2_0.2 &
+red$2_1.2 &
+! green$2_0.1 &
+! red$2_0.1 &
+! green$2_0.3 &
+! red$2_0.3 &
+! green$2_0.4 &
+! red$2_0.4 &
+! green$2_0.5 &
+! red$2_0.5 &
+! green$2_1.3 &
+! red$2_1.3 &
+! green$2_1.4 &
+! red$2_1.4 &
+! green$2_1.5 &
+! red$2_1.5 &
+! green$2_2.3 &
+! red$2_2.3 &
+! green$2_2.4 &
+! red$2_2.4 &
+! green$2_2.5 &
+! red$2_2.5 &
+! green$2_3.4 &
+! red$2_3.4 &
+! green$2_3.5 &
+! red$2_3.5 &
+! green$2_4.5 &
+! red$2_4.5 ) |
+( green$2_0.2 &
+red$2_1.3 &
+! green$2_0.1 &
+! red$2_0.1 &
+! green$2_0.3 &
+! red$2_0.3 &
+! green$2_0.4 &
+! red$2_0.4 &
+! green$2_0.5 &
+! red$2_0.5 &
+! green$2_1.2 &
+! red$2_1.2 &
+! green$2_1.4 &
+! red$2_1.4 &
+! green$2_1.5 &
+! red$2_1.5 &
+! green$2_2.3 &
+! red$2_2.3 &
+! green$2_2.4 &
+! red$2_2.4 &
+! green$2_2.5 &
+! red$2_2.5 &
+! green$2_3.4 &
+! red$2_3.4 &
+! green$2_3.5 &
+! red$2_3.5 &
+! green$2_4.5 &
+! red$2_4.5 ) |
+( green$2_0.2 &
+red$2_1.4 &
+! green$2_0.1 &
+! red$2_0.1 &
+! green$2_0.3 &
+! red$2_0.3 &
+! green$2_0.4 &
+! red$2_0.4 &
+! green$2_0.5 &
+! red$2_0.5 &
+! green$2_1.2 &
+! red$2_1.2 &
+! green$2_1.3 &
+! red$2_1.3 &
+! green$2_1.5 &
+! red$2_1.5 &
+! green$2_2.3 &
+! red$2_2.3 &
+! green$2_2.4 &
+! red$2_2.4 &
+! green$2_2.5 &
+! red$2_2.5 &
+! green$2_3.4 &
+! red$2_3.4 &
+! green$2_3.5 &
+! red$2_3.5 &
+! green$2_4.5 &
+! red$2_4.5 ) |
+( green$2_0.2 &
+red$2_1.5 &
+! green$2_0.1 &
+! red$2_0.1 &
+! green$2_0.3 &
+! red$2_0.3 &
+! green$2_0.4 &
+! red$2_0.4 &
+! green$2_0.5 &
+! red$2_0.5 &
+! green$2_1.2 &
+! red$2_1.2 &
+! green$2_1.3 &
+! red$2_1.3 &
+! green$2_1.4 &
+! red$2_1.4 &
+! green$2_2.3 &
+! red$2_2.3 &
+! green$2_2.4 &
+! red$2_2.4 &
+! green$2_2.5 &
+! red$2_2.5 &
+! green$2_3.4 &
+! red$2_3.4 &
+! green$2_3.5 &
+! red$2_3.5 &
+! green$2_4.5 &
+! red$2_4.5 ) |
+( green$2_0.2 &
+red$2_2.3 &
+! green$2_0.1 &
+! red$2_0.1 &
+! green$2_0.3 &
+! red$2_0.3 &
+! green$2_0.4 &
+! red$2_0.4 &
+! green$2_0.5 &
+! red$2_0.5 &
+! green$2_1.2 &
+! red$2_1.2 &
+! green$2_1.3 &
+! red$2_1.3 &
+! green$2_1.4 &
+! red$2_1.4 &
+! green$2_1.5 &
+! red$2_1.5 &
+! green$2_2.4 &
+! red$2_2.4 &
+! green$2_2.5 &
+! red$2_2.5 &
+! green$2_3.4 &
+! red$2_3.4 &
+! green$2_3.5 &
+! red$2_3.5 &
+! green$2_4.5 &
+! red$2_4.5 ) |
+( green$2_0.2 &
+red$2_2.4 &
+! green$2_0.1 &
+! red$2_0.1 &
+! green$2_0.3 &
+! red$2_0.3 &
+! green$2_0.4 &
+! red$2_0.4 &
+! green$2_0.5 &
+! red$2_0.5 &
+! green$2_1.2 &
+! red$2_1.2 &
+! green$2_1.3 &
+! red$2_1.3 &
+! green$2_1.4 &
+! red$2_1.4 &
+! green$2_1.5 &
+! red$2_1.5 &
+! green$2_2.3 &
+! red$2_2.3 &
+! green$2_2.5 &
+! red$2_2.5 &
+! green$2_3.4 &
+! red$2_3.4 &
+! green$2_3.5 &
+! red$2_3.5 &
+! green$2_4.5 &
+! red$2_4.5 ) |
+( green$2_0.2 &
+red$2_2.5 &
+! green$2_0.1 &
+! red$2_0.1 &
+! green$2_0.3 &
+! red$2_0.3 &
+! green$2_0.4 &
+! red$2_0.4 &
+! green$2_0.5 &
+! red$2_0.5 &
+! green$2_1.2 &
+! red$2_1.2 &
+! green$2_1.3 &
+! red$2_1.3 &
+! green$2_1.4 &
+! red$2_1.4 &
+! green$2_1.5 &
+! red$2_1.5 &
+! green$2_2.3 &
+! red$2_2.3 &
+! green$2_2.4 &
+! red$2_2.4 &
+! green$2_3.4 &
+! red$2_3.4 &
+! green$2_3.5 &
+! red$2_3.5 &
+! green$2_4.5 &
+! red$2_4.5 ) |
+( green$2_0.2 &
+red$2_3.4 &
+! green$2_0.1 &
+! red$2_0.1 &
+! green$2_0.3 &
+! red$2_0.3 &
+! green$2_0.4 &
+! red$2_0.4 &
+! green$2_0.5 &
+! red$2_0.5 &
+! green$2_1.2 &
+! red$2_1.2 &
+! green$2_1.3 &
+! red$2_1.3 &
+! green$2_1.4 &
+! red$2_1.4 &
+! green$2_1.5 &
+! red$2_1.5 &
+! green$2_2.3 &
+! red$2_2.3 &
+! green$2_2.4 &
+! red$2_2.4 &
+! green$2_2.5 &
+! red$2_2.5 &
+! green$2_3.5 &
+! red$2_3.5 &
+! green$2_4.5 &
+! red$2_4.5 ) |
+( green$2_0.2 &
+red$2_3.5 &
+! green$2_0.1 &
+! red$2_0.1 &
+! green$2_0.3 &
+! red$2_0.3 &
+! green$2_0.4 &
+! red$2_0.4 &
+! green$2_0.5 &
+! red$2_0.5 &
+! green$2_1.2 &
+! red$2_1.2 &
+! green$2_1.3 &
+! red$2_1.3 &
+! green$2_1.4 &
+! red$2_1.4 &
+! green$2_1.5 &
+! red$2_1.5 &
+! green$2_2.3 &
+! red$2_2.3 &
+! green$2_2.4 &
+! red$2_2.4 &
+! green$2_2.5 &
+! red$2_2.5 &
+! green$2_3.4 &
+! red$2_3.4 &
+! green$2_4.5 &
+! red$2_4.5 ) |
+( green$2_0.2 &
+red$2_4.5 &
+! green$2_0.1 &
+! red$2_0.1 &
+! green$2_0.3 &
+! red$2_0.3 &
+! green$2_0.4 &
+! red$2_0.4 &
+! green$2_0.5 &
+! red$2_0.5 &
+! green$2_1.2 &
+! red$2_1.2 &
+! green$2_1.3 &
+! red$2_1.3 &
+! green$2_1.4 &
+! red$2_1.4 &
+! green$2_1.5 &
+! red$2_1.5 &
+! green$2_2.3 &
+! red$2_2.3 &
+! green$2_2.4 &
+! red$2_2.4 &
+! green$2_2.5 &
+! red$2_2.5 &
+! green$2_3.4 &
+! red$2_3.4 &
+! green$2_3.5 &
+! red$2_3.5 ) |
+( green$2_0.3 &
+red$2_0.1 &
+! green$2_0.2 &
+! red$2_0.2 &
+! green$2_0.4 &
+! red$2_0.4 &
+! green$2_0.5 &
+! red$2_0.5 &
+! green$2_1.2 &
+! red$2_1.2 &
+! green$2_1.3 &
+! red$2_1.3 &
+! green$2_1.4 &
+! red$2_1.4 &
+! green$2_1.5 &
+! red$2_1.5 &
+! green$2_2.3 &
+! red$2_2.3 &
+! green$2_2.4 &
+! red$2_2.4 &
+! green$2_2.5 &
+! red$2_2.5 &
+! green$2_3.4 &
+! red$2_3.4 &
+! green$2_3.5 &
+! red$2_3.5 &
+! green$2_4.5 &
+! red$2_4.5 ) |
+( green$2_0.3 &
+red$2_0.2 &
+! green$2_0.1 &
+! red$2_0.1 &
+! green$2_0.4 &
+! red$2_0.4 &
+! green$2_0.5 &
+! red$2_0.5 &
+! green$2_1.2 &
+! red$2_1.2 &
+! green$2_1.3 &
+! red$2_1.3 &
+! green$2_1.4 &
+! red$2_1.4 &
+! green$2_1.5 &
+! red$2_1.5 &
+! green$2_2.3 &
+! red$2_2.3 &
+! green$2_2.4 &
+! red$2_2.4 &
+! green$2_2.5 &
+! red$2_2.5 &
+! green$2_3.4 &
+! red$2_3.4 &
+! green$2_3.5 &
+! red$2_3.5 &
+! green$2_4.5 &
+! red$2_4.5 ) |
+( green$2_0.3 &
+red$2_0.4 &
+! green$2_0.1 &
+! red$2_0.1 &
+! green$2_0.2 &
+! red$2_0.2 &
+! green$2_0.5 &
+! red$2_0.5 &
+! green$2_1.2 &
+! red$2_1.2 &
+! green$2_1.3 &
+! red$2_1.3 &
+! green$2_1.4 &
+! red$2_1.4 &
+! green$2_1.5 &
+! red$2_1.5 &
+! green$2_2.3 &
+! red$2_2.3 &
+! green$2_2.4 &
+! red$2_2.4 &
+! green$2_2.5 &
+! red$2_2.5 &
+! green$2_3.4 &
+! red$2_3.4 &
+! green$2_3.5 &
+! red$2_3.5 &
+! green$2_4.5 &
+! red$2_4.5 ) |
+( green$2_0.3 &
+red$2_0.5 &
+! green$2_0.1 &
+! red$2_0.1 &
+! green$2_0.2 &
+! red$2_0.2 &
+! green$2_0.4 &
+! red$2_0.4 &
+! green$2_1.2 &
+! red$2_1.2 &
+! green$2_1.3 &
+! red$2_1.3 &
+! green$2_1.4 &
+! red$2_1.4 &
+! green$2_1.5 &
+! red$2_1.5 &
+! green$2_2.3 &
+! red$2_2.3 &
+! green$2_2.4 &
+! red$2_2.4 &
+! green$2_2.5 &
+! red$2_2.5 &
+! green$2_3.4 &
+! red$2_3.4 &
+! green$2_3.5 &
+! red$2_3.5 &
+! green$2_4.5 &
+! red$2_4.5 ) |
+( green$2_0.3 &
+red$2_1.2 &
+! green$2_0.1 &
+! red$2_0.1 &
+! green$2_0.2 &
+! red$2_0.2 &
+! green$2_0.4 &
+! red$2_0.4 &
+! green$2_0.5 &
+! red$2_0.5 &
+! green$2_1.3 &
+! red$2_1.3 &
+! green$2_1.4 &
+! red$2_1.4 &
+! green$2_1.5 &
+! red$2_1.5 &
+! green$2_2.3 &
+! red$2_2.3 &
+! green$2_2.4 &
+! red$2_2.4 &
+! green$2_2.5 &
+! red$2_2.5 &
+! green$2_3.4 &
+! red$2_3.4 &
+! green$2_3.5 &
+! red$2_3.5 &
+! green$2_4.5 &
+! red$2_4.5 ) |
+( green$2_0.3 &
+red$2_1.3 &
+! green$2_0.1 &
+! red$2_0.1 &
+! green$2_0.2 &
+! red$2_0.2 &
+! green$2_0.4 &
+! red$2_0.4 &
+! green$2_0.5 &
+! red$2_0.5 &
+! green$2_1.2 &
+! red$2_1.2 &
+! green$2_1.4 &
+! red$2_1.4 &
+! green$2_1.5 &
+! red$2_1.5 &
+! green$2_2.3 &
+! red$2_2.3 &
+! green$2_2.4 &
+! red$2_2.4 &
+! green$2_2.5 &
+! red$2_2.5 &
+! green$2_3.4 &
+! red$2_3.4 &
+! green$2_3.5 &
+! red$2_3.5 &
+! green$2_4.5 &
+! red$2_4.5 ) |
+( green$2_0.3 &
+red$2_1.4 &
+! green$2_0.1 &
+! red$2_0.1 &
+! green$2_0.2 &
+! red$2_0.2 &
+! green$2_0.4 &
+! red$2_0.4 &
+! green$2_0.5 &
+! red$2_0.5 &
+! green$2_1.2 &
+! red$2_1.2 &
+! green$2_1.3 &
+! red$2_1.3 &
+! green$2_1.5 &
+! red$2_1.5 &
+! green$2_2.3 &
+! red$2_2.3 &
+! green$2_2.4 &
+! red$2_2.4 &
+! green$2_2.5 &
+! red$2_2.5 &
+! green$2_3.4 &
+! red$2_3.4 &
+! green$2_3.5 &
+! red$2_3.5 &
+! green$2_4.5 &
+! red$2_4.5 ) |
+( green$2_0.3 &
+red$2_1.5 &
+! green$2_0.1 &
+! red$2_0.1 &
+! green$2_0.2 &
+! red$2_0.2 &
+! green$2_0.4 &
+! red$2_0.4 &
+! green$2_0.5 &
+! red$2_0.5 &
+! green$2_1.2 &
+! red$2_1.2 &
+! green$2_1.3 &
+! red$2_1.3 &
+! green$2_1.4 &
+! red$2_1.4 &
+! green$2_2.3 &
+! red$2_2.3 &
+! green$2_2.4 &
+! red$2_2.4 &
+! green$2_2.5 &
+! red$2_2.5 &
+! green$2_3.4 &
+! red$2_3.4 &
+! green$2_3.5 &
+! red$2_3.5 &
+! green$2_4.5 &
+! red$2_4.5 ) |
+( green$2_0.3 &
+red$2_2.3 &
+! green$2_0.1 &
+! red$2_0.1 &
+! green$2_0.2 &
+! red$2_0.2 &
+! green$2_0.4 &
+! red$2_0.4 &
+! green$2_0.5 &
+! red$2_0.5 &
+! green$2_1.2 &
+! red$2_1.2 &
+! green$2_1.3 &
+! red$2_1.3 &
+! green$2_1.4 &
+! red$2_1.4 &
+! green$2_1.5 &
+! red$2_1.5 &
+! green$2_2.4 &
+! red$2_2.4 &
+! green$2_2.5 &
+! red$2_2.5 &
+! green$2_3.4 &
+! red$2_3.4 &
+! green$2_3.5 &
+! red$2_3.5 &
+! green$2_4.5 &
+! red$2_4.5 ) |
+( green$2_0.3 &
+red$2_2.4 &
+! green$2_0.1 &
+! red$2_0.1 &
+! green$2_0.2 &
+! red$2_0.2 &
+! green$2_0.4 &
+! red$2_0.4 &
+! green$2_0.5 &
+! red$2_0.5 &
+! green$2_1.2 &
+! red$2_1.2 &
+! green$2_1.3 &
+! red$2_1.3 &
+! green$2_1.4 &
+! red$2_1.4 &
+! green$2_1.5 &
+! red$2_1.5 &
+! green$2_2.3 &
+! red$2_2.3 &
+! green$2_2.5 &
+! red$2_2.5 &
+! green$2_3.4 &
+! red$2_3.4 &
+! green$2_3.5 &
+! red$2_3.5 &
+! green$2_4.5 &
+! red$2_4.5 ) |
+( green$2_0.3 &
+red$2_2.5 &
+! green$2_0.1 &
+! red$2_0.1 &
+! green$2_0.2 &
+! red$2_0.2 &
+! green$2_0.4 &
+! red$2_0.4 &
+! green$2_0.5 &
+! red$2_0.5 &
+! green$2_1.2 &
+! red$2_1.2 &
+! green$2_1.3 &
+! red$2_1.3 &
+! green$2_1.4 &
+! red$2_1.4 &
+! green$2_1.5 &
+! red$2_1.5 &
+! green$2_2.3 &
+! red$2_2.3 &
+! green$2_2.4 &
+! red$2_2.4 &
+! green$2_3.4 &
+! red$2_3.4 &
+! green$2_3.5 &
+! red$2_3.5 &
+! green$2_4.5 &
+! red$2_4.5 ) |
+( green$2_0.3 &
+red$2_3.4 &
+! green$2_0.1 &
+! red$2_0.1 &
+! green$2_0.2 &
+! red$2_0.2 &
+! green$2_0.4 &
+! red$2_0.4 &
+! green$2_0.5 &
+! red$2_0.5 &
+! green$2_1.2 &
+! red$2_1.2 &
+! green$2_1.3 &
+! red$2_1.3 &
+! green$2_1.4 &
+! red$2_1.4 &
+! green$2_1.5 &
+! red$2_1.5 &
+! green$2_2.3 &
+! red$2_2.3 &
+! green$2_2.4 &
+! red$2_2.4 &
+! green$2_2.5 &
+! red$2_2.5 &
+! green$2_3.5 &
+! red$2_3.5 &
+! green$2_4.5 &
+! red$2_4.5 ) |
+( green$2_0.3 &
+red$2_3.5 &
+! green$2_0.1 &
+! red$2_0.1 &
+! green$2_0.2 &
+! red$2_0.2 &
+! green$2_0.4 &
+! red$2_0.4 &
+! green$2_0.5 &
+! red$2_0.5 &
+! green$2_1.2 &
+! red$2_1.2 &
+! green$2_1.3 &
+! red$2_1.3 &
+! green$2_1.4 &
+! red$2_1.4 &
+! green$2_1.5 &
+! red$2_1.5 &
+! green$2_2.3 &
+! red$2_2.3 &
+! green$2_2.4 &
+! red$2_2.4 &
+! green$2_2.5 &
+! red$2_2.5 &
+! green$2_3.4 &
+! red$2_3.4 &
+! green$2_4.5 &
+! red$2_4.5 ) |
+( green$2_0.3 &
+red$2_4.5 &
+! green$2_0.1 &
+! red$2_0.1 &
+! green$2_0.2 &
+! red$2_0.2 &
+! green$2_0.4 &
+! red$2_0.4 &
+! green$2_0.5 &
+! red$2_0.5 &
+! green$2_1.2 &
+! red$2_1.2 &
+! green$2_1.3 &
+! red$2_1.3 &
+! green$2_1.4 &
+! red$2_1.4 &
+! green$2_1.5 &
+! red$2_1.5 &
+! green$2_2.3 &
+! red$2_2.3 &
+! green$2_2.4 &
+! red$2_2.4 &
+! green$2_2.5 &
+! red$2_2.5 &
+! green$2_3.4 &
+! red$2_3.4 &
+! green$2_3.5 &
+! red$2_3.5 ) |
+( green$2_0.4 &
+red$2_0.1 &
+! green$2_0.2 &
+! red$2_0.2 &
+! green$2_0.3 &
+! red$2_0.3 &
+! green$2_0.5 &
+! red$2_0.5 &
+! green$2_1.2 &
+! red$2_1.2 &
+! green$2_1.3 &
+! red$2_1.3 &
+! green$2_1.4 &
+! red$2_1.4 &
+! green$2_1.5 &
+! red$2_1.5 &
+! green$2_2.3 &
+! red$2_2.3 &
+! green$2_2.4 &
+! red$2_2.4 &
+! green$2_2.5 &
+! red$2_2.5 &
+! green$2_3.4 &
+! red$2_3.4 &
+! green$2_3.5 &
+! red$2_3.5 &
+! green$2_4.5 &
+! red$2_4.5 ) |
+( green$2_0.4 &
+red$2_0.2 &
+! green$2_0.1 &
+! red$2_0.1 &
+! green$2_0.3 &
+! red$2_0.3 &
+! green$2_0.5 &
+! red$2_0.5 &
+! green$2_1.2 &
+! red$2_1.2 &
+! green$2_1.3 &
+! red$2_1.3 &
+! green$2_1.4 &
+! red$2_1.4 &
+! green$2_1.5 &
+! red$2_1.5 &
+! green$2_2.3 &
+! red$2_2.3 &
+! green$2_2.4 &
+! red$2_2.4 &
+! green$2_2.5 &
+! red$2_2.5 &
+! green$2_3.4 &
+! red$2_3.4 &
+! green$2_3.5 &
+! red$2_3.5 &
+! green$2_4.5 &
+! red$2_4.5 ) |
+( green$2_0.4 &
+red$2_0.3 &
+! green$2_0.1 &
+! red$2_0.1 &
+! green$2_0.2 &
+! red$2_0.2 &
+! green$2_0.5 &
+! red$2_0.5 &
+! green$2_1.2 &
+! red$2_1.2 &
+! green$2_1.3 &
+! red$2_1.3 &
+! green$2_1.4 &
+! red$2_1.4 &
+! green$2_1.5 &
+! red$2_1.5 &
+! green$2_2.3 &
+! red$2_2.3 &
+! green$2_2.4 &
+! red$2_2.4 &
+! green$2_2.5 &
+! red$2_2.5 &
+! green$2_3.4 &
+! red$2_3.4 &
+! green$2_3.5 &
+! red$2_3.5 &
+! green$2_4.5 &
+! red$2_4.5 ) |
+( green$2_0.4 &
+red$2_0.5 &
+! green$2_0.1 &
+! red$2_0.1 &
+! green$2_0.2 &
+! red$2_0.2 &
+! green$2_0.3 &
+! red$2_0.3 &
+! green$2_1.2 &
+! red$2_1.2 &
+! green$2_1.3 &
+! red$2_1.3 &
+! green$2_1.4 &
+! red$2_1.4 &
+! green$2_1.5 &
+! red$2_1.5 &
+! green$2_2.3 &
+! red$2_2.3 &
+! green$2_2.4 &
+! red$2_2.4 &
+! green$2_2.5 &
+! red$2_2.5 &
+! green$2_3.4 &
+! red$2_3.4 &
+! green$2_3.5 &
+! red$2_3.5 &
+! green$2_4.5 &
+! red$2_4.5 ) |
+( green$2_0.4 &
+red$2_1.2 &
+! green$2_0.1 &
+! red$2_0.1 &
+! green$2_0.2 &
+! red$2_0.2 &
+! green$2_0.3 &
+! red$2_0.3 &
+! green$2_0.5 &
+! red$2_0.5 &
+! green$2_1.3 &
+! red$2_1.3 &
+! green$2_1.4 &
+! red$2_1.4 &
+! green$2_1.5 &
+! red$2_1.5 &
+! green$2_2.3 &
+! red$2_2.3 &
+! green$2_2.4 &
+! red$2_2.4 &
+! green$2_2.5 &
+! red$2_2.5 &
+! green$2_3.4 &
+! red$2_3.4 &
+! green$2_3.5 &
+! red$2_3.5 &
+! green$2_4.5 &
+! red$2_4.5 ) |
+( green$2_0.4 &
+red$2_1.3 &
+! green$2_0.1 &
+! red$2_0.1 &
+! green$2_0.2 &
+! red$2_0.2 &
+! green$2_0.3 &
+! red$2_0.3 &
+! green$2_0.5 &
+! red$2_0.5 &
+! green$2_1.2 &
+! red$2_1.2 &
+! green$2_1.4 &
+! red$2_1.4 &
+! green$2_1.5 &
+! red$2_1.5 &
+! green$2_2.3 &
+! red$2_2.3 &
+! green$2_2.4 &
+! red$2_2.4 &
+! green$2_2.5 &
+! red$2_2.5 &
+! green$2_3.4 &
+! red$2_3.4 &
+! green$2_3.5 &
+! red$2_3.5 &
+! green$2_4.5 &
+! red$2_4.5 ) |
+( green$2_0.4 &
+red$2_1.4 &
+! green$2_0.1 &
+! red$2_0.1 &
+! green$2_0.2 &
+! red$2_0.2 &
+! green$2_0.3 &
+! red$2_0.3 &
+! green$2_0.5 &
+! red$2_0.5 &
+! green$2_1.2 &
+! red$2_1.2 &
+! green$2_1.3 &
+! red$2_1.3 &
+! green$2_1.5 &
+! red$2_1.5 &
+! green$2_2.3 &
+! red$2_2.3 &
+! green$2_2.4 &
+! red$2_2.4 &
+! green$2_2.5 &
+! red$2_2.5 &
+! green$2_3.4 &
+! red$2_3.4 &
+! green$2_3.5 &
+! red$2_3.5 &
+! green$2_4.5 &
+! red$2_4.5 ) |
+( green$2_0.4 &
+red$2_1.5 &
+! green$2_0.1 &
+! red$2_0.1 &
+! green$2_0.2 &
+! red$2_0.2 &
+! green$2_0.3 &
+! red$2_0.3 &
+! green$2_0.5 &
+! red$2_0.5 &
+! green$2_1.2 &
+! red$2_1.2 &
+! green$2_1.3 &
+! red$2_1.3 &
+! green$2_1.4 &
+! red$2_1.4 &
+! green$2_2.3 &
+! red$2_2.3 &
+! green$2_2.4 &
+! red$2_2.4 &
+! green$2_2.5 &
+! red$2_2.5 &
+! green$2_3.4 &
+! red$2_3.4 &
+! green$2_3.5 &
+! red$2_3.5 &
+! green$2_4.5 &
+! red$2_4.5 ) |
+( green$2_0.4 &
+red$2_2.3 &
+! green$2_0.1 &
+! red$2_0.1 &
+! green$2_0.2 &
+! red$2_0.2 &
+! green$2_0.3 &
+! red$2_0.3 &
+! green$2_0.5 &
+! red$2_0.5 &
+! green$2_1.2 &
+! red$2_1.2 &
+! green$2_1.3 &
+! red$2_1.3 &
+! green$2_1.4 &
+! red$2_1.4 &
+! green$2_1.5 &
+! red$2_1.5 &
+! green$2_2.4 &
+! red$2_2.4 &
+! green$2_2.5 &
+! red$2_2.5 &
+! green$2_3.4 &
+! red$2_3.4 &
+! green$2_3.5 &
+! red$2_3.5 &
+! green$2_4.5 &
+! red$2_4.5 ) |
+( green$2_0.4 &
+red$2_2.4 &
+! green$2_0.1 &
+! red$2_0.1 &
+! green$2_0.2 &
+! red$2_0.2 &
+! green$2_0.3 &
+! red$2_0.3 &
+! green$2_0.5 &
+! red$2_0.5 &
+! green$2_1.2 &
+! red$2_1.2 &
+! green$2_1.3 &
+! red$2_1.3 &
+! green$2_1.4 &
+! red$2_1.4 &
+! green$2_1.5 &
+! red$2_1.5 &
+! green$2_2.3 &
+! red$2_2.3 &
+! green$2_2.5 &
+! red$2_2.5 &
+! green$2_3.4 &
+! red$2_3.4 &
+! green$2_3.5 &
+! red$2_3.5 &
+! green$2_4.5 &
+! red$2_4.5 ) |
+( green$2_0.4 &
+red$2_2.5 &
+! green$2_0.1 &
+! red$2_0.1 &
+! green$2_0.2 &
+! red$2_0.2 &
+! green$2_0.3 &
+! red$2_0.3 &
+! green$2_0.5 &
+! red$2_0.5 &
+! green$2_1.2 &
+! red$2_1.2 &
+! green$2_1.3 &
+! red$2_1.3 &
+! green$2_1.4 &
+! red$2_1.4 &
+! green$2_1.5 &
+! red$2_1.5 &
+! green$2_2.3 &
+! red$2_2.3 &
+! green$2_2.4 &
+! red$2_2.4 &
+! green$2_3.4 &
+! red$2_3.4 &
+! green$2_3.5 &
+! red$2_3.5 &
+! green$2_4.5 &
+! red$2_4.5 ) |
+( green$2_0.4 &
+red$2_3.4 &
+! green$2_0.1 &
+! red$2_0.1 &
+! green$2_0.2 &
+! red$2_0.2 &
+! green$2_0.3 &
+! red$2_0.3 &
+! green$2_0.5 &
+! red$2_0.5 &
+! green$2_1.2 &
+! red$2_1.2 &
+! green$2_1.3 &
+! red$2_1.3 &
+! green$2_1.4 &
+! red$2_1.4 &
+! green$2_1.5 &
+! red$2_1.5 &
+! green$2_2.3 &
+! red$2_2.3 &
+! green$2_2.4 &
+! red$2_2.4 &
+! green$2_2.5 &
+! red$2_2.5 &
+! green$2_3.5 &
+! red$2_3.5 &
+! green$2_4.5 &
+! red$2_4.5 ) |
+( green$2_0.4 &
+red$2_3.5 &
+! green$2_0.1 &
+! red$2_0.1 &
+! green$2_0.2 &
+! red$2_0.2 &
+! green$2_0.3 &
+! red$2_0.3 &
+! green$2_0.5 &
+! red$2_0.5 &
+! green$2_1.2 &
+! red$2_1.2 &
+! green$2_1.3 &
+! red$2_1.3 &
+! green$2_1.4 &
+! red$2_1.4 &
+! green$2_1.5 &
+! red$2_1.5 &
+! green$2_2.3 &
+! red$2_2.3 &
+! green$2_2.4 &
+! red$2_2.4 &
+! green$2_2.5 &
+! red$2_2.5 &
+! green$2_3.4 &
+! red$2_3.4 &
+! green$2_4.5 &
+! red$2_4.5 ) |
+( green$2_0.4 &
+red$2_4.5 &
+! green$2_0.1 &
+! red$2_0.1 &
+! green$2_0.2 &
+! red$2_0.2 &
+! green$2_0.3 &
+! red$2_0.3 &
+! green$2_0.5 &
+! red$2_0.5 &
+! green$2_1.2 &
+! red$2_1.2 &
+! green$2_1.3 &
+! red$2_1.3 &
+! green$2_1.4 &
+! red$2_1.4 &
+! green$2_1.5 &
+! red$2_1.5 &
+! green$2_2.3 &
+! red$2_2.3 &
+! green$2_2.4 &
+! red$2_2.4 &
+! green$2_2.5 &
+! red$2_2.5 &
+! green$2_3.4 &
+! red$2_3.4 &
+! green$2_3.5 &
+! red$2_3.5 ) |
+( green$2_0.5 &
+red$2_0.1 &
+! green$2_0.2 &
+! red$2_0.2 &
+! green$2_0.3 &
+! red$2_0.3 &
+! green$2_0.4 &
+! red$2_0.4 &
+! green$2_1.2 &
+! red$2_1.2 &
+! green$2_1.3 &
+! red$2_1.3 &
+! green$2_1.4 &
+! red$2_1.4 &
+! green$2_1.5 &
+! red$2_1.5 &
+! green$2_2.3 &
+! red$2_2.3 &
+! green$2_2.4 &
+! red$2_2.4 &
+! green$2_2.5 &
+! red$2_2.5 &
+! green$2_3.4 &
+! red$2_3.4 &
+! green$2_3.5 &
+! red$2_3.5 &
+! green$2_4.5 &
+! red$2_4.5 ) |
+( green$2_0.5 &
+red$2_0.2 &
+! green$2_0.1 &
+! red$2_0.1 &
+! green$2_0.3 &
+! red$2_0.3 &
+! green$2_0.4 &
+! red$2_0.4 &
+! green$2_1.2 &
+! red$2_1.2 &
+! green$2_1.3 &
+! red$2_1.3 &
+! green$2_1.4 &
+! red$2_1.4 &
+! green$2_1.5 &
+! red$2_1.5 &
+! green$2_2.3 &
+! red$2_2.3 &
+! green$2_2.4 &
+! red$2_2.4 &
+! green$2_2.5 &
+! red$2_2.5 &
+! green$2_3.4 &
+! red$2_3.4 &
+! green$2_3.5 &
+! red$2_3.5 &
+! green$2_4.5 &
+! red$2_4.5 ) |
+( green$2_0.5 &
+red$2_0.3 &
+! green$2_0.1 &
+! red$2_0.1 &
+! green$2_0.2 &
+! red$2_0.2 &
+! green$2_0.4 &
+! red$2_0.4 &
+! green$2_1.2 &
+! red$2_1.2 &
+! green$2_1.3 &
+! red$2_1.3 &
+! green$2_1.4 &
+! red$2_1.4 &
+! green$2_1.5 &
+! red$2_1.5 &
+! green$2_2.3 &
+! red$2_2.3 &
+! green$2_2.4 &
+! red$2_2.4 &
+! green$2_2.5 &
+! red$2_2.5 &
+! green$2_3.4 &
+! red$2_3.4 &
+! green$2_3.5 &
+! red$2_3.5 &
+! green$2_4.5 &
+! red$2_4.5 ) |
+( green$2_0.5 &
+red$2_0.4 &
+! green$2_0.1 &
+! red$2_0.1 &
+! green$2_0.2 &
+! red$2_0.2 &
+! green$2_0.3 &
+! red$2_0.3 &
+! green$2_1.2 &
+! red$2_1.2 &
+! green$2_1.3 &
+! red$2_1.3 &
+! green$2_1.4 &
+! red$2_1.4 &
+! green$2_1.5 &
+! red$2_1.5 &
+! green$2_2.3 &
+! red$2_2.3 &
+! green$2_2.4 &
+! red$2_2.4 &
+! green$2_2.5 &
+! red$2_2.5 &
+! green$2_3.4 &
+! red$2_3.4 &
+! green$2_3.5 &
+! red$2_3.5 &
+! green$2_4.5 &
+! red$2_4.5 ) |
+( green$2_0.5 &
+red$2_1.2 &
+! green$2_0.1 &
+! red$2_0.1 &
+! green$2_0.2 &
+! red$2_0.2 &
+! green$2_0.3 &
+! red$2_0.3 &
+! green$2_0.4 &
+! red$2_0.4 &
+! green$2_1.3 &
+! red$2_1.3 &
+! green$2_1.4 &
+! red$2_1.4 &
+! green$2_1.5 &
+! red$2_1.5 &
+! green$2_2.3 &
+! red$2_2.3 &
+! green$2_2.4 &
+! red$2_2.4 &
+! green$2_2.5 &
+! red$2_2.5 &
+! green$2_3.4 &
+! red$2_3.4 &
+! green$2_3.5 &
+! red$2_3.5 &
+! green$2_4.5 &
+! red$2_4.5 ) |
+( green$2_0.5 &
+red$2_1.3 &
+! green$2_0.1 &
+! red$2_0.1 &
+! green$2_0.2 &
+! red$2_0.2 &
+! green$2_0.3 &
+! red$2_0.3 &
+! green$2_0.4 &
+! red$2_0.4 &
+! green$2_1.2 &
+! red$2_1.2 &
+! green$2_1.4 &
+! red$2_1.4 &
+! green$2_1.5 &
+! red$2_1.5 &
+! green$2_2.3 &
+! red$2_2.3 &
+! green$2_2.4 &
+! red$2_2.4 &
+! green$2_2.5 &
+! red$2_2.5 &
+! green$2_3.4 &
+! red$2_3.4 &
+! green$2_3.5 &
+! red$2_3.5 &
+! green$2_4.5 &
+! red$2_4.5 ) |
+( green$2_0.5 &
+red$2_1.4 &
+! green$2_0.1 &
+! red$2_0.1 &
+! green$2_0.2 &
+! red$2_0.2 &
+! green$2_0.3 &
+! red$2_0.3 &
+! green$2_0.4 &
+! red$2_0.4 &
+! green$2_1.2 &
+! red$2_1.2 &
+! green$2_1.3 &
+! red$2_1.3 &
+! green$2_1.5 &
+! red$2_1.5 &
+! green$2_2.3 &
+! red$2_2.3 &
+! green$2_2.4 &
+! red$2_2.4 &
+! green$2_2.5 &
+! red$2_2.5 &
+! green$2_3.4 &
+! red$2_3.4 &
+! green$2_3.5 &
+! red$2_3.5 &
+! green$2_4.5 &
+! red$2_4.5 ) |
+( green$2_0.5 &
+red$2_1.5 &
+! green$2_0.1 &
+! red$2_0.1 &
+! green$2_0.2 &
+! red$2_0.2 &
+! green$2_0.3 &
+! red$2_0.3 &
+! green$2_0.4 &
+! red$2_0.4 &
+! green$2_1.2 &
+! red$2_1.2 &
+! green$2_1.3 &
+! red$2_1.3 &
+! green$2_1.4 &
+! red$2_1.4 &
+! green$2_2.3 &
+! red$2_2.3 &
+! green$2_2.4 &
+! red$2_2.4 &
+! green$2_2.5 &
+! red$2_2.5 &
+! green$2_3.4 &
+! red$2_3.4 &
+! green$2_3.5 &
+! red$2_3.5 &
+! green$2_4.5 &
+! red$2_4.5 ) |
+( green$2_0.5 &
+red$2_2.3 &
+! green$2_0.1 &
+! red$2_0.1 &
+! green$2_0.2 &
+! red$2_0.2 &
+! green$2_0.3 &
+! red$2_0.3 &
+! green$2_0.4 &
+! red$2_0.4 &
+! green$2_1.2 &
+! red$2_1.2 &
+! green$2_1.3 &
+! red$2_1.3 &
+! green$2_1.4 &
+! red$2_1.4 &
+! green$2_1.5 &
+! red$2_1.5 &
+! green$2_2.4 &
+! red$2_2.4 &
+! green$2_2.5 &
+! red$2_2.5 &
+! green$2_3.4 &
+! red$2_3.4 &
+! green$2_3.5 &
+! red$2_3.5 &
+! green$2_4.5 &
+! red$2_4.5 ) |
+( green$2_0.5 &
+red$2_2.4 &
+! green$2_0.1 &
+! red$2_0.1 &
+! green$2_0.2 &
+! red$2_0.2 &
+! green$2_0.3 &
+! red$2_0.3 &
+! green$2_0.4 &
+! red$2_0.4 &
+! green$2_1.2 &
+! red$2_1.2 &
+! green$2_1.3 &
+! red$2_1.3 &
+! green$2_1.4 &
+! red$2_1.4 &
+! green$2_1.5 &
+! red$2_1.5 &
+! green$2_2.3 &
+! red$2_2.3 &
+! green$2_2.5 &
+! red$2_2.5 &
+! green$2_3.4 &
+! red$2_3.4 &
+! green$2_3.5 &
+! red$2_3.5 &
+! green$2_4.5 &
+! red$2_4.5 ) |
+( green$2_0.5 &
+red$2_2.5 &
+! green$2_0.1 &
+! red$2_0.1 &
+! green$2_0.2 &
+! red$2_0.2 &
+! green$2_0.3 &
+! red$2_0.3 &
+! green$2_0.4 &
+! red$2_0.4 &
+! green$2_1.2 &
+! red$2_1.2 &
+! green$2_1.3 &
+! red$2_1.3 &
+! green$2_1.4 &
+! red$2_1.4 &
+! green$2_1.5 &
+! red$2_1.5 &
+! green$2_2.3 &
+! red$2_2.3 &
+! green$2_2.4 &
+! red$2_2.4 &
+! green$2_3.4 &
+! red$2_3.4 &
+! green$2_3.5 &
+! red$2_3.5 &
+! green$2_4.5 &
+! red$2_4.5 ) |
+( green$2_0.5 &
+red$2_3.4 &
+! green$2_0.1 &
+! red$2_0.1 &
+! green$2_0.2 &
+! red$2_0.2 &
+! green$2_0.3 &
+! red$2_0.3 &
+! green$2_0.4 &
+! red$2_0.4 &
+! green$2_1.2 &
+! red$2_1.2 &
+! green$2_1.3 &
+! red$2_1.3 &
+! green$2_1.4 &
+! red$2_1.4 &
+! green$2_1.5 &
+! red$2_1.5 &
+! green$2_2.3 &
+! red$2_2.3 &
+! green$2_2.4 &
+! red$2_2.4 &
+! green$2_2.5 &
+! red$2_2.5 &
+! green$2_3.5 &
+! red$2_3.5 &
+! green$2_4.5 &
+! red$2_4.5 ) |
+( green$2_0.5 &
+red$2_3.5 &
+! green$2_0.1 &
+! red$2_0.1 &
+! green$2_0.2 &
+! red$2_0.2 &
+! green$2_0.3 &
+! red$2_0.3 &
+! green$2_0.4 &
+! red$2_0.4 &
+! green$2_1.2 &
+! red$2_1.2 &
+! green$2_1.3 &
+! red$2_1.3 &
+! green$2_1.4 &
+! red$2_1.4 &
+! green$2_1.5 &
+! red$2_1.5 &
+! green$2_2.3 &
+! red$2_2.3 &
+! green$2_2.4 &
+! red$2_2.4 &
+! green$2_2.5 &
+! red$2_2.5 &
+! green$2_3.4 &
+! red$2_3.4 &
+! green$2_4.5 &
+! red$2_4.5 ) |
+( green$2_0.5 &
+red$2_4.5 &
+! green$2_0.1 &
+! red$2_0.1 &
+! green$2_0.2 &
+! red$2_0.2 &
+! green$2_0.3 &
+! red$2_0.3 &
+! green$2_0.4 &
+! red$2_0.4 &
+! green$2_1.2 &
+! red$2_1.2 &
+! green$2_1.3 &
+! red$2_1.3 &
+! green$2_1.4 &
+! red$2_1.4 &
+! green$2_1.5 &
+! red$2_1.5 &
+! green$2_2.3 &
+! red$2_2.3 &
+! green$2_2.4 &
+! red$2_2.4 &
+! green$2_2.5 &
+! red$2_2.5 &
+! green$2_3.4 &
+! red$2_3.4 &
+! green$2_3.5 &
+! red$2_3.5 ) |
+( green$2_1.2 &
+red$2_0.1 &
+! green$2_0.2 &
+! red$2_0.2 &
+! green$2_0.3 &
+! red$2_0.3 &
+! green$2_0.4 &
+! red$2_0.4 &
+! green$2_0.5 &
+! red$2_0.5 &
+! green$2_1.3 &
+! red$2_1.3 &
+! green$2_1.4 &
+! red$2_1.4 &
+! green$2_1.5 &
+! red$2_1.5 &
+! green$2_2.3 &
+! red$2_2.3 &
+! green$2_2.4 &
+! red$2_2.4 &
+! green$2_2.5 &
+! red$2_2.5 &
+! green$2_3.4 &
+! red$2_3.4 &
+! green$2_3.5 &
+! red$2_3.5 &
+! green$2_4.5 &
+! red$2_4.5 ) |
+( green$2_1.2 &
+red$2_0.2 &
+! green$2_0.1 &
+! red$2_0.1 &
+! green$2_0.3 &
+! red$2_0.3 &
+! green$2_0.4 &
+! red$2_0.4 &
+! green$2_0.5 &
+! red$2_0.5 &
+! green$2_1.3 &
+! red$2_1.3 &
+! green$2_1.4 &
+! red$2_1.4 &
+! green$2_1.5 &
+! red$2_1.5 &
+! green$2_2.3 &
+! red$2_2.3 &
+! green$2_2.4 &
+! red$2_2.4 &
+! green$2_2.5 &
+! red$2_2.5 &
+! green$2_3.4 &
+! red$2_3.4 &
+! green$2_3.5 &
+! red$2_3.5 &
+! green$2_4.5 &
+! red$2_4.5 ) |
+( green$2_1.2 &
+red$2_0.3 &
+! green$2_0.1 &
+! red$2_0.1 &
+! green$2_0.2 &
+! red$2_0.2 &
+! green$2_0.4 &
+! red$2_0.4 &
+! green$2_0.5 &
+! red$2_0.5 &
+! green$2_1.3 &
+! red$2_1.3 &
+! green$2_1.4 &
+! red$2_1.4 &
+! green$2_1.5 &
+! red$2_1.5 &
+! green$2_2.3 &
+! red$2_2.3 &
+! green$2_2.4 &
+! red$2_2.4 &
+! green$2_2.5 &
+! red$2_2.5 &
+! green$2_3.4 &
+! red$2_3.4 &
+! green$2_3.5 &
+! red$2_3.5 &
+! green$2_4.5 &
+! red$2_4.5 ) |
+( green$2_1.2 &
+red$2_0.4 &
+! green$2_0.1 &
+! red$2_0.1 &
+! green$2_0.2 &
+! red$2_0.2 &
+! green$2_0.3 &
+! red$2_0.3 &
+! green$2_0.5 &
+! red$2_0.5 &
+! green$2_1.3 &
+! red$2_1.3 &
+! green$2_1.4 &
+! red$2_1.4 &
+! green$2_1.5 &
+! red$2_1.5 &
+! green$2_2.3 &
+! red$2_2.3 &
+! green$2_2.4 &
+! red$2_2.4 &
+! green$2_2.5 &
+! red$2_2.5 &
+! green$2_3.4 &
+! red$2_3.4 &
+! green$2_3.5 &
+! red$2_3.5 &
+! green$2_4.5 &
+! red$2_4.5 ) |
+( green$2_1.2 &
+red$2_0.5 &
+! green$2_0.1 &
+! red$2_0.1 &
+! green$2_0.2 &
+! red$2_0.2 &
+! green$2_0.3 &
+! red$2_0.3 &
+! green$2_0.4 &
+! red$2_0.4 &
+! green$2_1.3 &
+! red$2_1.3 &
+! green$2_1.4 &
+! red$2_1.4 &
+! green$2_1.5 &
+! red$2_1.5 &
+! green$2_2.3 &
+! red$2_2.3 &
+! green$2_2.4 &
+! red$2_2.4 &
+! green$2_2.5 &
+! red$2_2.5 &
+! green$2_3.4 &
+! red$2_3.4 &
+! green$2_3.5 &
+! red$2_3.5 &
+! green$2_4.5 &
+! red$2_4.5 ) |
+( green$2_1.2 &
+red$2_1.3 &
+! green$2_0.1 &
+! red$2_0.1 &
+! green$2_0.2 &
+! red$2_0.2 &
+! green$2_0.3 &
+! red$2_0.3 &
+! green$2_0.4 &
+! red$2_0.4 &
+! green$2_0.5 &
+! red$2_0.5 &
+! green$2_1.4 &
+! red$2_1.4 &
+! green$2_1.5 &
+! red$2_1.5 &
+! green$2_2.3 &
+! red$2_2.3 &
+! green$2_2.4 &
+! red$2_2.4 &
+! green$2_2.5 &
+! red$2_2.5 &
+! green$2_3.4 &
+! red$2_3.4 &
+! green$2_3.5 &
+! red$2_3.5 &
+! green$2_4.5 &
+! red$2_4.5 ) |
+( green$2_1.2 &
+red$2_1.4 &
+! green$2_0.1 &
+! red$2_0.1 &
+! green$2_0.2 &
+! red$2_0.2 &
+! green$2_0.3 &
+! red$2_0.3 &
+! green$2_0.4 &
+! red$2_0.4 &
+! green$2_0.5 &
+! red$2_0.5 &
+! green$2_1.3 &
+! red$2_1.3 &
+! green$2_1.5 &
+! red$2_1.5 &
+! green$2_2.3 &
+! red$2_2.3 &
+! green$2_2.4 &
+! red$2_2.4 &
+! green$2_2.5 &
+! red$2_2.5 &
+! green$2_3.4 &
+! red$2_3.4 &
+! green$2_3.5 &
+! red$2_3.5 &
+! green$2_4.5 &
+! red$2_4.5 ) |
+( green$2_1.2 &
+red$2_1.5 &
+! green$2_0.1 &
+! red$2_0.1 &
+! green$2_0.2 &
+! red$2_0.2 &
+! green$2_0.3 &
+! red$2_0.3 &
+! green$2_0.4 &
+! red$2_0.4 &
+! green$2_0.5 &
+! red$2_0.5 &
+! green$2_1.3 &
+! red$2_1.3 &
+! green$2_1.4 &
+! red$2_1.4 &
+! green$2_2.3 &
+! red$2_2.3 &
+! green$2_2.4 &
+! red$2_2.4 &
+! green$2_2.5 &
+! red$2_2.5 &
+! green$2_3.4 &
+! red$2_3.4 &
+! green$2_3.5 &
+! red$2_3.5 &
+! green$2_4.5 &
+! red$2_4.5 ) |
+( green$2_1.2 &
+red$2_2.3 &
+! green$2_0.1 &
+! red$2_0.1 &
+! green$2_0.2 &
+! red$2_0.2 &
+! green$2_0.3 &
+! red$2_0.3 &
+! green$2_0.4 &
+! red$2_0.4 &
+! green$2_0.5 &
+! red$2_0.5 &
+! green$2_1.3 &
+! red$2_1.3 &
+! green$2_1.4 &
+! red$2_1.4 &
+! green$2_1.5 &
+! red$2_1.5 &
+! green$2_2.4 &
+! red$2_2.4 &
+! green$2_2.5 &
+! red$2_2.5 &
+! green$2_3.4 &
+! red$2_3.4 &
+! green$2_3.5 &
+! red$2_3.5 &
+! green$2_4.5 &
+! red$2_4.5 ) |
+( green$2_1.2 &
+red$2_2.4 &
+! green$2_0.1 &
+! red$2_0.1 &
+! green$2_0.2 &
+! red$2_0.2 &
+! green$2_0.3 &
+! red$2_0.3 &
+! green$2_0.4 &
+! red$2_0.4 &
+! green$2_0.5 &
+! red$2_0.5 &
+! green$2_1.3 &
+! red$2_1.3 &
+! green$2_1.4 &
+! red$2_1.4 &
+! green$2_1.5 &
+! red$2_1.5 &
+! green$2_2.3 &
+! red$2_2.3 &
+! green$2_2.5 &
+! red$2_2.5 &
+! green$2_3.4 &
+! red$2_3.4 &
+! green$2_3.5 &
+! red$2_3.5 &
+! green$2_4.5 &
+! red$2_4.5 ) |
+( green$2_1.2 &
+red$2_2.5 &
+! green$2_0.1 &
+! red$2_0.1 &
+! green$2_0.2 &
+! red$2_0.2 &
+! green$2_0.3 &
+! red$2_0.3 &
+! green$2_0.4 &
+! red$2_0.4 &
+! green$2_0.5 &
+! red$2_0.5 &
+! green$2_1.3 &
+! red$2_1.3 &
+! green$2_1.4 &
+! red$2_1.4 &
+! green$2_1.5 &
+! red$2_1.5 &
+! green$2_2.3 &
+! red$2_2.3 &
+! green$2_2.4 &
+! red$2_2.4 &
+! green$2_3.4 &
+! red$2_3.4 &
+! green$2_3.5 &
+! red$2_3.5 &
+! green$2_4.5 &
+! red$2_4.5 ) |
+( green$2_1.2 &
+red$2_3.4 &
+! green$2_0.1 &
+! red$2_0.1 &
+! green$2_0.2 &
+! red$2_0.2 &
+! green$2_0.3 &
+! red$2_0.3 &
+! green$2_0.4 &
+! red$2_0.4 &
+! green$2_0.5 &
+! red$2_0.5 &
+! green$2_1.3 &
+! red$2_1.3 &
+! green$2_1.4 &
+! red$2_1.4 &
+! green$2_1.5 &
+! red$2_1.5 &
+! green$2_2.3 &
+! red$2_2.3 &
+! green$2_2.4 &
+! red$2_2.4 &
+! green$2_2.5 &
+! red$2_2.5 &
+! green$2_3.5 &
+! red$2_3.5 &
+! green$2_4.5 &
+! red$2_4.5 ) |
+( green$2_1.2 &
+red$2_3.5 &
+! green$2_0.1 &
+! red$2_0.1 &
+! green$2_0.2 &
+! red$2_0.2 &
+! green$2_0.3 &
+! red$2_0.3 &
+! green$2_0.4 &
+! red$2_0.4 &
+! green$2_0.5 &
+! red$2_0.5 &
+! green$2_1.3 &
+! red$2_1.3 &
+! green$2_1.4 &
+! red$2_1.4 &
+! green$2_1.5 &
+! red$2_1.5 &
+! green$2_2.3 &
+! red$2_2.3 &
+! green$2_2.4 &
+! red$2_2.4 &
+! green$2_2.5 &
+! red$2_2.5 &
+! green$2_3.4 &
+! red$2_3.4 &
+! green$2_4.5 &
+! red$2_4.5 ) |
+( green$2_1.2 &
+red$2_4.5 &
+! green$2_0.1 &
+! red$2_0.1 &
+! green$2_0.2 &
+! red$2_0.2 &
+! green$2_0.3 &
+! red$2_0.3 &
+! green$2_0.4 &
+! red$2_0.4 &
+! green$2_0.5 &
+! red$2_0.5 &
+! green$2_1.3 &
+! red$2_1.3 &
+! green$2_1.4 &
+! red$2_1.4 &
+! green$2_1.5 &
+! red$2_1.5 &
+! green$2_2.3 &
+! red$2_2.3 &
+! green$2_2.4 &
+! red$2_2.4 &
+! green$2_2.5 &
+! red$2_2.5 &
+! green$2_3.4 &
+! red$2_3.4 &
+! green$2_3.5 &
+! red$2_3.5 ) |
+( green$2_1.3 &
+red$2_0.1 &
+! green$2_0.2 &
+! red$2_0.2 &
+! green$2_0.3 &
+! red$2_0.3 &
+! green$2_0.4 &
+! red$2_0.4 &
+! green$2_0.5 &
+! red$2_0.5 &
+! green$2_1.2 &
+! red$2_1.2 &
+! green$2_1.4 &
+! red$2_1.4 &
+! green$2_1.5 &
+! red$2_1.5 &
+! green$2_2.3 &
+! red$2_2.3 &
+! green$2_2.4 &
+! red$2_2.4 &
+! green$2_2.5 &
+! red$2_2.5 &
+! green$2_3.4 &
+! red$2_3.4 &
+! green$2_3.5 &
+! red$2_3.5 &
+! green$2_4.5 &
+! red$2_4.5 ) |
+( green$2_1.3 &
+red$2_0.2 &
+! green$2_0.1 &
+! red$2_0.1 &
+! green$2_0.3 &
+! red$2_0.3 &
+! green$2_0.4 &
+! red$2_0.4 &
+! green$2_0.5 &
+! red$2_0.5 &
+! green$2_1.2 &
+! red$2_1.2 &
+! green$2_1.4 &
+! red$2_1.4 &
+! green$2_1.5 &
+! red$2_1.5 &
+! green$2_2.3 &
+! red$2_2.3 &
+! green$2_2.4 &
+! red$2_2.4 &
+! green$2_2.5 &
+! red$2_2.5 &
+! green$2_3.4 &
+! red$2_3.4 &
+! green$2_3.5 &
+! red$2_3.5 &
+! green$2_4.5 &
+! red$2_4.5 ) |
+( green$2_1.3 &
+red$2_0.3 &
+! green$2_0.1 &
+! red$2_0.1 &
+! green$2_0.2 &
+! red$2_0.2 &
+! green$2_0.4 &
+! red$2_0.4 &
+! green$2_0.5 &
+! red$2_0.5 &
+! green$2_1.2 &
+! red$2_1.2 &
+! green$2_1.4 &
+! red$2_1.4 &
+! green$2_1.5 &
+! red$2_1.5 &
+! green$2_2.3 &
+! red$2_2.3 &
+! green$2_2.4 &
+! red$2_2.4 &
+! green$2_2.5 &
+! red$2_2.5 &
+! green$2_3.4 &
+! red$2_3.4 &
+! green$2_3.5 &
+! red$2_3.5 &
+! green$2_4.5 &
+! red$2_4.5 ) |
+( green$2_1.3 &
+red$2_0.4 &
+! green$2_0.1 &
+! red$2_0.1 &
+! green$2_0.2 &
+! red$2_0.2 &
+! green$2_0.3 &
+! red$2_0.3 &
+! green$2_0.5 &
+! red$2_0.5 &
+! green$2_1.2 &
+! red$2_1.2 &
+! green$2_1.4 &
+! red$2_1.4 &
+! green$2_1.5 &
+! red$2_1.5 &
+! green$2_2.3 &
+! red$2_2.3 &
+! green$2_2.4 &
+! red$2_2.4 &
+! green$2_2.5 &
+! red$2_2.5 &
+! green$2_3.4 &
+! red$2_3.4 &
+! green$2_3.5 &
+! red$2_3.5 &
+! green$2_4.5 &
+! red$2_4.5 ) |
+( green$2_1.3 &
+red$2_0.5 &
+! green$2_0.1 &
+! red$2_0.1 &
+! green$2_0.2 &
+! red$2_0.2 &
+! green$2_0.3 &
+! red$2_0.3 &
+! green$2_0.4 &
+! red$2_0.4 &
+! green$2_1.2 &
+! red$2_1.2 &
+! green$2_1.4 &
+! red$2_1.4 &
+! green$2_1.5 &
+! red$2_1.5 &
+! green$2_2.3 &
+! red$2_2.3 &
+! green$2_2.4 &
+! red$2_2.4 &
+! green$2_2.5 &
+! red$2_2.5 &
+! green$2_3.4 &
+! red$2_3.4 &
+! green$2_3.5 &
+! red$2_3.5 &
+! green$2_4.5 &
+! red$2_4.5 ) |
+( green$2_1.3 &
+red$2_1.2 &
+! green$2_0.1 &
+! red$2_0.1 &
+! green$2_0.2 &
+! red$2_0.2 &
+! green$2_0.3 &
+! red$2_0.3 &
+! green$2_0.4 &
+! red$2_0.4 &
+! green$2_0.5 &
+! red$2_0.5 &
+! green$2_1.4 &
+! red$2_1.4 &
+! green$2_1.5 &
+! red$2_1.5 &
+! green$2_2.3 &
+! red$2_2.3 &
+! green$2_2.4 &
+! red$2_2.4 &
+! green$2_2.5 &
+! red$2_2.5 &
+! green$2_3.4 &
+! red$2_3.4 &
+! green$2_3.5 &
+! red$2_3.5 &
+! green$2_4.5 &
+! red$2_4.5 ) |
+( green$2_1.3 &
+red$2_1.4 &
+! green$2_0.1 &
+! red$2_0.1 &
+! green$2_0.2 &
+! red$2_0.2 &
+! green$2_0.3 &
+! red$2_0.3 &
+! green$2_0.4 &
+! red$2_0.4 &
+! green$2_0.5 &
+! red$2_0.5 &
+! green$2_1.2 &
+! red$2_1.2 &
+! green$2_1.5 &
+! red$2_1.5 &
+! green$2_2.3 &
+! red$2_2.3 &
+! green$2_2.4 &
+! red$2_2.4 &
+! green$2_2.5 &
+! red$2_2.5 &
+! green$2_3.4 &
+! red$2_3.4 &
+! green$2_3.5 &
+! red$2_3.5 &
+! green$2_4.5 &
+! red$2_4.5 ) |
+( green$2_1.3 &
+red$2_1.5 &
+! green$2_0.1 &
+! red$2_0.1 &
+! green$2_0.2 &
+! red$2_0.2 &
+! green$2_0.3 &
+! red$2_0.3 &
+! green$2_0.4 &
+! red$2_0.4 &
+! green$2_0.5 &
+! red$2_0.5 &
+! green$2_1.2 &
+! red$2_1.2 &
+! green$2_1.4 &
+! red$2_1.4 &
+! green$2_2.3 &
+! red$2_2.3 &
+! green$2_2.4 &
+! red$2_2.4 &
+! green$2_2.5 &
+! red$2_2.5 &
+! green$2_3.4 &
+! red$2_3.4 &
+! green$2_3.5 &
+! red$2_3.5 &
+! green$2_4.5 &
+! red$2_4.5 ) |
+( green$2_1.3 &
+red$2_2.3 &
+! green$2_0.1 &
+! red$2_0.1 &
+! green$2_0.2 &
+! red$2_0.2 &
+! green$2_0.3 &
+! red$2_0.3 &
+! green$2_0.4 &
+! red$2_0.4 &
+! green$2_0.5 &
+! red$2_0.5 &
+! green$2_1.2 &
+! red$2_1.2 &
+! green$2_1.4 &
+! red$2_1.4 &
+! green$2_1.5 &
+! red$2_1.5 &
+! green$2_2.4 &
+! red$2_2.4 &
+! green$2_2.5 &
+! red$2_2.5 &
+! green$2_3.4 &
+! red$2_3.4 &
+! green$2_3.5 &
+! red$2_3.5 &
+! green$2_4.5 &
+! red$2_4.5 ) |
+( green$2_1.3 &
+red$2_2.4 &
+! green$2_0.1 &
+! red$2_0.1 &
+! green$2_0.2 &
+! red$2_0.2 &
+! green$2_0.3 &
+! red$2_0.3 &
+! green$2_0.4 &
+! red$2_0.4 &
+! green$2_0.5 &
+! red$2_0.5 &
+! green$2_1.2 &
+! red$2_1.2 &
+! green$2_1.4 &
+! red$2_1.4 &
+! green$2_1.5 &
+! red$2_1.5 &
+! green$2_2.3 &
+! red$2_2.3 &
+! green$2_2.5 &
+! red$2_2.5 &
+! green$2_3.4 &
+! red$2_3.4 &
+! green$2_3.5 &
+! red$2_3.5 &
+! green$2_4.5 &
+! red$2_4.5 ) |
+( green$2_1.3 &
+red$2_2.5 &
+! green$2_0.1 &
+! red$2_0.1 &
+! green$2_0.2 &
+! red$2_0.2 &
+! green$2_0.3 &
+! red$2_0.3 &
+! green$2_0.4 &
+! red$2_0.4 &
+! green$2_0.5 &
+! red$2_0.5 &
+! green$2_1.2 &
+! red$2_1.2 &
+! green$2_1.4 &
+! red$2_1.4 &
+! green$2_1.5 &
+! red$2_1.5 &
+! green$2_2.3 &
+! red$2_2.3 &
+! green$2_2.4 &
+! red$2_2.4 &
+! green$2_3.4 &
+! red$2_3.4 &
+! green$2_3.5 &
+! red$2_3.5 &
+! green$2_4.5 &
+! red$2_4.5 ) |
+( green$2_1.3 &
+red$2_3.4 &
+! green$2_0.1 &
+! red$2_0.1 &
+! green$2_0.2 &
+! red$2_0.2 &
+! green$2_0.3 &
+! red$2_0.3 &
+! green$2_0.4 &
+! red$2_0.4 &
+! green$2_0.5 &
+! red$2_0.5 &
+! green$2_1.2 &
+! red$2_1.2 &
+! green$2_1.4 &
+! red$2_1.4 &
+! green$2_1.5 &
+! red$2_1.5 &
+! green$2_2.3 &
+! red$2_2.3 &
+! green$2_2.4 &
+! red$2_2.4 &
+! green$2_2.5 &
+! red$2_2.5 &
+! green$2_3.5 &
+! red$2_3.5 &
+! green$2_4.5 &
+! red$2_4.5 ) |
+( green$2_1.3 &
+red$2_3.5 &
+! green$2_0.1 &
+! red$2_0.1 &
+! green$2_0.2 &
+! red$2_0.2 &
+! green$2_0.3 &
+! red$2_0.3 &
+! green$2_0.4 &
+! red$2_0.4 &
+! green$2_0.5 &
+! red$2_0.5 &
+! green$2_1.2 &
+! red$2_1.2 &
+! green$2_1.4 &
+! red$2_1.4 &
+! green$2_1.5 &
+! red$2_1.5 &
+! green$2_2.3 &
+! red$2_2.3 &
+! green$2_2.4 &
+! red$2_2.4 &
+! green$2_2.5 &
+! red$2_2.5 &
+! green$2_3.4 &
+! red$2_3.4 &
+! green$2_4.5 &
+! red$2_4.5 ) |
+( green$2_1.3 &
+red$2_4.5 &
+! green$2_0.1 &
+! red$2_0.1 &
+! green$2_0.2 &
+! red$2_0.2 &
+! green$2_0.3 &
+! red$2_0.3 &
+! green$2_0.4 &
+! red$2_0.4 &
+! green$2_0.5 &
+! red$2_0.5 &
+! green$2_1.2 &
+! red$2_1.2 &
+! green$2_1.4 &
+! red$2_1.4 &
+! green$2_1.5 &
+! red$2_1.5 &
+! green$2_2.3 &
+! red$2_2.3 &
+! green$2_2.4 &
+! red$2_2.4 &
+! green$2_2.5 &
+! red$2_2.5 &
+! green$2_3.4 &
+! red$2_3.4 &
+! green$2_3.5 &
+! red$2_3.5 ) |
+( green$2_1.4 &
+red$2_0.1 &
+! green$2_0.2 &
+! red$2_0.2 &
+! green$2_0.3 &
+! red$2_0.3 &
+! green$2_0.4 &
+! red$2_0.4 &
+! green$2_0.5 &
+! red$2_0.5 &
+! green$2_1.2 &
+! red$2_1.2 &
+! green$2_1.3 &
+! red$2_1.3 &
+! green$2_1.5 &
+! red$2_1.5 &
+! green$2_2.3 &
+! red$2_2.3 &
+! green$2_2.4 &
+! red$2_2.4 &
+! green$2_2.5 &
+! red$2_2.5 &
+! green$2_3.4 &
+! red$2_3.4 &
+! green$2_3.5 &
+! red$2_3.5 &
+! green$2_4.5 &
+! red$2_4.5 ) |
+( green$2_1.4 &
+red$2_0.2 &
+! green$2_0.1 &
+! red$2_0.1 &
+! green$2_0.3 &
+! red$2_0.3 &
+! green$2_0.4 &
+! red$2_0.4 &
+! green$2_0.5 &
+! red$2_0.5 &
+! green$2_1.2 &
+! red$2_1.2 &
+! green$2_1.3 &
+! red$2_1.3 &
+! green$2_1.5 &
+! red$2_1.5 &
+! green$2_2.3 &
+! red$2_2.3 &
+! green$2_2.4 &
+! red$2_2.4 &
+! green$2_2.5 &
+! red$2_2.5 &
+! green$2_3.4 &
+! red$2_3.4 &
+! green$2_3.5 &
+! red$2_3.5 &
+! green$2_4.5 &
+! red$2_4.5 ) |
+( green$2_1.4 &
+red$2_0.3 &
+! green$2_0.1 &
+! red$2_0.1 &
+! green$2_0.2 &
+! red$2_0.2 &
+! green$2_0.4 &
+! red$2_0.4 &
+! green$2_0.5 &
+! red$2_0.5 &
+! green$2_1.2 &
+! red$2_1.2 &
+! green$2_1.3 &
+! red$2_1.3 &
+! green$2_1.5 &
+! red$2_1.5 &
+! green$2_2.3 &
+! red$2_2.3 &
+! green$2_2.4 &
+! red$2_2.4 &
+! green$2_2.5 &
+! red$2_2.5 &
+! green$2_3.4 &
+! red$2_3.4 &
+! green$2_3.5 &
+! red$2_3.5 &
+! green$2_4.5 &
+! red$2_4.5 ) |
+( green$2_1.4 &
+red$2_0.4 &
+! green$2_0.1 &
+! red$2_0.1 &
+! green$2_0.2 &
+! red$2_0.2 &
+! green$2_0.3 &
+! red$2_0.3 &
+! green$2_0.5 &
+! red$2_0.5 &
+! green$2_1.2 &
+! red$2_1.2 &
+! green$2_1.3 &
+! red$2_1.3 &
+! green$2_1.5 &
+! red$2_1.5 &
+! green$2_2.3 &
+! red$2_2.3 &
+! green$2_2.4 &
+! red$2_2.4 &
+! green$2_2.5 &
+! red$2_2.5 &
+! green$2_3.4 &
+! red$2_3.4 &
+! green$2_3.5 &
+! red$2_3.5 &
+! green$2_4.5 &
+! red$2_4.5 ) |
+( green$2_1.4 &
+red$2_0.5 &
+! green$2_0.1 &
+! red$2_0.1 &
+! green$2_0.2 &
+! red$2_0.2 &
+! green$2_0.3 &
+! red$2_0.3 &
+! green$2_0.4 &
+! red$2_0.4 &
+! green$2_1.2 &
+! red$2_1.2 &
+! green$2_1.3 &
+! red$2_1.3 &
+! green$2_1.5 &
+! red$2_1.5 &
+! green$2_2.3 &
+! red$2_2.3 &
+! green$2_2.4 &
+! red$2_2.4 &
+! green$2_2.5 &
+! red$2_2.5 &
+! green$2_3.4 &
+! red$2_3.4 &
+! green$2_3.5 &
+! red$2_3.5 &
+! green$2_4.5 &
+! red$2_4.5 ) |
+( green$2_1.4 &
+red$2_1.2 &
+! green$2_0.1 &
+! red$2_0.1 &
+! green$2_0.2 &
+! red$2_0.2 &
+! green$2_0.3 &
+! red$2_0.3 &
+! green$2_0.4 &
+! red$2_0.4 &
+! green$2_0.5 &
+! red$2_0.5 &
+! green$2_1.3 &
+! red$2_1.3 &
+! green$2_1.5 &
+! red$2_1.5 &
+! green$2_2.3 &
+! red$2_2.3 &
+! green$2_2.4 &
+! red$2_2.4 &
+! green$2_2.5 &
+! red$2_2.5 &
+! green$2_3.4 &
+! red$2_3.4 &
+! green$2_3.5 &
+! red$2_3.5 &
+! green$2_4.5 &
+! red$2_4.5 ) |
+( green$2_1.4 &
+red$2_1.3 &
+! green$2_0.1 &
+! red$2_0.1 &
+! green$2_0.2 &
+! red$2_0.2 &
+! green$2_0.3 &
+! red$2_0.3 &
+! green$2_0.4 &
+! red$2_0.4 &
+! green$2_0.5 &
+! red$2_0.5 &
+! green$2_1.2 &
+! red$2_1.2 &
+! green$2_1.5 &
+! red$2_1.5 &
+! green$2_2.3 &
+! red$2_2.3 &
+! green$2_2.4 &
+! red$2_2.4 &
+! green$2_2.5 &
+! red$2_2.5 &
+! green$2_3.4 &
+! red$2_3.4 &
+! green$2_3.5 &
+! red$2_3.5 &
+! green$2_4.5 &
+! red$2_4.5 ) |
+( green$2_1.4 &
+red$2_1.5 &
+! green$2_0.1 &
+! red$2_0.1 &
+! green$2_0.2 &
+! red$2_0.2 &
+! green$2_0.3 &
+! red$2_0.3 &
+! green$2_0.4 &
+! red$2_0.4 &
+! green$2_0.5 &
+! red$2_0.5 &
+! green$2_1.2 &
+! red$2_1.2 &
+! green$2_1.3 &
+! red$2_1.3 &
+! green$2_2.3 &
+! red$2_2.3 &
+! green$2_2.4 &
+! red$2_2.4 &
+! green$2_2.5 &
+! red$2_2.5 &
+! green$2_3.4 &
+! red$2_3.4 &
+! green$2_3.5 &
+! red$2_3.5 &
+! green$2_4.5 &
+! red$2_4.5 ) |
+( green$2_1.4 &
+red$2_2.3 &
+! green$2_0.1 &
+! red$2_0.1 &
+! green$2_0.2 &
+! red$2_0.2 &
+! green$2_0.3 &
+! red$2_0.3 &
+! green$2_0.4 &
+! red$2_0.4 &
+! green$2_0.5 &
+! red$2_0.5 &
+! green$2_1.2 &
+! red$2_1.2 &
+! green$2_1.3 &
+! red$2_1.3 &
+! green$2_1.5 &
+! red$2_1.5 &
+! green$2_2.4 &
+! red$2_2.4 &
+! green$2_2.5 &
+! red$2_2.5 &
+! green$2_3.4 &
+! red$2_3.4 &
+! green$2_3.5 &
+! red$2_3.5 &
+! green$2_4.5 &
+! red$2_4.5 ) |
+( green$2_1.4 &
+red$2_2.4 &
+! green$2_0.1 &
+! red$2_0.1 &
+! green$2_0.2 &
+! red$2_0.2 &
+! green$2_0.3 &
+! red$2_0.3 &
+! green$2_0.4 &
+! red$2_0.4 &
+! green$2_0.5 &
+! red$2_0.5 &
+! green$2_1.2 &
+! red$2_1.2 &
+! green$2_1.3 &
+! red$2_1.3 &
+! green$2_1.5 &
+! red$2_1.5 &
+! green$2_2.3 &
+! red$2_2.3 &
+! green$2_2.5 &
+! red$2_2.5 &
+! green$2_3.4 &
+! red$2_3.4 &
+! green$2_3.5 &
+! red$2_3.5 &
+! green$2_4.5 &
+! red$2_4.5 ) |
+( green$2_1.4 &
+red$2_2.5 &
+! green$2_0.1 &
+! red$2_0.1 &
+! green$2_0.2 &
+! red$2_0.2 &
+! green$2_0.3 &
+! red$2_0.3 &
+! green$2_0.4 &
+! red$2_0.4 &
+! green$2_0.5 &
+! red$2_0.5 &
+! green$2_1.2 &
+! red$2_1.2 &
+! green$2_1.3 &
+! red$2_1.3 &
+! green$2_1.5 &
+! red$2_1.5 &
+! green$2_2.3 &
+! red$2_2.3 &
+! green$2_2.4 &
+! red$2_2.4 &
+! green$2_3.4 &
+! red$2_3.4 &
+! green$2_3.5 &
+! red$2_3.5 &
+! green$2_4.5 &
+! red$2_4.5 ) |
+( green$2_1.4 &
+red$2_3.4 &
+! green$2_0.1 &
+! red$2_0.1 &
+! green$2_0.2 &
+! red$2_0.2 &
+! green$2_0.3 &
+! red$2_0.3 &
+! green$2_0.4 &
+! red$2_0.4 &
+! green$2_0.5 &
+! red$2_0.5 &
+! green$2_1.2 &
+! red$2_1.2 &
+! green$2_1.3 &
+! red$2_1.3 &
+! green$2_1.5 &
+! red$2_1.5 &
+! green$2_2.3 &
+! red$2_2.3 &
+! green$2_2.4 &
+! red$2_2.4 &
+! green$2_2.5 &
+! red$2_2.5 &
+! green$2_3.5 &
+! red$2_3.5 &
+! green$2_4.5 &
+! red$2_4.5 ) |
+( green$2_1.4 &
+red$2_3.5 &
+! green$2_0.1 &
+! red$2_0.1 &
+! green$2_0.2 &
+! red$2_0.2 &
+! green$2_0.3 &
+! red$2_0.3 &
+! green$2_0.4 &
+! red$2_0.4 &
+! green$2_0.5 &
+! red$2_0.5 &
+! green$2_1.2 &
+! red$2_1.2 &
+! green$2_1.3 &
+! red$2_1.3 &
+! green$2_1.5 &
+! red$2_1.5 &
+! green$2_2.3 &
+! red$2_2.3 &
+! green$2_2.4 &
+! red$2_2.4 &
+! green$2_2.5 &
+! red$2_2.5 &
+! green$2_3.4 &
+! red$2_3.4 &
+! green$2_4.5 &
+! red$2_4.5 ) |
+( green$2_1.4 &
+red$2_4.5 &
+! green$2_0.1 &
+! red$2_0.1 &
+! green$2_0.2 &
+! red$2_0.2 &
+! green$2_0.3 &
+! red$2_0.3 &
+! green$2_0.4 &
+! red$2_0.4 &
+! green$2_0.5 &
+! red$2_0.5 &
+! green$2_1.2 &
+! red$2_1.2 &
+! green$2_1.3 &
+! red$2_1.3 &
+! green$2_1.5 &
+! red$2_1.5 &
+! green$2_2.3 &
+! red$2_2.3 &
+! green$2_2.4 &
+! red$2_2.4 &
+! green$2_2.5 &
+! red$2_2.5 &
+! green$2_3.4 &
+! red$2_3.4 &
+! green$2_3.5 &
+! red$2_3.5 ) |
+( green$2_1.5 &
+red$2_0.1 &
+! green$2_0.2 &
+! red$2_0.2 &
+! green$2_0.3 &
+! red$2_0.3 &
+! green$2_0.4 &
+! red$2_0.4 &
+! green$2_0.5 &
+! red$2_0.5 &
+! green$2_1.2 &
+! red$2_1.2 &
+! green$2_1.3 &
+! red$2_1.3 &
+! green$2_1.4 &
+! red$2_1.4 &
+! green$2_2.3 &
+! red$2_2.3 &
+! green$2_2.4 &
+! red$2_2.4 &
+! green$2_2.5 &
+! red$2_2.5 &
+! green$2_3.4 &
+! red$2_3.4 &
+! green$2_3.5 &
+! red$2_3.5 &
+! green$2_4.5 &
+! red$2_4.5 ) |
+( green$2_1.5 &
+red$2_0.2 &
+! green$2_0.1 &
+! red$2_0.1 &
+! green$2_0.3 &
+! red$2_0.3 &
+! green$2_0.4 &
+! red$2_0.4 &
+! green$2_0.5 &
+! red$2_0.5 &
+! green$2_1.2 &
+! red$2_1.2 &
+! green$2_1.3 &
+! red$2_1.3 &
+! green$2_1.4 &
+! red$2_1.4 &
+! green$2_2.3 &
+! red$2_2.3 &
+! green$2_2.4 &
+! red$2_2.4 &
+! green$2_2.5 &
+! red$2_2.5 &
+! green$2_3.4 &
+! red$2_3.4 &
+! green$2_3.5 &
+! red$2_3.5 &
+! green$2_4.5 &
+! red$2_4.5 ) |
+( green$2_1.5 &
+red$2_0.3 &
+! green$2_0.1 &
+! red$2_0.1 &
+! green$2_0.2 &
+! red$2_0.2 &
+! green$2_0.4 &
+! red$2_0.4 &
+! green$2_0.5 &
+! red$2_0.5 &
+! green$2_1.2 &
+! red$2_1.2 &
+! green$2_1.3 &
+! red$2_1.3 &
+! green$2_1.4 &
+! red$2_1.4 &
+! green$2_2.3 &
+! red$2_2.3 &
+! green$2_2.4 &
+! red$2_2.4 &
+! green$2_2.5 &
+! red$2_2.5 &
+! green$2_3.4 &
+! red$2_3.4 &
+! green$2_3.5 &
+! red$2_3.5 &
+! green$2_4.5 &
+! red$2_4.5 ) |
+( green$2_1.5 &
+red$2_0.4 &
+! green$2_0.1 &
+! red$2_0.1 &
+! green$2_0.2 &
+! red$2_0.2 &
+! green$2_0.3 &
+! red$2_0.3 &
+! green$2_0.5 &
+! red$2_0.5 &
+! green$2_1.2 &
+! red$2_1.2 &
+! green$2_1.3 &
+! red$2_1.3 &
+! green$2_1.4 &
+! red$2_1.4 &
+! green$2_2.3 &
+! red$2_2.3 &
+! green$2_2.4 &
+! red$2_2.4 &
+! green$2_2.5 &
+! red$2_2.5 &
+! green$2_3.4 &
+! red$2_3.4 &
+! green$2_3.5 &
+! red$2_3.5 &
+! green$2_4.5 &
+! red$2_4.5 ) |
+( green$2_1.5 &
+red$2_0.5 &
+! green$2_0.1 &
+! red$2_0.1 &
+! green$2_0.2 &
+! red$2_0.2 &
+! green$2_0.3 &
+! red$2_0.3 &
+! green$2_0.4 &
+! red$2_0.4 &
+! green$2_1.2 &
+! red$2_1.2 &
+! green$2_1.3 &
+! red$2_1.3 &
+! green$2_1.4 &
+! red$2_1.4 &
+! green$2_2.3 &
+! red$2_2.3 &
+! green$2_2.4 &
+! red$2_2.4 &
+! green$2_2.5 &
+! red$2_2.5 &
+! green$2_3.4 &
+! red$2_3.4 &
+! green$2_3.5 &
+! red$2_3.5 &
+! green$2_4.5 &
+! red$2_4.5 ) |
+( green$2_1.5 &
+red$2_1.2 &
+! green$2_0.1 &
+! red$2_0.1 &
+! green$2_0.2 &
+! red$2_0.2 &
+! green$2_0.3 &
+! red$2_0.3 &
+! green$2_0.4 &
+! red$2_0.4 &
+! green$2_0.5 &
+! red$2_0.5 &
+! green$2_1.3 &
+! red$2_1.3 &
+! green$2_1.4 &
+! red$2_1.4 &
+! green$2_2.3 &
+! red$2_2.3 &
+! green$2_2.4 &
+! red$2_2.4 &
+! green$2_2.5 &
+! red$2_2.5 &
+! green$2_3.4 &
+! red$2_3.4 &
+! green$2_3.5 &
+! red$2_3.5 &
+! green$2_4.5 &
+! red$2_4.5 ) |
+( green$2_1.5 &
+red$2_1.3 &
+! green$2_0.1 &
+! red$2_0.1 &
+! green$2_0.2 &
+! red$2_0.2 &
+! green$2_0.3 &
+! red$2_0.3 &
+! green$2_0.4 &
+! red$2_0.4 &
+! green$2_0.5 &
+! red$2_0.5 &
+! green$2_1.2 &
+! red$2_1.2 &
+! green$2_1.4 &
+! red$2_1.4 &
+! green$2_2.3 &
+! red$2_2.3 &
+! green$2_2.4 &
+! red$2_2.4 &
+! green$2_2.5 &
+! red$2_2.5 &
+! green$2_3.4 &
+! red$2_3.4 &
+! green$2_3.5 &
+! red$2_3.5 &
+! green$2_4.5 &
+! red$2_4.5 ) |
+( green$2_1.5 &
+red$2_1.4 &
+! green$2_0.1 &
+! red$2_0.1 &
+! green$2_0.2 &
+! red$2_0.2 &
+! green$2_0.3 &
+! red$2_0.3 &
+! green$2_0.4 &
+! red$2_0.4 &
+! green$2_0.5 &
+! red$2_0.5 &
+! green$2_1.2 &
+! red$2_1.2 &
+! green$2_1.3 &
+! red$2_1.3 &
+! green$2_2.3 &
+! red$2_2.3 &
+! green$2_2.4 &
+! red$2_2.4 &
+! green$2_2.5 &
+! red$2_2.5 &
+! green$2_3.4 &
+! red$2_3.4 &
+! green$2_3.5 &
+! red$2_3.5 &
+! green$2_4.5 &
+! red$2_4.5 ) |
+( green$2_1.5 &
+red$2_2.3 &
+! green$2_0.1 &
+! red$2_0.1 &
+! green$2_0.2 &
+! red$2_0.2 &
+! green$2_0.3 &
+! red$2_0.3 &
+! green$2_0.4 &
+! red$2_0.4 &
+! green$2_0.5 &
+! red$2_0.5 &
+! green$2_1.2 &
+! red$2_1.2 &
+! green$2_1.3 &
+! red$2_1.3 &
+! green$2_1.4 &
+! red$2_1.4 &
+! green$2_2.4 &
+! red$2_2.4 &
+! green$2_2.5 &
+! red$2_2.5 &
+! green$2_3.4 &
+! red$2_3.4 &
+! green$2_3.5 &
+! red$2_3.5 &
+! green$2_4.5 &
+! red$2_4.5 ) |
+( green$2_1.5 &
+red$2_2.4 &
+! green$2_0.1 &
+! red$2_0.1 &
+! green$2_0.2 &
+! red$2_0.2 &
+! green$2_0.3 &
+! red$2_0.3 &
+! green$2_0.4 &
+! red$2_0.4 &
+! green$2_0.5 &
+! red$2_0.5 &
+! green$2_1.2 &
+! red$2_1.2 &
+! green$2_1.3 &
+! red$2_1.3 &
+! green$2_1.4 &
+! red$2_1.4 &
+! green$2_2.3 &
+! red$2_2.3 &
+! green$2_2.5 &
+! red$2_2.5 &
+! green$2_3.4 &
+! red$2_3.4 &
+! green$2_3.5 &
+! red$2_3.5 &
+! green$2_4.5 &
+! red$2_4.5 ) |
+( green$2_1.5 &
+red$2_2.5 &
+! green$2_0.1 &
+! red$2_0.1 &
+! green$2_0.2 &
+! red$2_0.2 &
+! green$2_0.3 &
+! red$2_0.3 &
+! green$2_0.4 &
+! red$2_0.4 &
+! green$2_0.5 &
+! red$2_0.5 &
+! green$2_1.2 &
+! red$2_1.2 &
+! green$2_1.3 &
+! red$2_1.3 &
+! green$2_1.4 &
+! red$2_1.4 &
+! green$2_2.3 &
+! red$2_2.3 &
+! green$2_2.4 &
+! red$2_2.4 &
+! green$2_3.4 &
+! red$2_3.4 &
+! green$2_3.5 &
+! red$2_3.5 &
+! green$2_4.5 &
+! red$2_4.5 ) |
+( green$2_1.5 &
+red$2_3.4 &
+! green$2_0.1 &
+! red$2_0.1 &
+! green$2_0.2 &
+! red$2_0.2 &
+! green$2_0.3 &
+! red$2_0.3 &
+! green$2_0.4 &
+! red$2_0.4 &
+! green$2_0.5 &
+! red$2_0.5 &
+! green$2_1.2 &
+! red$2_1.2 &
+! green$2_1.3 &
+! red$2_1.3 &
+! green$2_1.4 &
+! red$2_1.4 &
+! green$2_2.3 &
+! red$2_2.3 &
+! green$2_2.4 &
+! red$2_2.4 &
+! green$2_2.5 &
+! red$2_2.5 &
+! green$2_3.5 &
+! red$2_3.5 &
+! green$2_4.5 &
+! red$2_4.5 ) |
+( green$2_1.5 &
+red$2_3.5 &
+! green$2_0.1 &
+! red$2_0.1 &
+! green$2_0.2 &
+! red$2_0.2 &
+! green$2_0.3 &
+! red$2_0.3 &
+! green$2_0.4 &
+! red$2_0.4 &
+! green$2_0.5 &
+! red$2_0.5 &
+! green$2_1.2 &
+! red$2_1.2 &
+! green$2_1.3 &
+! red$2_1.3 &
+! green$2_1.4 &
+! red$2_1.4 &
+! green$2_2.3 &
+! red$2_2.3 &
+! green$2_2.4 &
+! red$2_2.4 &
+! green$2_2.5 &
+! red$2_2.5 &
+! green$2_3.4 &
+! red$2_3.4 &
+! green$2_4.5 &
+! red$2_4.5 ) |
+( green$2_1.5 &
+red$2_4.5 &
+! green$2_0.1 &
+! red$2_0.1 &
+! green$2_0.2 &
+! red$2_0.2 &
+! green$2_0.3 &
+! red$2_0.3 &
+! green$2_0.4 &
+! red$2_0.4 &
+! green$2_0.5 &
+! red$2_0.5 &
+! green$2_1.2 &
+! red$2_1.2 &
+! green$2_1.3 &
+! red$2_1.3 &
+! green$2_1.4 &
+! red$2_1.4 &
+! green$2_2.3 &
+! red$2_2.3 &
+! green$2_2.4 &
+! red$2_2.4 &
+! green$2_2.5 &
+! red$2_2.5 &
+! green$2_3.4 &
+! red$2_3.4 &
+! green$2_3.5 &
+! red$2_3.5 ) |
+( green$2_2.3 &
+red$2_0.1 &
+! green$2_0.2 &
+! red$2_0.2 &
+! green$2_0.3 &
+! red$2_0.3 &
+! green$2_0.4 &
+! red$2_0.4 &
+! green$2_0.5 &
+! red$2_0.5 &
+! green$2_1.2 &
+! red$2_1.2 &
+! green$2_1.3 &
+! red$2_1.3 &
+! green$2_1.4 &
+! red$2_1.4 &
+! green$2_1.5 &
+! red$2_1.5 &
+! green$2_2.4 &
+! red$2_2.4 &
+! green$2_2.5 &
+! red$2_2.5 &
+! green$2_3.4 &
+! red$2_3.4 &
+! green$2_3.5 &
+! red$2_3.5 &
+! green$2_4.5 &
+! red$2_4.5 ) |
+( green$2_2.3 &
+red$2_0.2 &
+! green$2_0.1 &
+! red$2_0.1 &
+! green$2_0.3 &
+! red$2_0.3 &
+! green$2_0.4 &
+! red$2_0.4 &
+! green$2_0.5 &
+! red$2_0.5 &
+! green$2_1.2 &
+! red$2_1.2 &
+! green$2_1.3 &
+! red$2_1.3 &
+! green$2_1.4 &
+! red$2_1.4 &
+! green$2_1.5 &
+! red$2_1.5 &
+! green$2_2.4 &
+! red$2_2.4 &
+! green$2_2.5 &
+! red$2_2.5 &
+! green$2_3.4 &
+! red$2_3.4 &
+! green$2_3.5 &
+! red$2_3.5 &
+! green$2_4.5 &
+! red$2_4.5 ) |
+( green$2_2.3 &
+red$2_0.3 &
+! green$2_0.1 &
+! red$2_0.1 &
+! green$2_0.2 &
+! red$2_0.2 &
+! green$2_0.4 &
+! red$2_0.4 &
+! green$2_0.5 &
+! red$2_0.5 &
+! green$2_1.2 &
+! red$2_1.2 &
+! green$2_1.3 &
+! red$2_1.3 &
+! green$2_1.4 &
+! red$2_1.4 &
+! green$2_1.5 &
+! red$2_1.5 &
+! green$2_2.4 &
+! red$2_2.4 &
+! green$2_2.5 &
+! red$2_2.5 &
+! green$2_3.4 &
+! red$2_3.4 &
+! green$2_3.5 &
+! red$2_3.5 &
+! green$2_4.5 &
+! red$2_4.5 ) |
+( green$2_2.3 &
+red$2_0.4 &
+! green$2_0.1 &
+! red$2_0.1 &
+! green$2_0.2 &
+! red$2_0.2 &
+! green$2_0.3 &
+! red$2_0.3 &
+! green$2_0.5 &
+! red$2_0.5 &
+! green$2_1.2 &
+! red$2_1.2 &
+! green$2_1.3 &
+! red$2_1.3 &
+! green$2_1.4 &
+! red$2_1.4 &
+! green$2_1.5 &
+! red$2_1.5 &
+! green$2_2.4 &
+! red$2_2.4 &
+! green$2_2.5 &
+! red$2_2.5 &
+! green$2_3.4 &
+! red$2_3.4 &
+! green$2_3.5 &
+! red$2_3.5 &
+! green$2_4.5 &
+! red$2_4.5 ) |
+( green$2_2.3 &
+red$2_0.5 &
+! green$2_0.1 &
+! red$2_0.1 &
+! green$2_0.2 &
+! red$2_0.2 &
+! green$2_0.3 &
+! red$2_0.3 &
+! green$2_0.4 &
+! red$2_0.4 &
+! green$2_1.2 &
+! red$2_1.2 &
+! green$2_1.3 &
+! red$2_1.3 &
+! green$2_1.4 &
+! red$2_1.4 &
+! green$2_1.5 &
+! red$2_1.5 &
+! green$2_2.4 &
+! red$2_2.4 &
+! green$2_2.5 &
+! red$2_2.5 &
+! green$2_3.4 &
+! red$2_3.4 &
+! green$2_3.5 &
+! red$2_3.5 &
+! green$2_4.5 &
+! red$2_4.5 ) |
+( green$2_2.3 &
+red$2_1.2 &
+! green$2_0.1 &
+! red$2_0.1 &
+! green$2_0.2 &
+! red$2_0.2 &
+! green$2_0.3 &
+! red$2_0.3 &
+! green$2_0.4 &
+! red$2_0.4 &
+! green$2_0.5 &
+! red$2_0.5 &
+! green$2_1.3 &
+! red$2_1.3 &
+! green$2_1.4 &
+! red$2_1.4 &
+! green$2_1.5 &
+! red$2_1.5 &
+! green$2_2.4 &
+! red$2_2.4 &
+! green$2_2.5 &
+! red$2_2.5 &
+! green$2_3.4 &
+! red$2_3.4 &
+! green$2_3.5 &
+! red$2_3.5 &
+! green$2_4.5 &
+! red$2_4.5 ) |
+( green$2_2.3 &
+red$2_1.3 &
+! green$2_0.1 &
+! red$2_0.1 &
+! green$2_0.2 &
+! red$2_0.2 &
+! green$2_0.3 &
+! red$2_0.3 &
+! green$2_0.4 &
+! red$2_0.4 &
+! green$2_0.5 &
+! red$2_0.5 &
+! green$2_1.2 &
+! red$2_1.2 &
+! green$2_1.4 &
+! red$2_1.4 &
+! green$2_1.5 &
+! red$2_1.5 &
+! green$2_2.4 &
+! red$2_2.4 &
+! green$2_2.5 &
+! red$2_2.5 &
+! green$2_3.4 &
+! red$2_3.4 &
+! green$2_3.5 &
+! red$2_3.5 &
+! green$2_4.5 &
+! red$2_4.5 ) |
+( green$2_2.3 &
+red$2_1.4 &
+! green$2_0.1 &
+! red$2_0.1 &
+! green$2_0.2 &
+! red$2_0.2 &
+! green$2_0.3 &
+! red$2_0.3 &
+! green$2_0.4 &
+! red$2_0.4 &
+! green$2_0.5 &
+! red$2_0.5 &
+! green$2_1.2 &
+! red$2_1.2 &
+! green$2_1.3 &
+! red$2_1.3 &
+! green$2_1.5 &
+! red$2_1.5 &
+! green$2_2.4 &
+! red$2_2.4 &
+! green$2_2.5 &
+! red$2_2.5 &
+! green$2_3.4 &
+! red$2_3.4 &
+! green$2_3.5 &
+! red$2_3.5 &
+! green$2_4.5 &
+! red$2_4.5 ) |
+( green$2_2.3 &
+red$2_1.5 &
+! green$2_0.1 &
+! red$2_0.1 &
+! green$2_0.2 &
+! red$2_0.2 &
+! green$2_0.3 &
+! red$2_0.3 &
+! green$2_0.4 &
+! red$2_0.4 &
+! green$2_0.5 &
+! red$2_0.5 &
+! green$2_1.2 &
+! red$2_1.2 &
+! green$2_1.3 &
+! red$2_1.3 &
+! green$2_1.4 &
+! red$2_1.4 &
+! green$2_2.4 &
+! red$2_2.4 &
+! green$2_2.5 &
+! red$2_2.5 &
+! green$2_3.4 &
+! red$2_3.4 &
+! green$2_3.5 &
+! red$2_3.5 &
+! green$2_4.5 &
+! red$2_4.5 ) |
+( green$2_2.3 &
+red$2_2.4 &
+! green$2_0.1 &
+! red$2_0.1 &
+! green$2_0.2 &
+! red$2_0.2 &
+! green$2_0.3 &
+! red$2_0.3 &
+! green$2_0.4 &
+! red$2_0.4 &
+! green$2_0.5 &
+! red$2_0.5 &
+! green$2_1.2 &
+! red$2_1.2 &
+! green$2_1.3 &
+! red$2_1.3 &
+! green$2_1.4 &
+! red$2_1.4 &
+! green$2_1.5 &
+! red$2_1.5 &
+! green$2_2.5 &
+! red$2_2.5 &
+! green$2_3.4 &
+! red$2_3.4 &
+! green$2_3.5 &
+! red$2_3.5 &
+! green$2_4.5 &
+! red$2_4.5 ) |
+( green$2_2.3 &
+red$2_2.5 &
+! green$2_0.1 &
+! red$2_0.1 &
+! green$2_0.2 &
+! red$2_0.2 &
+! green$2_0.3 &
+! red$2_0.3 &
+! green$2_0.4 &
+! red$2_0.4 &
+! green$2_0.5 &
+! red$2_0.5 &
+! green$2_1.2 &
+! red$2_1.2 &
+! green$2_1.3 &
+! red$2_1.3 &
+! green$2_1.4 &
+! red$2_1.4 &
+! green$2_1.5 &
+! red$2_1.5 &
+! green$2_2.4 &
+! red$2_2.4 &
+! green$2_3.4 &
+! red$2_3.4 &
+! green$2_3.5 &
+! red$2_3.5 &
+! green$2_4.5 &
+! red$2_4.5 ) |
+( green$2_2.3 &
+red$2_3.4 &
+! green$2_0.1 &
+! red$2_0.1 &
+! green$2_0.2 &
+! red$2_0.2 &
+! green$2_0.3 &
+! red$2_0.3 &
+! green$2_0.4 &
+! red$2_0.4 &
+! green$2_0.5 &
+! red$2_0.5 &
+! green$2_1.2 &
+! red$2_1.2 &
+! green$2_1.3 &
+! red$2_1.3 &
+! green$2_1.4 &
+! red$2_1.4 &
+! green$2_1.5 &
+! red$2_1.5 &
+! green$2_2.4 &
+! red$2_2.4 &
+! green$2_2.5 &
+! red$2_2.5 &
+! green$2_3.5 &
+! red$2_3.5 &
+! green$2_4.5 &
+! red$2_4.5 ) |
+( green$2_2.3 &
+red$2_3.5 &
+! green$2_0.1 &
+! red$2_0.1 &
+! green$2_0.2 &
+! red$2_0.2 &
+! green$2_0.3 &
+! red$2_0.3 &
+! green$2_0.4 &
+! red$2_0.4 &
+! green$2_0.5 &
+! red$2_0.5 &
+! green$2_1.2 &
+! red$2_1.2 &
+! green$2_1.3 &
+! red$2_1.3 &
+! green$2_1.4 &
+! red$2_1.4 &
+! green$2_1.5 &
+! red$2_1.5 &
+! green$2_2.4 &
+! red$2_2.4 &
+! green$2_2.5 &
+! red$2_2.5 &
+! green$2_3.4 &
+! red$2_3.4 &
+! green$2_4.5 &
+! red$2_4.5 ) |
+( green$2_2.3 &
+red$2_4.5 &
+! green$2_0.1 &
+! red$2_0.1 &
+! green$2_0.2 &
+! red$2_0.2 &
+! green$2_0.3 &
+! red$2_0.3 &
+! green$2_0.4 &
+! red$2_0.4 &
+! green$2_0.5 &
+! red$2_0.5 &
+! green$2_1.2 &
+! red$2_1.2 &
+! green$2_1.3 &
+! red$2_1.3 &
+! green$2_1.4 &
+! red$2_1.4 &
+! green$2_1.5 &
+! red$2_1.5 &
+! green$2_2.4 &
+! red$2_2.4 &
+! green$2_2.5 &
+! red$2_2.5 &
+! green$2_3.4 &
+! red$2_3.4 &
+! green$2_3.5 &
+! red$2_3.5 ) |
+( green$2_2.4 &
+red$2_0.1 &
+! green$2_0.2 &
+! red$2_0.2 &
+! green$2_0.3 &
+! red$2_0.3 &
+! green$2_0.4 &
+! red$2_0.4 &
+! green$2_0.5 &
+! red$2_0.5 &
+! green$2_1.2 &
+! red$2_1.2 &
+! green$2_1.3 &
+! red$2_1.3 &
+! green$2_1.4 &
+! red$2_1.4 &
+! green$2_1.5 &
+! red$2_1.5 &
+! green$2_2.3 &
+! red$2_2.3 &
+! green$2_2.5 &
+! red$2_2.5 &
+! green$2_3.4 &
+! red$2_3.4 &
+! green$2_3.5 &
+! red$2_3.5 &
+! green$2_4.5 &
+! red$2_4.5 ) |
+( green$2_2.4 &
+red$2_0.2 &
+! green$2_0.1 &
+! red$2_0.1 &
+! green$2_0.3 &
+! red$2_0.3 &
+! green$2_0.4 &
+! red$2_0.4 &
+! green$2_0.5 &
+! red$2_0.5 &
+! green$2_1.2 &
+! red$2_1.2 &
+! green$2_1.3 &
+! red$2_1.3 &
+! green$2_1.4 &
+! red$2_1.4 &
+! green$2_1.5 &
+! red$2_1.5 &
+! green$2_2.3 &
+! red$2_2.3 &
+! green$2_2.5 &
+! red$2_2.5 &
+! green$2_3.4 &
+! red$2_3.4 &
+! green$2_3.5 &
+! red$2_3.5 &
+! green$2_4.5 &
+! red$2_4.5 ) |
+( green$2_2.4 &
+red$2_0.3 &
+! green$2_0.1 &
+! red$2_0.1 &
+! green$2_0.2 &
+! red$2_0.2 &
+! green$2_0.4 &
+! red$2_0.4 &
+! green$2_0.5 &
+! red$2_0.5 &
+! green$2_1.2 &
+! red$2_1.2 &
+! green$2_1.3 &
+! red$2_1.3 &
+! green$2_1.4 &
+! red$2_1.4 &
+! green$2_1.5 &
+! red$2_1.5 &
+! green$2_2.3 &
+! red$2_2.3 &
+! green$2_2.5 &
+! red$2_2.5 &
+! green$2_3.4 &
+! red$2_3.4 &
+! green$2_3.5 &
+! red$2_3.5 &
+! green$2_4.5 &
+! red$2_4.5 ) |
+( green$2_2.4 &
+red$2_0.4 &
+! green$2_0.1 &
+! red$2_0.1 &
+! green$2_0.2 &
+! red$2_0.2 &
+! green$2_0.3 &
+! red$2_0.3 &
+! green$2_0.5 &
+! red$2_0.5 &
+! green$2_1.2 &
+! red$2_1.2 &
+! green$2_1.3 &
+! red$2_1.3 &
+! green$2_1.4 &
+! red$2_1.4 &
+! green$2_1.5 &
+! red$2_1.5 &
+! green$2_2.3 &
+! red$2_2.3 &
+! green$2_2.5 &
+! red$2_2.5 &
+! green$2_3.4 &
+! red$2_3.4 &
+! green$2_3.5 &
+! red$2_3.5 &
+! green$2_4.5 &
+! red$2_4.5 ) |
+( green$2_2.4 &
+red$2_0.5 &
+! green$2_0.1 &
+! red$2_0.1 &
+! green$2_0.2 &
+! red$2_0.2 &
+! green$2_0.3 &
+! red$2_0.3 &
+! green$2_0.4 &
+! red$2_0.4 &
+! green$2_1.2 &
+! red$2_1.2 &
+! green$2_1.3 &
+! red$2_1.3 &
+! green$2_1.4 &
+! red$2_1.4 &
+! green$2_1.5 &
+! red$2_1.5 &
+! green$2_2.3 &
+! red$2_2.3 &
+! green$2_2.5 &
+! red$2_2.5 &
+! green$2_3.4 &
+! red$2_3.4 &
+! green$2_3.5 &
+! red$2_3.5 &
+! green$2_4.5 &
+! red$2_4.5 ) |
+( green$2_2.4 &
+red$2_1.2 &
+! green$2_0.1 &
+! red$2_0.1 &
+! green$2_0.2 &
+! red$2_0.2 &
+! green$2_0.3 &
+! red$2_0.3 &
+! green$2_0.4 &
+! red$2_0.4 &
+! green$2_0.5 &
+! red$2_0.5 &
+! green$2_1.3 &
+! red$2_1.3 &
+! green$2_1.4 &
+! red$2_1.4 &
+! green$2_1.5 &
+! red$2_1.5 &
+! green$2_2.3 &
+! red$2_2.3 &
+! green$2_2.5 &
+! red$2_2.5 &
+! green$2_3.4 &
+! red$2_3.4 &
+! green$2_3.5 &
+! red$2_3.5 &
+! green$2_4.5 &
+! red$2_4.5 ) |
+( green$2_2.4 &
+red$2_1.3 &
+! green$2_0.1 &
+! red$2_0.1 &
+! green$2_0.2 &
+! red$2_0.2 &
+! green$2_0.3 &
+! red$2_0.3 &
+! green$2_0.4 &
+! red$2_0.4 &
+! green$2_0.5 &
+! red$2_0.5 &
+! green$2_1.2 &
+! red$2_1.2 &
+! green$2_1.4 &
+! red$2_1.4 &
+! green$2_1.5 &
+! red$2_1.5 &
+! green$2_2.3 &
+! red$2_2.3 &
+! green$2_2.5 &
+! red$2_2.5 &
+! green$2_3.4 &
+! red$2_3.4 &
+! green$2_3.5 &
+! red$2_3.5 &
+! green$2_4.5 &
+! red$2_4.5 ) |
+( green$2_2.4 &
+red$2_1.4 &
+! green$2_0.1 &
+! red$2_0.1 &
+! green$2_0.2 &
+! red$2_0.2 &
+! green$2_0.3 &
+! red$2_0.3 &
+! green$2_0.4 &
+! red$2_0.4 &
+! green$2_0.5 &
+! red$2_0.5 &
+! green$2_1.2 &
+! red$2_1.2 &
+! green$2_1.3 &
+! red$2_1.3 &
+! green$2_1.5 &
+! red$2_1.5 &
+! green$2_2.3 &
+! red$2_2.3 &
+! green$2_2.5 &
+! red$2_2.5 &
+! green$2_3.4 &
+! red$2_3.4 &
+! green$2_3.5 &
+! red$2_3.5 &
+! green$2_4.5 &
+! red$2_4.5 ) |
+( green$2_2.4 &
+red$2_1.5 &
+! green$2_0.1 &
+! red$2_0.1 &
+! green$2_0.2 &
+! red$2_0.2 &
+! green$2_0.3 &
+! red$2_0.3 &
+! green$2_0.4 &
+! red$2_0.4 &
+! green$2_0.5 &
+! red$2_0.5 &
+! green$2_1.2 &
+! red$2_1.2 &
+! green$2_1.3 &
+! red$2_1.3 &
+! green$2_1.4 &
+! red$2_1.4 &
+! green$2_2.3 &
+! red$2_2.3 &
+! green$2_2.5 &
+! red$2_2.5 &
+! green$2_3.4 &
+! red$2_3.4 &
+! green$2_3.5 &
+! red$2_3.5 &
+! green$2_4.5 &
+! red$2_4.5 ) |
+( green$2_2.4 &
+red$2_2.3 &
+! green$2_0.1 &
+! red$2_0.1 &
+! green$2_0.2 &
+! red$2_0.2 &
+! green$2_0.3 &
+! red$2_0.3 &
+! green$2_0.4 &
+! red$2_0.4 &
+! green$2_0.5 &
+! red$2_0.5 &
+! green$2_1.2 &
+! red$2_1.2 &
+! green$2_1.3 &
+! red$2_1.3 &
+! green$2_1.4 &
+! red$2_1.4 &
+! green$2_1.5 &
+! red$2_1.5 &
+! green$2_2.5 &
+! red$2_2.5 &
+! green$2_3.4 &
+! red$2_3.4 &
+! green$2_3.5 &
+! red$2_3.5 &
+! green$2_4.5 &
+! red$2_4.5 ) |
+( green$2_2.4 &
+red$2_2.5 &
+! green$2_0.1 &
+! red$2_0.1 &
+! green$2_0.2 &
+! red$2_0.2 &
+! green$2_0.3 &
+! red$2_0.3 &
+! green$2_0.4 &
+! red$2_0.4 &
+! green$2_0.5 &
+! red$2_0.5 &
+! green$2_1.2 &
+! red$2_1.2 &
+! green$2_1.3 &
+! red$2_1.3 &
+! green$2_1.4 &
+! red$2_1.4 &
+! green$2_1.5 &
+! red$2_1.5 &
+! green$2_2.3 &
+! red$2_2.3 &
+! green$2_3.4 &
+! red$2_3.4 &
+! green$2_3.5 &
+! red$2_3.5 &
+! green$2_4.5 &
+! red$2_4.5 ) |
+( green$2_2.4 &
+red$2_3.4 &
+! green$2_0.1 &
+! red$2_0.1 &
+! green$2_0.2 &
+! red$2_0.2 &
+! green$2_0.3 &
+! red$2_0.3 &
+! green$2_0.4 &
+! red$2_0.4 &
+! green$2_0.5 &
+! red$2_0.5 &
+! green$2_1.2 &
+! red$2_1.2 &
+! green$2_1.3 &
+! red$2_1.3 &
+! green$2_1.4 &
+! red$2_1.4 &
+! green$2_1.5 &
+! red$2_1.5 &
+! green$2_2.3 &
+! red$2_2.3 &
+! green$2_2.5 &
+! red$2_2.5 &
+! green$2_3.5 &
+! red$2_3.5 &
+! green$2_4.5 &
+! red$2_4.5 ) |
+( green$2_2.4 &
+red$2_3.5 &
+! green$2_0.1 &
+! red$2_0.1 &
+! green$2_0.2 &
+! red$2_0.2 &
+! green$2_0.3 &
+! red$2_0.3 &
+! green$2_0.4 &
+! red$2_0.4 &
+! green$2_0.5 &
+! red$2_0.5 &
+! green$2_1.2 &
+! red$2_1.2 &
+! green$2_1.3 &
+! red$2_1.3 &
+! green$2_1.4 &
+! red$2_1.4 &
+! green$2_1.5 &
+! red$2_1.5 &
+! green$2_2.3 &
+! red$2_2.3 &
+! green$2_2.5 &
+! red$2_2.5 &
+! green$2_3.4 &
+! red$2_3.4 &
+! green$2_4.5 &
+! red$2_4.5 ) |
+( green$2_2.4 &
+red$2_4.5 &
+! green$2_0.1 &
+! red$2_0.1 &
+! green$2_0.2 &
+! red$2_0.2 &
+! green$2_0.3 &
+! red$2_0.3 &
+! green$2_0.4 &
+! red$2_0.4 &
+! green$2_0.5 &
+! red$2_0.5 &
+! green$2_1.2 &
+! red$2_1.2 &
+! green$2_1.3 &
+! red$2_1.3 &
+! green$2_1.4 &
+! red$2_1.4 &
+! green$2_1.5 &
+! red$2_1.5 &
+! green$2_2.3 &
+! red$2_2.3 &
+! green$2_2.5 &
+! red$2_2.5 &
+! green$2_3.4 &
+! red$2_3.4 &
+! green$2_3.5 &
+! red$2_3.5 ) |
+( green$2_2.5 &
+red$2_0.1 &
+! green$2_0.2 &
+! red$2_0.2 &
+! green$2_0.3 &
+! red$2_0.3 &
+! green$2_0.4 &
+! red$2_0.4 &
+! green$2_0.5 &
+! red$2_0.5 &
+! green$2_1.2 &
+! red$2_1.2 &
+! green$2_1.3 &
+! red$2_1.3 &
+! green$2_1.4 &
+! red$2_1.4 &
+! green$2_1.5 &
+! red$2_1.5 &
+! green$2_2.3 &
+! red$2_2.3 &
+! green$2_2.4 &
+! red$2_2.4 &
+! green$2_3.4 &
+! red$2_3.4 &
+! green$2_3.5 &
+! red$2_3.5 &
+! green$2_4.5 &
+! red$2_4.5 ) |
+( green$2_2.5 &
+red$2_0.2 &
+! green$2_0.1 &
+! red$2_0.1 &
+! green$2_0.3 &
+! red$2_0.3 &
+! green$2_0.4 &
+! red$2_0.4 &
+! green$2_0.5 &
+! red$2_0.5 &
+! green$2_1.2 &
+! red$2_1.2 &
+! green$2_1.3 &
+! red$2_1.3 &
+! green$2_1.4 &
+! red$2_1.4 &
+! green$2_1.5 &
+! red$2_1.5 &
+! green$2_2.3 &
+! red$2_2.3 &
+! green$2_2.4 &
+! red$2_2.4 &
+! green$2_3.4 &
+! red$2_3.4 &
+! green$2_3.5 &
+! red$2_3.5 &
+! green$2_4.5 &
+! red$2_4.5 ) |
+( green$2_2.5 &
+red$2_0.3 &
+! green$2_0.1 &
+! red$2_0.1 &
+! green$2_0.2 &
+! red$2_0.2 &
+! green$2_0.4 &
+! red$2_0.4 &
+! green$2_0.5 &
+! red$2_0.5 &
+! green$2_1.2 &
+! red$2_1.2 &
+! green$2_1.3 &
+! red$2_1.3 &
+! green$2_1.4 &
+! red$2_1.4 &
+! green$2_1.5 &
+! red$2_1.5 &
+! green$2_2.3 &
+! red$2_2.3 &
+! green$2_2.4 &
+! red$2_2.4 &
+! green$2_3.4 &
+! red$2_3.4 &
+! green$2_3.5 &
+! red$2_3.5 &
+! green$2_4.5 &
+! red$2_4.5 ) |
+( green$2_2.5 &
+red$2_0.4 &
+! green$2_0.1 &
+! red$2_0.1 &
+! green$2_0.2 &
+! red$2_0.2 &
+! green$2_0.3 &
+! red$2_0.3 &
+! green$2_0.5 &
+! red$2_0.5 &
+! green$2_1.2 &
+! red$2_1.2 &
+! green$2_1.3 &
+! red$2_1.3 &
+! green$2_1.4 &
+! red$2_1.4 &
+! green$2_1.5 &
+! red$2_1.5 &
+! green$2_2.3 &
+! red$2_2.3 &
+! green$2_2.4 &
+! red$2_2.4 &
+! green$2_3.4 &
+! red$2_3.4 &
+! green$2_3.5 &
+! red$2_3.5 &
+! green$2_4.5 &
+! red$2_4.5 ) |
+( green$2_2.5 &
+red$2_0.5 &
+! green$2_0.1 &
+! red$2_0.1 &
+! green$2_0.2 &
+! red$2_0.2 &
+! green$2_0.3 &
+! red$2_0.3 &
+! green$2_0.4 &
+! red$2_0.4 &
+! green$2_1.2 &
+! red$2_1.2 &
+! green$2_1.3 &
+! red$2_1.3 &
+! green$2_1.4 &
+! red$2_1.4 &
+! green$2_1.5 &
+! red$2_1.5 &
+! green$2_2.3 &
+! red$2_2.3 &
+! green$2_2.4 &
+! red$2_2.4 &
+! green$2_3.4 &
+! red$2_3.4 &
+! green$2_3.5 &
+! red$2_3.5 &
+! green$2_4.5 &
+! red$2_4.5 ) |
+( green$2_2.5 &
+red$2_1.2 &
+! green$2_0.1 &
+! red$2_0.1 &
+! green$2_0.2 &
+! red$2_0.2 &
+! green$2_0.3 &
+! red$2_0.3 &
+! green$2_0.4 &
+! red$2_0.4 &
+! green$2_0.5 &
+! red$2_0.5 &
+! green$2_1.3 &
+! red$2_1.3 &
+! green$2_1.4 &
+! red$2_1.4 &
+! green$2_1.5 &
+! red$2_1.5 &
+! green$2_2.3 &
+! red$2_2.3 &
+! green$2_2.4 &
+! red$2_2.4 &
+! green$2_3.4 &
+! red$2_3.4 &
+! green$2_3.5 &
+! red$2_3.5 &
+! green$2_4.5 &
+! red$2_4.5 ) |
+( green$2_2.5 &
+red$2_1.3 &
+! green$2_0.1 &
+! red$2_0.1 &
+! green$2_0.2 &
+! red$2_0.2 &
+! green$2_0.3 &
+! red$2_0.3 &
+! green$2_0.4 &
+! red$2_0.4 &
+! green$2_0.5 &
+! red$2_0.5 &
+! green$2_1.2 &
+! red$2_1.2 &
+! green$2_1.4 &
+! red$2_1.4 &
+! green$2_1.5 &
+! red$2_1.5 &
+! green$2_2.3 &
+! red$2_2.3 &
+! green$2_2.4 &
+! red$2_2.4 &
+! green$2_3.4 &
+! red$2_3.4 &
+! green$2_3.5 &
+! red$2_3.5 &
+! green$2_4.5 &
+! red$2_4.5 ) |
+( green$2_2.5 &
+red$2_1.4 &
+! green$2_0.1 &
+! red$2_0.1 &
+! green$2_0.2 &
+! red$2_0.2 &
+! green$2_0.3 &
+! red$2_0.3 &
+! green$2_0.4 &
+! red$2_0.4 &
+! green$2_0.5 &
+! red$2_0.5 &
+! green$2_1.2 &
+! red$2_1.2 &
+! green$2_1.3 &
+! red$2_1.3 &
+! green$2_1.5 &
+! red$2_1.5 &
+! green$2_2.3 &
+! red$2_2.3 &
+! green$2_2.4 &
+! red$2_2.4 &
+! green$2_3.4 &
+! red$2_3.4 &
+! green$2_3.5 &
+! red$2_3.5 &
+! green$2_4.5 &
+! red$2_4.5 ) |
+( green$2_2.5 &
+red$2_1.5 &
+! green$2_0.1 &
+! red$2_0.1 &
+! green$2_0.2 &
+! red$2_0.2 &
+! green$2_0.3 &
+! red$2_0.3 &
+! green$2_0.4 &
+! red$2_0.4 &
+! green$2_0.5 &
+! red$2_0.5 &
+! green$2_1.2 &
+! red$2_1.2 &
+! green$2_1.3 &
+! red$2_1.3 &
+! green$2_1.4 &
+! red$2_1.4 &
+! green$2_2.3 &
+! red$2_2.3 &
+! green$2_2.4 &
+! red$2_2.4 &
+! green$2_3.4 &
+! red$2_3.4 &
+! green$2_3.5 &
+! red$2_3.5 &
+! green$2_4.5 &
+! red$2_4.5 ) |
+( green$2_2.5 &
+red$2_2.3 &
+! green$2_0.1 &
+! red$2_0.1 &
+! green$2_0.2 &
+! red$2_0.2 &
+! green$2_0.3 &
+! red$2_0.3 &
+! green$2_0.4 &
+! red$2_0.4 &
+! green$2_0.5 &
+! red$2_0.5 &
+! green$2_1.2 &
+! red$2_1.2 &
+! green$2_1.3 &
+! red$2_1.3 &
+! green$2_1.4 &
+! red$2_1.4 &
+! green$2_1.5 &
+! red$2_1.5 &
+! green$2_2.4 &
+! red$2_2.4 &
+! green$2_3.4 &
+! red$2_3.4 &
+! green$2_3.5 &
+! red$2_3.5 &
+! green$2_4.5 &
+! red$2_4.5 ) |
+( green$2_2.5 &
+red$2_2.4 &
+! green$2_0.1 &
+! red$2_0.1 &
+! green$2_0.2 &
+! red$2_0.2 &
+! green$2_0.3 &
+! red$2_0.3 &
+! green$2_0.4 &
+! red$2_0.4 &
+! green$2_0.5 &
+! red$2_0.5 &
+! green$2_1.2 &
+! red$2_1.2 &
+! green$2_1.3 &
+! red$2_1.3 &
+! green$2_1.4 &
+! red$2_1.4 &
+! green$2_1.5 &
+! red$2_1.5 &
+! green$2_2.3 &
+! red$2_2.3 &
+! green$2_3.4 &
+! red$2_3.4 &
+! green$2_3.5 &
+! red$2_3.5 &
+! green$2_4.5 &
+! red$2_4.5 ) |
+( green$2_2.5 &
+red$2_3.4 &
+! green$2_0.1 &
+! red$2_0.1 &
+! green$2_0.2 &
+! red$2_0.2 &
+! green$2_0.3 &
+! red$2_0.3 &
+! green$2_0.4 &
+! red$2_0.4 &
+! green$2_0.5 &
+! red$2_0.5 &
+! green$2_1.2 &
+! red$2_1.2 &
+! green$2_1.3 &
+! red$2_1.3 &
+! green$2_1.4 &
+! red$2_1.4 &
+! green$2_1.5 &
+! red$2_1.5 &
+! green$2_2.3 &
+! red$2_2.3 &
+! green$2_2.4 &
+! red$2_2.4 &
+! green$2_3.5 &
+! red$2_3.5 &
+! green$2_4.5 &
+! red$2_4.5 ) |
+( green$2_2.5 &
+red$2_3.5 &
+! green$2_0.1 &
+! red$2_0.1 &
+! green$2_0.2 &
+! red$2_0.2 &
+! green$2_0.3 &
+! red$2_0.3 &
+! green$2_0.4 &
+! red$2_0.4 &
+! green$2_0.5 &
+! red$2_0.5 &
+! green$2_1.2 &
+! red$2_1.2 &
+! green$2_1.3 &
+! red$2_1.3 &
+! green$2_1.4 &
+! red$2_1.4 &
+! green$2_1.5 &
+! red$2_1.5 &
+! green$2_2.3 &
+! red$2_2.3 &
+! green$2_2.4 &
+! red$2_2.4 &
+! green$2_3.4 &
+! red$2_3.4 &
+! green$2_4.5 &
+! red$2_4.5 ) |
+( green$2_2.5 &
+red$2_4.5 &
+! green$2_0.1 &
+! red$2_0.1 &
+! green$2_0.2 &
+! red$2_0.2 &
+! green$2_0.3 &
+! red$2_0.3 &
+! green$2_0.4 &
+! red$2_0.4 &
+! green$2_0.5 &
+! red$2_0.5 &
+! green$2_1.2 &
+! red$2_1.2 &
+! green$2_1.3 &
+! red$2_1.3 &
+! green$2_1.4 &
+! red$2_1.4 &
+! green$2_1.5 &
+! red$2_1.5 &
+! green$2_2.3 &
+! red$2_2.3 &
+! green$2_2.4 &
+! red$2_2.4 &
+! green$2_3.4 &
+! red$2_3.4 &
+! green$2_3.5 &
+! red$2_3.5 ) |
+( green$2_3.4 &
+red$2_0.1 &
+! green$2_0.2 &
+! red$2_0.2 &
+! green$2_0.3 &
+! red$2_0.3 &
+! green$2_0.4 &
+! red$2_0.4 &
+! green$2_0.5 &
+! red$2_0.5 &
+! green$2_1.2 &
+! red$2_1.2 &
+! green$2_1.3 &
+! red$2_1.3 &
+! green$2_1.4 &
+! red$2_1.4 &
+! green$2_1.5 &
+! red$2_1.5 &
+! green$2_2.3 &
+! red$2_2.3 &
+! green$2_2.4 &
+! red$2_2.4 &
+! green$2_2.5 &
+! red$2_2.5 &
+! green$2_3.5 &
+! red$2_3.5 &
+! green$2_4.5 &
+! red$2_4.5 ) |
+( green$2_3.4 &
+red$2_0.2 &
+! green$2_0.1 &
+! red$2_0.1 &
+! green$2_0.3 &
+! red$2_0.3 &
+! green$2_0.4 &
+! red$2_0.4 &
+! green$2_0.5 &
+! red$2_0.5 &
+! green$2_1.2 &
+! red$2_1.2 &
+! green$2_1.3 &
+! red$2_1.3 &
+! green$2_1.4 &
+! red$2_1.4 &
+! green$2_1.5 &
+! red$2_1.5 &
+! green$2_2.3 &
+! red$2_2.3 &
+! green$2_2.4 &
+! red$2_2.4 &
+! green$2_2.5 &
+! red$2_2.5 &
+! green$2_3.5 &
+! red$2_3.5 &
+! green$2_4.5 &
+! red$2_4.5 ) |
+( green$2_3.4 &
+red$2_0.3 &
+! green$2_0.1 &
+! red$2_0.1 &
+! green$2_0.2 &
+! red$2_0.2 &
+! green$2_0.4 &
+! red$2_0.4 &
+! green$2_0.5 &
+! red$2_0.5 &
+! green$2_1.2 &
+! red$2_1.2 &
+! green$2_1.3 &
+! red$2_1.3 &
+! green$2_1.4 &
+! red$2_1.4 &
+! green$2_1.5 &
+! red$2_1.5 &
+! green$2_2.3 &
+! red$2_2.3 &
+! green$2_2.4 &
+! red$2_2.4 &
+! green$2_2.5 &
+! red$2_2.5 &
+! green$2_3.5 &
+! red$2_3.5 &
+! green$2_4.5 &
+! red$2_4.5 ) |
+( green$2_3.4 &
+red$2_0.4 &
+! green$2_0.1 &
+! red$2_0.1 &
+! green$2_0.2 &
+! red$2_0.2 &
+! green$2_0.3 &
+! red$2_0.3 &
+! green$2_0.5 &
+! red$2_0.5 &
+! green$2_1.2 &
+! red$2_1.2 &
+! green$2_1.3 &
+! red$2_1.3 &
+! green$2_1.4 &
+! red$2_1.4 &
+! green$2_1.5 &
+! red$2_1.5 &
+! green$2_2.3 &
+! red$2_2.3 &
+! green$2_2.4 &
+! red$2_2.4 &
+! green$2_2.5 &
+! red$2_2.5 &
+! green$2_3.5 &
+! red$2_3.5 &
+! green$2_4.5 &
+! red$2_4.5 ) |
+( green$2_3.4 &
+red$2_0.5 &
+! green$2_0.1 &
+! red$2_0.1 &
+! green$2_0.2 &
+! red$2_0.2 &
+! green$2_0.3 &
+! red$2_0.3 &
+! green$2_0.4 &
+! red$2_0.4 &
+! green$2_1.2 &
+! red$2_1.2 &
+! green$2_1.3 &
+! red$2_1.3 &
+! green$2_1.4 &
+! red$2_1.4 &
+! green$2_1.5 &
+! red$2_1.5 &
+! green$2_2.3 &
+! red$2_2.3 &
+! green$2_2.4 &
+! red$2_2.4 &
+! green$2_2.5 &
+! red$2_2.5 &
+! green$2_3.5 &
+! red$2_3.5 &
+! green$2_4.5 &
+! red$2_4.5 ) |
+( green$2_3.4 &
+red$2_1.2 &
+! green$2_0.1 &
+! red$2_0.1 &
+! green$2_0.2 &
+! red$2_0.2 &
+! green$2_0.3 &
+! red$2_0.3 &
+! green$2_0.4 &
+! red$2_0.4 &
+! green$2_0.5 &
+! red$2_0.5 &
+! green$2_1.3 &
+! red$2_1.3 &
+! green$2_1.4 &
+! red$2_1.4 &
+! green$2_1.5 &
+! red$2_1.5 &
+! green$2_2.3 &
+! red$2_2.3 &
+! green$2_2.4 &
+! red$2_2.4 &
+! green$2_2.5 &
+! red$2_2.5 &
+! green$2_3.5 &
+! red$2_3.5 &
+! green$2_4.5 &
+! red$2_4.5 ) |
+( green$2_3.4 &
+red$2_1.3 &
+! green$2_0.1 &
+! red$2_0.1 &
+! green$2_0.2 &
+! red$2_0.2 &
+! green$2_0.3 &
+! red$2_0.3 &
+! green$2_0.4 &
+! red$2_0.4 &
+! green$2_0.5 &
+! red$2_0.5 &
+! green$2_1.2 &
+! red$2_1.2 &
+! green$2_1.4 &
+! red$2_1.4 &
+! green$2_1.5 &
+! red$2_1.5 &
+! green$2_2.3 &
+! red$2_2.3 &
+! green$2_2.4 &
+! red$2_2.4 &
+! green$2_2.5 &
+! red$2_2.5 &
+! green$2_3.5 &
+! red$2_3.5 &
+! green$2_4.5 &
+! red$2_4.5 ) |
+( green$2_3.4 &
+red$2_1.4 &
+! green$2_0.1 &
+! red$2_0.1 &
+! green$2_0.2 &
+! red$2_0.2 &
+! green$2_0.3 &
+! red$2_0.3 &
+! green$2_0.4 &
+! red$2_0.4 &
+! green$2_0.5 &
+! red$2_0.5 &
+! green$2_1.2 &
+! red$2_1.2 &
+! green$2_1.3 &
+! red$2_1.3 &
+! green$2_1.5 &
+! red$2_1.5 &
+! green$2_2.3 &
+! red$2_2.3 &
+! green$2_2.4 &
+! red$2_2.4 &
+! green$2_2.5 &
+! red$2_2.5 &
+! green$2_3.5 &
+! red$2_3.5 &
+! green$2_4.5 &
+! red$2_4.5 ) |
+( green$2_3.4 &
+red$2_1.5 &
+! green$2_0.1 &
+! red$2_0.1 &
+! green$2_0.2 &
+! red$2_0.2 &
+! green$2_0.3 &
+! red$2_0.3 &
+! green$2_0.4 &
+! red$2_0.4 &
+! green$2_0.5 &
+! red$2_0.5 &
+! green$2_1.2 &
+! red$2_1.2 &
+! green$2_1.3 &
+! red$2_1.3 &
+! green$2_1.4 &
+! red$2_1.4 &
+! green$2_2.3 &
+! red$2_2.3 &
+! green$2_2.4 &
+! red$2_2.4 &
+! green$2_2.5 &
+! red$2_2.5 &
+! green$2_3.5 &
+! red$2_3.5 &
+! green$2_4.5 &
+! red$2_4.5 ) |
+( green$2_3.4 &
+red$2_2.3 &
+! green$2_0.1 &
+! red$2_0.1 &
+! green$2_0.2 &
+! red$2_0.2 &
+! green$2_0.3 &
+! red$2_0.3 &
+! green$2_0.4 &
+! red$2_0.4 &
+! green$2_0.5 &
+! red$2_0.5 &
+! green$2_1.2 &
+! red$2_1.2 &
+! green$2_1.3 &
+! red$2_1.3 &
+! green$2_1.4 &
+! red$2_1.4 &
+! green$2_1.5 &
+! red$2_1.5 &
+! green$2_2.4 &
+! red$2_2.4 &
+! green$2_2.5 &
+! red$2_2.5 &
+! green$2_3.5 &
+! red$2_3.5 &
+! green$2_4.5 &
+! red$2_4.5 ) |
+( green$2_3.4 &
+red$2_2.4 &
+! green$2_0.1 &
+! red$2_0.1 &
+! green$2_0.2 &
+! red$2_0.2 &
+! green$2_0.3 &
+! red$2_0.3 &
+! green$2_0.4 &
+! red$2_0.4 &
+! green$2_0.5 &
+! red$2_0.5 &
+! green$2_1.2 &
+! red$2_1.2 &
+! green$2_1.3 &
+! red$2_1.3 &
+! green$2_1.4 &
+! red$2_1.4 &
+! green$2_1.5 &
+! red$2_1.5 &
+! green$2_2.3 &
+! red$2_2.3 &
+! green$2_2.5 &
+! red$2_2.5 &
+! green$2_3.5 &
+! red$2_3.5 &
+! green$2_4.5 &
+! red$2_4.5 ) |
+( green$2_3.4 &
+red$2_2.5 &
+! green$2_0.1 &
+! red$2_0.1 &
+! green$2_0.2 &
+! red$2_0.2 &
+! green$2_0.3 &
+! red$2_0.3 &
+! green$2_0.4 &
+! red$2_0.4 &
+! green$2_0.5 &
+! red$2_0.5 &
+! green$2_1.2 &
+! red$2_1.2 &
+! green$2_1.3 &
+! red$2_1.3 &
+! green$2_1.4 &
+! red$2_1.4 &
+! green$2_1.5 &
+! red$2_1.5 &
+! green$2_2.3 &
+! red$2_2.3 &
+! green$2_2.4 &
+! red$2_2.4 &
+! green$2_3.5 &
+! red$2_3.5 &
+! green$2_4.5 &
+! red$2_4.5 ) |
+( green$2_3.4 &
+red$2_3.5 &
+! green$2_0.1 &
+! red$2_0.1 &
+! green$2_0.2 &
+! red$2_0.2 &
+! green$2_0.3 &
+! red$2_0.3 &
+! green$2_0.4 &
+! red$2_0.4 &
+! green$2_0.5 &
+! red$2_0.5 &
+! green$2_1.2 &
+! red$2_1.2 &
+! green$2_1.3 &
+! red$2_1.3 &
+! green$2_1.4 &
+! red$2_1.4 &
+! green$2_1.5 &
+! red$2_1.5 &
+! green$2_2.3 &
+! red$2_2.3 &
+! green$2_2.4 &
+! red$2_2.4 &
+! green$2_2.5 &
+! red$2_2.5 &
+! green$2_4.5 &
+! red$2_4.5 ) |
+( green$2_3.4 &
+red$2_4.5 &
+! green$2_0.1 &
+! red$2_0.1 &
+! green$2_0.2 &
+! red$2_0.2 &
+! green$2_0.3 &
+! red$2_0.3 &
+! green$2_0.4 &
+! red$2_0.4 &
+! green$2_0.5 &
+! red$2_0.5 &
+! green$2_1.2 &
+! red$2_1.2 &
+! green$2_1.3 &
+! red$2_1.3 &
+! green$2_1.4 &
+! red$2_1.4 &
+! green$2_1.5 &
+! red$2_1.5 &
+! green$2_2.3 &
+! red$2_2.3 &
+! green$2_2.4 &
+! red$2_2.4 &
+! green$2_2.5 &
+! red$2_2.5 &
+! green$2_3.5 &
+! red$2_3.5 ) |
+( green$2_3.5 &
+red$2_0.1 &
+! green$2_0.2 &
+! red$2_0.2 &
+! green$2_0.3 &
+! red$2_0.3 &
+! green$2_0.4 &
+! red$2_0.4 &
+! green$2_0.5 &
+! red$2_0.5 &
+! green$2_1.2 &
+! red$2_1.2 &
+! green$2_1.3 &
+! red$2_1.3 &
+! green$2_1.4 &
+! red$2_1.4 &
+! green$2_1.5 &
+! red$2_1.5 &
+! green$2_2.3 &
+! red$2_2.3 &
+! green$2_2.4 &
+! red$2_2.4 &
+! green$2_2.5 &
+! red$2_2.5 &
+! green$2_3.4 &
+! red$2_3.4 &
+! green$2_4.5 &
+! red$2_4.5 ) |
+( green$2_3.5 &
+red$2_0.2 &
+! green$2_0.1 &
+! red$2_0.1 &
+! green$2_0.3 &
+! red$2_0.3 &
+! green$2_0.4 &
+! red$2_0.4 &
+! green$2_0.5 &
+! red$2_0.5 &
+! green$2_1.2 &
+! red$2_1.2 &
+! green$2_1.3 &
+! red$2_1.3 &
+! green$2_1.4 &
+! red$2_1.4 &
+! green$2_1.5 &
+! red$2_1.5 &
+! green$2_2.3 &
+! red$2_2.3 &
+! green$2_2.4 &
+! red$2_2.4 &
+! green$2_2.5 &
+! red$2_2.5 &
+! green$2_3.4 &
+! red$2_3.4 &
+! green$2_4.5 &
+! red$2_4.5 ) |
+( green$2_3.5 &
+red$2_0.3 &
+! green$2_0.1 &
+! red$2_0.1 &
+! green$2_0.2 &
+! red$2_0.2 &
+! green$2_0.4 &
+! red$2_0.4 &
+! green$2_0.5 &
+! red$2_0.5 &
+! green$2_1.2 &
+! red$2_1.2 &
+! green$2_1.3 &
+! red$2_1.3 &
+! green$2_1.4 &
+! red$2_1.4 &
+! green$2_1.5 &
+! red$2_1.5 &
+! green$2_2.3 &
+! red$2_2.3 &
+! green$2_2.4 &
+! red$2_2.4 &
+! green$2_2.5 &
+! red$2_2.5 &
+! green$2_3.4 &
+! red$2_3.4 &
+! green$2_4.5 &
+! red$2_4.5 ) |
+( green$2_3.5 &
+red$2_0.4 &
+! green$2_0.1 &
+! red$2_0.1 &
+! green$2_0.2 &
+! red$2_0.2 &
+! green$2_0.3 &
+! red$2_0.3 &
+! green$2_0.5 &
+! red$2_0.5 &
+! green$2_1.2 &
+! red$2_1.2 &
+! green$2_1.3 &
+! red$2_1.3 &
+! green$2_1.4 &
+! red$2_1.4 &
+! green$2_1.5 &
+! red$2_1.5 &
+! green$2_2.3 &
+! red$2_2.3 &
+! green$2_2.4 &
+! red$2_2.4 &
+! green$2_2.5 &
+! red$2_2.5 &
+! green$2_3.4 &
+! red$2_3.4 &
+! green$2_4.5 &
+! red$2_4.5 ) |
+( green$2_3.5 &
+red$2_0.5 &
+! green$2_0.1 &
+! red$2_0.1 &
+! green$2_0.2 &
+! red$2_0.2 &
+! green$2_0.3 &
+! red$2_0.3 &
+! green$2_0.4 &
+! red$2_0.4 &
+! green$2_1.2 &
+! red$2_1.2 &
+! green$2_1.3 &
+! red$2_1.3 &
+! green$2_1.4 &
+! red$2_1.4 &
+! green$2_1.5 &
+! red$2_1.5 &
+! green$2_2.3 &
+! red$2_2.3 &
+! green$2_2.4 &
+! red$2_2.4 &
+! green$2_2.5 &
+! red$2_2.5 &
+! green$2_3.4 &
+! red$2_3.4 &
+! green$2_4.5 &
+! red$2_4.5 ) |
+( green$2_3.5 &
+red$2_1.2 &
+! green$2_0.1 &
+! red$2_0.1 &
+! green$2_0.2 &
+! red$2_0.2 &
+! green$2_0.3 &
+! red$2_0.3 &
+! green$2_0.4 &
+! red$2_0.4 &
+! green$2_0.5 &
+! red$2_0.5 &
+! green$2_1.3 &
+! red$2_1.3 &
+! green$2_1.4 &
+! red$2_1.4 &
+! green$2_1.5 &
+! red$2_1.5 &
+! green$2_2.3 &
+! red$2_2.3 &
+! green$2_2.4 &
+! red$2_2.4 &
+! green$2_2.5 &
+! red$2_2.5 &
+! green$2_3.4 &
+! red$2_3.4 &
+! green$2_4.5 &
+! red$2_4.5 ) |
+( green$2_3.5 &
+red$2_1.3 &
+! green$2_0.1 &
+! red$2_0.1 &
+! green$2_0.2 &
+! red$2_0.2 &
+! green$2_0.3 &
+! red$2_0.3 &
+! green$2_0.4 &
+! red$2_0.4 &
+! green$2_0.5 &
+! red$2_0.5 &
+! green$2_1.2 &
+! red$2_1.2 &
+! green$2_1.4 &
+! red$2_1.4 &
+! green$2_1.5 &
+! red$2_1.5 &
+! green$2_2.3 &
+! red$2_2.3 &
+! green$2_2.4 &
+! red$2_2.4 &
+! green$2_2.5 &
+! red$2_2.5 &
+! green$2_3.4 &
+! red$2_3.4 &
+! green$2_4.5 &
+! red$2_4.5 ) |
+( green$2_3.5 &
+red$2_1.4 &
+! green$2_0.1 &
+! red$2_0.1 &
+! green$2_0.2 &
+! red$2_0.2 &
+! green$2_0.3 &
+! red$2_0.3 &
+! green$2_0.4 &
+! red$2_0.4 &
+! green$2_0.5 &
+! red$2_0.5 &
+! green$2_1.2 &
+! red$2_1.2 &
+! green$2_1.3 &
+! red$2_1.3 &
+! green$2_1.5 &
+! red$2_1.5 &
+! green$2_2.3 &
+! red$2_2.3 &
+! green$2_2.4 &
+! red$2_2.4 &
+! green$2_2.5 &
+! red$2_2.5 &
+! green$2_3.4 &
+! red$2_3.4 &
+! green$2_4.5 &
+! red$2_4.5 ) |
+( green$2_3.5 &
+red$2_1.5 &
+! green$2_0.1 &
+! red$2_0.1 &
+! green$2_0.2 &
+! red$2_0.2 &
+! green$2_0.3 &
+! red$2_0.3 &
+! green$2_0.4 &
+! red$2_0.4 &
+! green$2_0.5 &
+! red$2_0.5 &
+! green$2_1.2 &
+! red$2_1.2 &
+! green$2_1.3 &
+! red$2_1.3 &
+! green$2_1.4 &
+! red$2_1.4 &
+! green$2_2.3 &
+! red$2_2.3 &
+! green$2_2.4 &
+! red$2_2.4 &
+! green$2_2.5 &
+! red$2_2.5 &
+! green$2_3.4 &
+! red$2_3.4 &
+! green$2_4.5 &
+! red$2_4.5 ) |
+( green$2_3.5 &
+red$2_2.3 &
+! green$2_0.1 &
+! red$2_0.1 &
+! green$2_0.2 &
+! red$2_0.2 &
+! green$2_0.3 &
+! red$2_0.3 &
+! green$2_0.4 &
+! red$2_0.4 &
+! green$2_0.5 &
+! red$2_0.5 &
+! green$2_1.2 &
+! red$2_1.2 &
+! green$2_1.3 &
+! red$2_1.3 &
+! green$2_1.4 &
+! red$2_1.4 &
+! green$2_1.5 &
+! red$2_1.5 &
+! green$2_2.4 &
+! red$2_2.4 &
+! green$2_2.5 &
+! red$2_2.5 &
+! green$2_3.4 &
+! red$2_3.4 &
+! green$2_4.5 &
+! red$2_4.5 ) |
+( green$2_3.5 &
+red$2_2.4 &
+! green$2_0.1 &
+! red$2_0.1 &
+! green$2_0.2 &
+! red$2_0.2 &
+! green$2_0.3 &
+! red$2_0.3 &
+! green$2_0.4 &
+! red$2_0.4 &
+! green$2_0.5 &
+! red$2_0.5 &
+! green$2_1.2 &
+! red$2_1.2 &
+! green$2_1.3 &
+! red$2_1.3 &
+! green$2_1.4 &
+! red$2_1.4 &
+! green$2_1.5 &
+! red$2_1.5 &
+! green$2_2.3 &
+! red$2_2.3 &
+! green$2_2.5 &
+! red$2_2.5 &
+! green$2_3.4 &
+! red$2_3.4 &
+! green$2_4.5 &
+! red$2_4.5 ) |
+( green$2_3.5 &
+red$2_2.5 &
+! green$2_0.1 &
+! red$2_0.1 &
+! green$2_0.2 &
+! red$2_0.2 &
+! green$2_0.3 &
+! red$2_0.3 &
+! green$2_0.4 &
+! red$2_0.4 &
+! green$2_0.5 &
+! red$2_0.5 &
+! green$2_1.2 &
+! red$2_1.2 &
+! green$2_1.3 &
+! red$2_1.3 &
+! green$2_1.4 &
+! red$2_1.4 &
+! green$2_1.5 &
+! red$2_1.5 &
+! green$2_2.3 &
+! red$2_2.3 &
+! green$2_2.4 &
+! red$2_2.4 &
+! green$2_3.4 &
+! red$2_3.4 &
+! green$2_4.5 &
+! red$2_4.5 ) |
+( green$2_3.5 &
+red$2_3.4 &
+! green$2_0.1 &
+! red$2_0.1 &
+! green$2_0.2 &
+! red$2_0.2 &
+! green$2_0.3 &
+! red$2_0.3 &
+! green$2_0.4 &
+! red$2_0.4 &
+! green$2_0.5 &
+! red$2_0.5 &
+! green$2_1.2 &
+! red$2_1.2 &
+! green$2_1.3 &
+! red$2_1.3 &
+! green$2_1.4 &
+! red$2_1.4 &
+! green$2_1.5 &
+! red$2_1.5 &
+! green$2_2.3 &
+! red$2_2.3 &
+! green$2_2.4 &
+! red$2_2.4 &
+! green$2_2.5 &
+! red$2_2.5 &
+! green$2_4.5 &
+! red$2_4.5 ) |
+( green$2_3.5 &
+red$2_4.5 &
+! green$2_0.1 &
+! red$2_0.1 &
+! green$2_0.2 &
+! red$2_0.2 &
+! green$2_0.3 &
+! red$2_0.3 &
+! green$2_0.4 &
+! red$2_0.4 &
+! green$2_0.5 &
+! red$2_0.5 &
+! green$2_1.2 &
+! red$2_1.2 &
+! green$2_1.3 &
+! red$2_1.3 &
+! green$2_1.4 &
+! red$2_1.4 &
+! green$2_1.5 &
+! red$2_1.5 &
+! green$2_2.3 &
+! red$2_2.3 &
+! green$2_2.4 &
+! red$2_2.4 &
+! green$2_2.5 &
+! red$2_2.5 &
+! green$2_3.4 &
+! red$2_3.4 ) |
+( green$2_4.5 &
+red$2_0.1 &
+! green$2_0.2 &
+! red$2_0.2 &
+! green$2_0.3 &
+! red$2_0.3 &
+! green$2_0.4 &
+! red$2_0.4 &
+! green$2_0.5 &
+! red$2_0.5 &
+! green$2_1.2 &
+! red$2_1.2 &
+! green$2_1.3 &
+! red$2_1.3 &
+! green$2_1.4 &
+! red$2_1.4 &
+! green$2_1.5 &
+! red$2_1.5 &
+! green$2_2.3 &
+! red$2_2.3 &
+! green$2_2.4 &
+! red$2_2.4 &
+! green$2_2.5 &
+! red$2_2.5 &
+! green$2_3.4 &
+! red$2_3.4 &
+! green$2_3.5 &
+! red$2_3.5 ) |
+( green$2_4.5 &
+red$2_0.2 &
+! green$2_0.1 &
+! red$2_0.1 &
+! green$2_0.3 &
+! red$2_0.3 &
+! green$2_0.4 &
+! red$2_0.4 &
+! green$2_0.5 &
+! red$2_0.5 &
+! green$2_1.2 &
+! red$2_1.2 &
+! green$2_1.3 &
+! red$2_1.3 &
+! green$2_1.4 &
+! red$2_1.4 &
+! green$2_1.5 &
+! red$2_1.5 &
+! green$2_2.3 &
+! red$2_2.3 &
+! green$2_2.4 &
+! red$2_2.4 &
+! green$2_2.5 &
+! red$2_2.5 &
+! green$2_3.4 &
+! red$2_3.4 &
+! green$2_3.5 &
+! red$2_3.5 ) |
+( green$2_4.5 &
+red$2_0.3 &
+! green$2_0.1 &
+! red$2_0.1 &
+! green$2_0.2 &
+! red$2_0.2 &
+! green$2_0.4 &
+! red$2_0.4 &
+! green$2_0.5 &
+! red$2_0.5 &
+! green$2_1.2 &
+! red$2_1.2 &
+! green$2_1.3 &
+! red$2_1.3 &
+! green$2_1.4 &
+! red$2_1.4 &
+! green$2_1.5 &
+! red$2_1.5 &
+! green$2_2.3 &
+! red$2_2.3 &
+! green$2_2.4 &
+! red$2_2.4 &
+! green$2_2.5 &
+! red$2_2.5 &
+! green$2_3.4 &
+! red$2_3.4 &
+! green$2_3.5 &
+! red$2_3.5 ) |
+( green$2_4.5 &
+red$2_0.4 &
+! green$2_0.1 &
+! red$2_0.1 &
+! green$2_0.2 &
+! red$2_0.2 &
+! green$2_0.3 &
+! red$2_0.3 &
+! green$2_0.5 &
+! red$2_0.5 &
+! green$2_1.2 &
+! red$2_1.2 &
+! green$2_1.3 &
+! red$2_1.3 &
+! green$2_1.4 &
+! red$2_1.4 &
+! green$2_1.5 &
+! red$2_1.5 &
+! green$2_2.3 &
+! red$2_2.3 &
+! green$2_2.4 &
+! red$2_2.4 &
+! green$2_2.5 &
+! red$2_2.5 &
+! green$2_3.4 &
+! red$2_3.4 &
+! green$2_3.5 &
+! red$2_3.5 ) |
+( green$2_4.5 &
+red$2_0.5 &
+! green$2_0.1 &
+! red$2_0.1 &
+! green$2_0.2 &
+! red$2_0.2 &
+! green$2_0.3 &
+! red$2_0.3 &
+! green$2_0.4 &
+! red$2_0.4 &
+! green$2_1.2 &
+! red$2_1.2 &
+! green$2_1.3 &
+! red$2_1.3 &
+! green$2_1.4 &
+! red$2_1.4 &
+! green$2_1.5 &
+! red$2_1.5 &
+! green$2_2.3 &
+! red$2_2.3 &
+! green$2_2.4 &
+! red$2_2.4 &
+! green$2_2.5 &
+! red$2_2.5 &
+! green$2_3.4 &
+! red$2_3.4 &
+! green$2_3.5 &
+! red$2_3.5 ) |
+( green$2_4.5 &
+red$2_1.2 &
+! green$2_0.1 &
+! red$2_0.1 &
+! green$2_0.2 &
+! red$2_0.2 &
+! green$2_0.3 &
+! red$2_0.3 &
+! green$2_0.4 &
+! red$2_0.4 &
+! green$2_0.5 &
+! red$2_0.5 &
+! green$2_1.3 &
+! red$2_1.3 &
+! green$2_1.4 &
+! red$2_1.4 &
+! green$2_1.5 &
+! red$2_1.5 &
+! green$2_2.3 &
+! red$2_2.3 &
+! green$2_2.4 &
+! red$2_2.4 &
+! green$2_2.5 &
+! red$2_2.5 &
+! green$2_3.4 &
+! red$2_3.4 &
+! green$2_3.5 &
+! red$2_3.5 ) |
+( green$2_4.5 &
+red$2_1.3 &
+! green$2_0.1 &
+! red$2_0.1 &
+! green$2_0.2 &
+! red$2_0.2 &
+! green$2_0.3 &
+! red$2_0.3 &
+! green$2_0.4 &
+! red$2_0.4 &
+! green$2_0.5 &
+! red$2_0.5 &
+! green$2_1.2 &
+! red$2_1.2 &
+! green$2_1.4 &
+! red$2_1.4 &
+! green$2_1.5 &
+! red$2_1.5 &
+! green$2_2.3 &
+! red$2_2.3 &
+! green$2_2.4 &
+! red$2_2.4 &
+! green$2_2.5 &
+! red$2_2.5 &
+! green$2_3.4 &
+! red$2_3.4 &
+! green$2_3.5 &
+! red$2_3.5 ) |
+( green$2_4.5 &
+red$2_1.4 &
+! green$2_0.1 &
+! red$2_0.1 &
+! green$2_0.2 &
+! red$2_0.2 &
+! green$2_0.3 &
+! red$2_0.3 &
+! green$2_0.4 &
+! red$2_0.4 &
+! green$2_0.5 &
+! red$2_0.5 &
+! green$2_1.2 &
+! red$2_1.2 &
+! green$2_1.3 &
+! red$2_1.3 &
+! green$2_1.5 &
+! red$2_1.5 &
+! green$2_2.3 &
+! red$2_2.3 &
+! green$2_2.4 &
+! red$2_2.4 &
+! green$2_2.5 &
+! red$2_2.5 &
+! green$2_3.4 &
+! red$2_3.4 &
+! green$2_3.5 &
+! red$2_3.5 ) |
+( green$2_4.5 &
+red$2_1.5 &
+! green$2_0.1 &
+! red$2_0.1 &
+! green$2_0.2 &
+! red$2_0.2 &
+! green$2_0.3 &
+! red$2_0.3 &
+! green$2_0.4 &
+! red$2_0.4 &
+! green$2_0.5 &
+! red$2_0.5 &
+! green$2_1.2 &
+! red$2_1.2 &
+! green$2_1.3 &
+! red$2_1.3 &
+! green$2_1.4 &
+! red$2_1.4 &
+! green$2_2.3 &
+! red$2_2.3 &
+! green$2_2.4 &
+! red$2_2.4 &
+! green$2_2.5 &
+! red$2_2.5 &
+! green$2_3.4 &
+! red$2_3.4 &
+! green$2_3.5 &
+! red$2_3.5 ) |
+( green$2_4.5 &
+red$2_2.3 &
+! green$2_0.1 &
+! red$2_0.1 &
+! green$2_0.2 &
+! red$2_0.2 &
+! green$2_0.3 &
+! red$2_0.3 &
+! green$2_0.4 &
+! red$2_0.4 &
+! green$2_0.5 &
+! red$2_0.5 &
+! green$2_1.2 &
+! red$2_1.2 &
+! green$2_1.3 &
+! red$2_1.3 &
+! green$2_1.4 &
+! red$2_1.4 &
+! green$2_1.5 &
+! red$2_1.5 &
+! green$2_2.4 &
+! red$2_2.4 &
+! green$2_2.5 &
+! red$2_2.5 &
+! green$2_3.4 &
+! red$2_3.4 &
+! green$2_3.5 &
+! red$2_3.5 ) |
+( green$2_4.5 &
+red$2_2.4 &
+! green$2_0.1 &
+! red$2_0.1 &
+! green$2_0.2 &
+! red$2_0.2 &
+! green$2_0.3 &
+! red$2_0.3 &
+! green$2_0.4 &
+! red$2_0.4 &
+! green$2_0.5 &
+! red$2_0.5 &
+! green$2_1.2 &
+! red$2_1.2 &
+! green$2_1.3 &
+! red$2_1.3 &
+! green$2_1.4 &
+! red$2_1.4 &
+! green$2_1.5 &
+! red$2_1.5 &
+! green$2_2.3 &
+! red$2_2.3 &
+! green$2_2.5 &
+! red$2_2.5 &
+! green$2_3.4 &
+! red$2_3.4 &
+! green$2_3.5 &
+! red$2_3.5 ) |
+( green$2_4.5 &
+red$2_2.5 &
+! green$2_0.1 &
+! red$2_0.1 &
+! green$2_0.2 &
+! red$2_0.2 &
+! green$2_0.3 &
+! red$2_0.3 &
+! green$2_0.4 &
+! red$2_0.4 &
+! green$2_0.5 &
+! red$2_0.5 &
+! green$2_1.2 &
+! red$2_1.2 &
+! green$2_1.3 &
+! red$2_1.3 &
+! green$2_1.4 &
+! red$2_1.4 &
+! green$2_1.5 &
+! red$2_1.5 &
+! green$2_2.3 &
+! red$2_2.3 &
+! green$2_2.4 &
+! red$2_2.4 &
+! green$2_3.4 &
+! red$2_3.4 &
+! green$2_3.5 &
+! red$2_3.5 ) |
+( green$2_4.5 &
+red$2_3.4 &
+! green$2_0.1 &
+! red$2_0.1 &
+! green$2_0.2 &
+! red$2_0.2 &
+! green$2_0.3 &
+! red$2_0.3 &
+! green$2_0.4 &
+! red$2_0.4 &
+! green$2_0.5 &
+! red$2_0.5 &
+! green$2_1.2 &
+! red$2_1.2 &
+! green$2_1.3 &
+! red$2_1.3 &
+! green$2_1.4 &
+! red$2_1.4 &
+! green$2_1.5 &
+! red$2_1.5 &
+! green$2_2.3 &
+! red$2_2.3 &
+! green$2_2.4 &
+! red$2_2.4 &
+! green$2_2.5 &
+! red$2_2.5 &
+! green$2_3.5 &
+! red$2_3.5 ) |
+( green$2_4.5 &
+red$2_3.5 &
+! green$2_0.1 &
+! red$2_0.1 &
+! green$2_0.2 &
+! red$2_0.2 &
+! green$2_0.3 &
+! red$2_0.3 &
+! green$2_0.4 &
+! red$2_0.4 &
+! green$2_0.5 &
+! red$2_0.5 &
+! green$2_1.2 &
+! red$2_1.2 &
+! green$2_1.3 &
+! red$2_1.3 &
+! green$2_1.4 &
+! red$2_1.4 &
+! green$2_1.5 &
+! red$2_1.5 &
+! green$2_2.3 &
+! red$2_2.3 &
+! green$2_2.4 &
+! red$2_2.4 &
+! green$2_2.5 &
+! red$2_2.5 &
+! green$2_3.4 &
+! red$2_3.4 )
+)
