@@ -20,7 +20,8 @@ list_of_segments.append("% define moves of players\n")
 # TODO: adapt brackets for two steps (at the end there are too many opening and closing brackets (275 - 278))
 for s in range(0, nrSteps):  # steps are restricted to 1 here to test if a single step works
     list_of_segments.append("(\n")
-    if s % 2 != 0 and s != 9:  # in the last state we don't need to open another bracket
+    if s % 2 != 0 and s != 1:
+        # in the last state we don't need to open another bracket, last state is 1 if we have 2 moves
         list_of_segments.append("(\n")  # open bracket before '->'
     for i in range(0, 5):
         for j in range(i + 1, 6):
@@ -46,7 +47,7 @@ for s in range(0, nrSteps):  # steps are restricted to 1 here to test if a singl
             list_of_segments.append(") | ")
     if s % 2 == 0:
         if s == 0:  # at the beginning we don't need to close an additional bracket
-            list_of_segments[-1] = list_of_segments[-1][:-2] + ")\n"
+            list_of_segments[-1] = list_of_segments[-1][:-2] + ") & \n"
         else:
             list_of_segments[-1] = list_of_segments[-1][:-2] + ")) &\n% next players move\n"
     else:
