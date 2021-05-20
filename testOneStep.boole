@@ -1,9 +1,9 @@
-% testing if one step works
-% init board with all positions to empty
-! green$0_0.1 &
+% testing if one or two steps work
+% init board with some already set variables
+green$0_0.1 &
 ! red$0_0.1 &
 ! green$0_0.2 &
-! red$0_0.2 &
+red$0_0.2 &
 ! green$0_0.3 &
 ! red$0_0.3 &
 ! green$0_0.4 &
@@ -516,14 +516,14 @@
 ! green$1_4.5 & ! red$1_4.5 & ! green$2_4.5 & red$2_4.5
 ) )
 &
-% define possible states after two steps
+% define possible states after two steps and non empty board
 (
 ( green$2_0.1 &
+! red$2_0.1 &
+! green$2_0.2 &
 red$2_0.2 &
-! green$2_0.3 &
-! red$2_0.3 &
-! green$2_0.4 &
-! red$2_0.4 &
+green$2_0.3 &
+red$2_0.4 &
 ! green$2_0.5 &
 ! red$2_0.5 &
 ! green$2_1.2 &
@@ -547,67 +547,11 @@ red$2_0.2 &
 ! green$2_4.5 &
 ! red$2_4.5 ) |
 ( green$2_0.1 &
-red$2_0.3 &
+! red$2_0.1 &
 ! green$2_0.2 &
-! red$2_0.2 &
-! green$2_0.4 &
-! red$2_0.4 &
-! green$2_0.5 &
-! red$2_0.5 &
-! green$2_1.2 &
-! red$2_1.2 &
-! green$2_1.3 &
-! red$2_1.3 &
-! green$2_1.4 &
-! red$2_1.4 &
-! green$2_1.5 &
-! red$2_1.5 &
-! green$2_2.3 &
-! red$2_2.3 &
-! green$2_2.4 &
-! red$2_2.4 &
-! green$2_2.5 &
-! red$2_2.5 &
-! green$2_3.4 &
-! red$2_3.4 &
-! green$2_3.5 &
-! red$2_3.5 &
-! green$2_4.5 &
-! red$2_4.5 ) |
-( green$2_0.1 &
-red$2_0.4 &
-! green$2_0.2 &
-! red$2_0.2 &
-! green$2_0.3 &
-! red$2_0.3 &
-! green$2_0.5 &
-! red$2_0.5 &
-! green$2_1.2 &
-! red$2_1.2 &
-! green$2_1.3 &
-! red$2_1.3 &
-! green$2_1.4 &
-! red$2_1.4 &
-! green$2_1.5 &
-! red$2_1.5 &
-! green$2_2.3 &
-! red$2_2.3 &
-! green$2_2.4 &
-! red$2_2.4 &
-! green$2_2.5 &
-! red$2_2.5 &
-! green$2_3.4 &
-! red$2_3.4 &
-! green$2_3.5 &
-! red$2_3.5 &
-! green$2_4.5 &
-! red$2_4.5 ) |
-( green$2_0.1 &
+red$2_0.2 &
+green$2_0.3 &
 red$2_0.5 &
-! green$2_0.2 &
-! red$2_0.2 &
-! green$2_0.3 &
-! red$2_0.3 &
 ! green$2_0.4 &
 ! red$2_0.4 &
 ! green$2_1.2 &
@@ -631,11 +575,11 @@ red$2_0.5 &
 ! green$2_4.5 &
 ! red$2_4.5 ) |
 ( green$2_0.1 &
-red$2_1.2 &
+! red$2_0.1 &
 ! green$2_0.2 &
-! red$2_0.2 &
-! green$2_0.3 &
-! red$2_0.3 &
+red$2_0.2 &
+green$2_0.3 &
+red$2_1.2 &
 ! green$2_0.4 &
 ! red$2_0.4 &
 ! green$2_0.5 &
@@ -659,11 +603,11 @@ red$2_1.2 &
 ! green$2_4.5 &
 ! red$2_4.5 ) |
 ( green$2_0.1 &
-red$2_1.3 &
+! red$2_0.1 &
 ! green$2_0.2 &
-! red$2_0.2 &
-! green$2_0.3 &
-! red$2_0.3 &
+red$2_0.2 &
+green$2_0.3 &
+red$2_1.3 &
 ! green$2_0.4 &
 ! red$2_0.4 &
 ! green$2_0.5 &
@@ -687,11 +631,11 @@ red$2_1.3 &
 ! green$2_4.5 &
 ! red$2_4.5 ) |
 ( green$2_0.1 &
-red$2_1.4 &
+! red$2_0.1 &
 ! green$2_0.2 &
-! red$2_0.2 &
-! green$2_0.3 &
-! red$2_0.3 &
+red$2_0.2 &
+green$2_0.3 &
+red$2_1.4 &
 ! green$2_0.4 &
 ! red$2_0.4 &
 ! green$2_0.5 &
@@ -715,11 +659,11 @@ red$2_1.4 &
 ! green$2_4.5 &
 ! red$2_4.5 ) |
 ( green$2_0.1 &
-red$2_1.5 &
+! red$2_0.1 &
 ! green$2_0.2 &
-! red$2_0.2 &
-! green$2_0.3 &
-! red$2_0.3 &
+red$2_0.2 &
+green$2_0.3 &
+red$2_1.5 &
 ! green$2_0.4 &
 ! red$2_0.4 &
 ! green$2_0.5 &
@@ -743,11 +687,11 @@ red$2_1.5 &
 ! green$2_4.5 &
 ! red$2_4.5 ) |
 ( green$2_0.1 &
-red$2_2.3 &
+! red$2_0.1 &
 ! green$2_0.2 &
-! red$2_0.2 &
-! green$2_0.3 &
-! red$2_0.3 &
+red$2_0.2 &
+green$2_0.3 &
+red$2_2.3 &
 ! green$2_0.4 &
 ! red$2_0.4 &
 ! green$2_0.5 &
@@ -771,11 +715,11 @@ red$2_2.3 &
 ! green$2_4.5 &
 ! red$2_4.5 ) |
 ( green$2_0.1 &
-red$2_2.4 &
+! red$2_0.1 &
 ! green$2_0.2 &
-! red$2_0.2 &
-! green$2_0.3 &
-! red$2_0.3 &
+red$2_0.2 &
+green$2_0.3 &
+red$2_2.4 &
 ! green$2_0.4 &
 ! red$2_0.4 &
 ! green$2_0.5 &
@@ -799,11 +743,11 @@ red$2_2.4 &
 ! green$2_4.5 &
 ! red$2_4.5 ) |
 ( green$2_0.1 &
-red$2_2.5 &
+! red$2_0.1 &
 ! green$2_0.2 &
-! red$2_0.2 &
-! green$2_0.3 &
-! red$2_0.3 &
+red$2_0.2 &
+green$2_0.3 &
+red$2_2.5 &
 ! green$2_0.4 &
 ! red$2_0.4 &
 ! green$2_0.5 &
@@ -827,11 +771,11 @@ red$2_2.5 &
 ! green$2_4.5 &
 ! red$2_4.5 ) |
 ( green$2_0.1 &
-red$2_3.4 &
+! red$2_0.1 &
 ! green$2_0.2 &
-! red$2_0.2 &
-! green$2_0.3 &
-! red$2_0.3 &
+red$2_0.2 &
+green$2_0.3 &
+red$2_3.4 &
 ! green$2_0.4 &
 ! red$2_0.4 &
 ! green$2_0.5 &
@@ -855,11 +799,11 @@ red$2_3.4 &
 ! green$2_4.5 &
 ! red$2_4.5 ) |
 ( green$2_0.1 &
-red$2_3.5 &
+! red$2_0.1 &
 ! green$2_0.2 &
-! red$2_0.2 &
-! green$2_0.3 &
-! red$2_0.3 &
+red$2_0.2 &
+green$2_0.3 &
+red$2_3.5 &
 ! green$2_0.4 &
 ! red$2_0.4 &
 ! green$2_0.5 &
@@ -883,795 +827,11 @@ red$2_3.5 &
 ! green$2_4.5 &
 ! red$2_4.5 ) |
 ( green$2_0.1 &
-red$2_4.5 &
+! red$2_0.1 &
 ! green$2_0.2 &
-! red$2_0.2 &
-! green$2_0.3 &
-! red$2_0.3 &
-! green$2_0.4 &
-! red$2_0.4 &
-! green$2_0.5 &
-! red$2_0.5 &
-! green$2_1.2 &
-! red$2_1.2 &
-! green$2_1.3 &
-! red$2_1.3 &
-! green$2_1.4 &
-! red$2_1.4 &
-! green$2_1.5 &
-! red$2_1.5 &
-! green$2_2.3 &
-! red$2_2.3 &
-! green$2_2.4 &
-! red$2_2.4 &
-! green$2_2.5 &
-! red$2_2.5 &
-! green$2_3.4 &
-! red$2_3.4 &
-! green$2_3.5 &
-! red$2_3.5 ) |
-( green$2_0.2 &
-red$2_0.1 &
-! green$2_0.3 &
-! red$2_0.3 &
-! green$2_0.4 &
-! red$2_0.4 &
-! green$2_0.5 &
-! red$2_0.5 &
-! green$2_1.2 &
-! red$2_1.2 &
-! green$2_1.3 &
-! red$2_1.3 &
-! green$2_1.4 &
-! red$2_1.4 &
-! green$2_1.5 &
-! red$2_1.5 &
-! green$2_2.3 &
-! red$2_2.3 &
-! green$2_2.4 &
-! red$2_2.4 &
-! green$2_2.5 &
-! red$2_2.5 &
-! green$2_3.4 &
-! red$2_3.4 &
-! green$2_3.5 &
-! red$2_3.5 &
-! green$2_4.5 &
-! red$2_4.5 ) |
-( green$2_0.2 &
-red$2_0.3 &
-! green$2_0.1 &
-! red$2_0.1 &
-! green$2_0.4 &
-! red$2_0.4 &
-! green$2_0.5 &
-! red$2_0.5 &
-! green$2_1.2 &
-! red$2_1.2 &
-! green$2_1.3 &
-! red$2_1.3 &
-! green$2_1.4 &
-! red$2_1.4 &
-! green$2_1.5 &
-! red$2_1.5 &
-! green$2_2.3 &
-! red$2_2.3 &
-! green$2_2.4 &
-! red$2_2.4 &
-! green$2_2.5 &
-! red$2_2.5 &
-! green$2_3.4 &
-! red$2_3.4 &
-! green$2_3.5 &
-! red$2_3.5 &
-! green$2_4.5 &
-! red$2_4.5 ) |
-( green$2_0.2 &
-red$2_0.4 &
-! green$2_0.1 &
-! red$2_0.1 &
-! green$2_0.3 &
-! red$2_0.3 &
-! green$2_0.5 &
-! red$2_0.5 &
-! green$2_1.2 &
-! red$2_1.2 &
-! green$2_1.3 &
-! red$2_1.3 &
-! green$2_1.4 &
-! red$2_1.4 &
-! green$2_1.5 &
-! red$2_1.5 &
-! green$2_2.3 &
-! red$2_2.3 &
-! green$2_2.4 &
-! red$2_2.4 &
-! green$2_2.5 &
-! red$2_2.5 &
-! green$2_3.4 &
-! red$2_3.4 &
-! green$2_3.5 &
-! red$2_3.5 &
-! green$2_4.5 &
-! red$2_4.5 ) |
-( green$2_0.2 &
-red$2_0.5 &
-! green$2_0.1 &
-! red$2_0.1 &
-! green$2_0.3 &
-! red$2_0.3 &
-! green$2_0.4 &
-! red$2_0.4 &
-! green$2_1.2 &
-! red$2_1.2 &
-! green$2_1.3 &
-! red$2_1.3 &
-! green$2_1.4 &
-! red$2_1.4 &
-! green$2_1.5 &
-! red$2_1.5 &
-! green$2_2.3 &
-! red$2_2.3 &
-! green$2_2.4 &
-! red$2_2.4 &
-! green$2_2.5 &
-! red$2_2.5 &
-! green$2_3.4 &
-! red$2_3.4 &
-! green$2_3.5 &
-! red$2_3.5 &
-! green$2_4.5 &
-! red$2_4.5 ) |
-( green$2_0.2 &
-red$2_1.2 &
-! green$2_0.1 &
-! red$2_0.1 &
-! green$2_0.3 &
-! red$2_0.3 &
-! green$2_0.4 &
-! red$2_0.4 &
-! green$2_0.5 &
-! red$2_0.5 &
-! green$2_1.3 &
-! red$2_1.3 &
-! green$2_1.4 &
-! red$2_1.4 &
-! green$2_1.5 &
-! red$2_1.5 &
-! green$2_2.3 &
-! red$2_2.3 &
-! green$2_2.4 &
-! red$2_2.4 &
-! green$2_2.5 &
-! red$2_2.5 &
-! green$2_3.4 &
-! red$2_3.4 &
-! green$2_3.5 &
-! red$2_3.5 &
-! green$2_4.5 &
-! red$2_4.5 ) |
-( green$2_0.2 &
-red$2_1.3 &
-! green$2_0.1 &
-! red$2_0.1 &
-! green$2_0.3 &
-! red$2_0.3 &
-! green$2_0.4 &
-! red$2_0.4 &
-! green$2_0.5 &
-! red$2_0.5 &
-! green$2_1.2 &
-! red$2_1.2 &
-! green$2_1.4 &
-! red$2_1.4 &
-! green$2_1.5 &
-! red$2_1.5 &
-! green$2_2.3 &
-! red$2_2.3 &
-! green$2_2.4 &
-! red$2_2.4 &
-! green$2_2.5 &
-! red$2_2.5 &
-! green$2_3.4 &
-! red$2_3.4 &
-! green$2_3.5 &
-! red$2_3.5 &
-! green$2_4.5 &
-! red$2_4.5 ) |
-( green$2_0.2 &
-red$2_1.4 &
-! green$2_0.1 &
-! red$2_0.1 &
-! green$2_0.3 &
-! red$2_0.3 &
-! green$2_0.4 &
-! red$2_0.4 &
-! green$2_0.5 &
-! red$2_0.5 &
-! green$2_1.2 &
-! red$2_1.2 &
-! green$2_1.3 &
-! red$2_1.3 &
-! green$2_1.5 &
-! red$2_1.5 &
-! green$2_2.3 &
-! red$2_2.3 &
-! green$2_2.4 &
-! red$2_2.4 &
-! green$2_2.5 &
-! red$2_2.5 &
-! green$2_3.4 &
-! red$2_3.4 &
-! green$2_3.5 &
-! red$2_3.5 &
-! green$2_4.5 &
-! red$2_4.5 ) |
-( green$2_0.2 &
-red$2_1.5 &
-! green$2_0.1 &
-! red$2_0.1 &
-! green$2_0.3 &
-! red$2_0.3 &
-! green$2_0.4 &
-! red$2_0.4 &
-! green$2_0.5 &
-! red$2_0.5 &
-! green$2_1.2 &
-! red$2_1.2 &
-! green$2_1.3 &
-! red$2_1.3 &
-! green$2_1.4 &
-! red$2_1.4 &
-! green$2_2.3 &
-! red$2_2.3 &
-! green$2_2.4 &
-! red$2_2.4 &
-! green$2_2.5 &
-! red$2_2.5 &
-! green$2_3.4 &
-! red$2_3.4 &
-! green$2_3.5 &
-! red$2_3.5 &
-! green$2_4.5 &
-! red$2_4.5 ) |
-( green$2_0.2 &
-red$2_2.3 &
-! green$2_0.1 &
-! red$2_0.1 &
-! green$2_0.3 &
-! red$2_0.3 &
-! green$2_0.4 &
-! red$2_0.4 &
-! green$2_0.5 &
-! red$2_0.5 &
-! green$2_1.2 &
-! red$2_1.2 &
-! green$2_1.3 &
-! red$2_1.3 &
-! green$2_1.4 &
-! red$2_1.4 &
-! green$2_1.5 &
-! red$2_1.5 &
-! green$2_2.4 &
-! red$2_2.4 &
-! green$2_2.5 &
-! red$2_2.5 &
-! green$2_3.4 &
-! red$2_3.4 &
-! green$2_3.5 &
-! red$2_3.5 &
-! green$2_4.5 &
-! red$2_4.5 ) |
-( green$2_0.2 &
-red$2_2.4 &
-! green$2_0.1 &
-! red$2_0.1 &
-! green$2_0.3 &
-! red$2_0.3 &
-! green$2_0.4 &
-! red$2_0.4 &
-! green$2_0.5 &
-! red$2_0.5 &
-! green$2_1.2 &
-! red$2_1.2 &
-! green$2_1.3 &
-! red$2_1.3 &
-! green$2_1.4 &
-! red$2_1.4 &
-! green$2_1.5 &
-! red$2_1.5 &
-! green$2_2.3 &
-! red$2_2.3 &
-! green$2_2.5 &
-! red$2_2.5 &
-! green$2_3.4 &
-! red$2_3.4 &
-! green$2_3.5 &
-! red$2_3.5 &
-! green$2_4.5 &
-! red$2_4.5 ) |
-( green$2_0.2 &
-red$2_2.5 &
-! green$2_0.1 &
-! red$2_0.1 &
-! green$2_0.3 &
-! red$2_0.3 &
-! green$2_0.4 &
-! red$2_0.4 &
-! green$2_0.5 &
-! red$2_0.5 &
-! green$2_1.2 &
-! red$2_1.2 &
-! green$2_1.3 &
-! red$2_1.3 &
-! green$2_1.4 &
-! red$2_1.4 &
-! green$2_1.5 &
-! red$2_1.5 &
-! green$2_2.3 &
-! red$2_2.3 &
-! green$2_2.4 &
-! red$2_2.4 &
-! green$2_3.4 &
-! red$2_3.4 &
-! green$2_3.5 &
-! red$2_3.5 &
-! green$2_4.5 &
-! red$2_4.5 ) |
-( green$2_0.2 &
-red$2_3.4 &
-! green$2_0.1 &
-! red$2_0.1 &
-! green$2_0.3 &
-! red$2_0.3 &
-! green$2_0.4 &
-! red$2_0.4 &
-! green$2_0.5 &
-! red$2_0.5 &
-! green$2_1.2 &
-! red$2_1.2 &
-! green$2_1.3 &
-! red$2_1.3 &
-! green$2_1.4 &
-! red$2_1.4 &
-! green$2_1.5 &
-! red$2_1.5 &
-! green$2_2.3 &
-! red$2_2.3 &
-! green$2_2.4 &
-! red$2_2.4 &
-! green$2_2.5 &
-! red$2_2.5 &
-! green$2_3.5 &
-! red$2_3.5 &
-! green$2_4.5 &
-! red$2_4.5 ) |
-( green$2_0.2 &
-red$2_3.5 &
-! green$2_0.1 &
-! red$2_0.1 &
-! green$2_0.3 &
-! red$2_0.3 &
-! green$2_0.4 &
-! red$2_0.4 &
-! green$2_0.5 &
-! red$2_0.5 &
-! green$2_1.2 &
-! red$2_1.2 &
-! green$2_1.3 &
-! red$2_1.3 &
-! green$2_1.4 &
-! red$2_1.4 &
-! green$2_1.5 &
-! red$2_1.5 &
-! green$2_2.3 &
-! red$2_2.3 &
-! green$2_2.4 &
-! red$2_2.4 &
-! green$2_2.5 &
-! red$2_2.5 &
-! green$2_3.4 &
-! red$2_3.4 &
-! green$2_4.5 &
-! red$2_4.5 ) |
-( green$2_0.2 &
-red$2_4.5 &
-! green$2_0.1 &
-! red$2_0.1 &
-! green$2_0.3 &
-! red$2_0.3 &
-! green$2_0.4 &
-! red$2_0.4 &
-! green$2_0.5 &
-! red$2_0.5 &
-! green$2_1.2 &
-! red$2_1.2 &
-! green$2_1.3 &
-! red$2_1.3 &
-! green$2_1.4 &
-! red$2_1.4 &
-! green$2_1.5 &
-! red$2_1.5 &
-! green$2_2.3 &
-! red$2_2.3 &
-! green$2_2.4 &
-! red$2_2.4 &
-! green$2_2.5 &
-! red$2_2.5 &
-! green$2_3.4 &
-! red$2_3.4 &
-! green$2_3.5 &
-! red$2_3.5 ) |
-( green$2_0.3 &
-red$2_0.1 &
-! green$2_0.2 &
-! red$2_0.2 &
-! green$2_0.4 &
-! red$2_0.4 &
-! green$2_0.5 &
-! red$2_0.5 &
-! green$2_1.2 &
-! red$2_1.2 &
-! green$2_1.3 &
-! red$2_1.3 &
-! green$2_1.4 &
-! red$2_1.4 &
-! green$2_1.5 &
-! red$2_1.5 &
-! green$2_2.3 &
-! red$2_2.3 &
-! green$2_2.4 &
-! red$2_2.4 &
-! green$2_2.5 &
-! red$2_2.5 &
-! green$2_3.4 &
-! red$2_3.4 &
-! green$2_3.5 &
-! red$2_3.5 &
-! green$2_4.5 &
-! red$2_4.5 ) |
-( green$2_0.3 &
 red$2_0.2 &
-! green$2_0.1 &
-! red$2_0.1 &
-! green$2_0.4 &
-! red$2_0.4 &
-! green$2_0.5 &
-! red$2_0.5 &
-! green$2_1.2 &
-! red$2_1.2 &
-! green$2_1.3 &
-! red$2_1.3 &
-! green$2_1.4 &
-! red$2_1.4 &
-! green$2_1.5 &
-! red$2_1.5 &
-! green$2_2.3 &
-! red$2_2.3 &
-! green$2_2.4 &
-! red$2_2.4 &
-! green$2_2.5 &
-! red$2_2.5 &
-! green$2_3.4 &
-! red$2_3.4 &
-! green$2_3.5 &
-! red$2_3.5 &
-! green$2_4.5 &
-! red$2_4.5 ) |
-( green$2_0.3 &
-red$2_0.4 &
-! green$2_0.1 &
-! red$2_0.1 &
-! green$2_0.2 &
-! red$2_0.2 &
-! green$2_0.5 &
-! red$2_0.5 &
-! green$2_1.2 &
-! red$2_1.2 &
-! green$2_1.3 &
-! red$2_1.3 &
-! green$2_1.4 &
-! red$2_1.4 &
-! green$2_1.5 &
-! red$2_1.5 &
-! green$2_2.3 &
-! red$2_2.3 &
-! green$2_2.4 &
-! red$2_2.4 &
-! green$2_2.5 &
-! red$2_2.5 &
-! green$2_3.4 &
-! red$2_3.4 &
-! green$2_3.5 &
-! red$2_3.5 &
-! green$2_4.5 &
-! red$2_4.5 ) |
-( green$2_0.3 &
-red$2_0.5 &
-! green$2_0.1 &
-! red$2_0.1 &
-! green$2_0.2 &
-! red$2_0.2 &
-! green$2_0.4 &
-! red$2_0.4 &
-! green$2_1.2 &
-! red$2_1.2 &
-! green$2_1.3 &
-! red$2_1.3 &
-! green$2_1.4 &
-! red$2_1.4 &
-! green$2_1.5 &
-! red$2_1.5 &
-! green$2_2.3 &
-! red$2_2.3 &
-! green$2_2.4 &
-! red$2_2.4 &
-! green$2_2.5 &
-! red$2_2.5 &
-! green$2_3.4 &
-! red$2_3.4 &
-! green$2_3.5 &
-! red$2_3.5 &
-! green$2_4.5 &
-! red$2_4.5 ) |
-( green$2_0.3 &
-red$2_1.2 &
-! green$2_0.1 &
-! red$2_0.1 &
-! green$2_0.2 &
-! red$2_0.2 &
-! green$2_0.4 &
-! red$2_0.4 &
-! green$2_0.5 &
-! red$2_0.5 &
-! green$2_1.3 &
-! red$2_1.3 &
-! green$2_1.4 &
-! red$2_1.4 &
-! green$2_1.5 &
-! red$2_1.5 &
-! green$2_2.3 &
-! red$2_2.3 &
-! green$2_2.4 &
-! red$2_2.4 &
-! green$2_2.5 &
-! red$2_2.5 &
-! green$2_3.4 &
-! red$2_3.4 &
-! green$2_3.5 &
-! red$2_3.5 &
-! green$2_4.5 &
-! red$2_4.5 ) |
-( green$2_0.3 &
-red$2_1.3 &
-! green$2_0.1 &
-! red$2_0.1 &
-! green$2_0.2 &
-! red$2_0.2 &
-! green$2_0.4 &
-! red$2_0.4 &
-! green$2_0.5 &
-! red$2_0.5 &
-! green$2_1.2 &
-! red$2_1.2 &
-! green$2_1.4 &
-! red$2_1.4 &
-! green$2_1.5 &
-! red$2_1.5 &
-! green$2_2.3 &
-! red$2_2.3 &
-! green$2_2.4 &
-! red$2_2.4 &
-! green$2_2.5 &
-! red$2_2.5 &
-! green$2_3.4 &
-! red$2_3.4 &
-! green$2_3.5 &
-! red$2_3.5 &
-! green$2_4.5 &
-! red$2_4.5 ) |
-( green$2_0.3 &
-red$2_1.4 &
-! green$2_0.1 &
-! red$2_0.1 &
-! green$2_0.2 &
-! red$2_0.2 &
-! green$2_0.4 &
-! red$2_0.4 &
-! green$2_0.5 &
-! red$2_0.5 &
-! green$2_1.2 &
-! red$2_1.2 &
-! green$2_1.3 &
-! red$2_1.3 &
-! green$2_1.5 &
-! red$2_1.5 &
-! green$2_2.3 &
-! red$2_2.3 &
-! green$2_2.4 &
-! red$2_2.4 &
-! green$2_2.5 &
-! red$2_2.5 &
-! green$2_3.4 &
-! red$2_3.4 &
-! green$2_3.5 &
-! red$2_3.5 &
-! green$2_4.5 &
-! red$2_4.5 ) |
-( green$2_0.3 &
-red$2_1.5 &
-! green$2_0.1 &
-! red$2_0.1 &
-! green$2_0.2 &
-! red$2_0.2 &
-! green$2_0.4 &
-! red$2_0.4 &
-! green$2_0.5 &
-! red$2_0.5 &
-! green$2_1.2 &
-! red$2_1.2 &
-! green$2_1.3 &
-! red$2_1.3 &
-! green$2_1.4 &
-! red$2_1.4 &
-! green$2_2.3 &
-! red$2_2.3 &
-! green$2_2.4 &
-! red$2_2.4 &
-! green$2_2.5 &
-! red$2_2.5 &
-! green$2_3.4 &
-! red$2_3.4 &
-! green$2_3.5 &
-! red$2_3.5 &
-! green$2_4.5 &
-! red$2_4.5 ) |
-( green$2_0.3 &
-red$2_2.3 &
-! green$2_0.1 &
-! red$2_0.1 &
-! green$2_0.2 &
-! red$2_0.2 &
-! green$2_0.4 &
-! red$2_0.4 &
-! green$2_0.5 &
-! red$2_0.5 &
-! green$2_1.2 &
-! red$2_1.2 &
-! green$2_1.3 &
-! red$2_1.3 &
-! green$2_1.4 &
-! red$2_1.4 &
-! green$2_1.5 &
-! red$2_1.5 &
-! green$2_2.4 &
-! red$2_2.4 &
-! green$2_2.5 &
-! red$2_2.5 &
-! green$2_3.4 &
-! red$2_3.4 &
-! green$2_3.5 &
-! red$2_3.5 &
-! green$2_4.5 &
-! red$2_4.5 ) |
-( green$2_0.3 &
-red$2_2.4 &
-! green$2_0.1 &
-! red$2_0.1 &
-! green$2_0.2 &
-! red$2_0.2 &
-! green$2_0.4 &
-! red$2_0.4 &
-! green$2_0.5 &
-! red$2_0.5 &
-! green$2_1.2 &
-! red$2_1.2 &
-! green$2_1.3 &
-! red$2_1.3 &
-! green$2_1.4 &
-! red$2_1.4 &
-! green$2_1.5 &
-! red$2_1.5 &
-! green$2_2.3 &
-! red$2_2.3 &
-! green$2_2.5 &
-! red$2_2.5 &
-! green$2_3.4 &
-! red$2_3.4 &
-! green$2_3.5 &
-! red$2_3.5 &
-! green$2_4.5 &
-! red$2_4.5 ) |
-( green$2_0.3 &
-red$2_2.5 &
-! green$2_0.1 &
-! red$2_0.1 &
-! green$2_0.2 &
-! red$2_0.2 &
-! green$2_0.4 &
-! red$2_0.4 &
-! green$2_0.5 &
-! red$2_0.5 &
-! green$2_1.2 &
-! red$2_1.2 &
-! green$2_1.3 &
-! red$2_1.3 &
-! green$2_1.4 &
-! red$2_1.4 &
-! green$2_1.5 &
-! red$2_1.5 &
-! green$2_2.3 &
-! red$2_2.3 &
-! green$2_2.4 &
-! red$2_2.4 &
-! green$2_3.4 &
-! red$2_3.4 &
-! green$2_3.5 &
-! red$2_3.5 &
-! green$2_4.5 &
-! red$2_4.5 ) |
-( green$2_0.3 &
-red$2_3.4 &
-! green$2_0.1 &
-! red$2_0.1 &
-! green$2_0.2 &
-! red$2_0.2 &
-! green$2_0.4 &
-! red$2_0.4 &
-! green$2_0.5 &
-! red$2_0.5 &
-! green$2_1.2 &
-! red$2_1.2 &
-! green$2_1.3 &
-! red$2_1.3 &
-! green$2_1.4 &
-! red$2_1.4 &
-! green$2_1.5 &
-! red$2_1.5 &
-! green$2_2.3 &
-! red$2_2.3 &
-! green$2_2.4 &
-! red$2_2.4 &
-! green$2_2.5 &
-! red$2_2.5 &
-! green$2_3.5 &
-! red$2_3.5 &
-! green$2_4.5 &
-! red$2_4.5 ) |
-( green$2_0.3 &
-red$2_3.5 &
-! green$2_0.1 &
-! red$2_0.1 &
-! green$2_0.2 &
-! red$2_0.2 &
-! green$2_0.4 &
-! red$2_0.4 &
-! green$2_0.5 &
-! red$2_0.5 &
-! green$2_1.2 &
-! red$2_1.2 &
-! green$2_1.3 &
-! red$2_1.3 &
-! green$2_1.4 &
-! red$2_1.4 &
-! green$2_1.5 &
-! red$2_1.5 &
-! green$2_2.3 &
-! red$2_2.3 &
-! green$2_2.4 &
-! red$2_2.4 &
-! green$2_2.5 &
-! red$2_2.5 &
-! green$2_3.4 &
-! red$2_3.4 &
-! green$2_4.5 &
-! red$2_4.5 ) |
-( green$2_0.3 &
+green$2_0.3 &
 red$2_4.5 &
-! green$2_0.1 &
-! red$2_0.1 &
-! green$2_0.2 &
-! red$2_0.2 &
 ! green$2_0.4 &
 ! red$2_0.4 &
 ! green$2_0.5 &
@@ -1694,68 +854,12 @@ red$2_4.5 &
 ! red$2_3.4 &
 ! green$2_3.5 &
 ! red$2_3.5 ) |
-( green$2_0.4 &
-red$2_0.1 &
+( green$2_0.1 &
+! red$2_0.1 &
 ! green$2_0.2 &
-! red$2_0.2 &
-! green$2_0.3 &
-! red$2_0.3 &
-! green$2_0.5 &
-! red$2_0.5 &
-! green$2_1.2 &
-! red$2_1.2 &
-! green$2_1.3 &
-! red$2_1.3 &
-! green$2_1.4 &
-! red$2_1.4 &
-! green$2_1.5 &
-! red$2_1.5 &
-! green$2_2.3 &
-! red$2_2.3 &
-! green$2_2.4 &
-! red$2_2.4 &
-! green$2_2.5 &
-! red$2_2.5 &
-! green$2_3.4 &
-! red$2_3.4 &
-! green$2_3.5 &
-! red$2_3.5 &
-! green$2_4.5 &
-! red$2_4.5 ) |
-( green$2_0.4 &
 red$2_0.2 &
-! green$2_0.1 &
-! red$2_0.1 &
-! green$2_0.3 &
-! red$2_0.3 &
-! green$2_0.5 &
-! red$2_0.5 &
-! green$2_1.2 &
-! red$2_1.2 &
-! green$2_1.3 &
-! red$2_1.3 &
-! green$2_1.4 &
-! red$2_1.4 &
-! green$2_1.5 &
-! red$2_1.5 &
-! green$2_2.3 &
-! red$2_2.3 &
-! green$2_2.4 &
-! red$2_2.4 &
-! green$2_2.5 &
-! red$2_2.5 &
-! green$2_3.4 &
-! red$2_3.4 &
-! green$2_3.5 &
-! red$2_3.5 &
-! green$2_4.5 &
-! red$2_4.5 ) |
-( green$2_0.4 &
+green$2_0.4 &
 red$2_0.3 &
-! green$2_0.1 &
-! red$2_0.1 &
-! green$2_0.2 &
-! red$2_0.2 &
 ! green$2_0.5 &
 ! red$2_0.5 &
 ! green$2_1.2 &
@@ -1778,12 +882,12 @@ red$2_0.3 &
 ! red$2_3.5 &
 ! green$2_4.5 &
 ! red$2_4.5 ) |
-( green$2_0.4 &
+( green$2_0.1 &
+! red$2_0.1 &
+! green$2_0.2 &
+red$2_0.2 &
+green$2_0.4 &
 red$2_0.5 &
-! green$2_0.1 &
-! red$2_0.1 &
-! green$2_0.2 &
-! red$2_0.2 &
 ! green$2_0.3 &
 ! red$2_0.3 &
 ! green$2_1.2 &
@@ -1806,12 +910,12 @@ red$2_0.5 &
 ! red$2_3.5 &
 ! green$2_4.5 &
 ! red$2_4.5 ) |
-( green$2_0.4 &
+( green$2_0.1 &
+! red$2_0.1 &
+! green$2_0.2 &
+red$2_0.2 &
+green$2_0.4 &
 red$2_1.2 &
-! green$2_0.1 &
-! red$2_0.1 &
-! green$2_0.2 &
-! red$2_0.2 &
 ! green$2_0.3 &
 ! red$2_0.3 &
 ! green$2_0.5 &
@@ -1834,12 +938,12 @@ red$2_1.2 &
 ! red$2_3.5 &
 ! green$2_4.5 &
 ! red$2_4.5 ) |
-( green$2_0.4 &
+( green$2_0.1 &
+! red$2_0.1 &
+! green$2_0.2 &
+red$2_0.2 &
+green$2_0.4 &
 red$2_1.3 &
-! green$2_0.1 &
-! red$2_0.1 &
-! green$2_0.2 &
-! red$2_0.2 &
 ! green$2_0.3 &
 ! red$2_0.3 &
 ! green$2_0.5 &
@@ -1862,12 +966,12 @@ red$2_1.3 &
 ! red$2_3.5 &
 ! green$2_4.5 &
 ! red$2_4.5 ) |
-( green$2_0.4 &
+( green$2_0.1 &
+! red$2_0.1 &
+! green$2_0.2 &
+red$2_0.2 &
+green$2_0.4 &
 red$2_1.4 &
-! green$2_0.1 &
-! red$2_0.1 &
-! green$2_0.2 &
-! red$2_0.2 &
 ! green$2_0.3 &
 ! red$2_0.3 &
 ! green$2_0.5 &
@@ -1890,12 +994,12 @@ red$2_1.4 &
 ! red$2_3.5 &
 ! green$2_4.5 &
 ! red$2_4.5 ) |
-( green$2_0.4 &
+( green$2_0.1 &
+! red$2_0.1 &
+! green$2_0.2 &
+red$2_0.2 &
+green$2_0.4 &
 red$2_1.5 &
-! green$2_0.1 &
-! red$2_0.1 &
-! green$2_0.2 &
-! red$2_0.2 &
 ! green$2_0.3 &
 ! red$2_0.3 &
 ! green$2_0.5 &
@@ -1918,12 +1022,12 @@ red$2_1.5 &
 ! red$2_3.5 &
 ! green$2_4.5 &
 ! red$2_4.5 ) |
-( green$2_0.4 &
+( green$2_0.1 &
+! red$2_0.1 &
+! green$2_0.2 &
+red$2_0.2 &
+green$2_0.4 &
 red$2_2.3 &
-! green$2_0.1 &
-! red$2_0.1 &
-! green$2_0.2 &
-! red$2_0.2 &
 ! green$2_0.3 &
 ! red$2_0.3 &
 ! green$2_0.5 &
@@ -1946,12 +1050,12 @@ red$2_2.3 &
 ! red$2_3.5 &
 ! green$2_4.5 &
 ! red$2_4.5 ) |
-( green$2_0.4 &
+( green$2_0.1 &
+! red$2_0.1 &
+! green$2_0.2 &
+red$2_0.2 &
+green$2_0.4 &
 red$2_2.4 &
-! green$2_0.1 &
-! red$2_0.1 &
-! green$2_0.2 &
-! red$2_0.2 &
 ! green$2_0.3 &
 ! red$2_0.3 &
 ! green$2_0.5 &
@@ -1974,12 +1078,12 @@ red$2_2.4 &
 ! red$2_3.5 &
 ! green$2_4.5 &
 ! red$2_4.5 ) |
-( green$2_0.4 &
+( green$2_0.1 &
+! red$2_0.1 &
+! green$2_0.2 &
+red$2_0.2 &
+green$2_0.4 &
 red$2_2.5 &
-! green$2_0.1 &
-! red$2_0.1 &
-! green$2_0.2 &
-! red$2_0.2 &
 ! green$2_0.3 &
 ! red$2_0.3 &
 ! green$2_0.5 &
@@ -2002,12 +1106,12 @@ red$2_2.5 &
 ! red$2_3.5 &
 ! green$2_4.5 &
 ! red$2_4.5 ) |
-( green$2_0.4 &
+( green$2_0.1 &
+! red$2_0.1 &
+! green$2_0.2 &
+red$2_0.2 &
+green$2_0.4 &
 red$2_3.4 &
-! green$2_0.1 &
-! red$2_0.1 &
-! green$2_0.2 &
-! red$2_0.2 &
 ! green$2_0.3 &
 ! red$2_0.3 &
 ! green$2_0.5 &
@@ -2030,12 +1134,12 @@ red$2_3.4 &
 ! red$2_3.5 &
 ! green$2_4.5 &
 ! red$2_4.5 ) |
-( green$2_0.4 &
-red$2_3.5 &
-! green$2_0.1 &
+( green$2_0.1 &
 ! red$2_0.1 &
 ! green$2_0.2 &
-! red$2_0.2 &
+red$2_0.2 &
+green$2_0.4 &
+red$2_3.5 &
 ! green$2_0.3 &
 ! red$2_0.3 &
 ! green$2_0.5 &
@@ -2058,12 +1162,12 @@ red$2_3.5 &
 ! red$2_3.4 &
 ! green$2_4.5 &
 ! red$2_4.5 ) |
-( green$2_0.4 &
-red$2_4.5 &
-! green$2_0.1 &
+( green$2_0.1 &
 ! red$2_0.1 &
 ! green$2_0.2 &
-! red$2_0.2 &
+red$2_0.2 &
+green$2_0.4 &
+red$2_4.5 &
 ! green$2_0.3 &
 ! red$2_0.3 &
 ! green$2_0.5 &
@@ -2086,68 +1190,12 @@ red$2_4.5 &
 ! red$2_3.4 &
 ! green$2_3.5 &
 ! red$2_3.5 ) |
-( green$2_0.5 &
-red$2_0.1 &
+( green$2_0.1 &
+! red$2_0.1 &
 ! green$2_0.2 &
-! red$2_0.2 &
-! green$2_0.3 &
-! red$2_0.3 &
-! green$2_0.4 &
-! red$2_0.4 &
-! green$2_1.2 &
-! red$2_1.2 &
-! green$2_1.3 &
-! red$2_1.3 &
-! green$2_1.4 &
-! red$2_1.4 &
-! green$2_1.5 &
-! red$2_1.5 &
-! green$2_2.3 &
-! red$2_2.3 &
-! green$2_2.4 &
-! red$2_2.4 &
-! green$2_2.5 &
-! red$2_2.5 &
-! green$2_3.4 &
-! red$2_3.4 &
-! green$2_3.5 &
-! red$2_3.5 &
-! green$2_4.5 &
-! red$2_4.5 ) |
-( green$2_0.5 &
 red$2_0.2 &
-! green$2_0.1 &
-! red$2_0.1 &
-! green$2_0.3 &
-! red$2_0.3 &
-! green$2_0.4 &
-! red$2_0.4 &
-! green$2_1.2 &
-! red$2_1.2 &
-! green$2_1.3 &
-! red$2_1.3 &
-! green$2_1.4 &
-! red$2_1.4 &
-! green$2_1.5 &
-! red$2_1.5 &
-! green$2_2.3 &
-! red$2_2.3 &
-! green$2_2.4 &
-! red$2_2.4 &
-! green$2_2.5 &
-! red$2_2.5 &
-! green$2_3.4 &
-! red$2_3.4 &
-! green$2_3.5 &
-! red$2_3.5 &
-! green$2_4.5 &
-! red$2_4.5 ) |
-( green$2_0.5 &
+green$2_0.5 &
 red$2_0.3 &
-! green$2_0.1 &
-! red$2_0.1 &
-! green$2_0.2 &
-! red$2_0.2 &
 ! green$2_0.4 &
 ! red$2_0.4 &
 ! green$2_1.2 &
@@ -2170,12 +1218,12 @@ red$2_0.3 &
 ! red$2_3.5 &
 ! green$2_4.5 &
 ! red$2_4.5 ) |
-( green$2_0.5 &
+( green$2_0.1 &
+! red$2_0.1 &
+! green$2_0.2 &
+red$2_0.2 &
+green$2_0.5 &
 red$2_0.4 &
-! green$2_0.1 &
-! red$2_0.1 &
-! green$2_0.2 &
-! red$2_0.2 &
 ! green$2_0.3 &
 ! red$2_0.3 &
 ! green$2_1.2 &
@@ -2198,12 +1246,12 @@ red$2_0.4 &
 ! red$2_3.5 &
 ! green$2_4.5 &
 ! red$2_4.5 ) |
-( green$2_0.5 &
+( green$2_0.1 &
+! red$2_0.1 &
+! green$2_0.2 &
+red$2_0.2 &
+green$2_0.5 &
 red$2_1.2 &
-! green$2_0.1 &
-! red$2_0.1 &
-! green$2_0.2 &
-! red$2_0.2 &
 ! green$2_0.3 &
 ! red$2_0.3 &
 ! green$2_0.4 &
@@ -2226,12 +1274,12 @@ red$2_1.2 &
 ! red$2_3.5 &
 ! green$2_4.5 &
 ! red$2_4.5 ) |
-( green$2_0.5 &
+( green$2_0.1 &
+! red$2_0.1 &
+! green$2_0.2 &
+red$2_0.2 &
+green$2_0.5 &
 red$2_1.3 &
-! green$2_0.1 &
-! red$2_0.1 &
-! green$2_0.2 &
-! red$2_0.2 &
 ! green$2_0.3 &
 ! red$2_0.3 &
 ! green$2_0.4 &
@@ -2254,12 +1302,12 @@ red$2_1.3 &
 ! red$2_3.5 &
 ! green$2_4.5 &
 ! red$2_4.5 ) |
-( green$2_0.5 &
+( green$2_0.1 &
+! red$2_0.1 &
+! green$2_0.2 &
+red$2_0.2 &
+green$2_0.5 &
 red$2_1.4 &
-! green$2_0.1 &
-! red$2_0.1 &
-! green$2_0.2 &
-! red$2_0.2 &
 ! green$2_0.3 &
 ! red$2_0.3 &
 ! green$2_0.4 &
@@ -2282,12 +1330,12 @@ red$2_1.4 &
 ! red$2_3.5 &
 ! green$2_4.5 &
 ! red$2_4.5 ) |
-( green$2_0.5 &
+( green$2_0.1 &
+! red$2_0.1 &
+! green$2_0.2 &
+red$2_0.2 &
+green$2_0.5 &
 red$2_1.5 &
-! green$2_0.1 &
-! red$2_0.1 &
-! green$2_0.2 &
-! red$2_0.2 &
 ! green$2_0.3 &
 ! red$2_0.3 &
 ! green$2_0.4 &
@@ -2310,12 +1358,12 @@ red$2_1.5 &
 ! red$2_3.5 &
 ! green$2_4.5 &
 ! red$2_4.5 ) |
-( green$2_0.5 &
+( green$2_0.1 &
+! red$2_0.1 &
+! green$2_0.2 &
+red$2_0.2 &
+green$2_0.5 &
 red$2_2.3 &
-! green$2_0.1 &
-! red$2_0.1 &
-! green$2_0.2 &
-! red$2_0.2 &
 ! green$2_0.3 &
 ! red$2_0.3 &
 ! green$2_0.4 &
@@ -2338,12 +1386,12 @@ red$2_2.3 &
 ! red$2_3.5 &
 ! green$2_4.5 &
 ! red$2_4.5 ) |
-( green$2_0.5 &
+( green$2_0.1 &
+! red$2_0.1 &
+! green$2_0.2 &
+red$2_0.2 &
+green$2_0.5 &
 red$2_2.4 &
-! green$2_0.1 &
-! red$2_0.1 &
-! green$2_0.2 &
-! red$2_0.2 &
 ! green$2_0.3 &
 ! red$2_0.3 &
 ! green$2_0.4 &
@@ -2366,12 +1414,12 @@ red$2_2.4 &
 ! red$2_3.5 &
 ! green$2_4.5 &
 ! red$2_4.5 ) |
-( green$2_0.5 &
+( green$2_0.1 &
+! red$2_0.1 &
+! green$2_0.2 &
+red$2_0.2 &
+green$2_0.5 &
 red$2_2.5 &
-! green$2_0.1 &
-! red$2_0.1 &
-! green$2_0.2 &
-! red$2_0.2 &
 ! green$2_0.3 &
 ! red$2_0.3 &
 ! green$2_0.4 &
@@ -2394,12 +1442,12 @@ red$2_2.5 &
 ! red$2_3.5 &
 ! green$2_4.5 &
 ! red$2_4.5 ) |
-( green$2_0.5 &
+( green$2_0.1 &
+! red$2_0.1 &
+! green$2_0.2 &
+red$2_0.2 &
+green$2_0.5 &
 red$2_3.4 &
-! green$2_0.1 &
-! red$2_0.1 &
-! green$2_0.2 &
-! red$2_0.2 &
 ! green$2_0.3 &
 ! red$2_0.3 &
 ! green$2_0.4 &
@@ -2422,12 +1470,12 @@ red$2_3.4 &
 ! red$2_3.5 &
 ! green$2_4.5 &
 ! red$2_4.5 ) |
-( green$2_0.5 &
-red$2_3.5 &
-! green$2_0.1 &
+( green$2_0.1 &
 ! red$2_0.1 &
 ! green$2_0.2 &
-! red$2_0.2 &
+red$2_0.2 &
+green$2_0.5 &
+red$2_3.5 &
 ! green$2_0.3 &
 ! red$2_0.3 &
 ! green$2_0.4 &
@@ -2450,12 +1498,12 @@ red$2_3.5 &
 ! red$2_3.4 &
 ! green$2_4.5 &
 ! red$2_4.5 ) |
-( green$2_0.5 &
-red$2_4.5 &
-! green$2_0.1 &
+( green$2_0.1 &
 ! red$2_0.1 &
 ! green$2_0.2 &
-! red$2_0.2 &
+red$2_0.2 &
+green$2_0.5 &
+red$2_4.5 &
 ! green$2_0.3 &
 ! red$2_0.3 &
 ! green$2_0.4 &
@@ -2478,68 +1526,12 @@ red$2_4.5 &
 ! red$2_3.4 &
 ! green$2_3.5 &
 ! red$2_3.5 ) |
-( green$2_1.2 &
-red$2_0.1 &
+( green$2_0.1 &
+! red$2_0.1 &
 ! green$2_0.2 &
-! red$2_0.2 &
-! green$2_0.3 &
-! red$2_0.3 &
-! green$2_0.4 &
-! red$2_0.4 &
-! green$2_0.5 &
-! red$2_0.5 &
-! green$2_1.3 &
-! red$2_1.3 &
-! green$2_1.4 &
-! red$2_1.4 &
-! green$2_1.5 &
-! red$2_1.5 &
-! green$2_2.3 &
-! red$2_2.3 &
-! green$2_2.4 &
-! red$2_2.4 &
-! green$2_2.5 &
-! red$2_2.5 &
-! green$2_3.4 &
-! red$2_3.4 &
-! green$2_3.5 &
-! red$2_3.5 &
-! green$2_4.5 &
-! red$2_4.5 ) |
-( green$2_1.2 &
 red$2_0.2 &
-! green$2_0.1 &
-! red$2_0.1 &
-! green$2_0.3 &
-! red$2_0.3 &
-! green$2_0.4 &
-! red$2_0.4 &
-! green$2_0.5 &
-! red$2_0.5 &
-! green$2_1.3 &
-! red$2_1.3 &
-! green$2_1.4 &
-! red$2_1.4 &
-! green$2_1.5 &
-! red$2_1.5 &
-! green$2_2.3 &
-! red$2_2.3 &
-! green$2_2.4 &
-! red$2_2.4 &
-! green$2_2.5 &
-! red$2_2.5 &
-! green$2_3.4 &
-! red$2_3.4 &
-! green$2_3.5 &
-! red$2_3.5 &
-! green$2_4.5 &
-! red$2_4.5 ) |
-( green$2_1.2 &
+green$2_1.2 &
 red$2_0.3 &
-! green$2_0.1 &
-! red$2_0.1 &
-! green$2_0.2 &
-! red$2_0.2 &
 ! green$2_0.4 &
 ! red$2_0.4 &
 ! green$2_0.5 &
@@ -2562,12 +1554,12 @@ red$2_0.3 &
 ! red$2_3.5 &
 ! green$2_4.5 &
 ! red$2_4.5 ) |
-( green$2_1.2 &
+( green$2_0.1 &
+! red$2_0.1 &
+! green$2_0.2 &
+red$2_0.2 &
+green$2_1.2 &
 red$2_0.4 &
-! green$2_0.1 &
-! red$2_0.1 &
-! green$2_0.2 &
-! red$2_0.2 &
 ! green$2_0.3 &
 ! red$2_0.3 &
 ! green$2_0.5 &
@@ -2590,12 +1582,12 @@ red$2_0.4 &
 ! red$2_3.5 &
 ! green$2_4.5 &
 ! red$2_4.5 ) |
-( green$2_1.2 &
+( green$2_0.1 &
+! red$2_0.1 &
+! green$2_0.2 &
+red$2_0.2 &
+green$2_1.2 &
 red$2_0.5 &
-! green$2_0.1 &
-! red$2_0.1 &
-! green$2_0.2 &
-! red$2_0.2 &
 ! green$2_0.3 &
 ! red$2_0.3 &
 ! green$2_0.4 &
@@ -2618,12 +1610,12 @@ red$2_0.5 &
 ! red$2_3.5 &
 ! green$2_4.5 &
 ! red$2_4.5 ) |
-( green$2_1.2 &
+( green$2_0.1 &
+! red$2_0.1 &
+! green$2_0.2 &
+red$2_0.2 &
+green$2_1.2 &
 red$2_1.3 &
-! green$2_0.1 &
-! red$2_0.1 &
-! green$2_0.2 &
-! red$2_0.2 &
 ! green$2_0.3 &
 ! red$2_0.3 &
 ! green$2_0.4 &
@@ -2646,12 +1638,12 @@ red$2_1.3 &
 ! red$2_3.5 &
 ! green$2_4.5 &
 ! red$2_4.5 ) |
-( green$2_1.2 &
+( green$2_0.1 &
+! red$2_0.1 &
+! green$2_0.2 &
+red$2_0.2 &
+green$2_1.2 &
 red$2_1.4 &
-! green$2_0.1 &
-! red$2_0.1 &
-! green$2_0.2 &
-! red$2_0.2 &
 ! green$2_0.3 &
 ! red$2_0.3 &
 ! green$2_0.4 &
@@ -2674,12 +1666,12 @@ red$2_1.4 &
 ! red$2_3.5 &
 ! green$2_4.5 &
 ! red$2_4.5 ) |
-( green$2_1.2 &
+( green$2_0.1 &
+! red$2_0.1 &
+! green$2_0.2 &
+red$2_0.2 &
+green$2_1.2 &
 red$2_1.5 &
-! green$2_0.1 &
-! red$2_0.1 &
-! green$2_0.2 &
-! red$2_0.2 &
 ! green$2_0.3 &
 ! red$2_0.3 &
 ! green$2_0.4 &
@@ -2702,12 +1694,12 @@ red$2_1.5 &
 ! red$2_3.5 &
 ! green$2_4.5 &
 ! red$2_4.5 ) |
-( green$2_1.2 &
+( green$2_0.1 &
+! red$2_0.1 &
+! green$2_0.2 &
+red$2_0.2 &
+green$2_1.2 &
 red$2_2.3 &
-! green$2_0.1 &
-! red$2_0.1 &
-! green$2_0.2 &
-! red$2_0.2 &
 ! green$2_0.3 &
 ! red$2_0.3 &
 ! green$2_0.4 &
@@ -2730,12 +1722,12 @@ red$2_2.3 &
 ! red$2_3.5 &
 ! green$2_4.5 &
 ! red$2_4.5 ) |
-( green$2_1.2 &
+( green$2_0.1 &
+! red$2_0.1 &
+! green$2_0.2 &
+red$2_0.2 &
+green$2_1.2 &
 red$2_2.4 &
-! green$2_0.1 &
-! red$2_0.1 &
-! green$2_0.2 &
-! red$2_0.2 &
 ! green$2_0.3 &
 ! red$2_0.3 &
 ! green$2_0.4 &
@@ -2758,12 +1750,12 @@ red$2_2.4 &
 ! red$2_3.5 &
 ! green$2_4.5 &
 ! red$2_4.5 ) |
-( green$2_1.2 &
+( green$2_0.1 &
+! red$2_0.1 &
+! green$2_0.2 &
+red$2_0.2 &
+green$2_1.2 &
 red$2_2.5 &
-! green$2_0.1 &
-! red$2_0.1 &
-! green$2_0.2 &
-! red$2_0.2 &
 ! green$2_0.3 &
 ! red$2_0.3 &
 ! green$2_0.4 &
@@ -2786,12 +1778,12 @@ red$2_2.5 &
 ! red$2_3.5 &
 ! green$2_4.5 &
 ! red$2_4.5 ) |
-( green$2_1.2 &
+( green$2_0.1 &
+! red$2_0.1 &
+! green$2_0.2 &
+red$2_0.2 &
+green$2_1.2 &
 red$2_3.4 &
-! green$2_0.1 &
-! red$2_0.1 &
-! green$2_0.2 &
-! red$2_0.2 &
 ! green$2_0.3 &
 ! red$2_0.3 &
 ! green$2_0.4 &
@@ -2814,12 +1806,12 @@ red$2_3.4 &
 ! red$2_3.5 &
 ! green$2_4.5 &
 ! red$2_4.5 ) |
-( green$2_1.2 &
-red$2_3.5 &
-! green$2_0.1 &
+( green$2_0.1 &
 ! red$2_0.1 &
 ! green$2_0.2 &
-! red$2_0.2 &
+red$2_0.2 &
+green$2_1.2 &
+red$2_3.5 &
 ! green$2_0.3 &
 ! red$2_0.3 &
 ! green$2_0.4 &
@@ -2842,12 +1834,12 @@ red$2_3.5 &
 ! red$2_3.4 &
 ! green$2_4.5 &
 ! red$2_4.5 ) |
-( green$2_1.2 &
-red$2_4.5 &
-! green$2_0.1 &
+( green$2_0.1 &
 ! red$2_0.1 &
 ! green$2_0.2 &
-! red$2_0.2 &
+red$2_0.2 &
+green$2_1.2 &
+red$2_4.5 &
 ! green$2_0.3 &
 ! red$2_0.3 &
 ! green$2_0.4 &
@@ -2870,68 +1862,12 @@ red$2_4.5 &
 ! red$2_3.4 &
 ! green$2_3.5 &
 ! red$2_3.5 ) |
-( green$2_1.3 &
-red$2_0.1 &
+( green$2_0.1 &
+! red$2_0.1 &
 ! green$2_0.2 &
-! red$2_0.2 &
-! green$2_0.3 &
-! red$2_0.3 &
-! green$2_0.4 &
-! red$2_0.4 &
-! green$2_0.5 &
-! red$2_0.5 &
-! green$2_1.2 &
-! red$2_1.2 &
-! green$2_1.4 &
-! red$2_1.4 &
-! green$2_1.5 &
-! red$2_1.5 &
-! green$2_2.3 &
-! red$2_2.3 &
-! green$2_2.4 &
-! red$2_2.4 &
-! green$2_2.5 &
-! red$2_2.5 &
-! green$2_3.4 &
-! red$2_3.4 &
-! green$2_3.5 &
-! red$2_3.5 &
-! green$2_4.5 &
-! red$2_4.5 ) |
-( green$2_1.3 &
 red$2_0.2 &
-! green$2_0.1 &
-! red$2_0.1 &
-! green$2_0.3 &
-! red$2_0.3 &
-! green$2_0.4 &
-! red$2_0.4 &
-! green$2_0.5 &
-! red$2_0.5 &
-! green$2_1.2 &
-! red$2_1.2 &
-! green$2_1.4 &
-! red$2_1.4 &
-! green$2_1.5 &
-! red$2_1.5 &
-! green$2_2.3 &
-! red$2_2.3 &
-! green$2_2.4 &
-! red$2_2.4 &
-! green$2_2.5 &
-! red$2_2.5 &
-! green$2_3.4 &
-! red$2_3.4 &
-! green$2_3.5 &
-! red$2_3.5 &
-! green$2_4.5 &
-! red$2_4.5 ) |
-( green$2_1.3 &
+green$2_1.3 &
 red$2_0.3 &
-! green$2_0.1 &
-! red$2_0.1 &
-! green$2_0.2 &
-! red$2_0.2 &
 ! green$2_0.4 &
 ! red$2_0.4 &
 ! green$2_0.5 &
@@ -2954,12 +1890,12 @@ red$2_0.3 &
 ! red$2_3.5 &
 ! green$2_4.5 &
 ! red$2_4.5 ) |
-( green$2_1.3 &
+( green$2_0.1 &
+! red$2_0.1 &
+! green$2_0.2 &
+red$2_0.2 &
+green$2_1.3 &
 red$2_0.4 &
-! green$2_0.1 &
-! red$2_0.1 &
-! green$2_0.2 &
-! red$2_0.2 &
 ! green$2_0.3 &
 ! red$2_0.3 &
 ! green$2_0.5 &
@@ -2982,12 +1918,12 @@ red$2_0.4 &
 ! red$2_3.5 &
 ! green$2_4.5 &
 ! red$2_4.5 ) |
-( green$2_1.3 &
+( green$2_0.1 &
+! red$2_0.1 &
+! green$2_0.2 &
+red$2_0.2 &
+green$2_1.3 &
 red$2_0.5 &
-! green$2_0.1 &
-! red$2_0.1 &
-! green$2_0.2 &
-! red$2_0.2 &
 ! green$2_0.3 &
 ! red$2_0.3 &
 ! green$2_0.4 &
@@ -3010,12 +1946,12 @@ red$2_0.5 &
 ! red$2_3.5 &
 ! green$2_4.5 &
 ! red$2_4.5 ) |
-( green$2_1.3 &
+( green$2_0.1 &
+! red$2_0.1 &
+! green$2_0.2 &
+red$2_0.2 &
+green$2_1.3 &
 red$2_1.2 &
-! green$2_0.1 &
-! red$2_0.1 &
-! green$2_0.2 &
-! red$2_0.2 &
 ! green$2_0.3 &
 ! red$2_0.3 &
 ! green$2_0.4 &
@@ -3038,12 +1974,12 @@ red$2_1.2 &
 ! red$2_3.5 &
 ! green$2_4.5 &
 ! red$2_4.5 ) |
-( green$2_1.3 &
+( green$2_0.1 &
+! red$2_0.1 &
+! green$2_0.2 &
+red$2_0.2 &
+green$2_1.3 &
 red$2_1.4 &
-! green$2_0.1 &
-! red$2_0.1 &
-! green$2_0.2 &
-! red$2_0.2 &
 ! green$2_0.3 &
 ! red$2_0.3 &
 ! green$2_0.4 &
@@ -3066,12 +2002,12 @@ red$2_1.4 &
 ! red$2_3.5 &
 ! green$2_4.5 &
 ! red$2_4.5 ) |
-( green$2_1.3 &
+( green$2_0.1 &
+! red$2_0.1 &
+! green$2_0.2 &
+red$2_0.2 &
+green$2_1.3 &
 red$2_1.5 &
-! green$2_0.1 &
-! red$2_0.1 &
-! green$2_0.2 &
-! red$2_0.2 &
 ! green$2_0.3 &
 ! red$2_0.3 &
 ! green$2_0.4 &
@@ -3094,12 +2030,12 @@ red$2_1.5 &
 ! red$2_3.5 &
 ! green$2_4.5 &
 ! red$2_4.5 ) |
-( green$2_1.3 &
+( green$2_0.1 &
+! red$2_0.1 &
+! green$2_0.2 &
+red$2_0.2 &
+green$2_1.3 &
 red$2_2.3 &
-! green$2_0.1 &
-! red$2_0.1 &
-! green$2_0.2 &
-! red$2_0.2 &
 ! green$2_0.3 &
 ! red$2_0.3 &
 ! green$2_0.4 &
@@ -3122,12 +2058,12 @@ red$2_2.3 &
 ! red$2_3.5 &
 ! green$2_4.5 &
 ! red$2_4.5 ) |
-( green$2_1.3 &
+( green$2_0.1 &
+! red$2_0.1 &
+! green$2_0.2 &
+red$2_0.2 &
+green$2_1.3 &
 red$2_2.4 &
-! green$2_0.1 &
-! red$2_0.1 &
-! green$2_0.2 &
-! red$2_0.2 &
 ! green$2_0.3 &
 ! red$2_0.3 &
 ! green$2_0.4 &
@@ -3150,12 +2086,12 @@ red$2_2.4 &
 ! red$2_3.5 &
 ! green$2_4.5 &
 ! red$2_4.5 ) |
-( green$2_1.3 &
+( green$2_0.1 &
+! red$2_0.1 &
+! green$2_0.2 &
+red$2_0.2 &
+green$2_1.3 &
 red$2_2.5 &
-! green$2_0.1 &
-! red$2_0.1 &
-! green$2_0.2 &
-! red$2_0.2 &
 ! green$2_0.3 &
 ! red$2_0.3 &
 ! green$2_0.4 &
@@ -3178,12 +2114,12 @@ red$2_2.5 &
 ! red$2_3.5 &
 ! green$2_4.5 &
 ! red$2_4.5 ) |
-( green$2_1.3 &
+( green$2_0.1 &
+! red$2_0.1 &
+! green$2_0.2 &
+red$2_0.2 &
+green$2_1.3 &
 red$2_3.4 &
-! green$2_0.1 &
-! red$2_0.1 &
-! green$2_0.2 &
-! red$2_0.2 &
 ! green$2_0.3 &
 ! red$2_0.3 &
 ! green$2_0.4 &
@@ -3206,12 +2142,12 @@ red$2_3.4 &
 ! red$2_3.5 &
 ! green$2_4.5 &
 ! red$2_4.5 ) |
-( green$2_1.3 &
-red$2_3.5 &
-! green$2_0.1 &
+( green$2_0.1 &
 ! red$2_0.1 &
 ! green$2_0.2 &
-! red$2_0.2 &
+red$2_0.2 &
+green$2_1.3 &
+red$2_3.5 &
 ! green$2_0.3 &
 ! red$2_0.3 &
 ! green$2_0.4 &
@@ -3234,12 +2170,12 @@ red$2_3.5 &
 ! red$2_3.4 &
 ! green$2_4.5 &
 ! red$2_4.5 ) |
-( green$2_1.3 &
-red$2_4.5 &
-! green$2_0.1 &
+( green$2_0.1 &
 ! red$2_0.1 &
 ! green$2_0.2 &
-! red$2_0.2 &
+red$2_0.2 &
+green$2_1.3 &
+red$2_4.5 &
 ! green$2_0.3 &
 ! red$2_0.3 &
 ! green$2_0.4 &
@@ -3262,68 +2198,12 @@ red$2_4.5 &
 ! red$2_3.4 &
 ! green$2_3.5 &
 ! red$2_3.5 ) |
-( green$2_1.4 &
-red$2_0.1 &
+( green$2_0.1 &
+! red$2_0.1 &
 ! green$2_0.2 &
-! red$2_0.2 &
-! green$2_0.3 &
-! red$2_0.3 &
-! green$2_0.4 &
-! red$2_0.4 &
-! green$2_0.5 &
-! red$2_0.5 &
-! green$2_1.2 &
-! red$2_1.2 &
-! green$2_1.3 &
-! red$2_1.3 &
-! green$2_1.5 &
-! red$2_1.5 &
-! green$2_2.3 &
-! red$2_2.3 &
-! green$2_2.4 &
-! red$2_2.4 &
-! green$2_2.5 &
-! red$2_2.5 &
-! green$2_3.4 &
-! red$2_3.4 &
-! green$2_3.5 &
-! red$2_3.5 &
-! green$2_4.5 &
-! red$2_4.5 ) |
-( green$2_1.4 &
 red$2_0.2 &
-! green$2_0.1 &
-! red$2_0.1 &
-! green$2_0.3 &
-! red$2_0.3 &
-! green$2_0.4 &
-! red$2_0.4 &
-! green$2_0.5 &
-! red$2_0.5 &
-! green$2_1.2 &
-! red$2_1.2 &
-! green$2_1.3 &
-! red$2_1.3 &
-! green$2_1.5 &
-! red$2_1.5 &
-! green$2_2.3 &
-! red$2_2.3 &
-! green$2_2.4 &
-! red$2_2.4 &
-! green$2_2.5 &
-! red$2_2.5 &
-! green$2_3.4 &
-! red$2_3.4 &
-! green$2_3.5 &
-! red$2_3.5 &
-! green$2_4.5 &
-! red$2_4.5 ) |
-( green$2_1.4 &
+green$2_1.4 &
 red$2_0.3 &
-! green$2_0.1 &
-! red$2_0.1 &
-! green$2_0.2 &
-! red$2_0.2 &
 ! green$2_0.4 &
 ! red$2_0.4 &
 ! green$2_0.5 &
@@ -3346,12 +2226,12 @@ red$2_0.3 &
 ! red$2_3.5 &
 ! green$2_4.5 &
 ! red$2_4.5 ) |
-( green$2_1.4 &
+( green$2_0.1 &
+! red$2_0.1 &
+! green$2_0.2 &
+red$2_0.2 &
+green$2_1.4 &
 red$2_0.4 &
-! green$2_0.1 &
-! red$2_0.1 &
-! green$2_0.2 &
-! red$2_0.2 &
 ! green$2_0.3 &
 ! red$2_0.3 &
 ! green$2_0.5 &
@@ -3374,12 +2254,12 @@ red$2_0.4 &
 ! red$2_3.5 &
 ! green$2_4.5 &
 ! red$2_4.5 ) |
-( green$2_1.4 &
+( green$2_0.1 &
+! red$2_0.1 &
+! green$2_0.2 &
+red$2_0.2 &
+green$2_1.4 &
 red$2_0.5 &
-! green$2_0.1 &
-! red$2_0.1 &
-! green$2_0.2 &
-! red$2_0.2 &
 ! green$2_0.3 &
 ! red$2_0.3 &
 ! green$2_0.4 &
@@ -3402,12 +2282,12 @@ red$2_0.5 &
 ! red$2_3.5 &
 ! green$2_4.5 &
 ! red$2_4.5 ) |
-( green$2_1.4 &
+( green$2_0.1 &
+! red$2_0.1 &
+! green$2_0.2 &
+red$2_0.2 &
+green$2_1.4 &
 red$2_1.2 &
-! green$2_0.1 &
-! red$2_0.1 &
-! green$2_0.2 &
-! red$2_0.2 &
 ! green$2_0.3 &
 ! red$2_0.3 &
 ! green$2_0.4 &
@@ -3430,12 +2310,12 @@ red$2_1.2 &
 ! red$2_3.5 &
 ! green$2_4.5 &
 ! red$2_4.5 ) |
-( green$2_1.4 &
+( green$2_0.1 &
+! red$2_0.1 &
+! green$2_0.2 &
+red$2_0.2 &
+green$2_1.4 &
 red$2_1.3 &
-! green$2_0.1 &
-! red$2_0.1 &
-! green$2_0.2 &
-! red$2_0.2 &
 ! green$2_0.3 &
 ! red$2_0.3 &
 ! green$2_0.4 &
@@ -3458,12 +2338,12 @@ red$2_1.3 &
 ! red$2_3.5 &
 ! green$2_4.5 &
 ! red$2_4.5 ) |
-( green$2_1.4 &
+( green$2_0.1 &
+! red$2_0.1 &
+! green$2_0.2 &
+red$2_0.2 &
+green$2_1.4 &
 red$2_1.5 &
-! green$2_0.1 &
-! red$2_0.1 &
-! green$2_0.2 &
-! red$2_0.2 &
 ! green$2_0.3 &
 ! red$2_0.3 &
 ! green$2_0.4 &
@@ -3486,12 +2366,12 @@ red$2_1.5 &
 ! red$2_3.5 &
 ! green$2_4.5 &
 ! red$2_4.5 ) |
-( green$2_1.4 &
+( green$2_0.1 &
+! red$2_0.1 &
+! green$2_0.2 &
+red$2_0.2 &
+green$2_1.4 &
 red$2_2.3 &
-! green$2_0.1 &
-! red$2_0.1 &
-! green$2_0.2 &
-! red$2_0.2 &
 ! green$2_0.3 &
 ! red$2_0.3 &
 ! green$2_0.4 &
@@ -3514,12 +2394,12 @@ red$2_2.3 &
 ! red$2_3.5 &
 ! green$2_4.5 &
 ! red$2_4.5 ) |
-( green$2_1.4 &
+( green$2_0.1 &
+! red$2_0.1 &
+! green$2_0.2 &
+red$2_0.2 &
+green$2_1.4 &
 red$2_2.4 &
-! green$2_0.1 &
-! red$2_0.1 &
-! green$2_0.2 &
-! red$2_0.2 &
 ! green$2_0.3 &
 ! red$2_0.3 &
 ! green$2_0.4 &
@@ -3542,12 +2422,12 @@ red$2_2.4 &
 ! red$2_3.5 &
 ! green$2_4.5 &
 ! red$2_4.5 ) |
-( green$2_1.4 &
+( green$2_0.1 &
+! red$2_0.1 &
+! green$2_0.2 &
+red$2_0.2 &
+green$2_1.4 &
 red$2_2.5 &
-! green$2_0.1 &
-! red$2_0.1 &
-! green$2_0.2 &
-! red$2_0.2 &
 ! green$2_0.3 &
 ! red$2_0.3 &
 ! green$2_0.4 &
@@ -3570,12 +2450,12 @@ red$2_2.5 &
 ! red$2_3.5 &
 ! green$2_4.5 &
 ! red$2_4.5 ) |
-( green$2_1.4 &
+( green$2_0.1 &
+! red$2_0.1 &
+! green$2_0.2 &
+red$2_0.2 &
+green$2_1.4 &
 red$2_3.4 &
-! green$2_0.1 &
-! red$2_0.1 &
-! green$2_0.2 &
-! red$2_0.2 &
 ! green$2_0.3 &
 ! red$2_0.3 &
 ! green$2_0.4 &
@@ -3598,12 +2478,12 @@ red$2_3.4 &
 ! red$2_3.5 &
 ! green$2_4.5 &
 ! red$2_4.5 ) |
-( green$2_1.4 &
-red$2_3.5 &
-! green$2_0.1 &
+( green$2_0.1 &
 ! red$2_0.1 &
 ! green$2_0.2 &
-! red$2_0.2 &
+red$2_0.2 &
+green$2_1.4 &
+red$2_3.5 &
 ! green$2_0.3 &
 ! red$2_0.3 &
 ! green$2_0.4 &
@@ -3626,12 +2506,12 @@ red$2_3.5 &
 ! red$2_3.4 &
 ! green$2_4.5 &
 ! red$2_4.5 ) |
-( green$2_1.4 &
-red$2_4.5 &
-! green$2_0.1 &
+( green$2_0.1 &
 ! red$2_0.1 &
 ! green$2_0.2 &
-! red$2_0.2 &
+red$2_0.2 &
+green$2_1.4 &
+red$2_4.5 &
 ! green$2_0.3 &
 ! red$2_0.3 &
 ! green$2_0.4 &
@@ -3654,68 +2534,12 @@ red$2_4.5 &
 ! red$2_3.4 &
 ! green$2_3.5 &
 ! red$2_3.5 ) |
-( green$2_1.5 &
-red$2_0.1 &
+( green$2_0.1 &
+! red$2_0.1 &
 ! green$2_0.2 &
-! red$2_0.2 &
-! green$2_0.3 &
-! red$2_0.3 &
-! green$2_0.4 &
-! red$2_0.4 &
-! green$2_0.5 &
-! red$2_0.5 &
-! green$2_1.2 &
-! red$2_1.2 &
-! green$2_1.3 &
-! red$2_1.3 &
-! green$2_1.4 &
-! red$2_1.4 &
-! green$2_2.3 &
-! red$2_2.3 &
-! green$2_2.4 &
-! red$2_2.4 &
-! green$2_2.5 &
-! red$2_2.5 &
-! green$2_3.4 &
-! red$2_3.4 &
-! green$2_3.5 &
-! red$2_3.5 &
-! green$2_4.5 &
-! red$2_4.5 ) |
-( green$2_1.5 &
 red$2_0.2 &
-! green$2_0.1 &
-! red$2_0.1 &
-! green$2_0.3 &
-! red$2_0.3 &
-! green$2_0.4 &
-! red$2_0.4 &
-! green$2_0.5 &
-! red$2_0.5 &
-! green$2_1.2 &
-! red$2_1.2 &
-! green$2_1.3 &
-! red$2_1.3 &
-! green$2_1.4 &
-! red$2_1.4 &
-! green$2_2.3 &
-! red$2_2.3 &
-! green$2_2.4 &
-! red$2_2.4 &
-! green$2_2.5 &
-! red$2_2.5 &
-! green$2_3.4 &
-! red$2_3.4 &
-! green$2_3.5 &
-! red$2_3.5 &
-! green$2_4.5 &
-! red$2_4.5 ) |
-( green$2_1.5 &
+green$2_1.5 &
 red$2_0.3 &
-! green$2_0.1 &
-! red$2_0.1 &
-! green$2_0.2 &
-! red$2_0.2 &
 ! green$2_0.4 &
 ! red$2_0.4 &
 ! green$2_0.5 &
@@ -3738,12 +2562,12 @@ red$2_0.3 &
 ! red$2_3.5 &
 ! green$2_4.5 &
 ! red$2_4.5 ) |
-( green$2_1.5 &
+( green$2_0.1 &
+! red$2_0.1 &
+! green$2_0.2 &
+red$2_0.2 &
+green$2_1.5 &
 red$2_0.4 &
-! green$2_0.1 &
-! red$2_0.1 &
-! green$2_0.2 &
-! red$2_0.2 &
 ! green$2_0.3 &
 ! red$2_0.3 &
 ! green$2_0.5 &
@@ -3766,12 +2590,12 @@ red$2_0.4 &
 ! red$2_3.5 &
 ! green$2_4.5 &
 ! red$2_4.5 ) |
-( green$2_1.5 &
+( green$2_0.1 &
+! red$2_0.1 &
+! green$2_0.2 &
+red$2_0.2 &
+green$2_1.5 &
 red$2_0.5 &
-! green$2_0.1 &
-! red$2_0.1 &
-! green$2_0.2 &
-! red$2_0.2 &
 ! green$2_0.3 &
 ! red$2_0.3 &
 ! green$2_0.4 &
@@ -3794,12 +2618,12 @@ red$2_0.5 &
 ! red$2_3.5 &
 ! green$2_4.5 &
 ! red$2_4.5 ) |
-( green$2_1.5 &
+( green$2_0.1 &
+! red$2_0.1 &
+! green$2_0.2 &
+red$2_0.2 &
+green$2_1.5 &
 red$2_1.2 &
-! green$2_0.1 &
-! red$2_0.1 &
-! green$2_0.2 &
-! red$2_0.2 &
 ! green$2_0.3 &
 ! red$2_0.3 &
 ! green$2_0.4 &
@@ -3822,12 +2646,12 @@ red$2_1.2 &
 ! red$2_3.5 &
 ! green$2_4.5 &
 ! red$2_4.5 ) |
-( green$2_1.5 &
+( green$2_0.1 &
+! red$2_0.1 &
+! green$2_0.2 &
+red$2_0.2 &
+green$2_1.5 &
 red$2_1.3 &
-! green$2_0.1 &
-! red$2_0.1 &
-! green$2_0.2 &
-! red$2_0.2 &
 ! green$2_0.3 &
 ! red$2_0.3 &
 ! green$2_0.4 &
@@ -3850,12 +2674,12 @@ red$2_1.3 &
 ! red$2_3.5 &
 ! green$2_4.5 &
 ! red$2_4.5 ) |
-( green$2_1.5 &
+( green$2_0.1 &
+! red$2_0.1 &
+! green$2_0.2 &
+red$2_0.2 &
+green$2_1.5 &
 red$2_1.4 &
-! green$2_0.1 &
-! red$2_0.1 &
-! green$2_0.2 &
-! red$2_0.2 &
 ! green$2_0.3 &
 ! red$2_0.3 &
 ! green$2_0.4 &
@@ -3878,12 +2702,12 @@ red$2_1.4 &
 ! red$2_3.5 &
 ! green$2_4.5 &
 ! red$2_4.5 ) |
-( green$2_1.5 &
+( green$2_0.1 &
+! red$2_0.1 &
+! green$2_0.2 &
+red$2_0.2 &
+green$2_1.5 &
 red$2_2.3 &
-! green$2_0.1 &
-! red$2_0.1 &
-! green$2_0.2 &
-! red$2_0.2 &
 ! green$2_0.3 &
 ! red$2_0.3 &
 ! green$2_0.4 &
@@ -3906,12 +2730,12 @@ red$2_2.3 &
 ! red$2_3.5 &
 ! green$2_4.5 &
 ! red$2_4.5 ) |
-( green$2_1.5 &
+( green$2_0.1 &
+! red$2_0.1 &
+! green$2_0.2 &
+red$2_0.2 &
+green$2_1.5 &
 red$2_2.4 &
-! green$2_0.1 &
-! red$2_0.1 &
-! green$2_0.2 &
-! red$2_0.2 &
 ! green$2_0.3 &
 ! red$2_0.3 &
 ! green$2_0.4 &
@@ -3934,12 +2758,12 @@ red$2_2.4 &
 ! red$2_3.5 &
 ! green$2_4.5 &
 ! red$2_4.5 ) |
-( green$2_1.5 &
+( green$2_0.1 &
+! red$2_0.1 &
+! green$2_0.2 &
+red$2_0.2 &
+green$2_1.5 &
 red$2_2.5 &
-! green$2_0.1 &
-! red$2_0.1 &
-! green$2_0.2 &
-! red$2_0.2 &
 ! green$2_0.3 &
 ! red$2_0.3 &
 ! green$2_0.4 &
@@ -3962,12 +2786,12 @@ red$2_2.5 &
 ! red$2_3.5 &
 ! green$2_4.5 &
 ! red$2_4.5 ) |
-( green$2_1.5 &
+( green$2_0.1 &
+! red$2_0.1 &
+! green$2_0.2 &
+red$2_0.2 &
+green$2_1.5 &
 red$2_3.4 &
-! green$2_0.1 &
-! red$2_0.1 &
-! green$2_0.2 &
-! red$2_0.2 &
 ! green$2_0.3 &
 ! red$2_0.3 &
 ! green$2_0.4 &
@@ -3990,12 +2814,12 @@ red$2_3.4 &
 ! red$2_3.5 &
 ! green$2_4.5 &
 ! red$2_4.5 ) |
-( green$2_1.5 &
-red$2_3.5 &
-! green$2_0.1 &
+( green$2_0.1 &
 ! red$2_0.1 &
 ! green$2_0.2 &
-! red$2_0.2 &
+red$2_0.2 &
+green$2_1.5 &
+red$2_3.5 &
 ! green$2_0.3 &
 ! red$2_0.3 &
 ! green$2_0.4 &
@@ -4018,12 +2842,12 @@ red$2_3.5 &
 ! red$2_3.4 &
 ! green$2_4.5 &
 ! red$2_4.5 ) |
-( green$2_1.5 &
-red$2_4.5 &
-! green$2_0.1 &
+( green$2_0.1 &
 ! red$2_0.1 &
 ! green$2_0.2 &
-! red$2_0.2 &
+red$2_0.2 &
+green$2_1.5 &
+red$2_4.5 &
 ! green$2_0.3 &
 ! red$2_0.3 &
 ! green$2_0.4 &
@@ -4046,68 +2870,12 @@ red$2_4.5 &
 ! red$2_3.4 &
 ! green$2_3.5 &
 ! red$2_3.5 ) |
-( green$2_2.3 &
-red$2_0.1 &
+( green$2_0.1 &
+! red$2_0.1 &
 ! green$2_0.2 &
-! red$2_0.2 &
-! green$2_0.3 &
-! red$2_0.3 &
-! green$2_0.4 &
-! red$2_0.4 &
-! green$2_0.5 &
-! red$2_0.5 &
-! green$2_1.2 &
-! red$2_1.2 &
-! green$2_1.3 &
-! red$2_1.3 &
-! green$2_1.4 &
-! red$2_1.4 &
-! green$2_1.5 &
-! red$2_1.5 &
-! green$2_2.4 &
-! red$2_2.4 &
-! green$2_2.5 &
-! red$2_2.5 &
-! green$2_3.4 &
-! red$2_3.4 &
-! green$2_3.5 &
-! red$2_3.5 &
-! green$2_4.5 &
-! red$2_4.5 ) |
-( green$2_2.3 &
 red$2_0.2 &
-! green$2_0.1 &
-! red$2_0.1 &
-! green$2_0.3 &
-! red$2_0.3 &
-! green$2_0.4 &
-! red$2_0.4 &
-! green$2_0.5 &
-! red$2_0.5 &
-! green$2_1.2 &
-! red$2_1.2 &
-! green$2_1.3 &
-! red$2_1.3 &
-! green$2_1.4 &
-! red$2_1.4 &
-! green$2_1.5 &
-! red$2_1.5 &
-! green$2_2.4 &
-! red$2_2.4 &
-! green$2_2.5 &
-! red$2_2.5 &
-! green$2_3.4 &
-! red$2_3.4 &
-! green$2_3.5 &
-! red$2_3.5 &
-! green$2_4.5 &
-! red$2_4.5 ) |
-( green$2_2.3 &
+green$2_2.3 &
 red$2_0.3 &
-! green$2_0.1 &
-! red$2_0.1 &
-! green$2_0.2 &
-! red$2_0.2 &
 ! green$2_0.4 &
 ! red$2_0.4 &
 ! green$2_0.5 &
@@ -4130,12 +2898,12 @@ red$2_0.3 &
 ! red$2_3.5 &
 ! green$2_4.5 &
 ! red$2_4.5 ) |
-( green$2_2.3 &
+( green$2_0.1 &
+! red$2_0.1 &
+! green$2_0.2 &
+red$2_0.2 &
+green$2_2.3 &
 red$2_0.4 &
-! green$2_0.1 &
-! red$2_0.1 &
-! green$2_0.2 &
-! red$2_0.2 &
 ! green$2_0.3 &
 ! red$2_0.3 &
 ! green$2_0.5 &
@@ -4158,12 +2926,12 @@ red$2_0.4 &
 ! red$2_3.5 &
 ! green$2_4.5 &
 ! red$2_4.5 ) |
-( green$2_2.3 &
+( green$2_0.1 &
+! red$2_0.1 &
+! green$2_0.2 &
+red$2_0.2 &
+green$2_2.3 &
 red$2_0.5 &
-! green$2_0.1 &
-! red$2_0.1 &
-! green$2_0.2 &
-! red$2_0.2 &
 ! green$2_0.3 &
 ! red$2_0.3 &
 ! green$2_0.4 &
@@ -4186,12 +2954,12 @@ red$2_0.5 &
 ! red$2_3.5 &
 ! green$2_4.5 &
 ! red$2_4.5 ) |
-( green$2_2.3 &
+( green$2_0.1 &
+! red$2_0.1 &
+! green$2_0.2 &
+red$2_0.2 &
+green$2_2.3 &
 red$2_1.2 &
-! green$2_0.1 &
-! red$2_0.1 &
-! green$2_0.2 &
-! red$2_0.2 &
 ! green$2_0.3 &
 ! red$2_0.3 &
 ! green$2_0.4 &
@@ -4214,12 +2982,12 @@ red$2_1.2 &
 ! red$2_3.5 &
 ! green$2_4.5 &
 ! red$2_4.5 ) |
-( green$2_2.3 &
+( green$2_0.1 &
+! red$2_0.1 &
+! green$2_0.2 &
+red$2_0.2 &
+green$2_2.3 &
 red$2_1.3 &
-! green$2_0.1 &
-! red$2_0.1 &
-! green$2_0.2 &
-! red$2_0.2 &
 ! green$2_0.3 &
 ! red$2_0.3 &
 ! green$2_0.4 &
@@ -4242,12 +3010,12 @@ red$2_1.3 &
 ! red$2_3.5 &
 ! green$2_4.5 &
 ! red$2_4.5 ) |
-( green$2_2.3 &
+( green$2_0.1 &
+! red$2_0.1 &
+! green$2_0.2 &
+red$2_0.2 &
+green$2_2.3 &
 red$2_1.4 &
-! green$2_0.1 &
-! red$2_0.1 &
-! green$2_0.2 &
-! red$2_0.2 &
 ! green$2_0.3 &
 ! red$2_0.3 &
 ! green$2_0.4 &
@@ -4270,12 +3038,12 @@ red$2_1.4 &
 ! red$2_3.5 &
 ! green$2_4.5 &
 ! red$2_4.5 ) |
-( green$2_2.3 &
+( green$2_0.1 &
+! red$2_0.1 &
+! green$2_0.2 &
+red$2_0.2 &
+green$2_2.3 &
 red$2_1.5 &
-! green$2_0.1 &
-! red$2_0.1 &
-! green$2_0.2 &
-! red$2_0.2 &
 ! green$2_0.3 &
 ! red$2_0.3 &
 ! green$2_0.4 &
@@ -4298,12 +3066,12 @@ red$2_1.5 &
 ! red$2_3.5 &
 ! green$2_4.5 &
 ! red$2_4.5 ) |
-( green$2_2.3 &
+( green$2_0.1 &
+! red$2_0.1 &
+! green$2_0.2 &
+red$2_0.2 &
+green$2_2.3 &
 red$2_2.4 &
-! green$2_0.1 &
-! red$2_0.1 &
-! green$2_0.2 &
-! red$2_0.2 &
 ! green$2_0.3 &
 ! red$2_0.3 &
 ! green$2_0.4 &
@@ -4326,12 +3094,12 @@ red$2_2.4 &
 ! red$2_3.5 &
 ! green$2_4.5 &
 ! red$2_4.5 ) |
-( green$2_2.3 &
+( green$2_0.1 &
+! red$2_0.1 &
+! green$2_0.2 &
+red$2_0.2 &
+green$2_2.3 &
 red$2_2.5 &
-! green$2_0.1 &
-! red$2_0.1 &
-! green$2_0.2 &
-! red$2_0.2 &
 ! green$2_0.3 &
 ! red$2_0.3 &
 ! green$2_0.4 &
@@ -4354,12 +3122,12 @@ red$2_2.5 &
 ! red$2_3.5 &
 ! green$2_4.5 &
 ! red$2_4.5 ) |
-( green$2_2.3 &
+( green$2_0.1 &
+! red$2_0.1 &
+! green$2_0.2 &
+red$2_0.2 &
+green$2_2.3 &
 red$2_3.4 &
-! green$2_0.1 &
-! red$2_0.1 &
-! green$2_0.2 &
-! red$2_0.2 &
 ! green$2_0.3 &
 ! red$2_0.3 &
 ! green$2_0.4 &
@@ -4382,12 +3150,12 @@ red$2_3.4 &
 ! red$2_3.5 &
 ! green$2_4.5 &
 ! red$2_4.5 ) |
-( green$2_2.3 &
-red$2_3.5 &
-! green$2_0.1 &
+( green$2_0.1 &
 ! red$2_0.1 &
 ! green$2_0.2 &
-! red$2_0.2 &
+red$2_0.2 &
+green$2_2.3 &
+red$2_3.5 &
 ! green$2_0.3 &
 ! red$2_0.3 &
 ! green$2_0.4 &
@@ -4410,12 +3178,12 @@ red$2_3.5 &
 ! red$2_3.4 &
 ! green$2_4.5 &
 ! red$2_4.5 ) |
-( green$2_2.3 &
-red$2_4.5 &
-! green$2_0.1 &
+( green$2_0.1 &
 ! red$2_0.1 &
 ! green$2_0.2 &
-! red$2_0.2 &
+red$2_0.2 &
+green$2_2.3 &
+red$2_4.5 &
 ! green$2_0.3 &
 ! red$2_0.3 &
 ! green$2_0.4 &
@@ -4438,68 +3206,12 @@ red$2_4.5 &
 ! red$2_3.4 &
 ! green$2_3.5 &
 ! red$2_3.5 ) |
-( green$2_2.4 &
-red$2_0.1 &
+( green$2_0.1 &
+! red$2_0.1 &
 ! green$2_0.2 &
-! red$2_0.2 &
-! green$2_0.3 &
-! red$2_0.3 &
-! green$2_0.4 &
-! red$2_0.4 &
-! green$2_0.5 &
-! red$2_0.5 &
-! green$2_1.2 &
-! red$2_1.2 &
-! green$2_1.3 &
-! red$2_1.3 &
-! green$2_1.4 &
-! red$2_1.4 &
-! green$2_1.5 &
-! red$2_1.5 &
-! green$2_2.3 &
-! red$2_2.3 &
-! green$2_2.5 &
-! red$2_2.5 &
-! green$2_3.4 &
-! red$2_3.4 &
-! green$2_3.5 &
-! red$2_3.5 &
-! green$2_4.5 &
-! red$2_4.5 ) |
-( green$2_2.4 &
 red$2_0.2 &
-! green$2_0.1 &
-! red$2_0.1 &
-! green$2_0.3 &
-! red$2_0.3 &
-! green$2_0.4 &
-! red$2_0.4 &
-! green$2_0.5 &
-! red$2_0.5 &
-! green$2_1.2 &
-! red$2_1.2 &
-! green$2_1.3 &
-! red$2_1.3 &
-! green$2_1.4 &
-! red$2_1.4 &
-! green$2_1.5 &
-! red$2_1.5 &
-! green$2_2.3 &
-! red$2_2.3 &
-! green$2_2.5 &
-! red$2_2.5 &
-! green$2_3.4 &
-! red$2_3.4 &
-! green$2_3.5 &
-! red$2_3.5 &
-! green$2_4.5 &
-! red$2_4.5 ) |
-( green$2_2.4 &
+green$2_2.4 &
 red$2_0.3 &
-! green$2_0.1 &
-! red$2_0.1 &
-! green$2_0.2 &
-! red$2_0.2 &
 ! green$2_0.4 &
 ! red$2_0.4 &
 ! green$2_0.5 &
@@ -4522,12 +3234,12 @@ red$2_0.3 &
 ! red$2_3.5 &
 ! green$2_4.5 &
 ! red$2_4.5 ) |
-( green$2_2.4 &
+( green$2_0.1 &
+! red$2_0.1 &
+! green$2_0.2 &
+red$2_0.2 &
+green$2_2.4 &
 red$2_0.4 &
-! green$2_0.1 &
-! red$2_0.1 &
-! green$2_0.2 &
-! red$2_0.2 &
 ! green$2_0.3 &
 ! red$2_0.3 &
 ! green$2_0.5 &
@@ -4550,12 +3262,12 @@ red$2_0.4 &
 ! red$2_3.5 &
 ! green$2_4.5 &
 ! red$2_4.5 ) |
-( green$2_2.4 &
+( green$2_0.1 &
+! red$2_0.1 &
+! green$2_0.2 &
+red$2_0.2 &
+green$2_2.4 &
 red$2_0.5 &
-! green$2_0.1 &
-! red$2_0.1 &
-! green$2_0.2 &
-! red$2_0.2 &
 ! green$2_0.3 &
 ! red$2_0.3 &
 ! green$2_0.4 &
@@ -4578,12 +3290,12 @@ red$2_0.5 &
 ! red$2_3.5 &
 ! green$2_4.5 &
 ! red$2_4.5 ) |
-( green$2_2.4 &
+( green$2_0.1 &
+! red$2_0.1 &
+! green$2_0.2 &
+red$2_0.2 &
+green$2_2.4 &
 red$2_1.2 &
-! green$2_0.1 &
-! red$2_0.1 &
-! green$2_0.2 &
-! red$2_0.2 &
 ! green$2_0.3 &
 ! red$2_0.3 &
 ! green$2_0.4 &
@@ -4606,12 +3318,12 @@ red$2_1.2 &
 ! red$2_3.5 &
 ! green$2_4.5 &
 ! red$2_4.5 ) |
-( green$2_2.4 &
+( green$2_0.1 &
+! red$2_0.1 &
+! green$2_0.2 &
+red$2_0.2 &
+green$2_2.4 &
 red$2_1.3 &
-! green$2_0.1 &
-! red$2_0.1 &
-! green$2_0.2 &
-! red$2_0.2 &
 ! green$2_0.3 &
 ! red$2_0.3 &
 ! green$2_0.4 &
@@ -4634,12 +3346,12 @@ red$2_1.3 &
 ! red$2_3.5 &
 ! green$2_4.5 &
 ! red$2_4.5 ) |
-( green$2_2.4 &
+( green$2_0.1 &
+! red$2_0.1 &
+! green$2_0.2 &
+red$2_0.2 &
+green$2_2.4 &
 red$2_1.4 &
-! green$2_0.1 &
-! red$2_0.1 &
-! green$2_0.2 &
-! red$2_0.2 &
 ! green$2_0.3 &
 ! red$2_0.3 &
 ! green$2_0.4 &
@@ -4662,12 +3374,12 @@ red$2_1.4 &
 ! red$2_3.5 &
 ! green$2_4.5 &
 ! red$2_4.5 ) |
-( green$2_2.4 &
+( green$2_0.1 &
+! red$2_0.1 &
+! green$2_0.2 &
+red$2_0.2 &
+green$2_2.4 &
 red$2_1.5 &
-! green$2_0.1 &
-! red$2_0.1 &
-! green$2_0.2 &
-! red$2_0.2 &
 ! green$2_0.3 &
 ! red$2_0.3 &
 ! green$2_0.4 &
@@ -4690,12 +3402,12 @@ red$2_1.5 &
 ! red$2_3.5 &
 ! green$2_4.5 &
 ! red$2_4.5 ) |
-( green$2_2.4 &
+( green$2_0.1 &
+! red$2_0.1 &
+! green$2_0.2 &
+red$2_0.2 &
+green$2_2.4 &
 red$2_2.3 &
-! green$2_0.1 &
-! red$2_0.1 &
-! green$2_0.2 &
-! red$2_0.2 &
 ! green$2_0.3 &
 ! red$2_0.3 &
 ! green$2_0.4 &
@@ -4718,12 +3430,12 @@ red$2_2.3 &
 ! red$2_3.5 &
 ! green$2_4.5 &
 ! red$2_4.5 ) |
-( green$2_2.4 &
+( green$2_0.1 &
+! red$2_0.1 &
+! green$2_0.2 &
+red$2_0.2 &
+green$2_2.4 &
 red$2_2.5 &
-! green$2_0.1 &
-! red$2_0.1 &
-! green$2_0.2 &
-! red$2_0.2 &
 ! green$2_0.3 &
 ! red$2_0.3 &
 ! green$2_0.4 &
@@ -4746,12 +3458,12 @@ red$2_2.5 &
 ! red$2_3.5 &
 ! green$2_4.5 &
 ! red$2_4.5 ) |
-( green$2_2.4 &
+( green$2_0.1 &
+! red$2_0.1 &
+! green$2_0.2 &
+red$2_0.2 &
+green$2_2.4 &
 red$2_3.4 &
-! green$2_0.1 &
-! red$2_0.1 &
-! green$2_0.2 &
-! red$2_0.2 &
 ! green$2_0.3 &
 ! red$2_0.3 &
 ! green$2_0.4 &
@@ -4774,12 +3486,12 @@ red$2_3.4 &
 ! red$2_3.5 &
 ! green$2_4.5 &
 ! red$2_4.5 ) |
-( green$2_2.4 &
-red$2_3.5 &
-! green$2_0.1 &
+( green$2_0.1 &
 ! red$2_0.1 &
 ! green$2_0.2 &
-! red$2_0.2 &
+red$2_0.2 &
+green$2_2.4 &
+red$2_3.5 &
 ! green$2_0.3 &
 ! red$2_0.3 &
 ! green$2_0.4 &
@@ -4802,12 +3514,12 @@ red$2_3.5 &
 ! red$2_3.4 &
 ! green$2_4.5 &
 ! red$2_4.5 ) |
-( green$2_2.4 &
-red$2_4.5 &
-! green$2_0.1 &
+( green$2_0.1 &
 ! red$2_0.1 &
 ! green$2_0.2 &
-! red$2_0.2 &
+red$2_0.2 &
+green$2_2.4 &
+red$2_4.5 &
 ! green$2_0.3 &
 ! red$2_0.3 &
 ! green$2_0.4 &
@@ -4830,68 +3542,12 @@ red$2_4.5 &
 ! red$2_3.4 &
 ! green$2_3.5 &
 ! red$2_3.5 ) |
-( green$2_2.5 &
-red$2_0.1 &
+( green$2_0.1 &
+! red$2_0.1 &
 ! green$2_0.2 &
-! red$2_0.2 &
-! green$2_0.3 &
-! red$2_0.3 &
-! green$2_0.4 &
-! red$2_0.4 &
-! green$2_0.5 &
-! red$2_0.5 &
-! green$2_1.2 &
-! red$2_1.2 &
-! green$2_1.3 &
-! red$2_1.3 &
-! green$2_1.4 &
-! red$2_1.4 &
-! green$2_1.5 &
-! red$2_1.5 &
-! green$2_2.3 &
-! red$2_2.3 &
-! green$2_2.4 &
-! red$2_2.4 &
-! green$2_3.4 &
-! red$2_3.4 &
-! green$2_3.5 &
-! red$2_3.5 &
-! green$2_4.5 &
-! red$2_4.5 ) |
-( green$2_2.5 &
 red$2_0.2 &
-! green$2_0.1 &
-! red$2_0.1 &
-! green$2_0.3 &
-! red$2_0.3 &
-! green$2_0.4 &
-! red$2_0.4 &
-! green$2_0.5 &
-! red$2_0.5 &
-! green$2_1.2 &
-! red$2_1.2 &
-! green$2_1.3 &
-! red$2_1.3 &
-! green$2_1.4 &
-! red$2_1.4 &
-! green$2_1.5 &
-! red$2_1.5 &
-! green$2_2.3 &
-! red$2_2.3 &
-! green$2_2.4 &
-! red$2_2.4 &
-! green$2_3.4 &
-! red$2_3.4 &
-! green$2_3.5 &
-! red$2_3.5 &
-! green$2_4.5 &
-! red$2_4.5 ) |
-( green$2_2.5 &
+green$2_2.5 &
 red$2_0.3 &
-! green$2_0.1 &
-! red$2_0.1 &
-! green$2_0.2 &
-! red$2_0.2 &
 ! green$2_0.4 &
 ! red$2_0.4 &
 ! green$2_0.5 &
@@ -4914,12 +3570,12 @@ red$2_0.3 &
 ! red$2_3.5 &
 ! green$2_4.5 &
 ! red$2_4.5 ) |
-( green$2_2.5 &
+( green$2_0.1 &
+! red$2_0.1 &
+! green$2_0.2 &
+red$2_0.2 &
+green$2_2.5 &
 red$2_0.4 &
-! green$2_0.1 &
-! red$2_0.1 &
-! green$2_0.2 &
-! red$2_0.2 &
 ! green$2_0.3 &
 ! red$2_0.3 &
 ! green$2_0.5 &
@@ -4942,12 +3598,12 @@ red$2_0.4 &
 ! red$2_3.5 &
 ! green$2_4.5 &
 ! red$2_4.5 ) |
-( green$2_2.5 &
+( green$2_0.1 &
+! red$2_0.1 &
+! green$2_0.2 &
+red$2_0.2 &
+green$2_2.5 &
 red$2_0.5 &
-! green$2_0.1 &
-! red$2_0.1 &
-! green$2_0.2 &
-! red$2_0.2 &
 ! green$2_0.3 &
 ! red$2_0.3 &
 ! green$2_0.4 &
@@ -4970,12 +3626,12 @@ red$2_0.5 &
 ! red$2_3.5 &
 ! green$2_4.5 &
 ! red$2_4.5 ) |
-( green$2_2.5 &
+( green$2_0.1 &
+! red$2_0.1 &
+! green$2_0.2 &
+red$2_0.2 &
+green$2_2.5 &
 red$2_1.2 &
-! green$2_0.1 &
-! red$2_0.1 &
-! green$2_0.2 &
-! red$2_0.2 &
 ! green$2_0.3 &
 ! red$2_0.3 &
 ! green$2_0.4 &
@@ -4998,12 +3654,12 @@ red$2_1.2 &
 ! red$2_3.5 &
 ! green$2_4.5 &
 ! red$2_4.5 ) |
-( green$2_2.5 &
+( green$2_0.1 &
+! red$2_0.1 &
+! green$2_0.2 &
+red$2_0.2 &
+green$2_2.5 &
 red$2_1.3 &
-! green$2_0.1 &
-! red$2_0.1 &
-! green$2_0.2 &
-! red$2_0.2 &
 ! green$2_0.3 &
 ! red$2_0.3 &
 ! green$2_0.4 &
@@ -5026,12 +3682,12 @@ red$2_1.3 &
 ! red$2_3.5 &
 ! green$2_4.5 &
 ! red$2_4.5 ) |
-( green$2_2.5 &
+( green$2_0.1 &
+! red$2_0.1 &
+! green$2_0.2 &
+red$2_0.2 &
+green$2_2.5 &
 red$2_1.4 &
-! green$2_0.1 &
-! red$2_0.1 &
-! green$2_0.2 &
-! red$2_0.2 &
 ! green$2_0.3 &
 ! red$2_0.3 &
 ! green$2_0.4 &
@@ -5054,12 +3710,12 @@ red$2_1.4 &
 ! red$2_3.5 &
 ! green$2_4.5 &
 ! red$2_4.5 ) |
-( green$2_2.5 &
+( green$2_0.1 &
+! red$2_0.1 &
+! green$2_0.2 &
+red$2_0.2 &
+green$2_2.5 &
 red$2_1.5 &
-! green$2_0.1 &
-! red$2_0.1 &
-! green$2_0.2 &
-! red$2_0.2 &
 ! green$2_0.3 &
 ! red$2_0.3 &
 ! green$2_0.4 &
@@ -5082,12 +3738,12 @@ red$2_1.5 &
 ! red$2_3.5 &
 ! green$2_4.5 &
 ! red$2_4.5 ) |
-( green$2_2.5 &
+( green$2_0.1 &
+! red$2_0.1 &
+! green$2_0.2 &
+red$2_0.2 &
+green$2_2.5 &
 red$2_2.3 &
-! green$2_0.1 &
-! red$2_0.1 &
-! green$2_0.2 &
-! red$2_0.2 &
 ! green$2_0.3 &
 ! red$2_0.3 &
 ! green$2_0.4 &
@@ -5110,12 +3766,12 @@ red$2_2.3 &
 ! red$2_3.5 &
 ! green$2_4.5 &
 ! red$2_4.5 ) |
-( green$2_2.5 &
+( green$2_0.1 &
+! red$2_0.1 &
+! green$2_0.2 &
+red$2_0.2 &
+green$2_2.5 &
 red$2_2.4 &
-! green$2_0.1 &
-! red$2_0.1 &
-! green$2_0.2 &
-! red$2_0.2 &
 ! green$2_0.3 &
 ! red$2_0.3 &
 ! green$2_0.4 &
@@ -5138,12 +3794,12 @@ red$2_2.4 &
 ! red$2_3.5 &
 ! green$2_4.5 &
 ! red$2_4.5 ) |
-( green$2_2.5 &
+( green$2_0.1 &
+! red$2_0.1 &
+! green$2_0.2 &
+red$2_0.2 &
+green$2_2.5 &
 red$2_3.4 &
-! green$2_0.1 &
-! red$2_0.1 &
-! green$2_0.2 &
-! red$2_0.2 &
 ! green$2_0.3 &
 ! red$2_0.3 &
 ! green$2_0.4 &
@@ -5166,12 +3822,12 @@ red$2_3.4 &
 ! red$2_3.5 &
 ! green$2_4.5 &
 ! red$2_4.5 ) |
-( green$2_2.5 &
-red$2_3.5 &
-! green$2_0.1 &
+( green$2_0.1 &
 ! red$2_0.1 &
 ! green$2_0.2 &
-! red$2_0.2 &
+red$2_0.2 &
+green$2_2.5 &
+red$2_3.5 &
 ! green$2_0.3 &
 ! red$2_0.3 &
 ! green$2_0.4 &
@@ -5194,12 +3850,12 @@ red$2_3.5 &
 ! red$2_3.4 &
 ! green$2_4.5 &
 ! red$2_4.5 ) |
-( green$2_2.5 &
-red$2_4.5 &
-! green$2_0.1 &
+( green$2_0.1 &
 ! red$2_0.1 &
 ! green$2_0.2 &
-! red$2_0.2 &
+red$2_0.2 &
+green$2_2.5 &
+red$2_4.5 &
 ! green$2_0.3 &
 ! red$2_0.3 &
 ! green$2_0.4 &
@@ -5222,68 +3878,12 @@ red$2_4.5 &
 ! red$2_3.4 &
 ! green$2_3.5 &
 ! red$2_3.5 ) |
-( green$2_3.4 &
-red$2_0.1 &
+( green$2_0.1 &
+! red$2_0.1 &
 ! green$2_0.2 &
-! red$2_0.2 &
-! green$2_0.3 &
-! red$2_0.3 &
-! green$2_0.4 &
-! red$2_0.4 &
-! green$2_0.5 &
-! red$2_0.5 &
-! green$2_1.2 &
-! red$2_1.2 &
-! green$2_1.3 &
-! red$2_1.3 &
-! green$2_1.4 &
-! red$2_1.4 &
-! green$2_1.5 &
-! red$2_1.5 &
-! green$2_2.3 &
-! red$2_2.3 &
-! green$2_2.4 &
-! red$2_2.4 &
-! green$2_2.5 &
-! red$2_2.5 &
-! green$2_3.5 &
-! red$2_3.5 &
-! green$2_4.5 &
-! red$2_4.5 ) |
-( green$2_3.4 &
 red$2_0.2 &
-! green$2_0.1 &
-! red$2_0.1 &
-! green$2_0.3 &
-! red$2_0.3 &
-! green$2_0.4 &
-! red$2_0.4 &
-! green$2_0.5 &
-! red$2_0.5 &
-! green$2_1.2 &
-! red$2_1.2 &
-! green$2_1.3 &
-! red$2_1.3 &
-! green$2_1.4 &
-! red$2_1.4 &
-! green$2_1.5 &
-! red$2_1.5 &
-! green$2_2.3 &
-! red$2_2.3 &
-! green$2_2.4 &
-! red$2_2.4 &
-! green$2_2.5 &
-! red$2_2.5 &
-! green$2_3.5 &
-! red$2_3.5 &
-! green$2_4.5 &
-! red$2_4.5 ) |
-( green$2_3.4 &
+green$2_3.4 &
 red$2_0.3 &
-! green$2_0.1 &
-! red$2_0.1 &
-! green$2_0.2 &
-! red$2_0.2 &
 ! green$2_0.4 &
 ! red$2_0.4 &
 ! green$2_0.5 &
@@ -5306,12 +3906,12 @@ red$2_0.3 &
 ! red$2_3.5 &
 ! green$2_4.5 &
 ! red$2_4.5 ) |
-( green$2_3.4 &
+( green$2_0.1 &
+! red$2_0.1 &
+! green$2_0.2 &
+red$2_0.2 &
+green$2_3.4 &
 red$2_0.4 &
-! green$2_0.1 &
-! red$2_0.1 &
-! green$2_0.2 &
-! red$2_0.2 &
 ! green$2_0.3 &
 ! red$2_0.3 &
 ! green$2_0.5 &
@@ -5334,12 +3934,12 @@ red$2_0.4 &
 ! red$2_3.5 &
 ! green$2_4.5 &
 ! red$2_4.5 ) |
-( green$2_3.4 &
+( green$2_0.1 &
+! red$2_0.1 &
+! green$2_0.2 &
+red$2_0.2 &
+green$2_3.4 &
 red$2_0.5 &
-! green$2_0.1 &
-! red$2_0.1 &
-! green$2_0.2 &
-! red$2_0.2 &
 ! green$2_0.3 &
 ! red$2_0.3 &
 ! green$2_0.4 &
@@ -5362,12 +3962,12 @@ red$2_0.5 &
 ! red$2_3.5 &
 ! green$2_4.5 &
 ! red$2_4.5 ) |
-( green$2_3.4 &
+( green$2_0.1 &
+! red$2_0.1 &
+! green$2_0.2 &
+red$2_0.2 &
+green$2_3.4 &
 red$2_1.2 &
-! green$2_0.1 &
-! red$2_0.1 &
-! green$2_0.2 &
-! red$2_0.2 &
 ! green$2_0.3 &
 ! red$2_0.3 &
 ! green$2_0.4 &
@@ -5390,12 +3990,12 @@ red$2_1.2 &
 ! red$2_3.5 &
 ! green$2_4.5 &
 ! red$2_4.5 ) |
-( green$2_3.4 &
+( green$2_0.1 &
+! red$2_0.1 &
+! green$2_0.2 &
+red$2_0.2 &
+green$2_3.4 &
 red$2_1.3 &
-! green$2_0.1 &
-! red$2_0.1 &
-! green$2_0.2 &
-! red$2_0.2 &
 ! green$2_0.3 &
 ! red$2_0.3 &
 ! green$2_0.4 &
@@ -5418,12 +4018,12 @@ red$2_1.3 &
 ! red$2_3.5 &
 ! green$2_4.5 &
 ! red$2_4.5 ) |
-( green$2_3.4 &
+( green$2_0.1 &
+! red$2_0.1 &
+! green$2_0.2 &
+red$2_0.2 &
+green$2_3.4 &
 red$2_1.4 &
-! green$2_0.1 &
-! red$2_0.1 &
-! green$2_0.2 &
-! red$2_0.2 &
 ! green$2_0.3 &
 ! red$2_0.3 &
 ! green$2_0.4 &
@@ -5446,12 +4046,12 @@ red$2_1.4 &
 ! red$2_3.5 &
 ! green$2_4.5 &
 ! red$2_4.5 ) |
-( green$2_3.4 &
+( green$2_0.1 &
+! red$2_0.1 &
+! green$2_0.2 &
+red$2_0.2 &
+green$2_3.4 &
 red$2_1.5 &
-! green$2_0.1 &
-! red$2_0.1 &
-! green$2_0.2 &
-! red$2_0.2 &
 ! green$2_0.3 &
 ! red$2_0.3 &
 ! green$2_0.4 &
@@ -5474,12 +4074,12 @@ red$2_1.5 &
 ! red$2_3.5 &
 ! green$2_4.5 &
 ! red$2_4.5 ) |
-( green$2_3.4 &
+( green$2_0.1 &
+! red$2_0.1 &
+! green$2_0.2 &
+red$2_0.2 &
+green$2_3.4 &
 red$2_2.3 &
-! green$2_0.1 &
-! red$2_0.1 &
-! green$2_0.2 &
-! red$2_0.2 &
 ! green$2_0.3 &
 ! red$2_0.3 &
 ! green$2_0.4 &
@@ -5502,12 +4102,12 @@ red$2_2.3 &
 ! red$2_3.5 &
 ! green$2_4.5 &
 ! red$2_4.5 ) |
-( green$2_3.4 &
+( green$2_0.1 &
+! red$2_0.1 &
+! green$2_0.2 &
+red$2_0.2 &
+green$2_3.4 &
 red$2_2.4 &
-! green$2_0.1 &
-! red$2_0.1 &
-! green$2_0.2 &
-! red$2_0.2 &
 ! green$2_0.3 &
 ! red$2_0.3 &
 ! green$2_0.4 &
@@ -5530,12 +4130,12 @@ red$2_2.4 &
 ! red$2_3.5 &
 ! green$2_4.5 &
 ! red$2_4.5 ) |
-( green$2_3.4 &
+( green$2_0.1 &
+! red$2_0.1 &
+! green$2_0.2 &
+red$2_0.2 &
+green$2_3.4 &
 red$2_2.5 &
-! green$2_0.1 &
-! red$2_0.1 &
-! green$2_0.2 &
-! red$2_0.2 &
 ! green$2_0.3 &
 ! red$2_0.3 &
 ! green$2_0.4 &
@@ -5558,12 +4158,12 @@ red$2_2.5 &
 ! red$2_3.5 &
 ! green$2_4.5 &
 ! red$2_4.5 ) |
-( green$2_3.4 &
-red$2_3.5 &
-! green$2_0.1 &
+( green$2_0.1 &
 ! red$2_0.1 &
 ! green$2_0.2 &
-! red$2_0.2 &
+red$2_0.2 &
+green$2_3.4 &
+red$2_3.5 &
 ! green$2_0.3 &
 ! red$2_0.3 &
 ! green$2_0.4 &
@@ -5586,12 +4186,12 @@ red$2_3.5 &
 ! red$2_2.5 &
 ! green$2_4.5 &
 ! red$2_4.5 ) |
-( green$2_3.4 &
-red$2_4.5 &
-! green$2_0.1 &
+( green$2_0.1 &
 ! red$2_0.1 &
 ! green$2_0.2 &
-! red$2_0.2 &
+red$2_0.2 &
+green$2_3.4 &
+red$2_4.5 &
 ! green$2_0.3 &
 ! red$2_0.3 &
 ! green$2_0.4 &
@@ -5614,68 +4214,12 @@ red$2_4.5 &
 ! red$2_2.5 &
 ! green$2_3.5 &
 ! red$2_3.5 ) |
-( green$2_3.5 &
-red$2_0.1 &
+( green$2_0.1 &
+! red$2_0.1 &
 ! green$2_0.2 &
-! red$2_0.2 &
-! green$2_0.3 &
-! red$2_0.3 &
-! green$2_0.4 &
-! red$2_0.4 &
-! green$2_0.5 &
-! red$2_0.5 &
-! green$2_1.2 &
-! red$2_1.2 &
-! green$2_1.3 &
-! red$2_1.3 &
-! green$2_1.4 &
-! red$2_1.4 &
-! green$2_1.5 &
-! red$2_1.5 &
-! green$2_2.3 &
-! red$2_2.3 &
-! green$2_2.4 &
-! red$2_2.4 &
-! green$2_2.5 &
-! red$2_2.5 &
-! green$2_3.4 &
-! red$2_3.4 &
-! green$2_4.5 &
-! red$2_4.5 ) |
-( green$2_3.5 &
 red$2_0.2 &
-! green$2_0.1 &
-! red$2_0.1 &
-! green$2_0.3 &
-! red$2_0.3 &
-! green$2_0.4 &
-! red$2_0.4 &
-! green$2_0.5 &
-! red$2_0.5 &
-! green$2_1.2 &
-! red$2_1.2 &
-! green$2_1.3 &
-! red$2_1.3 &
-! green$2_1.4 &
-! red$2_1.4 &
-! green$2_1.5 &
-! red$2_1.5 &
-! green$2_2.3 &
-! red$2_2.3 &
-! green$2_2.4 &
-! red$2_2.4 &
-! green$2_2.5 &
-! red$2_2.5 &
-! green$2_3.4 &
-! red$2_3.4 &
-! green$2_4.5 &
-! red$2_4.5 ) |
-( green$2_3.5 &
+green$2_3.5 &
 red$2_0.3 &
-! green$2_0.1 &
-! red$2_0.1 &
-! green$2_0.2 &
-! red$2_0.2 &
 ! green$2_0.4 &
 ! red$2_0.4 &
 ! green$2_0.5 &
@@ -5698,12 +4242,12 @@ red$2_0.3 &
 ! red$2_3.4 &
 ! green$2_4.5 &
 ! red$2_4.5 ) |
-( green$2_3.5 &
+( green$2_0.1 &
+! red$2_0.1 &
+! green$2_0.2 &
+red$2_0.2 &
+green$2_3.5 &
 red$2_0.4 &
-! green$2_0.1 &
-! red$2_0.1 &
-! green$2_0.2 &
-! red$2_0.2 &
 ! green$2_0.3 &
 ! red$2_0.3 &
 ! green$2_0.5 &
@@ -5726,12 +4270,12 @@ red$2_0.4 &
 ! red$2_3.4 &
 ! green$2_4.5 &
 ! red$2_4.5 ) |
-( green$2_3.5 &
+( green$2_0.1 &
+! red$2_0.1 &
+! green$2_0.2 &
+red$2_0.2 &
+green$2_3.5 &
 red$2_0.5 &
-! green$2_0.1 &
-! red$2_0.1 &
-! green$2_0.2 &
-! red$2_0.2 &
 ! green$2_0.3 &
 ! red$2_0.3 &
 ! green$2_0.4 &
@@ -5754,12 +4298,12 @@ red$2_0.5 &
 ! red$2_3.4 &
 ! green$2_4.5 &
 ! red$2_4.5 ) |
-( green$2_3.5 &
+( green$2_0.1 &
+! red$2_0.1 &
+! green$2_0.2 &
+red$2_0.2 &
+green$2_3.5 &
 red$2_1.2 &
-! green$2_0.1 &
-! red$2_0.1 &
-! green$2_0.2 &
-! red$2_0.2 &
 ! green$2_0.3 &
 ! red$2_0.3 &
 ! green$2_0.4 &
@@ -5782,12 +4326,12 @@ red$2_1.2 &
 ! red$2_3.4 &
 ! green$2_4.5 &
 ! red$2_4.5 ) |
-( green$2_3.5 &
+( green$2_0.1 &
+! red$2_0.1 &
+! green$2_0.2 &
+red$2_0.2 &
+green$2_3.5 &
 red$2_1.3 &
-! green$2_0.1 &
-! red$2_0.1 &
-! green$2_0.2 &
-! red$2_0.2 &
 ! green$2_0.3 &
 ! red$2_0.3 &
 ! green$2_0.4 &
@@ -5810,12 +4354,12 @@ red$2_1.3 &
 ! red$2_3.4 &
 ! green$2_4.5 &
 ! red$2_4.5 ) |
-( green$2_3.5 &
+( green$2_0.1 &
+! red$2_0.1 &
+! green$2_0.2 &
+red$2_0.2 &
+green$2_3.5 &
 red$2_1.4 &
-! green$2_0.1 &
-! red$2_0.1 &
-! green$2_0.2 &
-! red$2_0.2 &
 ! green$2_0.3 &
 ! red$2_0.3 &
 ! green$2_0.4 &
@@ -5838,12 +4382,12 @@ red$2_1.4 &
 ! red$2_3.4 &
 ! green$2_4.5 &
 ! red$2_4.5 ) |
-( green$2_3.5 &
+( green$2_0.1 &
+! red$2_0.1 &
+! green$2_0.2 &
+red$2_0.2 &
+green$2_3.5 &
 red$2_1.5 &
-! green$2_0.1 &
-! red$2_0.1 &
-! green$2_0.2 &
-! red$2_0.2 &
 ! green$2_0.3 &
 ! red$2_0.3 &
 ! green$2_0.4 &
@@ -5866,12 +4410,12 @@ red$2_1.5 &
 ! red$2_3.4 &
 ! green$2_4.5 &
 ! red$2_4.5 ) |
-( green$2_3.5 &
+( green$2_0.1 &
+! red$2_0.1 &
+! green$2_0.2 &
+red$2_0.2 &
+green$2_3.5 &
 red$2_2.3 &
-! green$2_0.1 &
-! red$2_0.1 &
-! green$2_0.2 &
-! red$2_0.2 &
 ! green$2_0.3 &
 ! red$2_0.3 &
 ! green$2_0.4 &
@@ -5894,12 +4438,12 @@ red$2_2.3 &
 ! red$2_3.4 &
 ! green$2_4.5 &
 ! red$2_4.5 ) |
-( green$2_3.5 &
+( green$2_0.1 &
+! red$2_0.1 &
+! green$2_0.2 &
+red$2_0.2 &
+green$2_3.5 &
 red$2_2.4 &
-! green$2_0.1 &
-! red$2_0.1 &
-! green$2_0.2 &
-! red$2_0.2 &
 ! green$2_0.3 &
 ! red$2_0.3 &
 ! green$2_0.4 &
@@ -5922,12 +4466,12 @@ red$2_2.4 &
 ! red$2_3.4 &
 ! green$2_4.5 &
 ! red$2_4.5 ) |
-( green$2_3.5 &
+( green$2_0.1 &
+! red$2_0.1 &
+! green$2_0.2 &
+red$2_0.2 &
+green$2_3.5 &
 red$2_2.5 &
-! green$2_0.1 &
-! red$2_0.1 &
-! green$2_0.2 &
-! red$2_0.2 &
 ! green$2_0.3 &
 ! red$2_0.3 &
 ! green$2_0.4 &
@@ -5950,12 +4494,12 @@ red$2_2.5 &
 ! red$2_3.4 &
 ! green$2_4.5 &
 ! red$2_4.5 ) |
-( green$2_3.5 &
-red$2_3.4 &
-! green$2_0.1 &
+( green$2_0.1 &
 ! red$2_0.1 &
 ! green$2_0.2 &
-! red$2_0.2 &
+red$2_0.2 &
+green$2_3.5 &
+red$2_3.4 &
 ! green$2_0.3 &
 ! red$2_0.3 &
 ! green$2_0.4 &
@@ -5978,12 +4522,12 @@ red$2_3.4 &
 ! red$2_2.5 &
 ! green$2_4.5 &
 ! red$2_4.5 ) |
-( green$2_3.5 &
-red$2_4.5 &
-! green$2_0.1 &
+( green$2_0.1 &
 ! red$2_0.1 &
 ! green$2_0.2 &
-! red$2_0.2 &
+red$2_0.2 &
+green$2_3.5 &
+red$2_4.5 &
 ! green$2_0.3 &
 ! red$2_0.3 &
 ! green$2_0.4 &
@@ -6006,68 +4550,12 @@ red$2_4.5 &
 ! red$2_2.5 &
 ! green$2_3.4 &
 ! red$2_3.4 ) |
-( green$2_4.5 &
-red$2_0.1 &
+( green$2_0.1 &
+! red$2_0.1 &
 ! green$2_0.2 &
-! red$2_0.2 &
-! green$2_0.3 &
-! red$2_0.3 &
-! green$2_0.4 &
-! red$2_0.4 &
-! green$2_0.5 &
-! red$2_0.5 &
-! green$2_1.2 &
-! red$2_1.2 &
-! green$2_1.3 &
-! red$2_1.3 &
-! green$2_1.4 &
-! red$2_1.4 &
-! green$2_1.5 &
-! red$2_1.5 &
-! green$2_2.3 &
-! red$2_2.3 &
-! green$2_2.4 &
-! red$2_2.4 &
-! green$2_2.5 &
-! red$2_2.5 &
-! green$2_3.4 &
-! red$2_3.4 &
-! green$2_3.5 &
-! red$2_3.5 ) |
-( green$2_4.5 &
 red$2_0.2 &
-! green$2_0.1 &
-! red$2_0.1 &
-! green$2_0.3 &
-! red$2_0.3 &
-! green$2_0.4 &
-! red$2_0.4 &
-! green$2_0.5 &
-! red$2_0.5 &
-! green$2_1.2 &
-! red$2_1.2 &
-! green$2_1.3 &
-! red$2_1.3 &
-! green$2_1.4 &
-! red$2_1.4 &
-! green$2_1.5 &
-! red$2_1.5 &
-! green$2_2.3 &
-! red$2_2.3 &
-! green$2_2.4 &
-! red$2_2.4 &
-! green$2_2.5 &
-! red$2_2.5 &
-! green$2_3.4 &
-! red$2_3.4 &
-! green$2_3.5 &
-! red$2_3.5 ) |
-( green$2_4.5 &
+green$2_4.5 &
 red$2_0.3 &
-! green$2_0.1 &
-! red$2_0.1 &
-! green$2_0.2 &
-! red$2_0.2 &
 ! green$2_0.4 &
 ! red$2_0.4 &
 ! green$2_0.5 &
@@ -6090,12 +4578,12 @@ red$2_0.3 &
 ! red$2_3.4 &
 ! green$2_3.5 &
 ! red$2_3.5 ) |
-( green$2_4.5 &
+( green$2_0.1 &
+! red$2_0.1 &
+! green$2_0.2 &
+red$2_0.2 &
+green$2_4.5 &
 red$2_0.4 &
-! green$2_0.1 &
-! red$2_0.1 &
-! green$2_0.2 &
-! red$2_0.2 &
 ! green$2_0.3 &
 ! red$2_0.3 &
 ! green$2_0.5 &
@@ -6118,12 +4606,12 @@ red$2_0.4 &
 ! red$2_3.4 &
 ! green$2_3.5 &
 ! red$2_3.5 ) |
-( green$2_4.5 &
+( green$2_0.1 &
+! red$2_0.1 &
+! green$2_0.2 &
+red$2_0.2 &
+green$2_4.5 &
 red$2_0.5 &
-! green$2_0.1 &
-! red$2_0.1 &
-! green$2_0.2 &
-! red$2_0.2 &
 ! green$2_0.3 &
 ! red$2_0.3 &
 ! green$2_0.4 &
@@ -6146,12 +4634,12 @@ red$2_0.5 &
 ! red$2_3.4 &
 ! green$2_3.5 &
 ! red$2_3.5 ) |
-( green$2_4.5 &
+( green$2_0.1 &
+! red$2_0.1 &
+! green$2_0.2 &
+red$2_0.2 &
+green$2_4.5 &
 red$2_1.2 &
-! green$2_0.1 &
-! red$2_0.1 &
-! green$2_0.2 &
-! red$2_0.2 &
 ! green$2_0.3 &
 ! red$2_0.3 &
 ! green$2_0.4 &
@@ -6174,12 +4662,12 @@ red$2_1.2 &
 ! red$2_3.4 &
 ! green$2_3.5 &
 ! red$2_3.5 ) |
-( green$2_4.5 &
+( green$2_0.1 &
+! red$2_0.1 &
+! green$2_0.2 &
+red$2_0.2 &
+green$2_4.5 &
 red$2_1.3 &
-! green$2_0.1 &
-! red$2_0.1 &
-! green$2_0.2 &
-! red$2_0.2 &
 ! green$2_0.3 &
 ! red$2_0.3 &
 ! green$2_0.4 &
@@ -6202,12 +4690,12 @@ red$2_1.3 &
 ! red$2_3.4 &
 ! green$2_3.5 &
 ! red$2_3.5 ) |
-( green$2_4.5 &
+( green$2_0.1 &
+! red$2_0.1 &
+! green$2_0.2 &
+red$2_0.2 &
+green$2_4.5 &
 red$2_1.4 &
-! green$2_0.1 &
-! red$2_0.1 &
-! green$2_0.2 &
-! red$2_0.2 &
 ! green$2_0.3 &
 ! red$2_0.3 &
 ! green$2_0.4 &
@@ -6230,12 +4718,12 @@ red$2_1.4 &
 ! red$2_3.4 &
 ! green$2_3.5 &
 ! red$2_3.5 ) |
-( green$2_4.5 &
+( green$2_0.1 &
+! red$2_0.1 &
+! green$2_0.2 &
+red$2_0.2 &
+green$2_4.5 &
 red$2_1.5 &
-! green$2_0.1 &
-! red$2_0.1 &
-! green$2_0.2 &
-! red$2_0.2 &
 ! green$2_0.3 &
 ! red$2_0.3 &
 ! green$2_0.4 &
@@ -6258,12 +4746,12 @@ red$2_1.5 &
 ! red$2_3.4 &
 ! green$2_3.5 &
 ! red$2_3.5 ) |
-( green$2_4.5 &
+( green$2_0.1 &
+! red$2_0.1 &
+! green$2_0.2 &
+red$2_0.2 &
+green$2_4.5 &
 red$2_2.3 &
-! green$2_0.1 &
-! red$2_0.1 &
-! green$2_0.2 &
-! red$2_0.2 &
 ! green$2_0.3 &
 ! red$2_0.3 &
 ! green$2_0.4 &
@@ -6286,12 +4774,12 @@ red$2_2.3 &
 ! red$2_3.4 &
 ! green$2_3.5 &
 ! red$2_3.5 ) |
-( green$2_4.5 &
+( green$2_0.1 &
+! red$2_0.1 &
+! green$2_0.2 &
+red$2_0.2 &
+green$2_4.5 &
 red$2_2.4 &
-! green$2_0.1 &
-! red$2_0.1 &
-! green$2_0.2 &
-! red$2_0.2 &
 ! green$2_0.3 &
 ! red$2_0.3 &
 ! green$2_0.4 &
@@ -6314,12 +4802,12 @@ red$2_2.4 &
 ! red$2_3.4 &
 ! green$2_3.5 &
 ! red$2_3.5 ) |
-( green$2_4.5 &
+( green$2_0.1 &
+! red$2_0.1 &
+! green$2_0.2 &
+red$2_0.2 &
+green$2_4.5 &
 red$2_2.5 &
-! green$2_0.1 &
-! red$2_0.1 &
-! green$2_0.2 &
-! red$2_0.2 &
 ! green$2_0.3 &
 ! red$2_0.3 &
 ! green$2_0.4 &
@@ -6342,12 +4830,12 @@ red$2_2.5 &
 ! red$2_3.4 &
 ! green$2_3.5 &
 ! red$2_3.5 ) |
-( green$2_4.5 &
-red$2_3.4 &
-! green$2_0.1 &
+( green$2_0.1 &
 ! red$2_0.1 &
 ! green$2_0.2 &
-! red$2_0.2 &
+red$2_0.2 &
+green$2_4.5 &
+red$2_3.4 &
 ! green$2_0.3 &
 ! red$2_0.3 &
 ! green$2_0.4 &
@@ -6370,12 +4858,12 @@ red$2_3.4 &
 ! red$2_2.5 &
 ! green$2_3.5 &
 ! red$2_3.5 ) |
-( green$2_4.5 &
-red$2_3.5 &
-! green$2_0.1 &
+( green$2_0.1 &
 ! red$2_0.1 &
 ! green$2_0.2 &
-! red$2_0.2 &
+red$2_0.2 &
+green$2_4.5 &
+red$2_3.5 &
 ! green$2_0.3 &
 ! red$2_0.3 &
 ! green$2_0.4 &

@@ -1,24 +1,37 @@
 # debug file to encoding_gen.py
-# TODO: maybe extend to 2 steps; try out not empty board
 # TODO: change nested loops to for i, tup in enumerate(list_of_game_edges)
-oneStep = False  # with this one can switch between one step or two steps
+oneStep = False  # with this, one can switch between one step or two steps
+emptyBoard = False  # with this, one can try a non empty board
+# store game edges in list of tuples
+list_of_game_edges = [(0, 1), (0, 2), (0, 3), (0, 4), (0, 5),
+                      (1, 2), (1, 3), (1, 4), (1, 5),
+                      (2, 3), (2, 4), (2, 5),
+                      (3, 4), (3, 5),
+                      (4, 5)]
 # in this test file we don't use quantifiers as we just want to check one step -----------------------------------------
 # ----------------------------------------------------------------------------------------------------------------------
-list_of_segments = ["% testing if one step works\n"]
+list_of_segments = ["% testing if one or two steps work\n"]
 # append init formula --------------------------------------------------------------------------------------------------
-list_of_segments.append("% init board with all positions to empty\n")
-for i in range(0, 5):
-    for j in range(i + 1, 6):
-        list_of_segments.append("! green$0_" + str(i) + "." + str(j) + " &\n")
-        list_of_segments.append("! red$0_" + str(i) + "." + str(j) + " &\n")
+if emptyBoard:
+    list_of_segments.append("% init board with all positions to empty\n")
+    for idx, tup in enumerate(list_of_game_edges):
+        list_of_segments.append("! green$0_" + str(tup[0]) + "." + str(tup[1]) + " &\n")
+        list_of_segments.append("! red$0_" + str(tup[0]) + "." + str(tup[1]) + " &\n")
+else:  # this theoretically is not possible as in state 0 there can't usually be colored lines
+    list_of_segments.append("% init board with some already set variables\n")
+    list_of_segments.append("green$0_0.1 &\n! red$0_0.1 &\n")  # TODO: maybe extend to read user colored lines
+    list_of_segments.append("! green$0_0.2 &\nred$0_0.2 &\n")
+    for idx, tup in enumerate(list_of_game_edges):
+        if idx >= 2:  # first two lines are written manually
+            list_of_segments.append("! green$0_" + str(tup[0]) + "." + str(tup[1]) + " &\n")
+            list_of_segments.append("! red$0_" + str(tup[0]) + "." + str(tup[1]) + " &\n")
 # ----------------------------------------------------------------------------------------------------------------------
 
 # moves of players in alternating turns --------------------------------------------------------------------------------
 # moves have brackets around them and also implies has brackets eg. x & y & (a -> b)
 nrSteps = 1 if oneStep else 2
 list_of_segments.append("% define moves of players\n")
-# TODO: adapt brackets for two steps (at the end there are too many opening and closing brackets (275 - 278))
-for s in range(0, nrSteps):  # steps are restricted to 1 here to test if a single step works
+for s in range(0, nrSteps):  # steps are restricted to 1 here to test if a single step works (or two steps work)
     list_of_segments.append("(\n")
     if s % 2 != 0 and s != 1:
         # in the last state we don't need to open another bracket, last state is 1 if we have 2 moves
@@ -56,7 +69,7 @@ list_of_segments[-1] = list_of_segments[-1] + "&"  # change last element so that
 # ----------------------------------------------------------------------------------------------------------------------
 
 # append goal state formula --------------------------------------------------------------------------------------------
-if oneStep:
+if oneStep and emptyBoard:
     list_of_segments.append("\n% define possible states after one step\n")
     list_of_segments.append("( ")
     # after one step there are 15  different possibilities, which line could be colored by the green player
@@ -73,14 +86,9 @@ if oneStep:
     list_of_segments.append(" )")
     # this is used to test if another step is made when we artificially say "don't make this step"
     list_of_segments.append("\n& ! green$1_0.2")
-else:
+elif emptyBoard:
     # two steps
     list_of_segments.append("\n% define possible states after two steps\n(\n")
-    list_of_game_edges = [(0, 1), (0, 2), (0, 3), (0, 4), (0, 5),
-                          (1, 2), (1, 3), (1, 4), (1, 5),
-                          (2, 3), (2, 4), (2, 5),
-                          (3, 4), (3, 5),
-                          (4, 5)]
     for i in range(0, 15):
         for j in range(0, 15):
             if i != j:
@@ -90,6 +98,23 @@ else:
                     "red$2_" + str(list_of_game_edges[j][0]) + "." + str(list_of_game_edges[j][1]) + " &\n")
                 for k, tup in enumerate(list_of_game_edges):
                     if k != j and k != i:
+                        list_of_segments.append("! green$2_" + str(tup[0]) + "." + str(tup[1]) + " &\n")
+                        list_of_segments.append("! red$2_" + str(tup[0]) + "." + str(tup[1]) + " &\n")
+                list_of_segments[-1] = list_of_segments[-1][:-3] + " ) |\n"
+    list_of_segments[-1] = list_of_segments[-1][:-3] + "\n)"  # cut off last part since this is the end of the formula
+else:  # non empty board and multiple steps
+    # two steps
+    list_of_segments.append("\n% define possible states after two steps and non empty board\n(\n")
+    for i in range(2, 15):  # start at two as first two tuples are omitted, because set manually
+        for j in range(2, 15):
+            if i != j:
+                list_of_segments.append("( green$2_0.1 &\n! red$2_0.1 &\n! green$2_0.2 &\nred$2_0.2 &\n")
+                list_of_segments.append(
+                    "green$2_" + str(list_of_game_edges[i][0]) + "." + str(list_of_game_edges[i][1]) + " &\n")
+                list_of_segments.append(
+                    "red$2_" + str(list_of_game_edges[j][0]) + "." + str(list_of_game_edges[j][1]) + " &\n")
+                for k, tup in enumerate(list_of_game_edges):
+                    if k != j and k != i and k >= 2:
                         list_of_segments.append("! green$2_" + str(tup[0]) + "." + str(tup[1]) + " &\n")
                         list_of_segments.append("! red$2_" + str(tup[0]) + "." + str(tup[1]) + " &\n")
                 list_of_segments[-1] = list_of_segments[-1][:-3] + " ) |\n"
