@@ -299,6 +299,36 @@
 ? red$9_3.5
 ? green$9_4.5
 ? red$9_4.5
+# green$10_0.1
+# red$10_0.1
+# green$10_0.2
+# red$10_0.2
+# green$10_0.3
+# red$10_0.3
+# green$10_0.4
+# red$10_0.4
+# green$10_0.5
+# red$10_0.5
+# green$10_1.2
+# red$10_1.2
+# green$10_1.3
+# red$10_1.3
+# green$10_1.4
+# red$10_1.4
+# green$10_1.5
+# red$10_1.5
+# green$10_2.3
+# red$10_2.3
+# green$10_2.4
+# red$10_2.4
+# green$10_2.5
+# red$10_2.5
+# green$10_3.4
+# red$10_3.4
+# green$10_3.5
+# red$10_3.5
+# green$10_4.5
+# red$10_4.5
 % init board with all positions to empty
 ! green$0_0.1 &
 ! red$0_0.1 &

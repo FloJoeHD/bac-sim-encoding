@@ -1,7 +1,7 @@
 # Sim game encoding QBF
 
 # at the beginning we want to write the alternating quantifiers to the file --------------------------------------------
-
+# TODO: change nested loops to enumerate with list of tuples (like in encoding_one_step.py)
 # a single colored line is represented like this: green$0_0.1
 list_of_segments = ["% first, quantifiers are written\n"]
 # step 0
@@ -10,7 +10,7 @@ for i in range(0, 5):
         list_of_segments.append("? green$0_" + str(i) + "." + str(j) + "\n")
         list_of_segments.append("? red$0_" + str(i) + "." + str(j) + "\n")
 
-for s in range(1, 10):  # TODO: run through all states from 1 to 10 (included) or till 9? can this end with '#'?
+for s in range(1, 11):  # TODO: run through all states from 1 to 10 (included) or till 9? can this end with '#'?
 
     for i in range(0, 5):
         for j in range(i + 1, 6):
