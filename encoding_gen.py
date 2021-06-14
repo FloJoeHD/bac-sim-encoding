@@ -86,6 +86,6 @@ list_of_segments.append(" )")
 segments = ''.join(list_of_segments)
 # print(segments)
 # writing to file ------------------------------------------------------------------------------------------------------
-with open('init.boole', 'w') as f:
+with open('sim_encoding.boole', 'w') as f:
     f.write(segments)
 # ----------------------------------------------------------------------------------------------------------------------
