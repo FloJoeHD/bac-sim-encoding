@@ -5,12 +5,12 @@
 # a single colored line is represented like this: green$0_0.1
 list_of_segments = ["% first, quantifiers are written\n"]
 # step 0
-for i in range(0, 5):
+for i in range(0, 5):  # TODO this can be changed to be in the following iteration
     for j in range(i + 1, 6):
         list_of_segments.append("? green$0_" + str(i) + "." + str(j) + "\n")
         list_of_segments.append("? red$0_" + str(i) + "." + str(j) + "\n")
 
-for s in range(1, 11):  # TODO: run through all states from 1 to 10 (included) or till 9? can this end with '#'?
+for s in range(1, 11):  # TODO: run through all states from 1 to 10 (included) can this end with '#'?
 
     for i in range(0, 5):
         for j in range(i + 1, 6):
@@ -21,8 +21,6 @@ for s in range(1, 11):  # TODO: run through all states from 1 to 10 (included) o
                 list_of_segments.append("# green$" + str(s) + "_" + str(i) + "." + str(j) + "\n")
                 list_of_segments.append("# red$" + str(s) + "_" + str(i) + "." + str(j) + "\n")
 
-
-# list_of_segments[-1] = list_of_segments[-1][:-3] + "\n"  # change last element
 # ----------------------------------------------------------------------------------------------------------------------
 
 # append init formula --------------------------------------------------------------------------------------------------
