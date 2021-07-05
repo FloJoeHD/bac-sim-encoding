@@ -4,6 +4,7 @@ oneStep = False  # with this, one can switch between one step or two steps
 threeSteps = True  # activate three steps
 emptyBoard = True  # with this, one can try a non empty board
 writeQuantifiers = True  # use quantifiers if enabled
+triangle = False  # with this option board size is decreased to just a simple triangle
 nrSteps = 1 if oneStep else 3 if threeSteps else 2
 print(nrSteps)
 # store game edges in list of tuples
@@ -12,11 +13,14 @@ list_of_game_edges = [(0, 1), (0, 2), (0, 3), (0, 4), (0, 5),
                       (2, 3), (2, 4), (2, 5),
                       (3, 4), (3, 5),
                       (4, 5)]
+triangle_game_edges = [(0, 1), (0, 2), (1, 2)]
+if triangle:
+    list_of_game_edges = triangle_game_edges
 list_of_segments = []
 # in this test file we don't use quantifiers as we just want to check one step -----------------------------------------
 if writeQuantifiers:
     list_of_segments.append("% first, quantifiers are written\n")
-    for s in range(0, nrSteps + 1):  # quantifiers always need to be one more than steps to cover wining state
+    for s in range(0, nrSteps + 1):  # quantifiers always need to be one more than steps to cover winning state
         for idx, tup in enumerate(list_of_game_edges):
             if s == 0:
                 list_of_segments.append("? green$0_" + str(tup[0]) + "." + str(tup[1]) + "\n")
@@ -47,43 +51,81 @@ else:  # this theoretically is not possible as in state 0 there can't usually be
 
 # moves of players in alternating turns --------------------------------------------------------------------------------
 # moves have brackets around them and also implies has brackets eg. x & y & (a -> b)
-
-list_of_segments.append("% define moves of players\n")
-for s in range(0, nrSteps):  # steps are restricted to 1 here to test if a single step works (or two steps work)
-    list_of_segments.append("(\n")
-    if s % 2 != 0 and s != 2:  # TODO: may need adaption for 3 steps
-        # in the last state we don't need to open another bracket, last state is 1 if we have 2 moves
-        list_of_segments.append("(\n")  # open bracket before '->'
-    for i in range(0, 5):
-        for j in range(i + 1, 6):
+if triangle:  # if we use the smallest possible board with 3 steps, we create the moves by using tuples
+    list_of_segments.append("% define moves of players in triangle board\n")
+    for s in range(0, nrSteps):
+        list_of_segments.append("(\n")
+        if s % 2 != 0 and s != 2:  # TODO: may need adaption for 3 steps
+            # in the last state we don't need to open another bracket, last state is 1 if we have 2 moves
+            list_of_segments.append("(\n")  # open bracket before '->'
+        for idx_1, tup_1 in enumerate(list_of_game_edges):
             list_of_segments.append("(\n")
-
-            for k in range(0, 5):
-                for l in range(k + 1, 6):
-                    if i != k or j != l:  # as long as we don't have the same tuple it is fine
-                        list_of_segments.append("( green$" + str(s) + "_" + str(k) + "." + str(l) +
-                                                " <-> green$" + str(s + 1) + "_" + str(k) + "." + str(l) + ") & ")
-                        list_of_segments.append("( red$" + str(s) + "_" + str(k) + "." + str(l) +
-                                                " <-> red$" + str(s + 1) + "_" + str(k) + "." + str(l) + ") &\n")
+            for idx_2, tup_2 in enumerate(list_of_game_edges):
+                if idx_1 != idx_2:
+                    # print("idx_1: " + str(idx_1) + " idx_2 " + str(idx_2))
+                    list_of_segments.append("( green$" + str(s) + "_" + str(tup_2[0]) + "." + str(tup_2[1]) +
+                                            " <-> green$" + str(s + 1) + "_" + str(tup_2[0]) + "." + str(tup_2[1])
+                                            + ") & ")
+                    list_of_segments.append("( red$" + str(s) + "_" + str(tup_2[0]) + "." + str(tup_2[1]) +
+                                            " <-> red$" + str(s + 1) + "_" + str(tup_2[0]) + "." + str(tup_2[1])
+                                            + ") &\n")
             if s % 2 == 0:  # green move
-                list_of_segments.append("! green$" + str(s) + "_" + str(i) + "." + str(j) +
-                                        " & ! red$" + str(s) + "_" + str(i) + "." + str(j) +
-                                        " & green$" + str(s + 1) + "_" + str(i) + "." + str(j) +
-                                        " & ! red$" + str(s + 1) + "_" + str(i) + "." + str(j) + "\n")
+                list_of_segments.append("! green$" + str(s) + "_" + str(tup_1[0]) + "." + str(tup_1[1]) +
+                                        " & ! red$" + str(s) + "_" + str(tup_1[0]) + "." + str(tup_1[1]) +
+                                        " & green$" + str(s + 1) + "_" + str(tup_1[0]) + "." + str(tup_1[1]) +
+                                        " & ! red$" + str(s + 1) + "_" + str(tup_1[0]) + "." + str(tup_1[1]) + "\n")
             else:  # red move
-                list_of_segments.append("! green$" + str(s) + "_" + str(i) + "." + str(j) +
-                                        " & ! red$" + str(s) + "_" + str(i) + "." + str(j) +
-                                        " & ! green$" + str(s + 1) + "_" + str(i) + "." + str(j) +
-                                        " & red$" + str(s + 1) + "_" + str(i) + "." + str(j) + "\n")
-            list_of_segments.append(") | ")
-    if s % 2 == 0:
-        if s == 0:  # at the beginning we don't need to close an additional bracket
-            list_of_segments[-1] = list_of_segments[-1][:-2] + ") & \n"
+                list_of_segments.append("! green$" + str(s) + "_" + str(tup_1[0]) + "." + str(tup_1[1]) +
+                                        " & ! red$" + str(s) + "_" + str(tup_1[0]) + "." + str(tup_1[1]) +
+                                        " & ! green$" + str(s + 1) + "_" + str(tup_1[0]) + "." + str(tup_1[1]) +
+                                        " & red$" + str(s + 1) + "_" + str(tup_1[0]) + "." + str(tup_1[1]) + "\n")
+            list_of_segments.append(") | \n")
+        if s % 2 == 0:
+            if s == 0:  # at the beginning we don't need to close an additional bracket
+                list_of_segments[-1] = list_of_segments[-1][:-3] + ") & \n"
+            else:
+                list_of_segments[-1] = list_of_segments[-1][:-3] + ")\n% next players move\n"
         else:
-            list_of_segments[-1] = list_of_segments[-1][:-2] + "))\n% next players move\n"
-    else:
-        list_of_segments[-1] = list_of_segments[-1][:-2] + ") ->\n"
-list_of_segments[-1] = list_of_segments[-1] + "&"  # change last element so that the last char is cut off
+            list_of_segments[-1] = list_of_segments[-1][:-3] + ") ->\n"
+    list_of_segments[-1] = list_of_segments[-1] + "&"  # change last element so that the last char is cut off
+
+else:
+    list_of_segments.append("% define moves of players\n")
+    for s in range(0, nrSteps):  # steps are restricted to 1 here to test if a single step works (or two steps work)
+        list_of_segments.append("(\n")
+        if s % 2 != 0 and s != 2:  # TODO: may need adaption for 3 steps
+            # in the last state we don't need to open another bracket, last state is 1 if we have 2 moves
+            list_of_segments.append("(\n")  # open bracket before '->'
+        for i in range(0, 5):
+            for j in range(i + 1, 6):
+                list_of_segments.append("(\n")
+
+                for k in range(0, 5):
+                    for l in range(k + 1, 6):
+                        if i != k or j != l:  # as long as we don't have the same tuple it is fine
+                            list_of_segments.append("( green$" + str(s) + "_" + str(k) + "." + str(l) +
+                                                    " <-> green$" + str(s + 1) + "_" + str(k) + "." + str(l) + ") & ")
+                            list_of_segments.append("( red$" + str(s) + "_" + str(k) + "." + str(l) +
+                                                    " <-> red$" + str(s + 1) + "_" + str(k) + "." + str(l) + ") &\n")
+                if s % 2 == 0:  # green move
+                    list_of_segments.append("! green$" + str(s) + "_" + str(i) + "." + str(j) +
+                                            " & ! red$" + str(s) + "_" + str(i) + "." + str(j) +
+                                            " & green$" + str(s + 1) + "_" + str(i) + "." + str(j) +
+                                            " & ! red$" + str(s + 1) + "_" + str(i) + "." + str(j) + "\n")
+                else:  # red move
+                    list_of_segments.append("! green$" + str(s) + "_" + str(i) + "." + str(j) +
+                                            " & ! red$" + str(s) + "_" + str(i) + "." + str(j) +
+                                            " & ! green$" + str(s + 1) + "_" + str(i) + "." + str(j) +
+                                            " & red$" + str(s + 1) + "_" + str(i) + "." + str(j) + "\n")
+                list_of_segments.append(") | ")
+        if s % 2 == 0:
+            if s == 0:  # at the beginning we don't need to close an additional bracket
+                list_of_segments[-1] = list_of_segments[-1][:-2] + ") & \n"
+            else:
+                list_of_segments[-1] = list_of_segments[-1][:-2] + "))\n% next players move\n"
+        else:
+            list_of_segments[-1] = list_of_segments[-1][:-2] + ") ->\n"
+    list_of_segments[-1] = list_of_segments[-1] + "&"  # change last element so that the last char is cut off
 # ----------------------------------------------------------------------------------------------------------------------
 
 # append goal state formula --------------------------------------------------------------------------------------------
@@ -107,8 +149,8 @@ if oneStep and emptyBoard:
 elif emptyBoard and not threeSteps:
     # two steps
     list_of_segments.append("\n% define possible states after two steps\n(\n")
-    for i in range(0, 15):
-        for j in range(0, 15):
+    for i in range(0, len(list_of_game_edges)):
+        for j in range(0, len(list_of_game_edges)):
             if i != j:
                 list_of_segments.append(
                     "( green$2_" + str(list_of_game_edges[i][0]) + "." + str(list_of_game_edges[i][1]) + " &\n")
@@ -123,9 +165,9 @@ elif emptyBoard and not threeSteps:
 
 elif threeSteps:
     list_of_segments.append("\n% define possible states after three steps\n(\n")
-    for i in range(0, 15):
-        for j in range(0, 15):
-            for k in range(0, 15):
+    for i in range(0, len(list_of_game_edges)):
+        for j in range(0, len(list_of_game_edges)):
+            for k in range(0, len(list_of_game_edges)):
                 if i != j != k != i:
                     list_of_segments.append(
                         "( green$3_" + str(list_of_game_edges[i][0]) + "." + str(list_of_game_edges[i][1]) + " &\n")
@@ -139,11 +181,13 @@ elif threeSteps:
                             list_of_segments.append("! red$3_" + str(tup[0]) + "." + str(tup[1]) + " &\n")
                     list_of_segments[-1] = list_of_segments[-1][:-3] + " ) |\n"
     list_of_segments[-1] = list_of_segments[-1][:-3] + "\n)"  # cut off last part since this is the end of the formula
+    if triangle:
+        list_of_segments.append("\n)")
 else:  # non empty board and multiple steps
     # two steps
     list_of_segments.append("\n% define possible states after two steps and non empty board\n(\n")
-    for i in range(2, 15):  # start at two as first two tuples are omitted, because set manually
-        for j in range(2, 15):
+    for i in range(2, len(list_of_game_edges)):  # start at two as first two tuples are omitted, because set manually
+        for j in range(2, len(list_of_game_edges)):
             if i != j:
                 list_of_segments.append("( green$2_0.1 &\n! red$2_0.1 &\n! green$2_0.2 &\nred$2_0.2 &\n")
                 list_of_segments.append(
