@@ -36,7 +36,7 @@ for i in range(0, 5):
 list_of_segments.append("% define moves of players\n")
 for s in range(0, 10):
     list_of_segments.append("(\n")
-    if s % 2 != 0 and s != 9:  # in the last state we don't need to open another bracket
+    if s != 0 and s != 9:  # in the last state we don't need to open another bracket
         list_of_segments.append("(\n")  # open bracket before '->'
     for i in range(0, 5):
         for j in range(i + 1, 6):
@@ -64,10 +64,10 @@ for s in range(0, 10):
         if s == 0:  # at the beginning we don't need to close an additional bracket
             list_of_segments[-1] = list_of_segments[-1][:-2] + ") &\n% next players move\n"
         else:
-            list_of_segments[-1] = list_of_segments[-1][:-2] + ")) &\n% next players move\n"
+            list_of_segments[-1] = list_of_segments[-1][:-2] + ") &\n% next players move\n"
     else:
         list_of_segments[-1] = list_of_segments[-1][:-2] + ") ->\n"
-list_of_segments[-1] = list_of_segments[-1][:-3] + "&"  # change last element so that the last 3 chars are cut off
+#  list_of_segments[-1] = list_of_segments[-1][:-3] + "&"  # change last element so that the last 3 chars are cut off
 # ----------------------------------------------------------------------------------------------------------------------
 
 # append goal state formula --------------------------------------------------------------------------------------------
@@ -82,6 +82,7 @@ for i in range(0, 4):
                                     " & red$10_" + str(y) + "." + str(j) + " |\n")
 list_of_segments[-1] = list_of_segments[-1][:-3]  # cut off last part since this is the end of the formula
 list_of_segments.append(" )")
+list_of_segments.append("))))))))")
 # ----------------------------------------------------------------------------------------------------------------------
 segments = ''.join(list_of_segments)
 # print(segments)
