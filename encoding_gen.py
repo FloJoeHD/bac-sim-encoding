@@ -10,7 +10,7 @@ for i in range(0, 5):  # TODO this can be changed to be in the following iterati
         list_of_segments.append("? green$0_" + str(i) + "." + str(j) + "\n")
         list_of_segments.append("? red$0_" + str(i) + "." + str(j) + "\n")
 
-for s in range(1, 11):  # TODO: run through all states from 1 to 10 (included) can this end with '#'?
+for s in range(1, 16):  # TODO: run through all states from 1 to 15
 
     for i in range(0, 5):
         for j in range(i + 1, 6):
@@ -34,7 +34,7 @@ for i in range(0, 5):
 # moves of players in alternating turns --------------------------------------------------------------------------------
 # moves have brackets around them and also implies has brackets eg. x & y & (a -> b)
 list_of_segments.append("% define moves of players\n")
-for s in range(0, 10):
+for s in range(0, 15):
     list_of_segments.append("(\n")
     if s != 0 and s != 9:  # in the last state we don't need to open another bracket
         list_of_segments.append("(\n")  # open bracket before '->'
@@ -77,12 +77,12 @@ for i in range(0, 4):
     for j in range(i + 1, 6):
         for y in range(i + 1, j):
             # changed green to red here, since green wins if red has a triangle
-            list_of_segments.append("red$10_" + str(i) + "." + str(j) +
-                                    " & red$10_" + str(i) + "." + str(y) +
-                                    " & red$10_" + str(y) + "." + str(j) + " |\n")
+            list_of_segments.append("green$15_" + str(i) + "." + str(j) +
+                                    " & green$15_" + str(i) + "." + str(y) +
+                                    " & green$15_" + str(y) + "." + str(j) + " |\n")
 list_of_segments[-1] = list_of_segments[-1][:-3]  # cut off last part since this is the end of the formula
 list_of_segments.append(" )")
-list_of_segments.append("))))))))")
+list_of_segments.append(")))))))))))))")  # close all brackets opened by implies, TODO: maybe make this use a counter
 # ----------------------------------------------------------------------------------------------------------------------
 segments = ''.join(list_of_segments)
 # print(segments)
