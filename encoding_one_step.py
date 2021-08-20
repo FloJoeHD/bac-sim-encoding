@@ -1,7 +1,7 @@
 # debug file to encoding_gen.py
 # TODO: change nested loops to for i, tup in enumerate(list_of_game_edges)
 oneStep = False  # with this, one can switch between one step or two steps
-threeSteps = True  # activate three steps
+threeSteps = False  # activate three steps
 emptyBoard = True  # with this, one can try a non empty board
 writeQuantifiers = True  # use quantifiers if enabled
 triangle = False  # with this option board size is decreased to just a simple triangle
@@ -17,20 +17,17 @@ triangle_game_edges = [(0, 1), (0, 2), (1, 2)]
 if triangle:
     list_of_game_edges = triangle_game_edges
 list_of_segments = []
-# in this test file we don't use quantifiers as we just want to check one step -----------------------------------------
+# in this test file we can turn quantifiers on or off-----------------------------------------
 if writeQuantifiers:
     list_of_segments.append("% first, quantifiers are written\n")
     for s in range(0, nrSteps + 1):  # quantifiers always need to be one more than steps to cover winning state
         for idx, tup in enumerate(list_of_game_edges):
-            if s == 0:
-                list_of_segments.append("? green$0_" + str(tup[0]) + "." + str(tup[1]) + "\n")
-                list_of_segments.append("? red$0_" + str(tup[0]) + "." + str(tup[1]) + "\n")
-            elif s % 2 != 0:  # every odd state, we use an existential quantifier '?'
-                list_of_segments.append("? green$" + str(s) + "_" + str(tup[0]) + "." + str(tup[1]) + "\n")
-                list_of_segments.append("? red$" + str(s) + "_" + str(tup[0]) + "." + str(tup[1]) + "\n")
-            else:  # every even state, we use a for all quantifier '#'
+            if s % 2 != 0:  # every odd state, we use a forall quantifier '#'
                 list_of_segments.append("# green$" + str(s) + "_" + str(tup[0]) + "." + str(tup[1]) + "\n")
                 list_of_segments.append("# red$" + str(s) + "_" + str(tup[0]) + "." + str(tup[1]) + "\n")
+            else:  # every even state, we use an existential quantifier '?'
+                list_of_segments.append("? green$" + str(s) + "_" + str(tup[0]) + "." + str(tup[1]) + "\n")
+                list_of_segments.append("? red$" + str(s) + "_" + str(tup[0]) + "." + str(tup[1]) + "\n")
 # ----------------------------------------------------------------------------------------------------------------------
 list_of_segments.append("% testing if one, two or three steps work\n")
 # append init formula --------------------------------------------------------------------------------------------------
@@ -93,7 +90,7 @@ else:
     list_of_segments.append("% define moves of players\n")
     for s in range(0, nrSteps):  # steps are restricted to 1 here to test if a single step works (or two steps work)
         list_of_segments.append("(\n")
-        if s % 2 != 0 and s != 2:  # TODO: may need adaption for 3 steps
+        if (nrSteps == 2 and s == 0) or (s % 2 != 0 and s != 2):  # TODO: may need adaption for 3 steps
             # in the last state we don't need to open another bracket, last state is 1 if we have 2 moves
             list_of_segments.append("(\n")  # open bracket before '->'
         for i in range(0, 5):
@@ -120,12 +117,12 @@ else:
                 list_of_segments.append(") | ")
         if s % 2 == 0:
             if s == 0:  # at the beginning we don't need to close an additional bracket
-                list_of_segments[-1] = list_of_segments[-1][:-2] + ") & \n"
+                list_of_segments[-1] = list_of_segments[-1][:-2] + ") -> \n"
             else:
                 list_of_segments[-1] = list_of_segments[-1][:-2] + "))\n% next players move\n"
         else:
-            list_of_segments[-1] = list_of_segments[-1][:-2] + ") ->\n"
-    list_of_segments[-1] = list_of_segments[-1] + "&"  # change last element so that the last char is cut off
+            list_of_segments[-1] = list_of_segments[-1][:-2] + ") &\n"
+    # list_of_segments[-1] = list_of_segments[-1] + "&"  # change last element so that the last char is cut off
 # ----------------------------------------------------------------------------------------------------------------------
 
 # append goal state formula --------------------------------------------------------------------------------------------
@@ -161,7 +158,7 @@ elif emptyBoard and not threeSteps:
                         list_of_segments.append("! green$2_" + str(tup[0]) + "." + str(tup[1]) + " &\n")
                         list_of_segments.append("! red$2_" + str(tup[0]) + "." + str(tup[1]) + " &\n")
                 list_of_segments[-1] = list_of_segments[-1][:-3] + " ) |\n"
-    list_of_segments[-1] = list_of_segments[-1][:-3] + "\n)"  # cut off last part since this is the end of the formula
+    list_of_segments[-1] = list_of_segments[-1][:-3] + "\n)))"  # cut off last part since this is the end of the formula
 
 elif threeSteps:
     list_of_segments.append("\n% define possible states after three steps\n(\n")
