@@ -29,456 +29,456 @@
 ? red$0_3.5
 ? green$0_4.5
 ? red$0_4.5
-? green$1_0.1
-? red$1_0.1
-? green$1_0.2
-? red$1_0.2
-? green$1_0.3
-? red$1_0.3
-? green$1_0.4
-? red$1_0.4
-? green$1_0.5
-? red$1_0.5
-? green$1_1.2
-? red$1_1.2
-? green$1_1.3
-? red$1_1.3
-? green$1_1.4
-? red$1_1.4
-? green$1_1.5
-? red$1_1.5
-? green$1_2.3
-? red$1_2.3
-? green$1_2.4
-? red$1_2.4
-? green$1_2.5
-? red$1_2.5
-? green$1_3.4
-? red$1_3.4
-? green$1_3.5
-? red$1_3.5
-? green$1_4.5
-? red$1_4.5
-# green$2_0.1
-# red$2_0.1
-# green$2_0.2
-# red$2_0.2
-# green$2_0.3
-# red$2_0.3
-# green$2_0.4
-# red$2_0.4
-# green$2_0.5
-# red$2_0.5
-# green$2_1.2
-# red$2_1.2
-# green$2_1.3
-# red$2_1.3
-# green$2_1.4
-# red$2_1.4
-# green$2_1.5
-# red$2_1.5
-# green$2_2.3
-# red$2_2.3
-# green$2_2.4
-# red$2_2.4
-# green$2_2.5
-# red$2_2.5
-# green$2_3.4
-# red$2_3.4
-# green$2_3.5
-# red$2_3.5
-# green$2_4.5
-# red$2_4.5
-? green$3_0.1
-? red$3_0.1
-? green$3_0.2
-? red$3_0.2
-? green$3_0.3
-? red$3_0.3
-? green$3_0.4
-? red$3_0.4
-? green$3_0.5
-? red$3_0.5
-? green$3_1.2
-? red$3_1.2
-? green$3_1.3
-? red$3_1.3
-? green$3_1.4
-? red$3_1.4
-? green$3_1.5
-? red$3_1.5
-? green$3_2.3
-? red$3_2.3
-? green$3_2.4
-? red$3_2.4
-? green$3_2.5
-? red$3_2.5
-? green$3_3.4
-? red$3_3.4
-? green$3_3.5
-? red$3_3.5
-? green$3_4.5
-? red$3_4.5
-# green$4_0.1
-# red$4_0.1
-# green$4_0.2
-# red$4_0.2
-# green$4_0.3
-# red$4_0.3
-# green$4_0.4
-# red$4_0.4
-# green$4_0.5
-# red$4_0.5
-# green$4_1.2
-# red$4_1.2
-# green$4_1.3
-# red$4_1.3
-# green$4_1.4
-# red$4_1.4
-# green$4_1.5
-# red$4_1.5
-# green$4_2.3
-# red$4_2.3
-# green$4_2.4
-# red$4_2.4
-# green$4_2.5
-# red$4_2.5
-# green$4_3.4
-# red$4_3.4
-# green$4_3.5
-# red$4_3.5
-# green$4_4.5
-# red$4_4.5
-? green$5_0.1
-? red$5_0.1
-? green$5_0.2
-? red$5_0.2
-? green$5_0.3
-? red$5_0.3
-? green$5_0.4
-? red$5_0.4
-? green$5_0.5
-? red$5_0.5
-? green$5_1.2
-? red$5_1.2
-? green$5_1.3
-? red$5_1.3
-? green$5_1.4
-? red$5_1.4
-? green$5_1.5
-? red$5_1.5
-? green$5_2.3
-? red$5_2.3
-? green$5_2.4
-? red$5_2.4
-? green$5_2.5
-? red$5_2.5
-? green$5_3.4
-? red$5_3.4
-? green$5_3.5
-? red$5_3.5
-? green$5_4.5
-? red$5_4.5
-# green$6_0.1
-# red$6_0.1
-# green$6_0.2
-# red$6_0.2
-# green$6_0.3
-# red$6_0.3
-# green$6_0.4
-# red$6_0.4
-# green$6_0.5
-# red$6_0.5
-# green$6_1.2
-# red$6_1.2
-# green$6_1.3
-# red$6_1.3
-# green$6_1.4
-# red$6_1.4
-# green$6_1.5
-# red$6_1.5
-# green$6_2.3
-# red$6_2.3
-# green$6_2.4
-# red$6_2.4
-# green$6_2.5
-# red$6_2.5
-# green$6_3.4
-# red$6_3.4
-# green$6_3.5
-# red$6_3.5
-# green$6_4.5
-# red$6_4.5
-? green$7_0.1
-? red$7_0.1
-? green$7_0.2
-? red$7_0.2
-? green$7_0.3
-? red$7_0.3
-? green$7_0.4
-? red$7_0.4
-? green$7_0.5
-? red$7_0.5
-? green$7_1.2
-? red$7_1.2
-? green$7_1.3
-? red$7_1.3
-? green$7_1.4
-? red$7_1.4
-? green$7_1.5
-? red$7_1.5
-? green$7_2.3
-? red$7_2.3
-? green$7_2.4
-? red$7_2.4
-? green$7_2.5
-? red$7_2.5
-? green$7_3.4
-? red$7_3.4
-? green$7_3.5
-? red$7_3.5
-? green$7_4.5
-? red$7_4.5
-# green$8_0.1
-# red$8_0.1
-# green$8_0.2
-# red$8_0.2
-# green$8_0.3
-# red$8_0.3
-# green$8_0.4
-# red$8_0.4
-# green$8_0.5
-# red$8_0.5
-# green$8_1.2
-# red$8_1.2
-# green$8_1.3
-# red$8_1.3
-# green$8_1.4
-# red$8_1.4
-# green$8_1.5
-# red$8_1.5
-# green$8_2.3
-# red$8_2.3
-# green$8_2.4
-# red$8_2.4
-# green$8_2.5
-# red$8_2.5
-# green$8_3.4
-# red$8_3.4
-# green$8_3.5
-# red$8_3.5
-# green$8_4.5
-# red$8_4.5
-? green$9_0.1
-? red$9_0.1
-? green$9_0.2
-? red$9_0.2
-? green$9_0.3
-? red$9_0.3
-? green$9_0.4
-? red$9_0.4
-? green$9_0.5
-? red$9_0.5
-? green$9_1.2
-? red$9_1.2
-? green$9_1.3
-? red$9_1.3
-? green$9_1.4
-? red$9_1.4
-? green$9_1.5
-? red$9_1.5
-? green$9_2.3
-? red$9_2.3
-? green$9_2.4
-? red$9_2.4
-? green$9_2.5
-? red$9_2.5
-? green$9_3.4
-? red$9_3.4
-? green$9_3.5
-? red$9_3.5
-? green$9_4.5
-? red$9_4.5
-# green$10_0.1
-# red$10_0.1
-# green$10_0.2
-# red$10_0.2
-# green$10_0.3
-# red$10_0.3
-# green$10_0.4
-# red$10_0.4
-# green$10_0.5
-# red$10_0.5
-# green$10_1.2
-# red$10_1.2
-# green$10_1.3
-# red$10_1.3
-# green$10_1.4
-# red$10_1.4
-# green$10_1.5
-# red$10_1.5
-# green$10_2.3
-# red$10_2.3
-# green$10_2.4
-# red$10_2.4
-# green$10_2.5
-# red$10_2.5
-# green$10_3.4
-# red$10_3.4
-# green$10_3.5
-# red$10_3.5
-# green$10_4.5
-# red$10_4.5
-? green$11_0.1
-? red$11_0.1
-? green$11_0.2
-? red$11_0.2
-? green$11_0.3
-? red$11_0.3
-? green$11_0.4
-? red$11_0.4
-? green$11_0.5
-? red$11_0.5
-? green$11_1.2
-? red$11_1.2
-? green$11_1.3
-? red$11_1.3
-? green$11_1.4
-? red$11_1.4
-? green$11_1.5
-? red$11_1.5
-? green$11_2.3
-? red$11_2.3
-? green$11_2.4
-? red$11_2.4
-? green$11_2.5
-? red$11_2.5
-? green$11_3.4
-? red$11_3.4
-? green$11_3.5
-? red$11_3.5
-? green$11_4.5
-? red$11_4.5
-# green$12_0.1
-# red$12_0.1
-# green$12_0.2
-# red$12_0.2
-# green$12_0.3
-# red$12_0.3
-# green$12_0.4
-# red$12_0.4
-# green$12_0.5
-# red$12_0.5
-# green$12_1.2
-# red$12_1.2
-# green$12_1.3
-# red$12_1.3
-# green$12_1.4
-# red$12_1.4
-# green$12_1.5
-# red$12_1.5
-# green$12_2.3
-# red$12_2.3
-# green$12_2.4
-# red$12_2.4
-# green$12_2.5
-# red$12_2.5
-# green$12_3.4
-# red$12_3.4
-# green$12_3.5
-# red$12_3.5
-# green$12_4.5
-# red$12_4.5
-? green$13_0.1
-? red$13_0.1
-? green$13_0.2
-? red$13_0.2
-? green$13_0.3
-? red$13_0.3
-? green$13_0.4
-? red$13_0.4
-? green$13_0.5
-? red$13_0.5
-? green$13_1.2
-? red$13_1.2
-? green$13_1.3
-? red$13_1.3
-? green$13_1.4
-? red$13_1.4
-? green$13_1.5
-? red$13_1.5
-? green$13_2.3
-? red$13_2.3
-? green$13_2.4
-? red$13_2.4
-? green$13_2.5
-? red$13_2.5
-? green$13_3.4
-? red$13_3.4
-? green$13_3.5
-? red$13_3.5
-? green$13_4.5
-? red$13_4.5
-# green$14_0.1
-# red$14_0.1
-# green$14_0.2
-# red$14_0.2
-# green$14_0.3
-# red$14_0.3
-# green$14_0.4
-# red$14_0.4
-# green$14_0.5
-# red$14_0.5
-# green$14_1.2
-# red$14_1.2
-# green$14_1.3
-# red$14_1.3
-# green$14_1.4
-# red$14_1.4
-# green$14_1.5
-# red$14_1.5
-# green$14_2.3
-# red$14_2.3
-# green$14_2.4
-# red$14_2.4
-# green$14_2.5
-# red$14_2.5
-# green$14_3.4
-# red$14_3.4
-# green$14_3.5
-# red$14_3.5
-# green$14_4.5
-# red$14_4.5
-? green$15_0.1
-? red$15_0.1
-? green$15_0.2
-? red$15_0.2
-? green$15_0.3
-? red$15_0.3
-? green$15_0.4
-? red$15_0.4
-? green$15_0.5
-? red$15_0.5
-? green$15_1.2
-? red$15_1.2
-? green$15_1.3
-? red$15_1.3
-? green$15_1.4
-? red$15_1.4
-? green$15_1.5
-? red$15_1.5
-? green$15_2.3
-? red$15_2.3
-? green$15_2.4
-? red$15_2.4
-? green$15_2.5
-? red$15_2.5
-? green$15_3.4
-? red$15_3.4
-? green$15_3.5
-? red$15_3.5
-? green$15_4.5
-? red$15_4.5
+# green$1_0.1
+# red$1_0.1
+# green$1_0.2
+# red$1_0.2
+# green$1_0.3
+# red$1_0.3
+# green$1_0.4
+# red$1_0.4
+# green$1_0.5
+# red$1_0.5
+# green$1_1.2
+# red$1_1.2
+# green$1_1.3
+# red$1_1.3
+# green$1_1.4
+# red$1_1.4
+# green$1_1.5
+# red$1_1.5
+# green$1_2.3
+# red$1_2.3
+# green$1_2.4
+# red$1_2.4
+# green$1_2.5
+# red$1_2.5
+# green$1_3.4
+# red$1_3.4
+# green$1_3.5
+# red$1_3.5
+# green$1_4.5
+# red$1_4.5
+? green$2_0.1
+? red$2_0.1
+? green$2_0.2
+? red$2_0.2
+? green$2_0.3
+? red$2_0.3
+? green$2_0.4
+? red$2_0.4
+? green$2_0.5
+? red$2_0.5
+? green$2_1.2
+? red$2_1.2
+? green$2_1.3
+? red$2_1.3
+? green$2_1.4
+? red$2_1.4
+? green$2_1.5
+? red$2_1.5
+? green$2_2.3
+? red$2_2.3
+? green$2_2.4
+? red$2_2.4
+? green$2_2.5
+? red$2_2.5
+? green$2_3.4
+? red$2_3.4
+? green$2_3.5
+? red$2_3.5
+? green$2_4.5
+? red$2_4.5
+# green$3_0.1
+# red$3_0.1
+# green$3_0.2
+# red$3_0.2
+# green$3_0.3
+# red$3_0.3
+# green$3_0.4
+# red$3_0.4
+# green$3_0.5
+# red$3_0.5
+# green$3_1.2
+# red$3_1.2
+# green$3_1.3
+# red$3_1.3
+# green$3_1.4
+# red$3_1.4
+# green$3_1.5
+# red$3_1.5
+# green$3_2.3
+# red$3_2.3
+# green$3_2.4
+# red$3_2.4
+# green$3_2.5
+# red$3_2.5
+# green$3_3.4
+# red$3_3.4
+# green$3_3.5
+# red$3_3.5
+# green$3_4.5
+# red$3_4.5
+? green$4_0.1
+? red$4_0.1
+? green$4_0.2
+? red$4_0.2
+? green$4_0.3
+? red$4_0.3
+? green$4_0.4
+? red$4_0.4
+? green$4_0.5
+? red$4_0.5
+? green$4_1.2
+? red$4_1.2
+? green$4_1.3
+? red$4_1.3
+? green$4_1.4
+? red$4_1.4
+? green$4_1.5
+? red$4_1.5
+? green$4_2.3
+? red$4_2.3
+? green$4_2.4
+? red$4_2.4
+? green$4_2.5
+? red$4_2.5
+? green$4_3.4
+? red$4_3.4
+? green$4_3.5
+? red$4_3.5
+? green$4_4.5
+? red$4_4.5
+# green$5_0.1
+# red$5_0.1
+# green$5_0.2
+# red$5_0.2
+# green$5_0.3
+# red$5_0.3
+# green$5_0.4
+# red$5_0.4
+# green$5_0.5
+# red$5_0.5
+# green$5_1.2
+# red$5_1.2
+# green$5_1.3
+# red$5_1.3
+# green$5_1.4
+# red$5_1.4
+# green$5_1.5
+# red$5_1.5
+# green$5_2.3
+# red$5_2.3
+# green$5_2.4
+# red$5_2.4
+# green$5_2.5
+# red$5_2.5
+# green$5_3.4
+# red$5_3.4
+# green$5_3.5
+# red$5_3.5
+# green$5_4.5
+# red$5_4.5
+? green$6_0.1
+? red$6_0.1
+? green$6_0.2
+? red$6_0.2
+? green$6_0.3
+? red$6_0.3
+? green$6_0.4
+? red$6_0.4
+? green$6_0.5
+? red$6_0.5
+? green$6_1.2
+? red$6_1.2
+? green$6_1.3
+? red$6_1.3
+? green$6_1.4
+? red$6_1.4
+? green$6_1.5
+? red$6_1.5
+? green$6_2.3
+? red$6_2.3
+? green$6_2.4
+? red$6_2.4
+? green$6_2.5
+? red$6_2.5
+? green$6_3.4
+? red$6_3.4
+? green$6_3.5
+? red$6_3.5
+? green$6_4.5
+? red$6_4.5
+# green$7_0.1
+# red$7_0.1
+# green$7_0.2
+# red$7_0.2
+# green$7_0.3
+# red$7_0.3
+# green$7_0.4
+# red$7_0.4
+# green$7_0.5
+# red$7_0.5
+# green$7_1.2
+# red$7_1.2
+# green$7_1.3
+# red$7_1.3
+# green$7_1.4
+# red$7_1.4
+# green$7_1.5
+# red$7_1.5
+# green$7_2.3
+# red$7_2.3
+# green$7_2.4
+# red$7_2.4
+# green$7_2.5
+# red$7_2.5
+# green$7_3.4
+# red$7_3.4
+# green$7_3.5
+# red$7_3.5
+# green$7_4.5
+# red$7_4.5
+? green$8_0.1
+? red$8_0.1
+? green$8_0.2
+? red$8_0.2
+? green$8_0.3
+? red$8_0.3
+? green$8_0.4
+? red$8_0.4
+? green$8_0.5
+? red$8_0.5
+? green$8_1.2
+? red$8_1.2
+? green$8_1.3
+? red$8_1.3
+? green$8_1.4
+? red$8_1.4
+? green$8_1.5
+? red$8_1.5
+? green$8_2.3
+? red$8_2.3
+? green$8_2.4
+? red$8_2.4
+? green$8_2.5
+? red$8_2.5
+? green$8_3.4
+? red$8_3.4
+? green$8_3.5
+? red$8_3.5
+? green$8_4.5
+? red$8_4.5
+# green$9_0.1
+# red$9_0.1
+# green$9_0.2
+# red$9_0.2
+# green$9_0.3
+# red$9_0.3
+# green$9_0.4
+# red$9_0.4
+# green$9_0.5
+# red$9_0.5
+# green$9_1.2
+# red$9_1.2
+# green$9_1.3
+# red$9_1.3
+# green$9_1.4
+# red$9_1.4
+# green$9_1.5
+# red$9_1.5
+# green$9_2.3
+# red$9_2.3
+# green$9_2.4
+# red$9_2.4
+# green$9_2.5
+# red$9_2.5
+# green$9_3.4
+# red$9_3.4
+# green$9_3.5
+# red$9_3.5
+# green$9_4.5
+# red$9_4.5
+? green$10_0.1
+? red$10_0.1
+? green$10_0.2
+? red$10_0.2
+? green$10_0.3
+? red$10_0.3
+? green$10_0.4
+? red$10_0.4
+? green$10_0.5
+? red$10_0.5
+? green$10_1.2
+? red$10_1.2
+? green$10_1.3
+? red$10_1.3
+? green$10_1.4
+? red$10_1.4
+? green$10_1.5
+? red$10_1.5
+? green$10_2.3
+? red$10_2.3
+? green$10_2.4
+? red$10_2.4
+? green$10_2.5
+? red$10_2.5
+? green$10_3.4
+? red$10_3.4
+? green$10_3.5
+? red$10_3.5
+? green$10_4.5
+? red$10_4.5
+# green$11_0.1
+# red$11_0.1
+# green$11_0.2
+# red$11_0.2
+# green$11_0.3
+# red$11_0.3
+# green$11_0.4
+# red$11_0.4
+# green$11_0.5
+# red$11_0.5
+# green$11_1.2
+# red$11_1.2
+# green$11_1.3
+# red$11_1.3
+# green$11_1.4
+# red$11_1.4
+# green$11_1.5
+# red$11_1.5
+# green$11_2.3
+# red$11_2.3
+# green$11_2.4
+# red$11_2.4
+# green$11_2.5
+# red$11_2.5
+# green$11_3.4
+# red$11_3.4
+# green$11_3.5
+# red$11_3.5
+# green$11_4.5
+# red$11_4.5
+? green$12_0.1
+? red$12_0.1
+? green$12_0.2
+? red$12_0.2
+? green$12_0.3
+? red$12_0.3
+? green$12_0.4
+? red$12_0.4
+? green$12_0.5
+? red$12_0.5
+? green$12_1.2
+? red$12_1.2
+? green$12_1.3
+? red$12_1.3
+? green$12_1.4
+? red$12_1.4
+? green$12_1.5
+? red$12_1.5
+? green$12_2.3
+? red$12_2.3
+? green$12_2.4
+? red$12_2.4
+? green$12_2.5
+? red$12_2.5
+? green$12_3.4
+? red$12_3.4
+? green$12_3.5
+? red$12_3.5
+? green$12_4.5
+? red$12_4.5
+# green$13_0.1
+# red$13_0.1
+# green$13_0.2
+# red$13_0.2
+# green$13_0.3
+# red$13_0.3
+# green$13_0.4
+# red$13_0.4
+# green$13_0.5
+# red$13_0.5
+# green$13_1.2
+# red$13_1.2
+# green$13_1.3
+# red$13_1.3
+# green$13_1.4
+# red$13_1.4
+# green$13_1.5
+# red$13_1.5
+# green$13_2.3
+# red$13_2.3
+# green$13_2.4
+# red$13_2.4
+# green$13_2.5
+# red$13_2.5
+# green$13_3.4
+# red$13_3.4
+# green$13_3.5
+# red$13_3.5
+# green$13_4.5
+# red$13_4.5
+? green$14_0.1
+? red$14_0.1
+? green$14_0.2
+? red$14_0.2
+? green$14_0.3
+? red$14_0.3
+? green$14_0.4
+? red$14_0.4
+? green$14_0.5
+? red$14_0.5
+? green$14_1.2
+? red$14_1.2
+? green$14_1.3
+? red$14_1.3
+? green$14_1.4
+? red$14_1.4
+? green$14_1.5
+? red$14_1.5
+? green$14_2.3
+? red$14_2.3
+? green$14_2.4
+? red$14_2.4
+? green$14_2.5
+? red$14_2.5
+? green$14_3.4
+? red$14_3.4
+? green$14_3.5
+? red$14_3.5
+? green$14_4.5
+? red$14_4.5
+# green$15_0.1
+# red$15_0.1
+# green$15_0.2
+# red$15_0.2
+# green$15_0.3
+# red$15_0.3
+# green$15_0.4
+# red$15_0.4
+# green$15_0.5
+# red$15_0.5
+# green$15_1.2
+# red$15_1.2
+# green$15_1.3
+# red$15_1.3
+# green$15_1.4
+# red$15_1.4
+# green$15_1.5
+# red$15_1.5
+# green$15_2.3
+# red$15_2.3
+# green$15_2.4
+# red$15_2.4
+# green$15_2.5
+# red$15_2.5
+# green$15_3.4
+# red$15_3.4
+# green$15_3.5
+# red$15_3.5
+# green$15_4.5
+# red$15_4.5
 % init board with all positions to empty
 ! green$0_0.1 &
 ! red$0_0.1 &
@@ -511,6 +511,7 @@
 ! green$0_4.5 &
 ! red$0_4.5 &
 % define moves of players
+(
 (
 (
 ( green$0_0.2 <-> green$1_0.2) & ( red$0_0.2 <-> red$1_0.2) &
@@ -752,7 +753,7 @@
 ( green$0_3.4 <-> green$1_3.4) & ( red$0_3.4 <-> red$1_3.4) &
 ( green$0_3.5 <-> green$1_3.5) & ( red$0_3.5 <-> red$1_3.5) &
 ! green$0_4.5 & ! red$0_4.5 & green$1_4.5 & ! red$1_4.5
-) ) &
+) ) ->
 % next players move
 (
 (
@@ -996,7 +997,8 @@
 ( green$1_3.4 <-> green$2_3.4) & ( red$1_3.4 <-> red$2_3.4) &
 ( green$1_3.5 <-> green$2_3.5) & ( red$1_3.5 <-> red$2_3.5) &
 ! green$1_4.5 & ! red$1_4.5 & ! green$2_4.5 & red$2_4.5
-) ) ->
+) ) &
+% next players move
 (
 (
 (
@@ -1239,7 +1241,7 @@
 ( green$2_3.4 <-> green$3_3.4) & ( red$2_3.4 <-> red$3_3.4) &
 ( green$2_3.5 <-> green$3_3.5) & ( red$2_3.5 <-> red$3_3.5) &
 ! green$2_4.5 & ! red$2_4.5 & green$3_4.5 & ! red$3_4.5
-) ) &
+) ) ->
 % next players move
 (
 (
@@ -1483,7 +1485,8 @@
 ( green$3_3.4 <-> green$4_3.4) & ( red$3_3.4 <-> red$4_3.4) &
 ( green$3_3.5 <-> green$4_3.5) & ( red$3_3.5 <-> red$4_3.5) &
 ! green$3_4.5 & ! red$3_4.5 & ! green$4_4.5 & red$4_4.5
-) ) ->
+) ) &
+% next players move
 (
 (
 (
@@ -1726,7 +1729,7 @@
 ( green$4_3.4 <-> green$5_3.4) & ( red$4_3.4 <-> red$5_3.4) &
 ( green$4_3.5 <-> green$5_3.5) & ( red$4_3.5 <-> red$5_3.5) &
 ! green$4_4.5 & ! red$4_4.5 & green$5_4.5 & ! red$5_4.5
-) ) &
+) ) ->
 % next players move
 (
 (
@@ -1970,7 +1973,8 @@
 ( green$5_3.4 <-> green$6_3.4) & ( red$5_3.4 <-> red$6_3.4) &
 ( green$5_3.5 <-> green$6_3.5) & ( red$5_3.5 <-> red$6_3.5) &
 ! green$5_4.5 & ! red$5_4.5 & ! green$6_4.5 & red$6_4.5
-) ) ->
+) ) &
+% next players move
 (
 (
 (
@@ -2213,7 +2217,7 @@
 ( green$6_3.4 <-> green$7_3.4) & ( red$6_3.4 <-> red$7_3.4) &
 ( green$6_3.5 <-> green$7_3.5) & ( red$6_3.5 <-> red$7_3.5) &
 ! green$6_4.5 & ! red$6_4.5 & green$7_4.5 & ! red$7_4.5
-) ) &
+) ) ->
 % next players move
 (
 (
@@ -2457,7 +2461,8 @@
 ( green$7_3.4 <-> green$8_3.4) & ( red$7_3.4 <-> red$8_3.4) &
 ( green$7_3.5 <-> green$8_3.5) & ( red$7_3.5 <-> red$8_3.5) &
 ! green$7_4.5 & ! red$7_4.5 & ! green$8_4.5 & red$8_4.5
-) ) ->
+) ) &
+% next players move
 (
 (
 (
@@ -2700,8 +2705,9 @@
 ( green$8_3.4 <-> green$9_3.4) & ( red$8_3.4 <-> red$9_3.4) &
 ( green$8_3.5 <-> green$9_3.5) & ( red$8_3.5 <-> red$9_3.5) &
 ! green$8_4.5 & ! red$8_4.5 & green$9_4.5 & ! red$9_4.5
-) ) &
+) ) ->
 % next players move
+(
 (
 (
 ( green$9_0.2 <-> green$10_0.2) & ( red$9_0.2 <-> red$10_0.2) &
@@ -2943,7 +2949,8 @@
 ( green$9_3.4 <-> green$10_3.4) & ( red$9_3.4 <-> red$10_3.4) &
 ( green$9_3.5 <-> green$10_3.5) & ( red$9_3.5 <-> red$10_3.5) &
 ! green$9_4.5 & ! red$9_4.5 & ! green$10_4.5 & red$10_4.5
-) ) ->
+) ) &
+% next players move
 (
 (
 (
@@ -3186,7 +3193,7 @@
 ( green$10_3.4 <-> green$11_3.4) & ( red$10_3.4 <-> red$11_3.4) &
 ( green$10_3.5 <-> green$11_3.5) & ( red$10_3.5 <-> red$11_3.5) &
 ! green$10_4.5 & ! red$10_4.5 & green$11_4.5 & ! red$11_4.5
-) ) &
+) ) ->
 % next players move
 (
 (
@@ -3430,7 +3437,8 @@
 ( green$11_3.4 <-> green$12_3.4) & ( red$11_3.4 <-> red$12_3.4) &
 ( green$11_3.5 <-> green$12_3.5) & ( red$11_3.5 <-> red$12_3.5) &
 ! green$11_4.5 & ! red$11_4.5 & ! green$12_4.5 & red$12_4.5
-) ) ->
+) ) &
+% next players move
 (
 (
 (
@@ -3673,7 +3681,7 @@
 ( green$12_3.4 <-> green$13_3.4) & ( red$12_3.4 <-> red$13_3.4) &
 ( green$12_3.5 <-> green$13_3.5) & ( red$12_3.5 <-> red$13_3.5) &
 ! green$12_4.5 & ! red$12_4.5 & green$13_4.5 & ! red$13_4.5
-) ) &
+) ) ->
 % next players move
 (
 (
@@ -3917,7 +3925,8 @@
 ( green$13_3.4 <-> green$14_3.4) & ( red$13_3.4 <-> red$14_3.4) &
 ( green$13_3.5 <-> green$14_3.5) & ( red$13_3.5 <-> red$14_3.5) &
 ! green$13_4.5 & ! red$13_4.5 & ! green$14_4.5 & red$14_4.5
-) ) ->
+) ) &
+% next players move
 (
 (
 (
@@ -4160,9 +4169,7 @@
 ( green$14_3.4 <-> green$15_3.4) & ( red$14_3.4 <-> red$15_3.4) &
 ( green$14_3.5 <-> green$15_3.5) & ( red$14_3.5 <-> red$15_3.5) &
 ! green$14_4.5 & ! red$14_4.5 & green$15_4.5 & ! red$15_4.5
-) ) &
-% next players move
-
+) ) ->
 % define goal states
 ( green$15_0.2 & green$15_0.1 & green$15_1.2 |
 green$15_0.3 & green$15_0.1 & green$15_1.3 |
@@ -4183,4 +4190,4 @@ green$15_1.5 & green$15_1.4 & green$15_4.5 |
 green$15_2.4 & green$15_2.3 & green$15_3.4 |
 green$15_2.5 & green$15_2.3 & green$15_3.5 |
 green$15_2.5 & green$15_2.4 & green$15_4.5 |
-green$15_3.5 & green$15_3.4 & green$15_4.5 ))))))))))))))
+green$15_3.5 & green$15_3.4 & green$15_4.5 ))))))))))))))))
