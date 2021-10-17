@@ -73,7 +73,7 @@ for i in range(0, 4):
                                     " & green$15_" + str(y) + "." + str(j) + " |\n")
 list_of_segments[-1] = list_of_segments[-1][:-3]  # cut off last " |\n" since this is the end of the formula
 list_of_segments.append(" )")
-list_of_segments.append(")))))))))))))))")  # close all brackets opened by each state (15)
+list_of_segments.append(")" * 15)  # close all brackets opened by each state (15)
 # ----------------------------------------------------------------------------------------------------------------------
 segments = ''.join(list_of_segments)
 # print(segments)
