@@ -1,9 +1,9 @@
 # debug file to encoding_gen.py
 # TODO: change nested loops to for i, tup in enumerate(list_of_game_edges)
-oneStep = True  # with this, one can switch between one step or two steps
-threeSteps = False  # activate three steps
+oneStep = False  # with this, one can switch between one step or two steps
+threeSteps = True  # activate three steps
 emptyBoard = True  # with this, one can try a non empty board
-writeQuantifiers = False  # use quantifiers if enabled
+writeQuantifiers = True  # use quantifiers if enabled
 triangle = False  # with this option board size is decreased to just a simple triangle
 nrSteps = 1 if oneStep else 3 if threeSteps else 2
 print(nrSteps)
@@ -86,7 +86,7 @@ if triangle:  # if we use the smallest possible board with 3 steps, we create th
                 list_of_segments[-1] = list_of_segments[-1][:-3] + ")\n% next players move\n"
         else:
             list_of_segments[-1] = list_of_segments[-1][:-3] + ") &\n"
-    #list_of_segments[-1] = list_of_segments[-1] + "&"  # change last element so that the last char is cut off
+    # list_of_segments[-1] = list_of_segments[-1] + "&"  # change last element so that the last char is cut off
 
 else:
     list_of_segments.append("% define moves of players\n")
@@ -124,7 +124,7 @@ else:
             if s == 0:  # at the beginning we don't need to close an additional bracket
                 list_of_segments[-1] = list_of_segments[-1][:-2] + ") -> \n"
             else:
-                list_of_segments[-1] = list_of_segments[-1][:-2] + "))\n% next players move\n"
+                list_of_segments[-1] = list_of_segments[-1][:-2] + ")\n% next players move\n->"
         else:
             list_of_segments[-1] = list_of_segments[-1][:-2] + ") &\n"
     # list_of_segments[-1] = list_of_segments[-1] + "&"  # change last element so that the last char is cut off
@@ -200,6 +200,8 @@ elif threeSteps:
     list_of_segments[-1] = list_of_segments[-1][:-3] + "\n)"  # cut off last part since this is the end of the formula
     if triangle and writeQuantifiers:
         list_of_segments.append("\n)")
+    elif writeQuantifiers:
+        list_of_segments.append(")))")
 else:  # non empty board and multiple steps
     # two steps
     print(len(list_of_game_edges))  # TODO: debug this for triangle board as we just have i == j == 3
@@ -221,6 +223,6 @@ else:  # non empty board and multiple steps
 # ----------------------------------------------------------------------------------------------------------------------
 segments = ''.join(list_of_segments)
 # writing to file ------------------------------------------------------------------------------------------------------
-with open('testOneStep.boole', 'w') as f:
+with open('testOneToThreeSteps.boole', 'w') as f:
     f.write(segments)
 # ----------------------------------------------------------------------------------------------------------------------
