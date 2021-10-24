@@ -1,4 +1,4 @@
-# bac-sim-QBF-encoding
+# bac-Sim-QBF-encoding
 This repo contains two simple python scripts that generate textfiles including the encoding of the game Sim as a QBF formula.
 
 The output can be further processed with a QBF-Solver to get a solution for the formula if there is one.
