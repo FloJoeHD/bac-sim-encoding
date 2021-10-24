@@ -1,5 +1,4 @@
 # debug file to encoding_gen.py
-# TODO: change nested loops to for i, tup in enumerate(list_of_game_edges)
 oneStep = False  # with this, one can switch between one step or two steps
 threeSteps = True  # activate three steps
 emptyBoard = True  # with this, one can try a non empty board
@@ -38,7 +37,7 @@ if emptyBoard:
         list_of_segments.append("! red$0_" + str(tup[0]) + "." + str(tup[1]) + " &\n")
 else:  # this theoretically is not possible as in state 0 there can't usually be colored lines
     list_of_segments.append("% init board with some already set variables\n")
-    list_of_segments.append("green$0_0.1 &\n! red$0_0.1 &\n")  # TODO: maybe extend to read user colored lines
+    list_of_segments.append("green$0_0.1 &\n! red$0_0.1 &\n")  # maybe extend to read user colored lines in the future
     list_of_segments.append("! green$0_0.2 &\nred$0_0.2 &\n")
     for idx, tup in enumerate(list_of_game_edges):
         if idx >= 2:  # first two lines are written manually
@@ -52,14 +51,13 @@ if triangle:  # if we use the smallest possible board with 3 steps, we create th
     list_of_segments.append("% define moves of players in triangle board\n")
     for s in range(0, nrSteps):
         list_of_segments.append("(\n")
-        if writeQuantifiers:  # TODO: may need adaption for 3 steps
+        if writeQuantifiers:
             # in the last state we don't need to open another bracket, last state is 1 if we have 2 moves
             list_of_segments.append("(\n")  # open bracket before '->'
         for idx_1, tup_1 in enumerate(list_of_game_edges):
             list_of_segments.append("(\n")
             for idx_2, tup_2 in enumerate(list_of_game_edges):
                 if idx_1 != idx_2:
-                    # print("idx_1: " + str(idx_1) + " idx_2 " + str(idx_2))
                     list_of_segments.append("( green$" + str(s) + "_" + str(tup_2[0]) + "." + str(tup_2[1]) +
                                             " <-> green$" + str(s + 1) + "_" + str(tup_2[0]) + "." + str(tup_2[1])
                                             + ") & ")
@@ -86,13 +84,11 @@ if triangle:  # if we use the smallest possible board with 3 steps, we create th
                 list_of_segments[-1] = list_of_segments[-1][:-3] + ")\n% next players move\n"
         else:
             list_of_segments[-1] = list_of_segments[-1][:-3] + ") &\n"
-    # list_of_segments[-1] = list_of_segments[-1] + "&"  # change last element so that the last char is cut off
 
 else:
     list_of_segments.append("% define moves of players\n")
     for s in range(0, nrSteps):  # steps are restricted to 1 here to test if a single step works (or two steps work)
         list_of_segments.append("(\n")
-        # TODO: refactor this if
         if writeQuantifiers:
             # in the last state we don't need to open another bracket, last state is 1 if we have 2 moves
             list_of_segments.append("(\n")  # open bracket before '->'
@@ -127,7 +123,6 @@ else:
                 list_of_segments[-1] = list_of_segments[-1][:-2] + ")\n% next players move\n->"
         else:
             list_of_segments[-1] = list_of_segments[-1][:-2] + ") &\n"
-    # list_of_segments[-1] = list_of_segments[-1] + "&"  # change last element so that the last char is cut off
 # ----------------------------------------------------------------------------------------------------------------------
 
 # append goal state formula --------------------------------------------------------------------------------------------
@@ -204,7 +199,7 @@ elif threeSteps:
         list_of_segments.append(")))")
 else:  # non empty board and multiple steps
     # two steps
-    print(len(list_of_game_edges))  # TODO: debug this for triangle board as we just have i == j == 3
+    print(len(list_of_game_edges))  # this does not work for triangle board as we just have i == j == 3
     list_of_segments.append("\n% define possible states after two steps and non empty board\n(\n")
     for i in range(2, len(list_of_game_edges)):  # start at two as first two tuples are omitted, because set manually
         for j in range(2, len(list_of_game_edges)):
