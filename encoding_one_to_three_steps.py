@@ -132,10 +132,11 @@ if oneStep and emptyBoard:
     for i in range(0, len(list_of_game_edges)):
         list_of_segments.append(
             "( green$1_" + str(list_of_game_edges[i][0]) + "." + str(list_of_game_edges[i][1]) + " &\n")
-        for k, tup in enumerate(list_of_game_edges):
-            if k != i:
-                list_of_segments.append("! green$1_" + str(tup[0]) + "." + str(tup[1]) + " &\n")
-                list_of_segments.append("! red$1_" + str(tup[0]) + "." + str(tup[1]) + " &\n")
+        # goal steps don't need to contain variables set to false as initially assumed, they can be omitted
+        # for k, tup in enumerate(list_of_game_edges):
+        #   if k != i:
+        #      list_of_segments.append("! green$1_" + str(tup[0]) + "." + str(tup[1]) + " &\n")
+        #     list_of_segments.append("! red$1_" + str(tup[0]) + "." + str(tup[1]) + " &\n")
         list_of_segments[-1] = list_of_segments[-1][:-3] + " ) |\n"
     list_of_segments[-1] = list_of_segments[-1][:-3] + " )"  # cut off last part since this is the end of the formula
     if writeQuantifiers:
@@ -166,10 +167,11 @@ elif emptyBoard and not threeSteps:
                     "( green$2_" + str(list_of_game_edges[i][0]) + "." + str(list_of_game_edges[i][1]) + " &\n")
                 list_of_segments.append(
                     "red$2_" + str(list_of_game_edges[j][0]) + "." + str(list_of_game_edges[j][1]) + " &\n")
-                for k, tup in enumerate(list_of_game_edges):
-                    if k != j and k != i:
-                        list_of_segments.append("! green$2_" + str(tup[0]) + "." + str(tup[1]) + " &\n")
-                        list_of_segments.append("! red$2_" + str(tup[0]) + "." + str(tup[1]) + " &\n")
+                # goal steps don't need to contain variables set to false as initially assumed, they can be omitted
+                # for k, tup in enumerate(list_of_game_edges):
+                #     if k != j and k != i:
+                #         list_of_segments.append("! green$2_" + str(tup[0]) + "." + str(tup[1]) + " &\n")
+                #         list_of_segments.append("! red$2_" + str(tup[0]) + "." + str(tup[1]) + " &\n")
                 list_of_segments[-1] = list_of_segments[-1][:-3] + " ) |\n"
     list_of_segments[-1] = list_of_segments[-1][:-3] + "\n)"  # cut off last part since this is the end of the formula
     if writeQuantifiers:
@@ -187,10 +189,11 @@ elif threeSteps:
                         "red$3_" + str(list_of_game_edges[j][0]) + "." + str(list_of_game_edges[j][1]) + " &\n")
                     list_of_segments.append(
                         "green$3_" + str(list_of_game_edges[k][0]) + "." + str(list_of_game_edges[k][1]) + " &\n")
-                    for n, tup in enumerate(list_of_game_edges):
-                        if n != i and n != j and n != k:
-                            list_of_segments.append("! green$3_" + str(tup[0]) + "." + str(tup[1]) + " &\n")
-                            list_of_segments.append("! red$3_" + str(tup[0]) + "." + str(tup[1]) + " &\n")
+                    # goal steps don't need to contain variables set to false as initially assumed, they can be omitted
+                    # for n, tup in enumerate(list_of_game_edges):
+                    #     if n != i and n != j and n != k:
+                    #         list_of_segments.append("! green$3_" + str(tup[0]) + "." + str(tup[1]) + " &\n")
+                    #         list_of_segments.append("! red$3_" + str(tup[0]) + "." + str(tup[1]) + " &\n")
                     list_of_segments[-1] = list_of_segments[-1][:-3] + " ) |\n"
     list_of_segments[-1] = list_of_segments[-1][:-3] + "\n)"  # cut off last part since this is the end of the formula
     if triangle and writeQuantifiers:
