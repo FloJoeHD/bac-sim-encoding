@@ -63,15 +63,22 @@ list_of_segments[-1] = list_of_segments[-1][:-21]  # change last element so that
 
 # append goal state formula --------------------------------------------------------------------------------------------
 list_of_segments.append("\n% define goal states\n")
-list_of_segments.append("( ")
+list_of_segments.append("(( ")
 for i in range(0, 4):
     for j in range(i + 1, 6):
         for y in range(i + 1, j):
-            # changed green to red here, since green wins if red has a triangle
             list_of_segments.append("green$15_" + str(i) + "." + str(j) +
                                     " & green$15_" + str(i) + "." + str(y) +
                                     " & green$15_" + str(y) + "." + str(j) + " |\n")
-list_of_segments[-1] = list_of_segments[-1][:-3]  # cut off last " |\n" since this is the end of the formula
+list_of_segments[-1] = list_of_segments[-1][:-2] + ") &\n!("  # cut off last "|\n" since this is the end of the formula
+for k in range(0, 4):
+    for l in range(k + 1, 6):
+        for m in range(k + 1, l):
+            # no red triangle is allowed
+            list_of_segments.append("red$15_" + str(k) + "." + str(l) +
+                                    " & red$15_" + str(k) + "." + str(m) +
+                                    " & red$15_" + str(m) + "." + str(l) + " |\n")
+list_of_segments[-1] = list_of_segments[-1][:-2] + ")\n"
 list_of_segments.append(" )")
 list_of_segments.append(")" * 15)  # close all brackets opened by each state (15)
 # ----------------------------------------------------------------------------------------------------------------------
